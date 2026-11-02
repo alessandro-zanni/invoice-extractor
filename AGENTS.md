@@ -50,8 +50,10 @@ curl -F file=@invoice.pdf localhost:3000/api/extract
 ## Git
 
 Gitflow: work on `develop`, `feat/` and `fix/` branches from `develop`. Merges and releases to
-`main` are decided by the owner. Commit author is `invoice-extractor@alessandrozanni.dev`
-(Vercel blocks deploys from other authors).
+`main` are decided by the owner. Commit author is `azanni098@gmail.com`: the app is hosted on the
+owner's personal Vercel account (a dedicated one needs a phone number already in use), and Vercel
+blocks deploys from other authors. Supabase is on the dedicated
+`invoice-extractor@alessandrozanni.dev` account.
 
 ## Static analysis
 
