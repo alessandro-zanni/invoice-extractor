@@ -2,8 +2,7 @@
 
 Portfolio project for AI engineering roles, run as if it were in production: extract structured
 data from invoices and receipts (PDF or photo), check it with deterministic rules, route between
-a cheap and a strong model, and send what still fails to human review. `CLAUDE.md` is a symlink
-to this file.
+a cheap and a strong model, and send what still fails to human review.
 
 The story it has to tell, backed by eval numbers: *Haiku extracts, rules check, Opus steps in
 only when checks fail: X% of the Opus-only cost at Y% accuracy; human corrections become new
