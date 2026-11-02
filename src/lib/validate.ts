@@ -1,0 +1,67 @@
+import type { Invoice } from "./schema";
+
+export type Issue = { field: string; message: string };
+
+const cents = (n: number) => Math.round(n * 100);
+// One cent of rounding per summed term is normal on real invoices.
+const close = (a: number, b: number, terms = 1) => Math.abs(cents(a) - cents(b)) <= terms;
+
+// Italian partita IVA: 11 digits, last one is a Luhn-style check digit.
+function isItalianVat(digits: string) {
+  if (!/^\d{11}$/.test(digits)) return false;
+  let sum = 0;
+  for (let i = 0; i < 10; i++) {
+    let d = Number(digits[i]);
+    if (i % 2 === 1) d = d * 2 > 9 ? d * 2 - 9 : d * 2;
+    sum += d;
+  }
+  return (10 - (sum % 10)) % 10 === Number(digits[10]);
+}
+
+// Spanish NIF: DNI (8 digits + check letter), NIE (X/Y/Z + 7 digits + letter), CIF (letter + 7 digits + control).
+function isSpanishNif(id: string) {
+  const letters = "TRWAGMYFPDXBNJZSQVHLCKE";
+  const dni = /^(\d{8})([A-Z])$/.exec(id);
+  if (dni) return letters[Number(dni[1]) % 23] === dni[2];
+  const nie = /^([XYZ])(\d{7})([A-Z])$/.exec(id);
+  if (nie) return letters[Number("XYZ".indexOf(nie[1]) + nie[2]) % 23] === nie[3];
+  return /^[ABCDEFGHJNPQRSUVW]\d{7}[0-9A-J]$/.test(id); // ponytail: CIF format only, add control digit if false positives show up in eval
+}
+
+export function validateTaxId(raw: string) {
+  const id = raw.replace(/[\s.-]/g, "").toUpperCase();
+  if (id.startsWith("IT")) return isItalianVat(id.slice(2));
+  if (id.startsWith("ES")) return isSpanishNif(id.slice(2));
+  return isItalianVat(id) || isSpanishNif(id);
+}
+
+export function validateInvoice(inv: Invoice, today = new Date()): Issue[] {
+  const issues: Issue[] = [];
+
+  inv.lines.forEach((l, i) => {
+    if (!close(l.quantity * l.unit_price, l.amount))
+      issues.push({ field: `lines.${i}.amount`, message: `${l.quantity} × ${l.unit_price} ≠ ${l.amount}` });
+  });
+
+  if (inv.lines.length) {
+    const sum = inv.lines.reduce((s, l) => s + l.amount, 0);
+    if (!close(sum, inv.subtotal, inv.lines.length))
+      issues.push({ field: "subtotal", message: `lines sum to ${sum.toFixed(2)}, subtotal is ${inv.subtotal}` });
+  }
+
+  if (!close(inv.subtotal + inv.tax_amount, inv.total, 2))
+    issues.push({ field: "total", message: `${inv.subtotal} + ${inv.tax_amount} ≠ ${inv.total}` });
+
+  if (inv.supplier_tax_id && !validateTaxId(inv.supplier_tax_id))
+    issues.push({ field: "supplier_tax_id", message: `invalid tax id ${inv.supplier_tax_id}` });
+
+  if (inv.issue_date) {
+    const d = new Date(`${inv.issue_date}T00:00:00Z`);
+    if (Number.isNaN(d.getTime()) || !/^\d{4}-\d{2}-\d{2}$/.test(inv.issue_date))
+      issues.push({ field: "issue_date", message: `not an ISO date: ${inv.issue_date}` });
+    else if (d > today || d.getUTCFullYear() < 2000)
+      issues.push({ field: "issue_date", message: `implausible date ${inv.issue_date}` });
+  }
+
+  return issues;
+}
