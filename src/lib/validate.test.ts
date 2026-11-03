@@ -52,7 +52,7 @@ test("document discount, rounding and tax-inclusive prices", () => {
 
 test("review reason", () => {
   const total = [{ field: "total", message: "a" }];
-  expect(reviewReason(total, [])).toBe(null);
+  expect(reviewReason(total, [])).toBeNull();
   expect(reviewReason(total, [{ field: "total", message: "b" }])).toBe("document_inconsistent");
   expect(reviewReason(total, [{ field: "subtotal", message: "c" }])).toBe("uncertain_extraction");
   expect(reviewReason(total, total)).toBe("uncertain_extraction"); // same attempt: nobody double-checked
@@ -64,6 +64,6 @@ test("tax ids", () => {
   expect(validateTaxId("ES12345678A")).toBe(false);
   expect(validateTaxId("X1234567L")).toBe(true); // NIE
   expect(validateTaxId("B12345678")).toBe(true); // CIF format
-  expect(validateTaxId("GST 001234567890")).toBe(null); // other countries: not checkable, not invalid
+  expect(validateTaxId("GST 001234567890")).toBeNull(); // other countries: not checkable, not invalid
   expect(validateTaxId("00743110158")).toBe(false);
 });
