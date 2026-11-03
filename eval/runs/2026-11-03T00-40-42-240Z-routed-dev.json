@@ -1,0 +1,1165 @@
+{
+  "summary": {
+    "strategy": "routed",
+    "split": "dev",
+    "docs": 20,
+    "errors": 0,
+    "field_accuracy": {
+      "supplier_name": "n/a",
+      "supplier_tax_id": "n/a",
+      "invoice_number": "n/a",
+      "issue_date": "n/a",
+      "currency": "n/a",
+      "subtotal": "n/a",
+      "tax_amount": "n/a",
+      "total": "95.0% (20)",
+      "lines": "90.0% (20)"
+    },
+    "docs_all_fields_right": "90.0%",
+    "printed_errors_caught": "0/0",
+    "clean_docs_flagged": "0/0",
+    "escalated_to_opus": "20.0%",
+    "cost_usd_total": 0.0828,
+    "cost_usd_per_doc": 0.00414,
+    "latency_ms_p50": 2208,
+    "latency_ms_p95": 8936
+  },
+  "results": [
+    {
+      "id": "cord-002",
+      "scored": [
+        "total",
+        "lines"
+      ],
+      "expect_review": null,
+      "flagged": false,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.000351,
+      "ms": 2050,
+      "issues": [],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "null",
+        "supplier_tax_id": null,
+        "invoice_number": null,
+        "issue_date": null,
+        "currency": "IDR",
+        "lines": [
+          {
+            "description": "J.STB PROMO",
+            "quantity": 1,
+            "unit_price": 17500,
+            "amount": 17500
+          },
+          {
+            "description": "Y.B.BAT",
+            "quantity": 1,
+            "unit_price": 46000,
+            "amount": 46000
+          },
+          {
+            "description": "Y.BASO PROM",
+            "quantity": 1,
+            "unit_price": 27500,
+            "amount": 27500
+          }
+        ],
+        "subtotal": 91000,
+        "tax_amount": 0,
+        "total": 91000
+      }
+    },
+    {
+      "id": "cord-003",
+      "scored": [
+        "total",
+        "lines"
+      ],
+      "expect_review": null,
+      "flagged": false,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.00032020000000000003,
+      "ms": 2416,
+      "issues": [],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "null",
+        "supplier_tax_id": null,
+        "invoice_number": null,
+        "issue_date": null,
+        "currency": "IDR",
+        "lines": [
+          {
+            "description": "JASMINE MT (L)",
+            "quantity": 1,
+            "unit_price": 24000,
+            "amount": 24000
+          },
+          {
+            "description": "COCONUT JELLY (L)",
+            "quantity": 1,
+            "unit_price": 4000,
+            "amount": 4000
+          }
+        ],
+        "subtotal": 28000,
+        "tax_amount": 0,
+        "total": 28000
+      }
+    },
+    {
+      "id": "cord-004",
+      "scored": [
+        "total",
+        "lines"
+      ],
+      "expect_review": null,
+      "flagged": false,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.00030620000000000007,
+      "ms": 2208,
+      "issues": [],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Dynamic Bakery & Cake Natural",
+        "supplier_tax_id": null,
+        "invoice_number": null,
+        "issue_date": null,
+        "currency": "IDR",
+        "lines": [
+          {
+            "description": "DONAT GULA",
+            "quantity": 1,
+            "unit_price": 11000,
+            "amount": 11000
+          }
+        ],
+        "subtotal": 11000,
+        "tax_amount": 0,
+        "total": 11000
+      }
+    },
+    {
+      "id": "cord-006",
+      "scored": [
+        "total",
+        "lines"
+      ],
+      "expect_review": null,
+      "flagged": false,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.0006379,
+      "ms": 3007,
+      "issues": [],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": false,
+        "total": false,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "null",
+        "supplier_tax_id": null,
+        "invoice_number": null,
+        "issue_date": null,
+        "currency": "IDR",
+        "lines": [
+          {
+            "description": "TRAD KY TOAST CARTE",
+            "quantity": 1,
+            "unit_price": 28.182,
+            "amount": 28.182
+          }
+        ],
+        "subtotal": 28.182,
+        "tax_amount": 2.818,
+        "total": 31
+      }
+    },
+    {
+      "id": "cord-007",
+      "scored": [
+        "total",
+        "lines"
+      ],
+      "expect_review": null,
+      "flagged": false,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.0005487000000000001,
+      "ms": 3313,
+      "issues": [],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Unreadable (blurred header)",
+        "supplier_tax_id": null,
+        "invoice_number": null,
+        "issue_date": null,
+        "currency": "IDR",
+        "lines": [
+          {
+            "description": "EGG TART",
+            "quantity": 1,
+            "unit_price": 13000,
+            "amount": 13000
+          },
+          {
+            "description": "CHOCO CUSTARD PASTRY",
+            "quantity": 2,
+            "unit_price": 12000,
+            "amount": 24000
+          },
+          {
+            "description": "REDBEAN BREAD",
+            "quantity": 1,
+            "unit_price": 9000,
+            "amount": 9000
+          }
+        ],
+        "subtotal": 46000,
+        "tax_amount": 0,
+        "total": 46000
+      }
+    },
+    {
+      "id": "cord-008",
+      "scored": [
+        "total",
+        "lines"
+      ],
+      "expect_review": null,
+      "flagged": false,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.0004266,
+      "ms": 3057,
+      "issues": [],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "UNKNOWN",
+        "supplier_tax_id": null,
+        "invoice_number": null,
+        "issue_date": null,
+        "currency": "IDR",
+        "lines": [
+          {
+            "description": "Kupon 15",
+            "quantity": 1,
+            "unit_price": 100000,
+            "amount": 100000
+          },
+          {
+            "description": "ADD CHICKEN BOX",
+            "quantity": 1,
+            "unit_price": 909,
+            "amount": 909
+          }
+        ],
+        "subtotal": 100909,
+        "tax_amount": 10091,
+        "total": 111000
+      }
+    },
+    {
+      "id": "cord-011",
+      "scored": [
+        "total",
+        "lines"
+      ],
+      "expect_review": null,
+      "flagged": false,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.00022360000000000001,
+      "ms": 1577,
+      "issues": [],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Auntie Anne's",
+        "supplier_tax_id": null,
+        "invoice_number": null,
+        "issue_date": null,
+        "currency": "IDR",
+        "lines": [
+          {
+            "description": "CINNAMON SUGAR",
+            "quantity": 1,
+            "unit_price": 17000,
+            "amount": 17000
+          }
+        ],
+        "subtotal": 17000,
+        "tax_amount": 0,
+        "total": 17000
+      }
+    },
+    {
+      "id": "cord-012",
+      "scored": [
+        "total",
+        "lines"
+      ],
+      "expect_review": null,
+      "flagged": false,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.00022360000000000001,
+      "ms": 1184,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "",
+        "supplier_tax_id": null,
+        "invoice_number": null,
+        "issue_date": null,
+        "currency": "IDR",
+        "lines": [
+          {
+            "description": "1 BANABERRY FRESH CREAM CAK",
+            "quantity": 1,
+            "unit_price": 230000,
+            "amount": 230000
+          }
+        ],
+        "subtotal": 230000,
+        "tax_amount": 0,
+        "total": 230000
+      }
+    },
+    {
+      "id": "cord-013",
+      "scored": [
+        "total",
+        "lines"
+      ],
+      "expect_review": null,
+      "flagged": true,
+      "models": [
+        "claude-haiku-5-5",
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.0099076,
+      "ms": 3849,
+      "issues": [
+        {
+          "field": "lines.1.amount",
+          "message": "1 × 880 ≠ 0"
+        }
+      ],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "",
+        "supplier_tax_id": null,
+        "invoice_number": null,
+        "issue_date": null,
+        "currency": "IDR",
+        "lines": [
+          {
+            "description": "0571-1854 BLUS WANITA",
+            "quantity": 1,
+            "unit_price": 120000,
+            "amount": 120000
+          },
+          {
+            "description": "1002-0060 SHOPPING BAG",
+            "quantity": 1,
+            "unit_price": 880,
+            "amount": 0
+          }
+        ],
+        "subtotal": 120000,
+        "tax_amount": 0,
+        "total": 120000
+      }
+    },
+    {
+      "id": "cord-015",
+      "scored": [
+        "total",
+        "lines"
+      ],
+      "expect_review": null,
+      "flagged": true,
+      "models": [
+        "claude-haiku-5-5",
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.0296189,
+      "ms": 7637,
+      "issues": [
+        {
+          "field": "total",
+          "message": "238000 + 25585 ≠ 281435"
+        }
+      ],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "",
+        "supplier_tax_id": null,
+        "invoice_number": null,
+        "issue_date": null,
+        "currency": "IDR",
+        "lines": [
+          {
+            "description": "RedVelvet Cheese Slc",
+            "quantity": 1,
+            "unit_price": 38000,
+            "amount": 38000
+          },
+          {
+            "description": "Chicken Baked Rice",
+            "quantity": 1,
+            "unit_price": 55000,
+            "amount": 55000
+          },
+          {
+            "description": "Fish n Chips",
+            "quantity": 1,
+            "unit_price": 65000,
+            "amount": 65000
+          },
+          {
+            "description": "Mushroom Soup",
+            "quantity": 1,
+            "unit_price": 35000,
+            "amount": 35000
+          },
+          {
+            "description": "Chamomile",
+            "quantity": 1,
+            "unit_price": 25000,
+            "amount": 25000
+          },
+          {
+            "description": "Iced Tea",
+            "quantity": 1,
+            "unit_price": 20000,
+            "amount": 20000
+          }
+        ],
+        "subtotal": 238000,
+        "tax_amount": 25585,
+        "total": 281435
+      }
+    },
+    {
+      "id": "cord-016",
+      "scored": [
+        "total",
+        "lines"
+      ],
+      "expect_review": null,
+      "flagged": false,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.00023810000000000001,
+      "ms": 1972,
+      "issues": [],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "XXI café",
+        "supplier_tax_id": null,
+        "invoice_number": null,
+        "issue_date": null,
+        "currency": "IDR",
+        "lines": [
+          {
+            "description": "Lemon Tea (L)",
+            "quantity": 1,
+            "unit_price": 25000,
+            "amount": 25000
+          },
+          {
+            "description": "Caramel Small",
+            "quantity": 1,
+            "unit_price": 38000,
+            "amount": 38000
+          }
+        ],
+        "subtotal": 63000,
+        "tax_amount": 0,
+        "total": 63000
+      }
+    },
+    {
+      "id": "cord-017",
+      "scored": [
+        "total",
+        "lines"
+      ],
+      "expect_review": null,
+      "flagged": false,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.0003847,
+      "ms": 2247,
+      "issues": [],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Unknown (name blurred on receipt)",
+        "supplier_tax_id": null,
+        "invoice_number": null,
+        "issue_date": null,
+        "currency": "IDR",
+        "lines": [
+          {
+            "description": "1 [LG] BLACK SAKURA",
+            "quantity": 1,
+            "unit_price": 59091,
+            "amount": 59091
+          },
+          {
+            "description": "1 LONGAN",
+            "quantity": 1,
+            "unit_price": 0,
+            "amount": 0
+          },
+          {
+            "description": "1 ROASTED ALMOND",
+            "quantity": 1,
+            "unit_price": 0,
+            "amount": 0
+          },
+          {
+            "description": "1 MANGGO",
+            "quantity": 1,
+            "unit_price": 0,
+            "amount": 0
+          },
+          {
+            "description": "1 MINERAL WATER (bundling) 5k",
+            "quantity": 1,
+            "unit_price": 4545,
+            "amount": 4545
+          }
+        ],
+        "subtotal": 63636,
+        "tax_amount": 6364,
+        "total": 70000
+      }
+    },
+    {
+      "id": "cord-020",
+      "scored": [
+        "total",
+        "lines"
+      ],
+      "expect_review": null,
+      "flagged": false,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.00024910000000000004,
+      "ms": 1903,
+      "issues": [],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": false,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "null",
+        "supplier_tax_id": null,
+        "invoice_number": null,
+        "issue_date": null,
+        "currency": "null",
+        "lines": [
+          {
+            "description": "4 AMBUSH DBL CHS",
+            "quantity": 4,
+            "unit_price": 15000,
+            "amount": 60000
+          },
+          {
+            "description": "10 AMBUSH CHS BUR",
+            "quantity": 10,
+            "unit_price": 10000,
+            "amount": 100000
+          }
+        ],
+        "subtotal": 160000,
+        "tax_amount": 16000,
+        "total": 176000
+      }
+    },
+    {
+      "id": "cord-021",
+      "scored": [
+        "total",
+        "lines"
+      ],
+      "expect_review": null,
+      "flagged": true,
+      "models": [
+        "claude-haiku-5-5",
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.015999199999999998,
+      "ms": 8936,
+      "issues": [
+        {
+          "field": "subtotal",
+          "message": "lines sum to 343508.00, subtotal is 325600"
+        },
+        {
+          "field": "total",
+          "message": "325600 + 34351 ≠ 377859"
+        }
+      ],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "",
+        "supplier_tax_id": null,
+        "invoice_number": null,
+        "issue_date": null,
+        "currency": "IDR",
+        "lines": [
+          {
+            "description": "cashew nuts chkn",
+            "quantity": 1,
+            "unit_price": 64500,
+            "amount": 64500
+          },
+          {
+            "description": "garlic pepper beef",
+            "quantity": 1,
+            "unit_price": 79500,
+            "amount": 79500
+          },
+          {
+            "description": "red curry beef",
+            "quantity": 1,
+            "unit_price": 69500,
+            "amount": 69500
+          },
+          {
+            "description": "phad thai",
+            "quantity": 1,
+            "unit_price": 64500,
+            "amount": 64500
+          },
+          {
+            "description": "steamed rice",
+            "quantity": 4,
+            "unit_price": 11900,
+            "amount": 47600
+          },
+          {
+            "description": "Service chrg",
+            "quantity": 1,
+            "unit_price": 17908,
+            "amount": 17908
+          }
+        ],
+        "subtotal": 325600,
+        "tax_amount": 34351,
+        "total": 377859
+      }
+    },
+    {
+      "id": "cord-022",
+      "scored": [
+        "total",
+        "lines"
+      ],
+      "expect_review": null,
+      "flagged": false,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.0003355,
+      "ms": 1365,
+      "issues": [],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "null",
+        "supplier_tax_id": null,
+        "invoice_number": null,
+        "issue_date": null,
+        "currency": "IDR",
+        "lines": [
+          {
+            "description": "NASI GOR SFD TLR",
+            "quantity": 1,
+            "unit_price": 35000,
+            "amount": 35000
+          },
+          {
+            "description": "ES TEH TAWAR",
+            "quantity": 1,
+            "unit_price": 3000,
+            "amount": 3000
+          }
+        ],
+        "subtotal": 38000,
+        "tax_amount": 0,
+        "total": 38000
+      }
+    },
+    {
+      "id": "cord-024",
+      "scored": [
+        "total",
+        "lines"
+      ],
+      "expect_review": null,
+      "flagged": false,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.00031820000000000004,
+      "ms": 1874,
+      "issues": [],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": false,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "null",
+        "supplier_tax_id": null,
+        "invoice_number": null,
+        "issue_date": null,
+        "currency": "KRW",
+        "lines": [
+          {
+            "description": "TWIST DONUT",
+            "quantity": 6,
+            "unit_price": 9000,
+            "amount": 54000
+          },
+          {
+            "description": "REDBEAN BREAD",
+            "quantity": 1,
+            "unit_price": 9000,
+            "amount": 9000
+          }
+        ],
+        "subtotal": 63000,
+        "tax_amount": 0,
+        "total": 63000
+      }
+    },
+    {
+      "id": "cord-025",
+      "scored": [
+        "total",
+        "lines"
+      ],
+      "expect_review": null,
+      "flagged": false,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.0002616,
+      "ms": 1587,
+      "issues": [],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "null",
+        "supplier_tax_id": null,
+        "invoice_number": null,
+        "issue_date": null,
+        "currency": "IDR",
+        "lines": [
+          {
+            "description": "5001-Corn Flakes Cookies",
+            "quantity": 1,
+            "unit_price": 56000,
+            "amount": 56000
+          },
+          {
+            "description": "5003-Chokoreto Cookies",
+            "quantity": 1,
+            "unit_price": 62000,
+            "amount": 62000
+          },
+          {
+            "description": "6002-Plastic Bag Medium",
+            "quantity": 1,
+            "unit_price": 0,
+            "amount": 0
+          }
+        ],
+        "subtotal": 118000,
+        "tax_amount": 0,
+        "total": 118000
+      }
+    },
+    {
+      "id": "cord-026",
+      "scored": [
+        "total",
+        "lines"
+      ],
+      "expect_review": null,
+      "flagged": false,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.0003487,
+      "ms": 1467,
+      "issues": [],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Unreadable (blurred header)",
+        "supplier_tax_id": null,
+        "invoice_number": null,
+        "issue_date": null,
+        "currency": "IDR",
+        "lines": [
+          {
+            "description": "TWIST STRAWBERRY DONUT",
+            "quantity": 1,
+            "unit_price": 10000,
+            "amount": 10000
+          },
+          {
+            "description": "TLJ CROQUETTE",
+            "quantity": 1,
+            "unit_price": 17000,
+            "amount": 17000
+          },
+          {
+            "description": "POTATO PEPPER BAGEL",
+            "quantity": 1,
+            "unit_price": 16000,
+            "amount": 16000
+          }
+        ],
+        "subtotal": 43000,
+        "tax_amount": 0,
+        "total": 43000
+      }
+    },
+    {
+      "id": "cord-029",
+      "scored": [
+        "total",
+        "lines"
+      ],
+      "expect_review": null,
+      "flagged": true,
+      "models": [
+        "claude-haiku-5-5",
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.0216384,
+      "ms": 8111,
+      "issues": [
+        {
+          "field": "total",
+          "message": "369000 + 38745 ≠ 426195"
+        }
+      ],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "",
+        "supplier_tax_id": null,
+        "invoice_number": null,
+        "issue_date": null,
+        "currency": "IDR",
+        "lines": [
+          {
+            "description": "SAMGYOPSAL",
+            "quantity": 2,
+            "unit_price": 97000,
+            "amount": 194000
+          },
+          {
+            "description": "SUL LUNG TANG",
+            "quantity": 1,
+            "unit_price": 75000,
+            "amount": 75000
+          },
+          {
+            "description": "MAKOLI",
+            "quantity": 1,
+            "unit_price": 100000,
+            "amount": 100000
+          }
+        ],
+        "subtotal": 369000,
+        "tax_amount": 38745,
+        "total": 426195
+      }
+    },
+    {
+      "id": "cord-030",
+      "scored": [
+        "total",
+        "lines"
+      ],
+      "expect_review": null,
+      "flagged": false,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.0004337,
+      "ms": 1791,
+      "issues": [],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "null",
+        "supplier_tax_id": null,
+        "invoice_number": null,
+        "issue_date": null,
+        "currency": "IDR",
+        "lines": [
+          {
+            "description": "COLD OCHA",
+            "quantity": 1,
+            "unit_price": 10909,
+            "amount": 10909
+          },
+          {
+            "description": "BCA PROMO",
+            "quantity": 1,
+            "unit_price": 54455,
+            "amount": 54455
+          },
+          {
+            "description": ":-ABURA UDON SPICY",
+            "quantity": 1,
+            "unit_price": 0,
+            "amount": 0
+          },
+          {
+            "description": ":-KAKE UDON",
+            "quantity": 1,
+            "unit_price": 0,
+            "amount": 0
+          },
+          {
+            "description": "SKEWERED SHUMAI",
+            "quantity": 1,
+            "unit_price": 12727,
+            "amount": 12727
+          },
+          {
+            "description": "SKEWERED TOFU ROLL",
+            "quantity": 1,
+            "unit_price": 12727,
+            "amount": 12727
+          },
+          {
+            "description": "EBI TEMPURA",
+            "quantity": 1,
+            "unit_price": 13636,
+            "amount": 13636
+          },
+          {
+            "description": "KITSUNE UDON (KIDS)",
+            "quantity": 1,
+            "unit_price": 28182,
+            "amount": 28182
+          }
+        ],
+        "subtotal": 132636,
+        "tax_amount": 13264,
+        "total": 145900
+      }
+    }
+  ]
+}
