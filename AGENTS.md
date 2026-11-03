@@ -37,7 +37,7 @@ eval cases.*
 - [ ] 5. Review UI; corrections → golden set (Supabase from here)
 - [ ] 6. Prod: rate limit, cost logs, spend limit, Vercel deploy
 - [ ] 7. Showcase: README with numbers table, diagram, GIF; link from the portfolio; set the GitHub
-  default branch back to `main` (it is `develop` until `main` has a release)
+  default branch back to `main` (it is `develop` until `main` has a release). README done 2026-11-03; GIF waits for the review UI
 
 ## Commands
 
