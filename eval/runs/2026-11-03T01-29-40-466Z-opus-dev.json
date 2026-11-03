@@ -1,0 +1,7369 @@
+{
+  "summary": {
+    "strategy": "opus",
+    "split": "dev",
+    "docs": 93,
+    "errors": 0,
+    "field_accuracy": {
+      "supplier_name": "100.0% (53)",
+      "supplier_tax_id": "97.0% (33)",
+      "invoice_number": "100.0% (53)",
+      "issue_date": "100.0% (73)",
+      "currency": "100.0% (48)",
+      "subtotal": "100.0% (33)",
+      "tax_amount": "100.0% (33)",
+      "total": "100.0% (93)",
+      "lines": "98.1% (53)"
+    },
+    "docs_all_fields_right": "97.8%",
+    "printed_errors_caught": "5/5",
+    "clean_docs_flagged": "1/28",
+    "cost_usd_total": 1.7042,
+    "cost_usd_per_doc": 0.01833,
+    "latency_ms_p50": 3596,
+    "latency_ms_p95": 6432
+  },
+  "results": [
+    {
+      "id": "cord-002",
+      "scored": [
+        "total",
+        "lines"
+      ],
+      "expect_review": null,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.016372,
+      "ms": 3261,
+      "issues": [],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "SAMS",
+        "supplier_tax_id": null,
+        "invoice_number": null,
+        "issue_date": null,
+        "currency": "IDR",
+        "lines": [
+          {
+            "description": "J.STB PROMO",
+            "quantity": 1,
+            "unit_price": 17500,
+            "discount_percent": null,
+            "amount": 17500
+          },
+          {
+            "description": "Y.B.BAT",
+            "quantity": 1,
+            "unit_price": 46000,
+            "discount_percent": null,
+            "amount": 46000
+          },
+          {
+            "description": "Y.BASO PROM",
+            "quantity": 1,
+            "unit_price": 27500,
+            "discount_percent": null,
+            "amount": 27500
+          }
+        ],
+        "subtotal": 91000,
+        "discount_amount": 0,
+        "tax_amount": 0,
+        "prices_include_tax": true,
+        "rounding": 0,
+        "total": 91000
+      }
+    },
+    {
+      "id": "cord-003",
+      "scored": [
+        "total",
+        "lines"
+      ],
+      "expect_review": null,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.01488,
+      "ms": 2834,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "",
+        "supplier_tax_id": null,
+        "invoice_number": null,
+        "issue_date": null,
+        "currency": "IDR",
+        "lines": [
+          {
+            "description": "JASMINE MT (L)",
+            "quantity": 1,
+            "unit_price": 24000,
+            "discount_percent": null,
+            "amount": 24000
+          },
+          {
+            "description": "COCONUT JELLY (L)",
+            "quantity": 1,
+            "unit_price": 4000,
+            "discount_percent": null,
+            "amount": 4000
+          }
+        ],
+        "subtotal": 28000,
+        "discount_amount": 0,
+        "tax_amount": 0,
+        "prices_include_tax": true,
+        "rounding": 0,
+        "total": 28000
+      }
+    },
+    {
+      "id": "cord-004",
+      "scored": [
+        "total",
+        "lines"
+      ],
+      "expect_review": null,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.0141,
+      "ms": 2577,
+      "issues": [],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Dynamic Bakery & Cake",
+        "supplier_tax_id": null,
+        "invoice_number": null,
+        "issue_date": null,
+        "currency": "IDR",
+        "lines": [
+          {
+            "description": "DONAT GULA",
+            "quantity": 1,
+            "unit_price": 11000,
+            "discount_percent": null,
+            "amount": 11000
+          }
+        ],
+        "subtotal": 11000,
+        "discount_amount": 0,
+        "tax_amount": 0,
+        "prices_include_tax": true,
+        "rounding": 0,
+        "total": 11000
+      }
+    },
+    {
+      "id": "cord-006",
+      "scored": [
+        "total",
+        "lines"
+      ],
+      "expect_review": null,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.027308,
+      "ms": 3150,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "",
+        "supplier_tax_id": null,
+        "invoice_number": null,
+        "issue_date": null,
+        "currency": "IDR",
+        "lines": [
+          {
+            "description": "TRAD KY TOAST CARTE",
+            "quantity": 1,
+            "unit_price": 28182,
+            "discount_percent": null,
+            "amount": 28182
+          }
+        ],
+        "subtotal": 28182,
+        "discount_amount": 0,
+        "tax_amount": 2818,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 31000
+      }
+    },
+    {
+      "id": "cord-007",
+      "scored": [
+        "total",
+        "lines"
+      ],
+      "expect_review": null,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.01596,
+      "ms": 3838,
+      "issues": [],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Tous Les Jours",
+        "supplier_tax_id": null,
+        "invoice_number": null,
+        "issue_date": null,
+        "currency": "IDR",
+        "lines": [
+          {
+            "description": "EGG TART",
+            "quantity": 1,
+            "unit_price": 13000,
+            "discount_percent": null,
+            "amount": 13000
+          },
+          {
+            "description": "CHOCO CUSTARD PASTRY",
+            "quantity": 2,
+            "unit_price": 12000,
+            "discount_percent": null,
+            "amount": 24000
+          },
+          {
+            "description": "REDBEAN BREAD",
+            "quantity": 1,
+            "unit_price": 9000,
+            "discount_percent": null,
+            "amount": 9000
+          }
+        ],
+        "subtotal": 46000,
+        "discount_amount": 0,
+        "tax_amount": 0,
+        "prices_include_tax": true,
+        "rounding": 0,
+        "total": 46000
+      }
+    },
+    {
+      "id": "cord-008",
+      "scored": [
+        "total",
+        "lines"
+      ],
+      "expect_review": null,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.011556,
+      "ms": 3465,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "",
+        "supplier_tax_id": null,
+        "invoice_number": null,
+        "issue_date": null,
+        "currency": "IDR",
+        "lines": [
+          {
+            "description": "Kupon 15",
+            "quantity": 1,
+            "unit_price": 100000,
+            "discount_percent": null,
+            "amount": 100000
+          },
+          {
+            "description": "ADD CHICKEN BOX",
+            "quantity": 1,
+            "unit_price": 909,
+            "discount_percent": null,
+            "amount": 909
+          }
+        ],
+        "subtotal": 100909,
+        "discount_amount": 0,
+        "tax_amount": 10091,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 111000
+      }
+    },
+    {
+      "id": "cord-011",
+      "scored": [
+        "total",
+        "lines"
+      ],
+      "expect_review": null,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.010856,
+      "ms": 3324,
+      "issues": [],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Auntie Anne's",
+        "supplier_tax_id": null,
+        "invoice_number": null,
+        "issue_date": null,
+        "currency": "IDR",
+        "lines": [
+          {
+            "description": "CINNAMON SUGAR",
+            "quantity": 1,
+            "unit_price": 17000,
+            "discount_percent": null,
+            "amount": 17000
+          }
+        ],
+        "subtotal": 17000,
+        "discount_amount": 0,
+        "tax_amount": 0,
+        "prices_include_tax": true,
+        "rounding": 0,
+        "total": 17000
+      }
+    },
+    {
+      "id": "cord-012",
+      "scored": [
+        "total",
+        "lines"
+      ],
+      "expect_review": null,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.010816,
+      "ms": 3041,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "",
+        "supplier_tax_id": null,
+        "invoice_number": null,
+        "issue_date": null,
+        "currency": "IDR",
+        "lines": [
+          {
+            "description": "BANABERRY FRESH CREAM CAK",
+            "quantity": 1,
+            "unit_price": 230000,
+            "discount_percent": null,
+            "amount": 230000
+          }
+        ],
+        "subtotal": 230000,
+        "discount_amount": 0,
+        "tax_amount": 0,
+        "prices_include_tax": true,
+        "rounding": 0,
+        "total": 230000
+      }
+    },
+    {
+      "id": "cord-013",
+      "scored": [
+        "total",
+        "lines"
+      ],
+      "expect_review": null,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.011756,
+      "ms": 2781,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "",
+        "supplier_tax_id": null,
+        "invoice_number": null,
+        "issue_date": null,
+        "currency": "IDR",
+        "lines": [
+          {
+            "description": "0571-1854 BLUS WANITA",
+            "quantity": 1,
+            "unit_price": 120000,
+            "discount_percent": 0,
+            "amount": 120000
+          },
+          {
+            "description": "1002-0060 SHOPPING BAG",
+            "quantity": 1,
+            "unit_price": 880,
+            "discount_percent": 100,
+            "amount": 0
+          }
+        ],
+        "subtotal": 120000,
+        "discount_amount": 0,
+        "tax_amount": 0,
+        "prices_include_tax": true,
+        "rounding": 0,
+        "total": 120000
+      }
+    },
+    {
+      "id": "cord-015",
+      "scored": [
+        "total",
+        "lines"
+      ],
+      "expect_review": null,
+      "flagged": true,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.034248,
+      "ms": 6432,
+      "issues": [
+        {
+          "field": "total",
+          "message": "238000 − 0 + 25585 + 0 ≠ 281435"
+        }
+      ],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "",
+        "supplier_tax_id": null,
+        "invoice_number": null,
+        "issue_date": null,
+        "currency": "IDR",
+        "lines": [
+          {
+            "description": "RedVelvet Cheese Slc",
+            "quantity": 1,
+            "unit_price": 38000,
+            "discount_percent": null,
+            "amount": 38000
+          },
+          {
+            "description": "Chicken Baked Rice",
+            "quantity": 1,
+            "unit_price": 55000,
+            "discount_percent": null,
+            "amount": 55000
+          },
+          {
+            "description": "Fish n Chips",
+            "quantity": 1,
+            "unit_price": 65000,
+            "discount_percent": null,
+            "amount": 65000
+          },
+          {
+            "description": "Mushroom Soup",
+            "quantity": 1,
+            "unit_price": 35000,
+            "discount_percent": null,
+            "amount": 35000
+          },
+          {
+            "description": "Chamomile",
+            "quantity": 1,
+            "unit_price": 25000,
+            "discount_percent": null,
+            "amount": 25000
+          },
+          {
+            "description": "Iced Tea",
+            "quantity": 1,
+            "unit_price": 20000,
+            "discount_percent": null,
+            "amount": 20000
+          }
+        ],
+        "subtotal": 238000,
+        "discount_amount": 0,
+        "tax_amount": 25585,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 281435
+      }
+    },
+    {
+      "id": "cord-016",
+      "scored": [
+        "total",
+        "lines"
+      ],
+      "expect_review": null,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.011616,
+      "ms": 3372,
+      "issues": [],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "XXI café",
+        "supplier_tax_id": null,
+        "invoice_number": null,
+        "issue_date": null,
+        "currency": "IDR",
+        "lines": [
+          {
+            "description": "Lemon Tea (L)",
+            "quantity": 1,
+            "unit_price": 25000,
+            "discount_percent": null,
+            "amount": 25000
+          },
+          {
+            "description": "Caramel Small",
+            "quantity": 1,
+            "unit_price": 38000,
+            "discount_percent": null,
+            "amount": 38000
+          }
+        ],
+        "subtotal": 63000,
+        "discount_amount": 0,
+        "tax_amount": 0,
+        "prices_include_tax": true,
+        "rounding": 0,
+        "total": 63000
+      }
+    },
+    {
+      "id": "cord-017",
+      "scored": [
+        "total",
+        "lines"
+      ],
+      "expect_review": null,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.01754,
+      "ms": 4438,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "",
+        "supplier_tax_id": null,
+        "invoice_number": null,
+        "issue_date": null,
+        "currency": "IDR",
+        "lines": [
+          {
+            "description": "[LG] BLACK SAKURA",
+            "quantity": 1,
+            "unit_price": 59091,
+            "discount_percent": null,
+            "amount": 59091
+          },
+          {
+            "description": "LONGAN",
+            "quantity": 1,
+            "unit_price": 0,
+            "discount_percent": null,
+            "amount": 0
+          },
+          {
+            "description": "ROASTED ALMOND",
+            "quantity": 1,
+            "unit_price": 0,
+            "discount_percent": null,
+            "amount": 0
+          },
+          {
+            "description": "MANGGO",
+            "quantity": 1,
+            "unit_price": 0,
+            "discount_percent": null,
+            "amount": 0
+          },
+          {
+            "description": "MINERAL WATER (bundling) 5k",
+            "quantity": 1,
+            "unit_price": 4545,
+            "discount_percent": null,
+            "amount": 4545
+          }
+        ],
+        "subtotal": 63636,
+        "discount_amount": 0,
+        "tax_amount": 6364,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 70000
+      }
+    },
+    {
+      "id": "cord-020",
+      "scored": [
+        "total",
+        "lines"
+      ],
+      "expect_review": null,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.011716,
+      "ms": 2552,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "",
+        "supplier_tax_id": null,
+        "invoice_number": null,
+        "issue_date": null,
+        "currency": "IDR",
+        "lines": [
+          {
+            "description": "AMBUSH DBL CHS",
+            "quantity": 4,
+            "unit_price": 15000,
+            "discount_percent": null,
+            "amount": 60000
+          },
+          {
+            "description": "AMBUSH CHS BUR",
+            "quantity": 10,
+            "unit_price": 10000,
+            "discount_percent": null,
+            "amount": 100000
+          }
+        ],
+        "subtotal": 160000,
+        "discount_amount": 0,
+        "tax_amount": 16000,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 176000
+      }
+    },
+    {
+      "id": "cord-021",
+      "scored": [
+        "total",
+        "lines"
+      ],
+      "expect_review": null,
+      "flagged": true,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.01814,
+      "ms": 4116,
+      "issues": [
+        {
+          "field": "subtotal",
+          "message": "lines sum to 343508.00, subtotal is 325600"
+        },
+        {
+          "field": "total",
+          "message": "325600 − 0 + 34351 + 0 ≠ 377859"
+        }
+      ],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "",
+        "supplier_tax_id": null,
+        "invoice_number": null,
+        "issue_date": null,
+        "currency": "IDR",
+        "lines": [
+          {
+            "description": "cashew nuts chkn",
+            "quantity": 1,
+            "unit_price": 64500,
+            "discount_percent": null,
+            "amount": 64500
+          },
+          {
+            "description": "garlic pepper beef",
+            "quantity": 1,
+            "unit_price": 79500,
+            "discount_percent": null,
+            "amount": 79500
+          },
+          {
+            "description": "red curry beef",
+            "quantity": 1,
+            "unit_price": 69500,
+            "discount_percent": null,
+            "amount": 69500
+          },
+          {
+            "description": "phad thai",
+            "quantity": 1,
+            "unit_price": 64500,
+            "discount_percent": null,
+            "amount": 64500
+          },
+          {
+            "description": "steamed rice",
+            "quantity": 4,
+            "unit_price": 11900,
+            "discount_percent": null,
+            "amount": 47600
+          },
+          {
+            "description": "Service chrg",
+            "quantity": 1,
+            "unit_price": 17908,
+            "discount_percent": null,
+            "amount": 17908
+          }
+        ],
+        "subtotal": 325600,
+        "discount_amount": 0,
+        "tax_amount": 34351,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 377859
+      }
+    },
+    {
+      "id": "cord-022",
+      "scored": [
+        "total",
+        "lines"
+      ],
+      "expect_review": null,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.015492,
+      "ms": 2989,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "",
+        "supplier_tax_id": null,
+        "invoice_number": null,
+        "issue_date": null,
+        "currency": "IDR",
+        "lines": [
+          {
+            "description": "NASI GOR SFD TLR",
+            "quantity": 1,
+            "unit_price": 35000,
+            "discount_percent": null,
+            "amount": 35000
+          },
+          {
+            "description": "ES TEH TAWAR",
+            "quantity": 1,
+            "unit_price": 3000,
+            "discount_percent": null,
+            "amount": 3000
+          }
+        ],
+        "subtotal": 38000,
+        "discount_amount": 0,
+        "tax_amount": 0,
+        "prices_include_tax": true,
+        "rounding": 0,
+        "total": 38000
+      }
+    },
+    {
+      "id": "cord-024",
+      "scored": [
+        "total",
+        "lines"
+      ],
+      "expect_review": null,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.0148,
+      "ms": 3490,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "",
+        "supplier_tax_id": null,
+        "invoice_number": null,
+        "issue_date": null,
+        "currency": "IDR",
+        "lines": [
+          {
+            "description": "TWIST DONUT",
+            "quantity": 6,
+            "unit_price": 9000,
+            "discount_percent": null,
+            "amount": 54000
+          },
+          {
+            "description": "REDBEAN BREAD",
+            "quantity": 1,
+            "unit_price": 9000,
+            "discount_percent": null,
+            "amount": 9000
+          }
+        ],
+        "subtotal": 63000,
+        "discount_amount": 0,
+        "tax_amount": 0,
+        "prices_include_tax": true,
+        "rounding": 0,
+        "total": 63000
+      }
+    },
+    {
+      "id": "cord-025",
+      "scored": [
+        "total",
+        "lines"
+      ],
+      "expect_review": null,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.012716,
+      "ms": 3327,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "",
+        "supplier_tax_id": null,
+        "invoice_number": null,
+        "issue_date": null,
+        "currency": "IDR",
+        "lines": [
+          {
+            "description": "5001-Corn Flakes Cookies",
+            "quantity": 1,
+            "unit_price": 56000,
+            "discount_percent": null,
+            "amount": 56000
+          },
+          {
+            "description": "5003-Chokoreto Cookies",
+            "quantity": 1,
+            "unit_price": 62000,
+            "discount_percent": null,
+            "amount": 62000
+          },
+          {
+            "description": "6002-Plastic Bag Medium",
+            "quantity": 1,
+            "unit_price": 0,
+            "discount_percent": null,
+            "amount": 0
+          }
+        ],
+        "subtotal": 118000,
+        "discount_amount": 0,
+        "tax_amount": 0,
+        "prices_include_tax": true,
+        "rounding": 0,
+        "total": 118000
+      }
+    },
+    {
+      "id": "cord-026",
+      "scored": [
+        "total",
+        "lines"
+      ],
+      "expect_review": null,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.01616,
+      "ms": 4638,
+      "issues": [],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Tous Les Jours",
+        "supplier_tax_id": null,
+        "invoice_number": null,
+        "issue_date": null,
+        "currency": "IDR",
+        "lines": [
+          {
+            "description": "TWIST STRAWBERRY DONUT",
+            "quantity": 1,
+            "unit_price": 10000,
+            "discount_percent": null,
+            "amount": 10000
+          },
+          {
+            "description": "TLJ CROQUETTE",
+            "quantity": 1,
+            "unit_price": 17000,
+            "discount_percent": null,
+            "amount": 17000
+          },
+          {
+            "description": "POTATO PEPPER BAGEL",
+            "quantity": 1,
+            "unit_price": 16000,
+            "discount_percent": null,
+            "amount": 16000
+          }
+        ],
+        "subtotal": 43000,
+        "discount_amount": 0,
+        "tax_amount": 0,
+        "prices_include_tax": true,
+        "rounding": 0,
+        "total": 43000
+      }
+    },
+    {
+      "id": "cord-029",
+      "scored": [
+        "total",
+        "lines"
+      ],
+      "expect_review": null,
+      "flagged": true,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.023588,
+      "ms": 4955,
+      "issues": [
+        {
+          "field": "total",
+          "message": "369000 − 0 + 38745 + 0 ≠ 426195"
+        }
+      ],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "",
+        "supplier_tax_id": null,
+        "invoice_number": null,
+        "issue_date": null,
+        "currency": "IDR",
+        "lines": [
+          {
+            "description": "SAMGYOPSAL",
+            "quantity": 2,
+            "unit_price": 97000,
+            "discount_percent": null,
+            "amount": 194000
+          },
+          {
+            "description": "SUL LUNG TANG",
+            "quantity": 1,
+            "unit_price": 75000,
+            "discount_percent": null,
+            "amount": 75000
+          },
+          {
+            "description": "MAKOLI",
+            "quantity": 1,
+            "unit_price": 100000,
+            "discount_percent": null,
+            "amount": 100000
+          }
+        ],
+        "subtotal": 369000,
+        "discount_amount": 0,
+        "tax_amount": 38745,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 426195
+      }
+    },
+    {
+      "id": "cord-030",
+      "scored": [
+        "total",
+        "lines"
+      ],
+      "expect_review": null,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.02046,
+      "ms": 4068,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "",
+        "supplier_tax_id": null,
+        "invoice_number": null,
+        "issue_date": null,
+        "currency": "IDR",
+        "lines": [
+          {
+            "description": "COLD OCHA",
+            "quantity": 1,
+            "unit_price": 10909,
+            "discount_percent": null,
+            "amount": 10909
+          },
+          {
+            "description": "BCA PROMO",
+            "quantity": 1,
+            "unit_price": 54455,
+            "discount_percent": null,
+            "amount": 54455
+          },
+          {
+            "description": "ABURA UDON SPICY",
+            "quantity": 1,
+            "unit_price": 0,
+            "discount_percent": null,
+            "amount": 0
+          },
+          {
+            "description": "KAKE UDON",
+            "quantity": 1,
+            "unit_price": 0,
+            "discount_percent": null,
+            "amount": 0
+          },
+          {
+            "description": "SKEWERED SHUMAI",
+            "quantity": 1,
+            "unit_price": 12727,
+            "discount_percent": null,
+            "amount": 12727
+          },
+          {
+            "description": "SKEWERED TOFU ROLL",
+            "quantity": 1,
+            "unit_price": 12727,
+            "discount_percent": null,
+            "amount": 12727
+          },
+          {
+            "description": "EBI TEMPURA",
+            "quantity": 1,
+            "unit_price": 13636,
+            "discount_percent": null,
+            "amount": 13636
+          },
+          {
+            "description": "KITSUNE UDON (KIDS)",
+            "quantity": 1,
+            "unit_price": 28182,
+            "discount_percent": null,
+            "amount": 28182
+          }
+        ],
+        "subtotal": 132636,
+        "discount_amount": 0,
+        "tax_amount": 13264,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 145900
+      }
+    },
+    {
+      "id": "fat-002",
+      "scored": [
+        "total",
+        "currency",
+        "issue_date",
+        "invoice_number"
+      ],
+      "expect_review": null,
+      "flagged": true,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.01322,
+      "ms": 4191,
+      "issues": [
+        {
+          "field": "total",
+          "message": "769.56 − 9.93 + 0 + 0 ≠ 796.34"
+        }
+      ],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "Mclean-Cochran",
+        "supplier_tax_id": null,
+        "invoice_number": "9Y2M7d-647",
+        "issue_date": "2014-01-16",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Probably notice leg.",
+            "quantity": 1,
+            "unit_price": 53.1,
+            "discount_percent": null,
+            "amount": 53.1
+          },
+          {
+            "description": "Say culture.",
+            "quantity": 6,
+            "unit_price": 96.99,
+            "discount_percent": null,
+            "amount": 581.94
+          },
+          {
+            "description": "Reach.",
+            "quantity": 6,
+            "unit_price": 22.42,
+            "discount_percent": null,
+            "amount": 134.52
+          }
+        ],
+        "subtotal": 769.56,
+        "discount_amount": 9.93,
+        "tax_amount": 0,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 796.34
+      }
+    },
+    {
+      "id": "fat-003",
+      "scored": [
+        "total",
+        "currency",
+        "issue_date",
+        "invoice_number"
+      ],
+      "expect_review": null,
+      "flagged": true,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.0121,
+      "ms": 2715,
+      "issues": [
+        {
+          "field": "total",
+          "message": "402.41 − 4.35 + 0 + 0 ≠ 408.61"
+        }
+      ],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "Mclean-Cochran",
+        "supplier_tax_id": null,
+        "invoice_number": "0649-071",
+        "issue_date": "2014-01-15",
+        "currency": "USD",
+        "lines": [
+          {
+            "description": "Today year yard.",
+            "quantity": 4,
+            "unit_price": 72.29,
+            "discount_percent": null,
+            "amount": 289.16
+          },
+          {
+            "description": "Left week.",
+            "quantity": 3,
+            "unit_price": 37.75,
+            "discount_percent": null,
+            "amount": 113.25
+          }
+        ],
+        "subtotal": 402.41,
+        "discount_amount": 4.35,
+        "tax_amount": 0,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 408.61
+      }
+    },
+    {
+      "id": "fat-004",
+      "scored": [
+        "total",
+        "currency",
+        "issue_date",
+        "invoice_number"
+      ],
+      "expect_review": null,
+      "flagged": true,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.01234,
+      "ms": 2805,
+      "issues": [
+        {
+          "field": "total",
+          "message": "615.64 − 21.42 + 0 + 0 ≠ 634.39"
+        }
+      ],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "Mclean-Cochran",
+        "supplier_tax_id": null,
+        "invoice_number": "INV43749404",
+        "issue_date": "2007-09-05",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Knowledge fly number economy.",
+            "quantity": 6,
+            "unit_price": 51.79,
+            "discount_percent": null,
+            "amount": 310.74
+          },
+          {
+            "description": "When conference nearly.",
+            "quantity": 5,
+            "unit_price": 60.98,
+            "discount_percent": null,
+            "amount": 304.9
+          }
+        ],
+        "subtotal": 615.64,
+        "discount_amount": 21.42,
+        "tax_amount": 0,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 634.39
+      }
+    },
+    {
+      "id": "fat-006",
+      "scored": [
+        "total",
+        "currency",
+        "issue_date",
+        "invoice_number"
+      ],
+      "expect_review": null,
+      "flagged": true,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.01508,
+      "ms": 3363,
+      "issues": [
+        {
+          "field": "total",
+          "message": "689.55 − 15.38 + 0 + 0 ≠ 705.26"
+        }
+      ],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "Mclean-Cochran",
+        "supplier_tax_id": null,
+        "invoice_number": "INV/43-51/346",
+        "issue_date": "2007-07-26",
+        "currency": "USD",
+        "lines": [
+          {
+            "description": "Magazine pull state.",
+            "quantity": 1,
+            "unit_price": 14.39,
+            "discount_percent": null,
+            "amount": 14.39
+          },
+          {
+            "description": "Stop expert true.",
+            "quantity": 1,
+            "unit_price": 52.11,
+            "discount_percent": null,
+            "amount": 52.11
+          },
+          {
+            "description": "Chance toward.",
+            "quantity": 2,
+            "unit_price": 86.69,
+            "discount_percent": null,
+            "amount": 173.38
+          },
+          {
+            "description": "Than all serve.",
+            "quantity": 3,
+            "unit_price": 84.01,
+            "discount_percent": null,
+            "amount": 252.03
+          },
+          {
+            "description": "Budget this.",
+            "quantity": 2,
+            "unit_price": 98.82,
+            "discount_percent": null,
+            "amount": 197.64
+          }
+        ],
+        "subtotal": 689.55,
+        "discount_amount": 15.38,
+        "tax_amount": 0,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 705.26
+      }
+    },
+    {
+      "id": "fat-007",
+      "scored": [
+        "total",
+        "issue_date",
+        "invoice_number"
+      ],
+      "expect_review": null,
+      "flagged": true,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.0124,
+      "ms": 3861,
+      "issues": [
+        {
+          "field": "total",
+          "message": "579 − 15.46 + 0 + 0 ≠ 596.21"
+        },
+        {
+          "field": "issue_date",
+          "message": "implausible date 1995-02-12"
+        }
+      ],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": false,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "Mclean-Cochran",
+        "supplier_tax_id": null,
+        "invoice_number": "INV/54-76/892",
+        "issue_date": "1995-02-12",
+        "currency": "USD",
+        "lines": [
+          {
+            "description": "Someone describe describe everyone.",
+            "quantity": 2,
+            "unit_price": 82.65,
+            "discount_percent": null,
+            "amount": 165.3
+          },
+          {
+            "description": "Sign apply whom.",
+            "quantity": 5,
+            "unit_price": 82.74,
+            "discount_percent": null,
+            "amount": 413.7
+          }
+        ],
+        "subtotal": 579,
+        "discount_amount": 15.46,
+        "tax_amount": 0,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 596.21
+      }
+    },
+    {
+      "id": "fat-008",
+      "scored": [
+        "total",
+        "currency",
+        "issue_date",
+        "invoice_number"
+      ],
+      "expect_review": null,
+      "flagged": true,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.01492,
+      "ms": 4220,
+      "issues": [
+        {
+          "field": "total",
+          "message": "407.23 − 4.6 + 0 + 0 ≠ 416.83"
+        },
+        {
+          "field": "issue_date",
+          "message": "implausible date 1998-12-16"
+        }
+      ],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "Mclean-Cochran",
+        "supplier_tax_id": null,
+        "invoice_number": "7775-094",
+        "issue_date": "1998-12-16",
+        "currency": "USD",
+        "lines": [
+          {
+            "description": "Finally wait.",
+            "quantity": 5,
+            "unit_price": 46.62,
+            "discount_percent": null,
+            "amount": 233.1
+          },
+          {
+            "description": "Toward politics door.",
+            "quantity": 5,
+            "unit_price": 12.91,
+            "discount_percent": null,
+            "amount": 64.55
+          },
+          {
+            "description": "Figure.",
+            "quantity": 2,
+            "unit_price": 4.19,
+            "discount_percent": null,
+            "amount": 8.38
+          },
+          {
+            "description": "Design successful.",
+            "quantity": 1,
+            "unit_price": 99.8,
+            "discount_percent": null,
+            "amount": 99.8
+          },
+          {
+            "description": "Camera them father.",
+            "quantity": 1,
+            "unit_price": 1.4,
+            "discount_percent": null,
+            "amount": 1.4
+          }
+        ],
+        "subtotal": 407.23,
+        "discount_amount": 4.6,
+        "tax_amount": 0,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 416.83
+      }
+    },
+    {
+      "id": "fat-011",
+      "scored": [
+        "total",
+        "currency",
+        "issue_date",
+        "invoice_number"
+      ],
+      "expect_review": null,
+      "flagged": true,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.01398,
+      "ms": 3233,
+      "issues": [
+        {
+          "field": "total",
+          "message": "949.38 − 46.23 + 0 + 0 ≠ 979.92"
+        }
+      ],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "Mclean-Cochran",
+        "supplier_tax_id": null,
+        "invoice_number": "INV47702701",
+        "issue_date": "2021-11-16",
+        "currency": "USD",
+        "lines": [
+          {
+            "description": "But right blood.",
+            "quantity": 3,
+            "unit_price": 75.29,
+            "discount_percent": null,
+            "amount": 225.87
+          },
+          {
+            "description": "Push year always.",
+            "quantity": 3,
+            "unit_price": 90.48,
+            "discount_percent": null,
+            "amount": 271.44
+          },
+          {
+            "description": "Face street machine.",
+            "quantity": 4,
+            "unit_price": 96.62,
+            "discount_percent": null,
+            "amount": 386.48
+          },
+          {
+            "description": "Decide note.",
+            "quantity": 1,
+            "unit_price": 65.59,
+            "discount_percent": null,
+            "amount": 65.59
+          }
+        ],
+        "subtotal": 949.38,
+        "discount_amount": 46.23,
+        "tax_amount": 0,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 979.92
+      }
+    },
+    {
+      "id": "fat-012",
+      "scored": [
+        "total",
+        "currency",
+        "issue_date",
+        "invoice_number"
+      ],
+      "expect_review": null,
+      "flagged": true,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.01222,
+      "ms": 4253,
+      "issues": [
+        {
+          "field": "total",
+          "message": "51.8 − 2.43 + 0 + 0 ≠ 52.97"
+        }
+      ],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "Mclean-Cochran",
+        "supplier_tax_id": null,
+        "invoice_number": "INV/30-53/825",
+        "issue_date": "2007-10-17",
+        "currency": "USD",
+        "lines": [
+          {
+            "description": "Seven whether require.",
+            "quantity": 4,
+            "unit_price": 2.35,
+            "discount_percent": null,
+            "amount": 9.4
+          },
+          {
+            "description": "Blood want.",
+            "quantity": 1,
+            "unit_price": 42.4,
+            "discount_percent": null,
+            "amount": 42.4
+          }
+        ],
+        "subtotal": 51.8,
+        "discount_amount": 2.43,
+        "tax_amount": 0,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 52.97
+      }
+    },
+    {
+      "id": "fat-013",
+      "scored": [
+        "total",
+        "currency",
+        "issue_date",
+        "invoice_number"
+      ],
+      "expect_review": null,
+      "flagged": true,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.01394,
+      "ms": 4458,
+      "issues": [
+        {
+          "field": "total",
+          "message": "393.84 − 10.71 + 0 + 0 ≠ 402.94"
+        }
+      ],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "Mclean-Cochran",
+        "supplier_tax_id": null,
+        "invoice_number": "INV92631148",
+        "issue_date": "2022-05-08",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Phone.",
+            "quantity": 1,
+            "unit_price": 19.41,
+            "discount_percent": null,
+            "amount": 19.41
+          },
+          {
+            "description": "Article attention.",
+            "quantity": 3,
+            "unit_price": 0.72,
+            "discount_percent": null,
+            "amount": 2.16
+          },
+          {
+            "description": "Case.",
+            "quantity": 6,
+            "unit_price": 49.6,
+            "discount_percent": null,
+            "amount": 297.6
+          },
+          {
+            "description": "It hour.",
+            "quantity": 3,
+            "unit_price": 24.89,
+            "discount_percent": null,
+            "amount": 74.67
+          }
+        ],
+        "subtotal": 393.84,
+        "discount_amount": 10.71,
+        "tax_amount": 0,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 402.94
+      }
+    },
+    {
+      "id": "fat-015",
+      "scored": [
+        "total",
+        "issue_date",
+        "invoice_number"
+      ],
+      "expect_review": null,
+      "flagged": true,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.015,
+      "ms": 3582,
+      "issues": [
+        {
+          "field": "total",
+          "message": "859.61 − 30.86 + 0 + 0 ≠ 906.48"
+        }
+      ],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": false,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "Mclean-Cochran",
+        "supplier_tax_id": null,
+        "invoice_number": "6Y6M3d-631",
+        "issue_date": "2007-07-04",
+        "currency": "USD",
+        "lines": [
+          {
+            "description": "Stock down since.",
+            "quantity": 3,
+            "unit_price": 88.21,
+            "discount_percent": null,
+            "amount": 264.63
+          },
+          {
+            "description": "Particular choice.",
+            "quantity": 3,
+            "unit_price": 51.46,
+            "discount_percent": null,
+            "amount": 154.38
+          },
+          {
+            "description": "Long.",
+            "quantity": 1,
+            "unit_price": 87.42,
+            "discount_percent": null,
+            "amount": 87.42
+          },
+          {
+            "description": "Much role him.",
+            "quantity": 4,
+            "unit_price": 53.06,
+            "discount_percent": null,
+            "amount": 212.24
+          },
+          {
+            "description": "Suggest right box.",
+            "quantity": 6,
+            "unit_price": 23.49,
+            "discount_percent": null,
+            "amount": 140.94
+          }
+        ],
+        "subtotal": 859.61,
+        "discount_amount": 30.86,
+        "tax_amount": 0,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 906.48
+      }
+    },
+    {
+      "id": "fat-016",
+      "scored": [
+        "total",
+        "currency",
+        "issue_date",
+        "invoice_number"
+      ],
+      "expect_review": null,
+      "flagged": true,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.01404,
+      "ms": 2869,
+      "issues": [
+        {
+          "field": "total",
+          "message": "1304.7 − 59.62 + 0 + 0 ≠ 1301.29"
+        },
+        {
+          "field": "issue_date",
+          "message": "implausible date 1997-05-04"
+        }
+      ],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "Mclean-Cochran",
+        "supplier_tax_id": null,
+        "invoice_number": "9201-095",
+        "issue_date": "1997-05-04",
+        "currency": "USD",
+        "lines": [
+          {
+            "description": "Owner ten.",
+            "quantity": 6,
+            "unit_price": 68.51,
+            "discount_percent": null,
+            "amount": 411.06
+          },
+          {
+            "description": "Method form between media.",
+            "quantity": 6,
+            "unit_price": 19.93,
+            "discount_percent": null,
+            "amount": 119.58
+          },
+          {
+            "description": "Management.",
+            "quantity": 6,
+            "unit_price": 56.77,
+            "discount_percent": null,
+            "amount": 340.62
+          },
+          {
+            "description": "Defense miss defense.",
+            "quantity": 6,
+            "unit_price": 72.24,
+            "discount_percent": null,
+            "amount": 433.44
+          }
+        ],
+        "subtotal": 1304.7,
+        "discount_amount": 59.62,
+        "tax_amount": 0,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 1301.29
+      }
+    },
+    {
+      "id": "fat-017",
+      "scored": [
+        "total",
+        "issue_date",
+        "invoice_number"
+      ],
+      "expect_review": null,
+      "flagged": true,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.0151,
+      "ms": 3596,
+      "issues": [
+        {
+          "field": "total",
+          "message": "650.57 − 11.12 + 0 + 0 ≠ 672.51"
+        }
+      ],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": false,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "Mclean-Cochran",
+        "supplier_tax_id": null,
+        "invoice_number": "INV/95-85/718",
+        "issue_date": "2006-12-08",
+        "currency": "USD",
+        "lines": [
+          {
+            "description": "Me debate.",
+            "quantity": 1,
+            "unit_price": 75.66,
+            "discount_percent": null,
+            "amount": 75.66
+          },
+          {
+            "description": "Data about.",
+            "quantity": 3,
+            "unit_price": 96.05,
+            "discount_percent": null,
+            "amount": 288.15
+          },
+          {
+            "description": "Drive while.",
+            "quantity": 1,
+            "unit_price": 22.28,
+            "discount_percent": null,
+            "amount": 22.28
+          },
+          {
+            "description": "Republican edge question lead.",
+            "quantity": 3,
+            "unit_price": 84.06,
+            "discount_percent": null,
+            "amount": 252.18
+          },
+          {
+            "description": "Government conference maybe.",
+            "quantity": 6,
+            "unit_price": 2.05,
+            "discount_percent": null,
+            "amount": 12.3
+          }
+        ],
+        "subtotal": 650.57,
+        "discount_amount": 11.12,
+        "tax_amount": 0,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 672.51
+      }
+    },
+    {
+      "id": "fat-020",
+      "scored": [
+        "total",
+        "currency",
+        "issue_date",
+        "invoice_number"
+      ],
+      "expect_review": null,
+      "flagged": true,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.01498,
+      "ms": 3625,
+      "issues": [
+        {
+          "field": "total",
+          "message": "1026.31 − 27.4 + 0 + 0 ≠ 1055.08"
+        }
+      ],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "Mclean-Cochran",
+        "supplier_tax_id": null,
+        "invoice_number": "INV42891180",
+        "issue_date": "2015-01-11",
+        "currency": "USD",
+        "lines": [
+          {
+            "description": "Various hit seem.",
+            "quantity": 1,
+            "unit_price": 55.91,
+            "discount_percent": null,
+            "amount": 55.91
+          },
+          {
+            "description": "Will organization.",
+            "quantity": 6,
+            "unit_price": 63.31,
+            "discount_percent": null,
+            "amount": 379.86
+          },
+          {
+            "description": "None west visit.",
+            "quantity": 2,
+            "unit_price": 97.49,
+            "discount_percent": null,
+            "amount": 194.98
+          },
+          {
+            "description": "Suffer close.",
+            "quantity": 5,
+            "unit_price": 75.99,
+            "discount_percent": null,
+            "amount": 379.95
+          },
+          {
+            "description": "Education tough.",
+            "quantity": 1,
+            "unit_price": 15.61,
+            "discount_percent": null,
+            "amount": 15.61
+          }
+        ],
+        "subtotal": 1026.31,
+        "discount_amount": 27.4,
+        "tax_amount": 0,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 1055.08
+      }
+    },
+    {
+      "id": "fat-021",
+      "scored": [
+        "total",
+        "currency",
+        "issue_date",
+        "invoice_number"
+      ],
+      "expect_review": null,
+      "flagged": true,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.01414,
+      "ms": 3271,
+      "issues": [
+        {
+          "field": "total",
+          "message": "933.27 − 14.65 + 0 + 0 ≠ 964.16"
+        }
+      ],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "Mclean-Cochran",
+        "supplier_tax_id": null,
+        "invoice_number": "3Y2M9d-132",
+        "issue_date": "2007-01-24",
+        "currency": "USD",
+        "lines": [
+          {
+            "description": "Middle thus instead.",
+            "quantity": 5,
+            "unit_price": 48.73,
+            "discount_percent": null,
+            "amount": 243.65
+          },
+          {
+            "description": "Local benefit.",
+            "quantity": 6,
+            "unit_price": 17.87,
+            "discount_percent": null,
+            "amount": 107.22
+          },
+          {
+            "description": "Sort pick.",
+            "quantity": 5,
+            "unit_price": 32.38,
+            "discount_percent": null,
+            "amount": 161.9
+          },
+          {
+            "description": "Community civil.",
+            "quantity": 5,
+            "unit_price": 84.1,
+            "discount_percent": null,
+            "amount": 420.5
+          }
+        ],
+        "subtotal": 933.27,
+        "discount_amount": 14.65,
+        "tax_amount": 0,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 964.16
+      }
+    },
+    {
+      "id": "fat-022",
+      "scored": [
+        "total",
+        "currency",
+        "issue_date",
+        "invoice_number"
+      ],
+      "expect_review": null,
+      "flagged": true,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.01504,
+      "ms": 5281,
+      "issues": [
+        {
+          "field": "total",
+          "message": "1004.03 − 37.55 + 0 + 0 ≠ 1036.97"
+        }
+      ],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "Mclean-Cochran",
+        "supplier_tax_id": null,
+        "invoice_number": "INV06279486",
+        "issue_date": "2013-06-19",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Leg think.",
+            "quantity": 5,
+            "unit_price": 5.54,
+            "discount_percent": null,
+            "amount": 27.7
+          },
+          {
+            "description": "Manager military game.",
+            "quantity": 2,
+            "unit_price": 79.33,
+            "discount_percent": null,
+            "amount": 158.66
+          },
+          {
+            "description": "Night student.",
+            "quantity": 6,
+            "unit_price": 96.57,
+            "discount_percent": null,
+            "amount": 579.42
+          },
+          {
+            "description": "Bit agreement argue.",
+            "quantity": 1,
+            "unit_price": 52.11,
+            "discount_percent": null,
+            "amount": 52.11
+          },
+          {
+            "description": "Small each.",
+            "quantity": 2,
+            "unit_price": 93.07,
+            "discount_percent": null,
+            "amount": 186.14
+          }
+        ],
+        "subtotal": 1004.03,
+        "discount_amount": 37.55,
+        "tax_amount": 0,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 1036.97
+      }
+    },
+    {
+      "id": "fat-024",
+      "scored": [
+        "total",
+        "issue_date",
+        "invoice_number"
+      ],
+      "expect_review": null,
+      "flagged": true,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.01404,
+      "ms": 3449,
+      "issues": [
+        {
+          "field": "total",
+          "message": "428.09 − 9.76 + 0 + 0 ≠ 426.52"
+        }
+      ],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": false,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "Mclean-Cochran",
+        "supplier_tax_id": null,
+        "invoice_number": "2684-789",
+        "issue_date": "2015-03-07",
+        "currency": "USD",
+        "lines": [
+          {
+            "description": "Energy environment.",
+            "quantity": 4,
+            "unit_price": 62.04,
+            "discount_percent": null,
+            "amount": 248.16
+          },
+          {
+            "description": "Per not.",
+            "quantity": 1,
+            "unit_price": 53.79,
+            "discount_percent": null,
+            "amount": 53.79
+          },
+          {
+            "description": "Avoid through.",
+            "quantity": 3,
+            "unit_price": 30.74,
+            "discount_percent": null,
+            "amount": 92.22
+          },
+          {
+            "description": "Stuff have present.",
+            "quantity": 2,
+            "unit_price": 16.96,
+            "discount_percent": null,
+            "amount": 33.92
+          }
+        ],
+        "subtotal": 428.09,
+        "discount_amount": 9.76,
+        "tax_amount": 0,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 426.52
+      }
+    },
+    {
+      "id": "fat-025",
+      "scored": [
+        "total",
+        "currency",
+        "issue_date",
+        "invoice_number"
+      ],
+      "expect_review": null,
+      "flagged": true,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.01428,
+      "ms": 3306,
+      "issues": [
+        {
+          "field": "total",
+          "message": "1274.05 − 18.73 + 0 + 0 ≠ 1309.79"
+        }
+      ],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "Mclean-Cochran",
+        "supplier_tax_id": null,
+        "invoice_number": "INV/97-27/209",
+        "issue_date": "2021-11-08",
+        "currency": "USD",
+        "lines": [
+          {
+            "description": "Cut miss camera among.",
+            "quantity": 5,
+            "unit_price": 99.55,
+            "discount_percent": null,
+            "amount": 497.75
+          },
+          {
+            "description": "Reduce detail knowledge.",
+            "quantity": 3,
+            "unit_price": 68.61,
+            "discount_percent": null,
+            "amount": 205.83
+          },
+          {
+            "description": "Painting son against.",
+            "quantity": 5,
+            "unit_price": 94.83,
+            "discount_percent": null,
+            "amount": 474.15
+          },
+          {
+            "description": "Him seven.",
+            "quantity": 2,
+            "unit_price": 48.16,
+            "discount_percent": null,
+            "amount": 96.32
+          }
+        ],
+        "subtotal": 1274.05,
+        "discount_amount": 18.73,
+        "tax_amount": 0,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 1309.79
+      }
+    },
+    {
+      "id": "fat-026",
+      "scored": [
+        "total",
+        "currency",
+        "issue_date",
+        "invoice_number"
+      ],
+      "expect_review": null,
+      "flagged": true,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.015,
+      "ms": 3734,
+      "issues": [
+        {
+          "field": "total",
+          "message": "1001.6 − 32.95 + 0 + 0 ≠ 1037.12"
+        },
+        {
+          "field": "issue_date",
+          "message": "implausible date 1998-03-27"
+        }
+      ],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "Mclean-Cochran",
+        "supplier_tax_id": null,
+        "invoice_number": "2Y1M4d-299",
+        "issue_date": "1998-03-27",
+        "currency": "USD",
+        "lines": [
+          {
+            "description": "Service research.",
+            "quantity": 3,
+            "unit_price": 68.09,
+            "discount_percent": null,
+            "amount": 204.27
+          },
+          {
+            "description": "Arrive why then.",
+            "quantity": 5,
+            "unit_price": 21.07,
+            "discount_percent": null,
+            "amount": 105.35
+          },
+          {
+            "description": "Easy TV.",
+            "quantity": 6,
+            "unit_price": 38.29,
+            "discount_percent": null,
+            "amount": 229.74
+          },
+          {
+            "description": "Building.",
+            "quantity": 6,
+            "unit_price": 1.09,
+            "discount_percent": null,
+            "amount": 6.54
+          },
+          {
+            "description": "Offer or.",
+            "quantity": 6,
+            "unit_price": 75.95,
+            "discount_percent": null,
+            "amount": 455.7
+          }
+        ],
+        "subtotal": 1001.6,
+        "discount_amount": 32.95,
+        "tax_amount": 0,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 1037.12
+      }
+    },
+    {
+      "id": "fat-029",
+      "scored": [
+        "total",
+        "currency",
+        "issue_date",
+        "invoice_number"
+      ],
+      "expect_review": null,
+      "flagged": true,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.01226,
+      "ms": 2506,
+      "issues": [
+        {
+          "field": "total",
+          "message": "571.78 − 16.24 + 0 + 0 ≠ 598.47"
+        },
+        {
+          "field": "issue_date",
+          "message": "implausible date 1997-12-30"
+        }
+      ],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "Mclean-Cochran",
+        "supplier_tax_id": null,
+        "invoice_number": "INV/18-91/749",
+        "issue_date": "1997-12-30",
+        "currency": "USD",
+        "lines": [
+          {
+            "description": "Administration any attention yes.",
+            "quantity": 4,
+            "unit_price": 65.02,
+            "discount_percent": null,
+            "amount": 260.08
+          },
+          {
+            "description": "Front already new.",
+            "quantity": 6,
+            "unit_price": 51.95,
+            "discount_percent": null,
+            "amount": 311.7
+          }
+        ],
+        "subtotal": 571.78,
+        "discount_amount": 16.24,
+        "tax_amount": 0,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 598.47
+      }
+    },
+    {
+      "id": "fat-030",
+      "scored": [
+        "total",
+        "issue_date",
+        "invoice_number"
+      ],
+      "expect_review": null,
+      "flagged": true,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.01414,
+      "ms": 2993,
+      "issues": [
+        {
+          "field": "total",
+          "message": "335.12 − 10.99 + 0 + 0 ≠ 345.32"
+        },
+        {
+          "field": "issue_date",
+          "message": "implausible date 1993-07-12"
+        }
+      ],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": false,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "Mclean-Cochran",
+        "supplier_tax_id": null,
+        "invoice_number": "INV08648683",
+        "issue_date": "1993-07-12",
+        "currency": "USD",
+        "lines": [
+          {
+            "description": "Moment group American hand.",
+            "quantity": 2,
+            "unit_price": 27.47,
+            "discount_percent": null,
+            "amount": 54.94
+          },
+          {
+            "description": "Blue suggest model.",
+            "quantity": 1,
+            "unit_price": 29.51,
+            "discount_percent": null,
+            "amount": 29.51
+          },
+          {
+            "description": "True hear form.",
+            "quantity": 5,
+            "unit_price": 33.82,
+            "discount_percent": null,
+            "amount": 169.1
+          },
+          {
+            "description": "Than use interview recently.",
+            "quantity": 1,
+            "unit_price": 81.57,
+            "discount_percent": null,
+            "amount": 81.57
+          }
+        ],
+        "subtotal": 335.12,
+        "discount_amount": 10.99,
+        "tax_amount": 0,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 345.32
+      }
+    },
+    {
+      "id": "sroie-002",
+      "scored": [
+        "total",
+        "issue_date",
+        "supplier_name"
+      ],
+      "expect_review": null,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.012396,
+      "ms": 4107,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": false,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "INDAH GIFT & HOME DECO",
+        "supplier_tax_id": null,
+        "invoice_number": "050100035279",
+        "issue_date": "2018-10-19",
+        "currency": "MYR",
+        "lines": [
+          {
+            "description": "ST-PRIVILEGE CARD/GD INDAH",
+            "quantity": 1,
+            "unit_price": 10,
+            "discount_percent": null,
+            "amount": 10
+          },
+          {
+            "description": "GF-TABLE LAMP/STITCH <i>",
+            "quantity": 1,
+            "unit_price": 55.9,
+            "discount_percent": 10,
+            "amount": 50.31
+          }
+        ],
+        "subtotal": 60.31,
+        "discount_amount": 0,
+        "tax_amount": 0,
+        "prices_include_tax": true,
+        "rounding": -0.01,
+        "total": 60.3
+      }
+    },
+    {
+      "id": "sroie-003",
+      "scored": [
+        "total",
+        "issue_date",
+        "supplier_name"
+      ],
+      "expect_review": null,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.015844,
+      "ms": 5726,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": false,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "MR D.I.Y. (JOHOR) SDN BHD",
+        "supplier_tax_id": null,
+        "invoice_number": "R000027830",
+        "issue_date": "2019-01-12",
+        "currency": "MYR",
+        "lines": [
+          {
+            "description": "CHOPPING BOARD 35.5x25.5CM 803M# EZ10HD05 - 24",
+            "quantity": 1,
+            "unit_price": 19,
+            "discount_percent": null,
+            "amount": 19
+          },
+          {
+            "description": "AIR PRESSURE SPRAYER SX-575-1 1.5L HC03-7 - 15",
+            "quantity": 1,
+            "unit_price": 8.02,
+            "discount_percent": null,
+            "amount": 8.02
+          },
+          {
+            "description": "WAXCO WINDSHILED CLEANER 120ML WA14-3A - 48",
+            "quantity": 1,
+            "unit_price": 3.02,
+            "discount_percent": null,
+            "amount": 3.02
+          },
+          {
+            "description": "BOPP TAPE 48MM*100M CLEAR FZ-04 - 36",
+            "quantity": 1,
+            "unit_price": 3.88,
+            "discount_percent": null,
+            "amount": 3.88
+          }
+        ],
+        "subtotal": 33.92,
+        "discount_amount": 0,
+        "tax_amount": 0,
+        "prices_include_tax": true,
+        "rounding": -0.02,
+        "total": 33.9
+      }
+    },
+    {
+      "id": "sroie-004",
+      "scored": [
+        "total",
+        "issue_date",
+        "supplier_name"
+      ],
+      "expect_review": null,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.011244,
+      "ms": 3376,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": false,
+        "invoice_number": false,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "YONGFATT ENTERPRISE",
+        "supplier_tax_id": "000849813504",
+        "invoice_number": "CS00031663",
+        "issue_date": "2018-12-25",
+        "currency": "MYR",
+        "lines": [
+          {
+            "description": "E8318 ELEGANT SCH TR BAG 15",
+            "quantity": 1,
+            "unit_price": 80.91,
+            "discount_percent": null,
+            "amount": 80.91
+          }
+        ],
+        "subtotal": 80.91,
+        "discount_amount": 0,
+        "tax_amount": 0,
+        "prices_include_tax": false,
+        "rounding": -0.01,
+        "total": 80.9
+      }
+    },
+    {
+      "id": "sroie-006",
+      "scored": [
+        "total",
+        "issue_date",
+        "supplier_name"
+      ],
+      "expect_review": null,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.009868,
+      "ms": 3466,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": false,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "ABC HO TRADING",
+        "supplier_tax_id": null,
+        "invoice_number": "01-143008",
+        "issue_date": "2019-01-09",
+        "currency": "MYR",
+        "lines": [
+          {
+            "description": "Plastic",
+            "quantity": 2,
+            "unit_price": 15.5,
+            "discount_percent": null,
+            "amount": 31
+          }
+        ],
+        "subtotal": 31,
+        "discount_amount": 0,
+        "tax_amount": 0,
+        "prices_include_tax": true,
+        "rounding": 0,
+        "total": 31
+      }
+    },
+    {
+      "id": "sroie-007",
+      "scored": [
+        "total",
+        "issue_date",
+        "supplier_name"
+      ],
+      "expect_review": null,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.019448,
+      "ms": 4774,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": false,
+        "invoice_number": false,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "SOON HUAT MACHINERY ENTERPRISE",
+        "supplier_tax_id": "002116837376",
+        "invoice_number": "CS00004040",
+        "issue_date": "2019-01-11",
+        "currency": "MYR",
+        "lines": [
+          {
+            "description": "REPAIR ENGINE POWER SPRAYER (1UNIT) workmanship & service",
+            "quantity": 1,
+            "unit_price": 80,
+            "discount_percent": null,
+            "amount": 80
+          },
+          {
+            "description": "GIANT 606 OVERFLOW ASSY",
+            "quantity": 1,
+            "unit_price": 160,
+            "discount_percent": null,
+            "amount": 160
+          },
+          {
+            "description": "ENGINE OIL",
+            "quantity": 1,
+            "unit_price": 17,
+            "discount_percent": null,
+            "amount": 17
+          },
+          {
+            "description": "GREASE FOR TOOLS 40ML (AKODA)",
+            "quantity": 1,
+            "unit_price": 10,
+            "discount_percent": null,
+            "amount": 10
+          },
+          {
+            "description": "EY20 PLUG CHAMPION",
+            "quantity": 1,
+            "unit_price": 6,
+            "discount_percent": null,
+            "amount": 6
+          },
+          {
+            "description": "STARTER TALI",
+            "quantity": 1,
+            "unit_price": 8,
+            "discount_percent": null,
+            "amount": 8
+          },
+          {
+            "description": "EY20 STARTER HANDLE",
+            "quantity": 1,
+            "unit_price": 10,
+            "discount_percent": null,
+            "amount": 10
+          },
+          {
+            "description": "HD40 1L COTIN",
+            "quantity": 2,
+            "unit_price": 18,
+            "discount_percent": null,
+            "amount": 36
+          }
+        ],
+        "subtotal": 327,
+        "discount_amount": 0,
+        "tax_amount": 0,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 327
+      }
+    },
+    {
+      "id": "sroie-008",
+      "scored": [
+        "total",
+        "issue_date",
+        "supplier_name"
+      ],
+      "expect_review": null,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.011084,
+      "ms": 2676,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": false,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "S.H.H. MOTOR ( SUNGAI RENGIT ) SDN. BHD.",
+        "supplier_tax_id": null,
+        "invoice_number": "22497",
+        "issue_date": "2019-01-23",
+        "currency": "MYR",
+        "lines": [
+          {
+            "description": "4132 CROCS 300X17 TUBES",
+            "quantity": 1,
+            "unit_price": 20,
+            "discount_percent": null,
+            "amount": 20
+          }
+        ],
+        "subtotal": 20,
+        "discount_amount": 0,
+        "tax_amount": 0,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 20
+      }
+    },
+    {
+      "id": "sroie-011",
+      "scored": [
+        "total",
+        "issue_date",
+        "supplier_name"
+      ],
+      "expect_review": null,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.018012,
+      "ms": 3438,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": false,
+        "invoice_number": false,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": false,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "SAM SAM TRADING CO",
+        "supplier_tax_id": "001006288896",
+        "invoice_number": "R000721136",
+        "issue_date": "2017-12-29",
+        "currency": "MYR",
+        "lines": [
+          {
+            "description": "HE EOG UNICORN TWIN SUPER GLUE USG-99-",
+            "quantity": 1,
+            "unit_price": 5.2,
+            "discount_percent": null,
+            "amount": 5.2
+          },
+          {
+            "description": "SS EZL A4 CYBER MIX COLOR PAPER 100'S8",
+            "quantity": 1,
+            "unit_price": 8.9,
+            "discount_percent": null,
+            "amount": 8.9
+          }
+        ],
+        "subtotal": 14.1,
+        "discount_amount": 0,
+        "tax_amount": 0.8,
+        "prices_include_tax": true,
+        "rounding": 0,
+        "total": 14.1
+      }
+    },
+    {
+      "id": "sroie-012",
+      "scored": [
+        "total",
+        "issue_date",
+        "supplier_name"
+      ],
+      "expect_review": null,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.018172,
+      "ms": 3371,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": false,
+        "invoice_number": false,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": false,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "AIK HUAT HARDWARE ENTERPRISE (SETIA ALAM) SDN BHD",
+        "supplier_tax_id": "000394528768",
+        "invoice_number": "CSP0393921",
+        "issue_date": "2017-06-15",
+        "currency": "MYR",
+        "lines": [
+          {
+            "description": "20\" 1.6KG X 500MM BIG STRETCH FILM ???",
+            "quantity": 1,
+            "unit_price": 15,
+            "discount_percent": null,
+            "amount": 15
+          }
+        ],
+        "subtotal": 15,
+        "discount_amount": 0,
+        "tax_amount": 0.85,
+        "prices_include_tax": true,
+        "rounding": 0,
+        "total": 15
+      }
+    },
+    {
+      "id": "sroie-013",
+      "scored": [
+        "total",
+        "issue_date",
+        "supplier_name"
+      ],
+      "expect_review": null,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.01454,
+      "ms": 3728,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": false,
+        "invoice_number": false,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": false,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "HOME MASTER HARDWARE & ELECTRICAL",
+        "supplier_tax_id": "001637511168",
+        "invoice_number": "CS 67832",
+        "issue_date": "2017-12-22",
+        "currency": "MYR",
+        "lines": [
+          {
+            "description": "24MMx7Y M.ONE TAPE",
+            "quantity": 1,
+            "unit_price": 15.9,
+            "discount_percent": null,
+            "amount": 15.9
+          }
+        ],
+        "subtotal": 15.9,
+        "discount_amount": 0,
+        "tax_amount": 0.9,
+        "prices_include_tax": true,
+        "rounding": 0,
+        "total": 15.9
+      }
+    },
+    {
+      "id": "sroie-015",
+      "scored": [
+        "total",
+        "issue_date",
+        "supplier_name"
+      ],
+      "expect_review": null,
+      "flagged": true,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.026028,
+      "ms": 6408,
+      "issues": [
+        {
+          "field": "lines.0.amount",
+          "message": "17 × 0.9 − 0% ≠ 15.25"
+        }
+      ],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": false,
+        "invoice_number": false,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": false,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "ASIA MART",
+        "supplier_tax_id": "001609584640",
+        "invoice_number": "CS02070163",
+        "issue_date": "2017-12-22",
+        "currency": "MYR",
+        "lines": [
+          {
+            "description": "DELICIA CHOCOLATE [50G]",
+            "quantity": 17,
+            "unit_price": 0.9,
+            "discount_percent": null,
+            "amount": 15.25
+          },
+          {
+            "description": "GARDENIA ORIGINAL CLASSIC JUMBO [600G]",
+            "quantity": 1,
+            "unit_price": 3.55,
+            "discount_percent": null,
+            "amount": 3.55
+          },
+          {
+            "description": "HUNTINS LIME 50G",
+            "quantity": 1,
+            "unit_price": 1.5,
+            "discount_percent": null,
+            "amount": 1.5
+          },
+          {
+            "description": "DOREMON CATCAT JOY 15G",
+            "quantity": 1,
+            "unit_price": 1.51,
+            "discount_percent": null,
+            "amount": 1.51
+          },
+          {
+            "description": "DOREMON CATCAT JOY 15G",
+            "quantity": 1,
+            "unit_price": 1.51,
+            "discount_percent": null,
+            "amount": 1.51
+          },
+          {
+            "description": "MINUTE MAID PULPY [OREN] [350ML]",
+            "quantity": 1,
+            "unit_price": 2.44,
+            "discount_percent": null,
+            "amount": 2.44
+          },
+          {
+            "description": "MINUTE MAID PULPY [OREN] [350ML]",
+            "quantity": 1,
+            "unit_price": 2.44,
+            "discount_percent": null,
+            "amount": 2.44
+          },
+          {
+            "description": "TINGE LEMON DRINK 500ML",
+            "quantity": 1,
+            "unit_price": 1.6,
+            "discount_percent": null,
+            "amount": 1.6
+          },
+          {
+            "description": "100 PLUS [1.5L]",
+            "quantity": 1,
+            "unit_price": 2.9,
+            "discount_percent": null,
+            "amount": 2.9
+          }
+        ],
+        "subtotal": 32.69,
+        "discount_amount": 0,
+        "tax_amount": 1.65,
+        "prices_include_tax": true,
+        "rounding": 0.02,
+        "total": 32.7
+      }
+    },
+    {
+      "id": "sroie-016",
+      "scored": [
+        "total",
+        "issue_date",
+        "supplier_name"
+      ],
+      "expect_review": null,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.01454,
+      "ms": 3534,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": false,
+        "invoice_number": false,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": false,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "HOME MASTER HARDWARE & ELECTRICAL",
+        "supplier_tax_id": "001637511168",
+        "invoice_number": "CS 67832",
+        "issue_date": "2017-12-22",
+        "currency": "MYR",
+        "lines": [
+          {
+            "description": "24MMx7Y M.ONE TAPE",
+            "quantity": 1,
+            "unit_price": 15.9,
+            "discount_percent": null,
+            "amount": 15.9
+          }
+        ],
+        "subtotal": 15.9,
+        "discount_amount": 0,
+        "tax_amount": 0.9,
+        "prices_include_tax": true,
+        "rounding": 0,
+        "total": 15.9
+      }
+    },
+    {
+      "id": "sroie-017",
+      "scored": [
+        "total",
+        "issue_date",
+        "supplier_name"
+      ],
+      "expect_review": null,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.018652,
+      "ms": 4405,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": false,
+        "invoice_number": false,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": false,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "LIGHTROOM GALLERY SDN BHD",
+        "supplier_tax_id": "000584089600",
+        "invoice_number": "LCS03908",
+        "issue_date": "2017-12-20",
+        "currency": "MYR",
+        "lines": [
+          {
+            "description": "CH50514 T5 JOINT 2PIN 2PCS",
+            "quantity": 1,
+            "unit_price": 2.83,
+            "discount_percent": null,
+            "amount": 2.83
+          },
+          {
+            "description": "YT51874 YE30 BK 7W WW LED TRACK LIGHT",
+            "quantity": 2,
+            "unit_price": 33.02,
+            "discount_percent": null,
+            "amount": 66.04
+          }
+        ],
+        "subtotal": 68.87,
+        "discount_amount": 0,
+        "tax_amount": 4.13,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 73
+      }
+    },
+    {
+      "id": "sroie-020",
+      "scored": [
+        "total",
+        "issue_date",
+        "supplier_name"
+      ],
+      "expect_review": null,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.010864,
+      "ms": 2758,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": false,
+        "invoice_number": false,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": false,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "Shell ISNI PETRO TRADING",
+        "supplier_tax_id": "0010 9010 5344",
+        "invoice_number": "60000053668",
+        "issue_date": "2018-03-18",
+        "currency": "MYR",
+        "lines": [
+          {
+            "description": "V-Power 97",
+            "quantity": 35.1,
+            "unit_price": 2.45,
+            "discount_percent": null,
+            "amount": 86
+          }
+        ],
+        "subtotal": 86,
+        "discount_amount": 0,
+        "tax_amount": 4.87,
+        "prices_include_tax": true,
+        "rounding": 0,
+        "total": 86
+      }
+    },
+    {
+      "id": "sroie-021",
+      "scored": [
+        "total",
+        "issue_date",
+        "supplier_name"
+      ],
+      "expect_review": null,
+      "flagged": true,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.018232,
+      "ms": 5752,
+      "issues": [
+        {
+          "field": "subtotal",
+          "message": "lines sum to 54.50, subtotal is 51.42"
+        },
+        {
+          "field": "total",
+          "message": "51.42 − 0 + 0 + 0 ≠ 54.5"
+        }
+      ],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": false,
+        "invoice_number": false,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": false,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "SYL ROASTED DELIGHTS SDN. BHD.",
+        "supplier_tax_id": "002046390272",
+        "invoice_number": "SO00022185",
+        "issue_date": "2018-03-06",
+        "currency": "MYR",
+        "lines": [
+          {
+            "description": "(T02) BRAISED PORK RICE WITH PEANUT",
+            "quantity": 2,
+            "unit_price": 7,
+            "discount_percent": null,
+            "amount": 14
+          },
+          {
+            "description": "ROAST PORK - SMALL",
+            "quantity": 1,
+            "unit_price": 12,
+            "discount_percent": null,
+            "amount": 12
+          },
+          {
+            "description": "(V02) SOUR & SPICY MUSTARD",
+            "quantity": 1,
+            "unit_price": 12,
+            "discount_percent": null,
+            "amount": 12
+          },
+          {
+            "description": "(B03) JASMINE GREEN TEA(HOT)",
+            "quantity": 2,
+            "unit_price": 2.3,
+            "discount_percent": null,
+            "amount": 4.6
+          },
+          {
+            "description": "(R05) ROAST PORK + ROAST CHICKEN RICE",
+            "quantity": 1,
+            "unit_price": 11.9,
+            "discount_percent": null,
+            "amount": 11.9
+          }
+        ],
+        "subtotal": 51.42,
+        "discount_amount": 0,
+        "tax_amount": 3.08,
+        "prices_include_tax": true,
+        "rounding": 0,
+        "total": 54.5
+      }
+    },
+    {
+      "id": "sroie-022",
+      "scored": [
+        "total",
+        "issue_date",
+        "supplier_name"
+      ],
+      "expect_review": null,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.023048,
+      "ms": 4287,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": false,
+        "invoice_number": false,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": false,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "TEO HENG STATIONERY & BOOKS",
+        "supplier_tax_id": "000689913856",
+        "invoice_number": "CS1801/26874",
+        "issue_date": "2018-01-18",
+        "currency": "MYR",
+        "lines": [
+          {
+            "description": "9557068000035 - JIANYU STELL RULER 30CM THICK",
+            "quantity": 1,
+            "unit_price": 3.5,
+            "discount_percent": 5.69,
+            "amount": 3.3
+          },
+          {
+            "description": "1 - LAMINATE FILM",
+            "quantity": 1,
+            "unit_price": 1.3,
+            "discount_percent": null,
+            "amount": 1.3
+          }
+        ],
+        "subtotal": 4.6,
+        "discount_amount": 0,
+        "tax_amount": 0.28,
+        "prices_include_tax": false,
+        "rounding": 0.02,
+        "total": 4.9
+      }
+    },
+    {
+      "id": "sroie-024",
+      "scored": [
+        "total",
+        "issue_date",
+        "supplier_name"
+      ],
+      "expect_review": null,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.028276,
+      "ms": 4983,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": false,
+        "invoice_number": false,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": false,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "TEO HENG STATIONERY & BOOKS",
+        "supplier_tax_id": "000689913856",
+        "invoice_number": "CS1801/26821",
+        "issue_date": "2018-01-17",
+        "currency": "MYR",
+        "lines": [
+          {
+            "description": "9555017370017 - LION FILE 220*307 LAMINATING FILM",
+            "quantity": 1,
+            "unit_price": 28,
+            "discount_percent": 7.14,
+            "amount": 26
+          }
+        ],
+        "subtotal": 26,
+        "discount_amount": 0,
+        "tax_amount": 1.56,
+        "prices_include_tax": false,
+        "rounding": -0.01,
+        "total": 27.55
+      }
+    },
+    {
+      "id": "sroie-025",
+      "scored": [
+        "total",
+        "issue_date",
+        "supplier_name"
+      ],
+      "expect_review": null,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.029436,
+      "ms": 3961,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": false,
+        "invoice_number": false,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": false,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "TEO HENG STATIONERY & BOOKS",
+        "supplier_tax_id": "000689913856",
+        "invoice_number": "CS1801/26717",
+        "issue_date": "2018-01-15",
+        "currency": "MYR",
+        "lines": [
+          {
+            "description": "9556655864036 - CBE BADGE CLIP 100PCS",
+            "quantity": 1,
+            "unit_price": 26.42,
+            "discount_percent": 9.14,
+            "amount": 24
+          },
+          {
+            "description": "9555535000663 - NISO A4 LAMINATING FILM",
+            "quantity": 1,
+            "unit_price": 28,
+            "discount_percent": 0,
+            "amount": 28
+          }
+        ],
+        "subtotal": 52,
+        "discount_amount": 0,
+        "tax_amount": 3.12,
+        "prices_include_tax": false,
+        "rounding": -0.02,
+        "total": 55.1
+      }
+    },
+    {
+      "id": "sroie-026",
+      "scored": [
+        "total",
+        "issue_date",
+        "supplier_name"
+      ],
+      "expect_review": null,
+      "flagged": true,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.029656,
+      "ms": 5089,
+      "issues": [
+        {
+          "field": "lines.1.amount",
+          "message": "5 × 2.08 − 0% ≠ 10.38"
+        }
+      ],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": false,
+        "invoice_number": false,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": false,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "TEO HENG STATIONERY & BOOKS",
+        "supplier_tax_id": "000689913856",
+        "invoice_number": "CS1801/27037",
+        "issue_date": "2018-01-23",
+        "currency": "MYR",
+        "lines": [
+          {
+            "description": "TP-24 - DOUBLE SIDED TISSUE TAPE 18MM",
+            "quantity": 5,
+            "unit_price": 1.32,
+            "discount_percent": 0,
+            "amount": 6.6
+          },
+          {
+            "description": "9557546631393 - G SOFT 6ML QUICK DRY CORRECTION PEN",
+            "quantity": 5,
+            "unit_price": 2.08,
+            "discount_percent": 0,
+            "amount": 10.38
+          }
+        ],
+        "subtotal": 16.98,
+        "discount_amount": 0,
+        "tax_amount": 1.02,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 18
+      }
+    },
+    {
+      "id": "sroie-029",
+      "scored": [
+        "total",
+        "issue_date",
+        "supplier_name"
+      ],
+      "expect_review": null,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.016776,
+      "ms": 3210,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": false,
+        "invoice_number": false,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": false,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "99 SPEED MART S/B",
+        "supplier_tax_id": "000181747712",
+        "invoice_number": "18287/102/T0049",
+        "issue_date": "2018-01-24",
+        "currency": "MYR",
+        "lines": [
+          {
+            "description": "1973 GARBAGE BAG (BLUE) 74C",
+            "quantity": 1,
+            "unit_price": 1.25,
+            "discount_percent": null,
+            "amount": 1.25
+          },
+          {
+            "description": "1974 GARBAGE BAG (GREEN) 74",
+            "quantity": 1,
+            "unit_price": 1.25,
+            "discount_percent": null,
+            "amount": 1.25
+          }
+        ],
+        "subtotal": 2.5,
+        "discount_amount": 0,
+        "tax_amount": 0.14,
+        "prices_include_tax": true,
+        "rounding": 0,
+        "total": 2.5
+      }
+    },
+    {
+      "id": "sroie-030",
+      "scored": [
+        "total",
+        "issue_date",
+        "supplier_name"
+      ],
+      "expect_review": null,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.014156,
+      "ms": 3558,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": false,
+        "invoice_number": false,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": false,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "C W KHOO HARDWARE SDN BHD",
+        "supplier_tax_id": "000549584896",
+        "invoice_number": "CR 1803/0064",
+        "issue_date": "2018-03-01",
+        "currency": "MYR",
+        "lines": [
+          {
+            "description": "AIR ADAPTOR @ 1",
+            "quantity": 5,
+            "unit_price": 4,
+            "discount_percent": null,
+            "amount": 20
+          }
+        ],
+        "subtotal": 20,
+        "discount_amount": 0,
+        "tax_amount": 1.2,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 21.2
+      }
+    },
+    {
+      "id": "syn-002",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.016832,
+      "ms": 3365,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Distribuciones Arnau SL",
+        "supplier_tax_id": "55719666G",
+        "invoice_number": "204/2025",
+        "issue_date": "2025-02-09",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Sesión de fotos",
+            "quantity": 1,
+            "unit_price": 156.94,
+            "discount_percent": null,
+            "amount": 156.94
+          },
+          {
+            "description": "Mantenimiento mensual",
+            "quantity": 3,
+            "unit_price": 728.41,
+            "discount_percent": null,
+            "amount": 2185.23
+          },
+          {
+            "description": "Hora de consultoría",
+            "quantity": 3,
+            "unit_price": 35.13,
+            "discount_percent": null,
+            "amount": 105.39
+          },
+          {
+            "description": "Impresión de folletos",
+            "quantity": 5,
+            "unit_price": 537.66,
+            "discount_percent": null,
+            "amount": 2688.3
+          }
+        ],
+        "subtotal": 5135.86,
+        "discount_amount": 0,
+        "tax_amount": 513.59,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 5649.45
+      }
+    },
+    {
+      "id": "syn-003",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.019748,
+      "ms": 4268,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Studio Grafico Lunetta",
+        "supplier_tax_id": "IT58195945355",
+        "invoice_number": "323/2026",
+        "issue_date": "2026-03-20",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Consulenza oraria",
+            "quantity": 10,
+            "unit_price": 835.17,
+            "discount_percent": null,
+            "amount": 8351.7
+          },
+          {
+            "description": "Pannello in legno",
+            "quantity": 2.5,
+            "unit_price": 388.88,
+            "discount_percent": null,
+            "amount": 972.2
+          },
+          {
+            "description": "Consulenza oraria",
+            "quantity": 1,
+            "unit_price": 101.18,
+            "discount_percent": null,
+            "amount": 101.18
+          },
+          {
+            "description": "Trasferta",
+            "quantity": 2,
+            "unit_price": 434.33,
+            "discount_percent": null,
+            "amount": 868.66
+          },
+          {
+            "description": "Licenza software annuale",
+            "quantity": 2.5,
+            "unit_price": 71.2,
+            "discount_percent": null,
+            "amount": 178
+          }
+        ],
+        "subtotal": 10471.74,
+        "discount_amount": 0,
+        "tax_amount": 1047.17,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 11518.91
+      }
+    },
+    {
+      "id": "syn-004",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": true,
+      "flagged": true,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.017496,
+      "ms": 3624,
+      "issues": [
+        {
+          "field": "total",
+          "message": "1379.02 − 0 + 289.59 + 0 ≠ 1669.61"
+        }
+      ],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Imprenta Soler SL",
+        "supplier_tax_id": "B82195081",
+        "invoice_number": "972/2024",
+        "issue_date": "2024-08-26",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Pintura interior",
+            "quantity": 0.5,
+            "unit_price": 626.02,
+            "discount_percent": null,
+            "amount": 313.01
+          },
+          {
+            "description": "Material de oficina",
+            "quantity": 2.5,
+            "unit_price": 389.55,
+            "discount_percent": null,
+            "amount": 973.88
+          },
+          {
+            "description": "Desplazamiento",
+            "quantity": 1,
+            "unit_price": 92.13,
+            "discount_percent": null,
+            "amount": 92.13
+          }
+        ],
+        "subtotal": 1379.02,
+        "discount_amount": 0,
+        "tax_amount": 289.59,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 1669.61
+      }
+    },
+    {
+      "id": "syn-006",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.016496,
+      "ms": 3136,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Laura Peña Fotografía",
+        "supplier_tax_id": "B39465634",
+        "invoice_number": "418/2026",
+        "issue_date": "2026-02-05",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Hora de consultoría",
+            "quantity": 1,
+            "unit_price": 303.93,
+            "discount_percent": null,
+            "amount": 303.93
+          },
+          {
+            "description": "Desplazamiento",
+            "quantity": 1,
+            "unit_price": 894.18,
+            "discount_percent": null,
+            "amount": 894.18
+          }
+        ],
+        "subtotal": 1198.11,
+        "discount_amount": 0,
+        "tax_amount": 119.81,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 1317.92
+      }
+    },
+    {
+      "id": "syn-007",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.017684,
+      "ms": 4285,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Studio Grafico Lunetta",
+        "supplier_tax_id": "IT63130524372",
+        "invoice_number": "912/2024",
+        "issue_date": "2024-07-07",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Materiale di consumo",
+            "quantity": 2.5,
+            "unit_price": 295.59,
+            "discount_percent": null,
+            "amount": 738.97
+          },
+          {
+            "description": "Trasferta",
+            "quantity": 5,
+            "unit_price": 492.41,
+            "discount_percent": null,
+            "amount": 2462.05
+          },
+          {
+            "description": "Manutenzione impianto",
+            "quantity": 1,
+            "unit_price": 293.84,
+            "discount_percent": null,
+            "amount": 293.84
+          }
+        ],
+        "subtotal": 3494.86,
+        "discount_amount": 0,
+        "tax_amount": 349.49,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 3844.35
+      }
+    },
+    {
+      "id": "syn-008",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": true,
+      "flagged": true,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.013912,
+      "ms": 2558,
+      "issues": [
+        {
+          "field": "subtotal",
+          "message": "lines sum to 236.91, subtotal is 237.91"
+        },
+        {
+          "field": "total",
+          "message": "237.91 − 0 + 49.75 + 0 ≠ 286.66"
+        }
+      ],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Laura Peña Fotografía",
+        "supplier_tax_id": "28756869S",
+        "invoice_number": "390/2026",
+        "issue_date": "2026-05-05",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Sesión de fotos",
+            "quantity": 0.5,
+            "unit_price": 473.82,
+            "discount_percent": null,
+            "amount": 236.91
+          }
+        ],
+        "subtotal": 237.91,
+        "discount_amount": 0,
+        "tax_amount": 49.75,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 286.66
+      }
+    },
+    {
+      "id": "syn-011",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.014872,
+      "ms": 2691,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Tipografia Bassi Srl",
+        "supplier_tax_id": "IT19084508035",
+        "invoice_number": "230/2025",
+        "issue_date": "2025-04-04",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Materiale di consumo",
+            "quantity": 1,
+            "unit_price": 134.16,
+            "discount_percent": null,
+            "amount": 134.16
+          },
+          {
+            "description": "Materiale di consumo",
+            "quantity": 1,
+            "unit_price": 478.21,
+            "discount_percent": null,
+            "amount": 478.21
+          }
+        ],
+        "subtotal": 612.37,
+        "discount_amount": 0,
+        "tax_amount": 61.24,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 673.61
+      }
+    },
+    {
+      "id": "syn-012",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.01968,
+      "ms": 5092,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Distribuciones Arnau SL",
+        "supplier_tax_id": "28446942J",
+        "invoice_number": "944/2024",
+        "issue_date": "2024-04-08",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Material de oficina",
+            "quantity": 5,
+            "unit_price": 717.05,
+            "discount_percent": null,
+            "amount": 3585.25
+          },
+          {
+            "description": "Impresión de folletos",
+            "quantity": 0.5,
+            "unit_price": 475.06,
+            "discount_percent": null,
+            "amount": 237.53
+          },
+          {
+            "description": "Hora de consultoría",
+            "quantity": 1,
+            "unit_price": 87.64,
+            "discount_percent": null,
+            "amount": 87.64
+          },
+          {
+            "description": "Desplazamiento",
+            "quantity": 1,
+            "unit_price": 605.42,
+            "discount_percent": null,
+            "amount": 605.42
+          },
+          {
+            "description": "Hora de consultoría",
+            "quantity": 5,
+            "unit_price": 879.02,
+            "discount_percent": null,
+            "amount": 4395.1
+          }
+        ],
+        "subtotal": 8910.94,
+        "discount_amount": 0,
+        "tax_amount": 891.09,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 9802.03
+      }
+    },
+    {
+      "id": "syn-013",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.018804,
+      "ms": 4658,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Studio Grafico Lunetta",
+        "supplier_tax_id": "IT66838384353",
+        "invoice_number": "836/2026",
+        "issue_date": "2026-09-22",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Trasferta",
+            "quantity": 0.5,
+            "unit_price": 841.91,
+            "discount_percent": null,
+            "amount": 420.96
+          },
+          {
+            "description": "Manutenzione impianto",
+            "quantity": 5,
+            "unit_price": 729.21,
+            "discount_percent": null,
+            "amount": 3646.05
+          },
+          {
+            "description": "Materiale di consumo",
+            "quantity": 3,
+            "unit_price": 675.6,
+            "discount_percent": null,
+            "amount": 2026.8
+          },
+          {
+            "description": "Materiale di consumo",
+            "quantity": 10,
+            "unit_price": 499.53,
+            "discount_percent": null,
+            "amount": 4995.3
+          }
+        ],
+        "subtotal": 11089.11,
+        "discount_amount": 0,
+        "tax_amount": 2439.6,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 13528.71
+      }
+    },
+    {
+      "id": "syn-015",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.019732,
+      "ms": 5015,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Consulenze Moretti",
+        "supplier_tax_id": "IT54517691009",
+        "invoice_number": "341/2024",
+        "issue_date": "2024-03-08",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Consulenza oraria",
+            "quantity": 0.5,
+            "unit_price": 615.49,
+            "discount_percent": null,
+            "amount": 307.75
+          },
+          {
+            "description": "Trasferta",
+            "quantity": 1,
+            "unit_price": 244.33,
+            "discount_percent": null,
+            "amount": 244.33
+          },
+          {
+            "description": "Trasferta",
+            "quantity": 1,
+            "unit_price": 770.68,
+            "discount_percent": null,
+            "amount": 770.68
+          },
+          {
+            "description": "Manutenzione impianto",
+            "quantity": 2.5,
+            "unit_price": 799.5,
+            "discount_percent": null,
+            "amount": 1998.75
+          },
+          {
+            "description": "Stampa biglietti da visita",
+            "quantity": 1,
+            "unit_price": 565.06,
+            "discount_percent": null,
+            "amount": 565.06
+          }
+        ],
+        "subtotal": 3886.57,
+        "discount_amount": 0,
+        "tax_amount": 388.66,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 4275.23
+      }
+    },
+    {
+      "id": "syn-016",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.0208,
+      "ms": 5502,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Laura Peña Fotografía",
+        "supplier_tax_id": "28590533S",
+        "invoice_number": "770/2026",
+        "issue_date": "2026-02-05",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Mantenimiento mensual",
+            "quantity": 5,
+            "unit_price": 756.25,
+            "discount_percent": null,
+            "amount": 3781.25
+          },
+          {
+            "description": "Sesión de fotos",
+            "quantity": 5,
+            "unit_price": 30.32,
+            "discount_percent": null,
+            "amount": 151.6
+          },
+          {
+            "description": "Impresión de folletos",
+            "quantity": 0.5,
+            "unit_price": 339.23,
+            "discount_percent": null,
+            "amount": 169.62
+          },
+          {
+            "description": "Hora de consultoría",
+            "quantity": 0.5,
+            "unit_price": 455.31,
+            "discount_percent": null,
+            "amount": 227.66
+          },
+          {
+            "description": "Material de oficina",
+            "quantity": 1,
+            "unit_price": 695.64,
+            "discount_percent": null,
+            "amount": 695.64
+          },
+          {
+            "description": "Material de oficina",
+            "quantity": 0.5,
+            "unit_price": 713.22,
+            "discount_percent": null,
+            "amount": 356.61
+          }
+        ],
+        "subtotal": 5382.38,
+        "discount_amount": 0,
+        "tax_amount": 1130.3,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 6512.68
+      }
+    },
+    {
+      "id": "syn-017",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": true,
+      "flagged": true,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.016872,
+      "ms": 4092,
+      "issues": [
+        {
+          "field": "supplier_tax_id",
+          "message": "invalid tax id IT41651801925"
+        }
+      ],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Panificio Rinaldi",
+        "supplier_tax_id": "IT41651801925",
+        "invoice_number": "472/2025",
+        "issue_date": "2025-07-08",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Stampa biglietti da visita",
+            "quantity": 5,
+            "unit_price": 500.55,
+            "discount_percent": null,
+            "amount": 2502.75
+          },
+          {
+            "description": "Licenza software annuale",
+            "quantity": 2.5,
+            "unit_price": 470.3,
+            "discount_percent": null,
+            "amount": 1175.75
+          },
+          {
+            "description": "Trasferta",
+            "quantity": 1,
+            "unit_price": 861.84,
+            "discount_percent": null,
+            "amount": 861.84
+          },
+          {
+            "description": "Manutenzione impianto",
+            "quantity": 1,
+            "unit_price": 43.78,
+            "discount_percent": null,
+            "amount": 43.78
+          }
+        ],
+        "subtotal": 4584.12,
+        "discount_amount": 0,
+        "tax_amount": 1008.51,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 5592.63
+      }
+    },
+    {
+      "id": "syn-020",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.016732,
+      "ms": 3165,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Café Rambla SL",
+        "supplier_tax_id": "B51607984",
+        "invoice_number": "682/2026",
+        "issue_date": "2026-05-01",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Hora de consultoría",
+            "quantity": 2.5,
+            "unit_price": 416.71,
+            "discount_percent": null,
+            "amount": 1041.77
+          },
+          {
+            "description": "Material de oficina",
+            "quantity": 5,
+            "unit_price": 446.19,
+            "discount_percent": null,
+            "amount": 2230.95
+          },
+          {
+            "description": "Hora de consultoría",
+            "quantity": 3,
+            "unit_price": 678.8,
+            "discount_percent": null,
+            "amount": 2036.4
+          },
+          {
+            "description": "Pintura interior",
+            "quantity": 10,
+            "unit_price": 536.17,
+            "discount_percent": null,
+            "amount": 5361.7
+          }
+        ],
+        "subtotal": 10670.82,
+        "discount_amount": 0,
+        "tax_amount": 2240.87,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 12911.69
+      }
+    },
+    {
+      "id": "syn-021",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.020876,
+      "ms": 4606,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Consulenze Moretti",
+        "supplier_tax_id": "IT01263694778",
+        "invoice_number": "17/2024",
+        "issue_date": "2024-02-11",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Licenza software annuale",
+            "quantity": 2.5,
+            "unit_price": 870.47,
+            "discount_percent": null,
+            "amount": 2176.18
+          },
+          {
+            "description": "Stampa biglietti da visita",
+            "quantity": 2.5,
+            "unit_price": 730.42,
+            "discount_percent": null,
+            "amount": 1826.05
+          },
+          {
+            "description": "Consulenza oraria",
+            "quantity": 1,
+            "unit_price": 893.67,
+            "discount_percent": null,
+            "amount": 893.67
+          },
+          {
+            "description": "Trasferta",
+            "quantity": 3,
+            "unit_price": 787.05,
+            "discount_percent": null,
+            "amount": 2361.15
+          },
+          {
+            "description": "Licenza software annuale",
+            "quantity": 10,
+            "unit_price": 295.87,
+            "discount_percent": null,
+            "amount": 2958.7
+          },
+          {
+            "description": "Trasferta",
+            "quantity": 3,
+            "unit_price": 830.91,
+            "discount_percent": null,
+            "amount": 2492.73
+          }
+        ],
+        "subtotal": 12708.48,
+        "discount_amount": 0,
+        "tax_amount": 1270.85,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 13979.33
+      }
+    },
+    {
+      "id": "syn-022",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.016344,
+      "ms": 2448,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Café Rambla SL",
+        "supplier_tax_id": "B59455200",
+        "invoice_number": "644/2024",
+        "issue_date": "2024-05-15",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Material de oficina",
+            "quantity": 5,
+            "unit_price": 809.67,
+            "discount_percent": null,
+            "amount": 4048.35
+          },
+          {
+            "description": "Desplazamiento",
+            "quantity": 2,
+            "unit_price": 758,
+            "discount_percent": null,
+            "amount": 1516
+          }
+        ],
+        "subtotal": 5564.35,
+        "discount_amount": 0,
+        "tax_amount": 556.44,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 6120.79
+      }
+    },
+    {
+      "id": "syn-024",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.018616,
+      "ms": 3588,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Talleres Montaner SA",
+        "supplier_tax_id": "98095784W",
+        "invoice_number": "891/2026",
+        "issue_date": "2026-04-17",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Mantenimiento mensual",
+            "quantity": 0.5,
+            "unit_price": 522.66,
+            "discount_percent": null,
+            "amount": 261.33
+          },
+          {
+            "description": "Desplazamiento",
+            "quantity": 5,
+            "unit_price": 370.98,
+            "discount_percent": null,
+            "amount": 1854.9
+          },
+          {
+            "description": "Desplazamiento",
+            "quantity": 1,
+            "unit_price": 122.94,
+            "discount_percent": null,
+            "amount": 122.94
+          },
+          {
+            "description": "Pintura interior",
+            "quantity": 10,
+            "unit_price": 254.82,
+            "discount_percent": null,
+            "amount": 2548.2
+          }
+        ],
+        "subtotal": 4787.37,
+        "discount_amount": 0,
+        "tax_amount": 478.74,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 5266.11
+      }
+    },
+    {
+      "id": "syn-025",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": true,
+      "flagged": true,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.020952,
+      "ms": 4574,
+      "issues": [
+        {
+          "field": "subtotal",
+          "message": "lines sum to 9679.01, subtotal is 9680.01"
+        },
+        {
+          "field": "total",
+          "message": "9680.01 − 0 + 967.9 + 0 ≠ 10646.91"
+        }
+      ],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Panificio Rinaldi",
+        "supplier_tax_id": "IT63534158652",
+        "invoice_number": "888/2024",
+        "issue_date": "2024-02-09",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Stampa biglietti da visita",
+            "quantity": 3,
+            "unit_price": 825.86,
+            "discount_percent": null,
+            "amount": 2477.58
+          },
+          {
+            "description": "Pannello in legno",
+            "quantity": 1,
+            "unit_price": 288.91,
+            "discount_percent": null,
+            "amount": 288.91
+          },
+          {
+            "description": "Consulenza oraria",
+            "quantity": 3,
+            "unit_price": 878.4,
+            "discount_percent": null,
+            "amount": 2635.2
+          },
+          {
+            "description": "Pannello in legno",
+            "quantity": 5,
+            "unit_price": 543.74,
+            "discount_percent": null,
+            "amount": 2718.7
+          },
+          {
+            "description": "Stampa biglietti da visita",
+            "quantity": 1,
+            "unit_price": 866.92,
+            "discount_percent": null,
+            "amount": 866.92
+          },
+          {
+            "description": "Materiale di consumo",
+            "quantity": 2.5,
+            "unit_price": 276.68,
+            "discount_percent": null,
+            "amount": 691.7
+          }
+        ],
+        "subtotal": 9680.01,
+        "discount_amount": 0,
+        "tax_amount": 967.9,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 10646.91
+      }
+    },
+    {
+      "id": "syn-026",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.016772,
+      "ms": 4593,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Talleres Montaner SA",
+        "supplier_tax_id": "22293355F",
+        "invoice_number": "708/2025",
+        "issue_date": "2025-03-02",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Desplazamiento",
+            "quantity": 3,
+            "unit_price": 529.88,
+            "discount_percent": null,
+            "amount": 1589.64
+          },
+          {
+            "description": "Impresión de folletos",
+            "quantity": 5,
+            "unit_price": 368.77,
+            "discount_percent": null,
+            "amount": 1843.85
+          },
+          {
+            "description": "Mantenimiento mensual",
+            "quantity": 1,
+            "unit_price": 639.5,
+            "discount_percent": null,
+            "amount": 639.5
+          },
+          {
+            "description": "Hora de consultoría",
+            "quantity": 1,
+            "unit_price": 18.52,
+            "discount_percent": null,
+            "amount": 18.52
+          }
+        ],
+        "subtotal": 4091.51,
+        "discount_amount": 0,
+        "tax_amount": 859.22,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 4950.73
+      }
+    },
+    {
+      "id": "syn-029",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": true,
+      "flagged": true,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.015892,
+      "ms": 3090,
+      "issues": [
+        {
+          "field": "lines.0.amount",
+          "message": "3 × 656.37 − 0% ≠ 1979.11"
+        },
+        {
+          "field": "subtotal",
+          "message": "lines sum to 3852.93, subtotal is 3842.93"
+        }
+      ],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Consulenze Moretti",
+        "supplier_tax_id": "IT54397437259",
+        "invoice_number": "264/2023",
+        "issue_date": "2023-02-10",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Trasferta",
+            "quantity": 3,
+            "unit_price": 656.37,
+            "discount_percent": null,
+            "amount": 1979.11
+          },
+          {
+            "description": "Stampa biglietti da visita",
+            "quantity": 2,
+            "unit_price": 897.39,
+            "discount_percent": null,
+            "amount": 1794.78
+          },
+          {
+            "description": "Stampa biglietti da visita",
+            "quantity": 2,
+            "unit_price": 39.52,
+            "discount_percent": null,
+            "amount": 79.04
+          }
+        ],
+        "subtotal": 3842.93,
+        "discount_amount": 0,
+        "tax_amount": 384.29,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 4227.22
+      }
+    },
+    {
+      "id": "syn-030",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.015472,
+      "ms": 2218,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Café Rambla SL",
+        "supplier_tax_id": "B97205014",
+        "invoice_number": "418/2025",
+        "issue_date": "2025-08-06",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Hora de consultoría",
+            "quantity": 10,
+            "unit_price": 518.23,
+            "discount_percent": null,
+            "amount": 5182.3
+          }
+        ],
+        "subtotal": 5182.3,
+        "discount_amount": 0,
+        "tax_amount": 518.23,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 5700.53
+      }
+    },
+    {
+      "id": "syn-031",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.017916,
+      "ms": 4112,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Panificio Rinaldi",
+        "supplier_tax_id": "IT82758208993",
+        "invoice_number": "227/2025",
+        "issue_date": "2025-08-28",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Manutenzione impianto",
+            "quantity": 2,
+            "unit_price": 434.5,
+            "discount_percent": null,
+            "amount": 869
+          },
+          {
+            "description": "Licenza software annuale",
+            "quantity": 1,
+            "unit_price": 866.15,
+            "discount_percent": null,
+            "amount": 866.15
+          },
+          {
+            "description": "Stampa biglietti da visita",
+            "quantity": 1,
+            "unit_price": 113.34,
+            "discount_percent": null,
+            "amount": 113.34
+          }
+        ],
+        "subtotal": 1848.49,
+        "discount_amount": 0,
+        "tax_amount": 282.33,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 2130.82
+      }
+    },
+    {
+      "id": "syn-033",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.05444,
+      "ms": 12430,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Tipografia Bassi Srl",
+        "supplier_tax_id": "IT71213947881",
+        "invoice_number": "266/2023",
+        "issue_date": "2023-06-01",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Trasferta",
+            "quantity": 0.5,
+            "unit_price": 616.65,
+            "discount_percent": null,
+            "amount": 308.33
+          },
+          {
+            "description": "Stampa biglietti da visita",
+            "quantity": 2,
+            "unit_price": 727.64,
+            "discount_percent": null,
+            "amount": 1455.28
+          },
+          {
+            "description": "Pannello in legno",
+            "quantity": 2,
+            "unit_price": 93.72,
+            "discount_percent": null,
+            "amount": 187.44
+          },
+          {
+            "description": "Trasferta",
+            "quantity": 1,
+            "unit_price": 208.97,
+            "discount_percent": null,
+            "amount": 208.97
+          },
+          {
+            "description": "Manutenzione impianto",
+            "quantity": 5,
+            "unit_price": 503.34,
+            "discount_percent": null,
+            "amount": 2516.7
+          },
+          {
+            "description": "Materiale di consumo",
+            "quantity": 2,
+            "unit_price": 317.84,
+            "discount_percent": null,
+            "amount": 635.68
+          },
+          {
+            "description": "Trasferta",
+            "quantity": 10,
+            "unit_price": 73.9,
+            "discount_percent": null,
+            "amount": 739
+          },
+          {
+            "description": "Pannello in legno",
+            "quantity": 5,
+            "unit_price": 584.16,
+            "discount_percent": null,
+            "amount": 2920.8
+          },
+          {
+            "description": "Licenza software annuale",
+            "quantity": 0.5,
+            "unit_price": 437.8,
+            "discount_percent": null,
+            "amount": 218.9
+          },
+          {
+            "description": "Trasferta",
+            "quantity": 1,
+            "unit_price": 413.87,
+            "discount_percent": null,
+            "amount": 413.87
+          },
+          {
+            "description": "Pannello in legno",
+            "quantity": 2,
+            "unit_price": 176.41,
+            "discount_percent": null,
+            "amount": 352.82
+          },
+          {
+            "description": "Pannello in legno",
+            "quantity": 2.5,
+            "unit_price": 390.15,
+            "discount_percent": null,
+            "amount": 975.38
+          },
+          {
+            "description": "Materiale di consumo",
+            "quantity": 2.5,
+            "unit_price": 88.49,
+            "discount_percent": null,
+            "amount": 221.23
+          },
+          {
+            "description": "Materiale di consumo",
+            "quantity": 0.5,
+            "unit_price": 244.9,
+            "discount_percent": null,
+            "amount": 122.45
+          },
+          {
+            "description": "Licenza software annuale",
+            "quantity": 0.5,
+            "unit_price": 310.46,
+            "discount_percent": null,
+            "amount": 155.23
+          },
+          {
+            "description": "Consulenza oraria",
+            "quantity": 2,
+            "unit_price": 861.6,
+            "discount_percent": null,
+            "amount": 1723.2
+          },
+          {
+            "description": "Materiale di consumo",
+            "quantity": 2.5,
+            "unit_price": 667.13,
+            "discount_percent": null,
+            "amount": 1667.83
+          },
+          {
+            "description": "Manutenzione impianto",
+            "quantity": 1,
+            "unit_price": 242.13,
+            "discount_percent": null,
+            "amount": 242.13
+          },
+          {
+            "description": "Consulenza oraria",
+            "quantity": 1,
+            "unit_price": 187.62,
+            "discount_percent": null,
+            "amount": 187.62
+          },
+          {
+            "description": "Stampa biglietti da visita",
+            "quantity": 10,
+            "unit_price": 141.15,
+            "discount_percent": null,
+            "amount": 1411.5
+          },
+          {
+            "description": "Consulenza oraria",
+            "quantity": 1,
+            "unit_price": 718.06,
+            "discount_percent": null,
+            "amount": 718.06
+          },
+          {
+            "description": "Materiale di consumo",
+            "quantity": 10,
+            "unit_price": 495.26,
+            "discount_percent": null,
+            "amount": 4952.6
+          },
+          {
+            "description": "Trasferta",
+            "quantity": 2,
+            "unit_price": 579.03,
+            "discount_percent": null,
+            "amount": 1158.06
+          },
+          {
+            "description": "Pannello in legno",
+            "quantity": 1,
+            "unit_price": 703.98,
+            "discount_percent": null,
+            "amount": 703.98
+          },
+          {
+            "description": "Materiale di consumo",
+            "quantity": 10,
+            "unit_price": 599.96,
+            "discount_percent": null,
+            "amount": 5999.6
+          },
+          {
+            "description": "Pannello in legno",
+            "quantity": 2,
+            "unit_price": 539.13,
+            "discount_percent": null,
+            "amount": 1078.26
+          },
+          {
+            "description": "Manutenzione impianto",
+            "quantity": 1,
+            "unit_price": 370.81,
+            "discount_percent": null,
+            "amount": 370.81
+          },
+          {
+            "description": "Manutenzione impianto",
+            "quantity": 1,
+            "unit_price": 612.06,
+            "discount_percent": null,
+            "amount": 612.06
+          },
+          {
+            "description": "Licenza software annuale",
+            "quantity": 1,
+            "unit_price": 580.61,
+            "discount_percent": null,
+            "amount": 580.61
+          },
+          {
+            "description": "Pannello in legno",
+            "quantity": 5,
+            "unit_price": 889.66,
+            "discount_percent": null,
+            "amount": 4448.3
+          },
+          {
+            "description": "Materiale di consumo",
+            "quantity": 2.5,
+            "unit_price": 535.95,
+            "discount_percent": null,
+            "amount": 1339.88
+          },
+          {
+            "description": "Stampa biglietti da visita",
+            "quantity": 2,
+            "unit_price": 769.78,
+            "discount_percent": null,
+            "amount": 1539.56
+          }
+        ],
+        "subtotal": 40166.14,
+        "discount_amount": 0,
+        "tax_amount": 4016.61,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 44182.75
+      }
+    },
+    {
+      "id": "syn-034",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.014912,
+      "ms": 3324,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Café Rambla SL",
+        "supplier_tax_id": "66454673Z",
+        "invoice_number": "626/2025",
+        "issue_date": "2025-06-08",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Sesión de fotos",
+            "quantity": 1,
+            "unit_price": 650.98,
+            "discount_percent": null,
+            "amount": 650.98
+          },
+          {
+            "description": "Impresión de folletos",
+            "quantity": 2.5,
+            "unit_price": 441.18,
+            "discount_percent": null,
+            "amount": 1102.95
+          }
+        ],
+        "subtotal": 1753.93,
+        "discount_amount": 0,
+        "tax_amount": 368.33,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 2122.26
+      }
+    },
+    {
+      "id": "syn-035",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.013888,
+      "ms": 5205,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Idraulica Valli Srl",
+        "supplier_tax_id": "IT10822962329",
+        "invoice_number": "226/2026",
+        "issue_date": "2026-09-16",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Licenza software annuale",
+            "quantity": 1,
+            "unit_price": 788.46,
+            "discount_percent": null,
+            "amount": 788.46
+          },
+          {
+            "description": "Consulenza oraria",
+            "quantity": 0.5,
+            "unit_price": 219.66,
+            "discount_percent": null,
+            "amount": 109.83
+          },
+          {
+            "description": "Materiale di consumo",
+            "quantity": 0.5,
+            "unit_price": 353.86,
+            "discount_percent": null,
+            "amount": 176.93
+          },
+          {
+            "description": "Manutenzione impianto",
+            "quantity": 0.5,
+            "unit_price": 369.5,
+            "discount_percent": null,
+            "amount": 184.75
+          },
+          {
+            "description": "Manutenzione impianto",
+            "quantity": 3,
+            "unit_price": 41.39,
+            "discount_percent": null,
+            "amount": 124.17
+          }
+        ],
+        "subtotal": 1384.14,
+        "discount_amount": 0,
+        "tax_amount": 55.37,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 1439.51
+      }
+    },
+    {
+      "id": "syn-038",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.062804,
+      "ms": 21803,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Laura Peña Fotografía",
+        "supplier_tax_id": "B65662115",
+        "invoice_number": "254/2025",
+        "issue_date": "2025-08-15",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Hora de consultoría",
+            "quantity": 1,
+            "unit_price": 716.25,
+            "discount_percent": null,
+            "amount": 716.25
+          },
+          {
+            "description": "Desplazamiento",
+            "quantity": 1,
+            "unit_price": 465.23,
+            "discount_percent": null,
+            "amount": 465.23
+          },
+          {
+            "description": "Sesión de fotos",
+            "quantity": 2.5,
+            "unit_price": 684.98,
+            "discount_percent": null,
+            "amount": 1712.45
+          },
+          {
+            "description": "Sesión de fotos",
+            "quantity": 0.5,
+            "unit_price": 894.57,
+            "discount_percent": null,
+            "amount": 447.29
+          },
+          {
+            "description": "Pintura interior",
+            "quantity": 0.5,
+            "unit_price": 541.37,
+            "discount_percent": null,
+            "amount": 270.69
+          },
+          {
+            "description": "Hora de consultoría",
+            "quantity": 2,
+            "unit_price": 501.7,
+            "discount_percent": null,
+            "amount": 1003.4
+          },
+          {
+            "description": "Sesión de fotos",
+            "quantity": 2,
+            "unit_price": 181.31,
+            "discount_percent": null,
+            "amount": 362.62
+          },
+          {
+            "description": "Impresión de folletos",
+            "quantity": 1,
+            "unit_price": 609.46,
+            "discount_percent": null,
+            "amount": 609.46
+          },
+          {
+            "description": "Hora de consultoría",
+            "quantity": 0.5,
+            "unit_price": 268.83,
+            "discount_percent": null,
+            "amount": 134.42
+          },
+          {
+            "description": "Pintura interior",
+            "quantity": 1,
+            "unit_price": 171.92,
+            "discount_percent": null,
+            "amount": 171.92
+          },
+          {
+            "description": "Mantenimiento mensual",
+            "quantity": 2.5,
+            "unit_price": 309.98,
+            "discount_percent": null,
+            "amount": 774.95
+          },
+          {
+            "description": "Impresión de folletos",
+            "quantity": 2.5,
+            "unit_price": 670.01,
+            "discount_percent": null,
+            "amount": 1675.03
+          },
+          {
+            "description": "Desplazamiento",
+            "quantity": 1,
+            "unit_price": 154.36,
+            "discount_percent": null,
+            "amount": 154.36
+          },
+          {
+            "description": "Sesión de fotos",
+            "quantity": 2.5,
+            "unit_price": 632.22,
+            "discount_percent": null,
+            "amount": 1580.55
+          },
+          {
+            "description": "Sesión de fotos",
+            "quantity": 0.5,
+            "unit_price": 626.33,
+            "discount_percent": null,
+            "amount": 313.17
+          },
+          {
+            "description": "Mantenimiento mensual",
+            "quantity": 1,
+            "unit_price": 234.96,
+            "discount_percent": null,
+            "amount": 234.96
+          },
+          {
+            "description": "Impresión de folletos",
+            "quantity": 1,
+            "unit_price": 863.85,
+            "discount_percent": null,
+            "amount": 863.85
+          },
+          {
+            "description": "Mantenimiento mensual",
+            "quantity": 5,
+            "unit_price": 740.13,
+            "discount_percent": null,
+            "amount": 3700.65
+          },
+          {
+            "description": "Sesión de fotos",
+            "quantity": 2.5,
+            "unit_price": 852.31,
+            "discount_percent": null,
+            "amount": 2130.77
+          },
+          {
+            "description": "Material de oficina",
+            "quantity": 1,
+            "unit_price": 179.59,
+            "discount_percent": null,
+            "amount": 179.59
+          },
+          {
+            "description": "Sesión de fotos",
+            "quantity": 0.5,
+            "unit_price": 361.11,
+            "discount_percent": null,
+            "amount": 180.56
+          },
+          {
+            "description": "Desplazamiento",
+            "quantity": 1,
+            "unit_price": 37.5,
+            "discount_percent": null,
+            "amount": 37.5
+          },
+          {
+            "description": "Desplazamiento",
+            "quantity": 2,
+            "unit_price": 118.54,
+            "discount_percent": null,
+            "amount": 237.08
+          },
+          {
+            "description": "Hora de consultoría",
+            "quantity": 0.5,
+            "unit_price": 181.38,
+            "discount_percent": null,
+            "amount": 90.69
+          },
+          {
+            "description": "Impresión de folletos",
+            "quantity": 1,
+            "unit_price": 175.88,
+            "discount_percent": null,
+            "amount": 175.88
+          },
+          {
+            "description": "Mantenimiento mensual",
+            "quantity": 2.5,
+            "unit_price": 809.72,
+            "discount_percent": null,
+            "amount": 2024.3
+          },
+          {
+            "description": "Material de oficina",
+            "quantity": 3,
+            "unit_price": 300.64,
+            "discount_percent": null,
+            "amount": 901.92
+          },
+          {
+            "description": "Desplazamiento",
+            "quantity": 1,
+            "unit_price": 237.53,
+            "discount_percent": null,
+            "amount": 237.53
+          },
+          {
+            "description": "Pintura interior",
+            "quantity": 3,
+            "unit_price": 433.51,
+            "discount_percent": null,
+            "amount": 1300.53
+          },
+          {
+            "description": "Pintura interior",
+            "quantity": 3,
+            "unit_price": 58.12,
+            "discount_percent": null,
+            "amount": 174.36
+          },
+          {
+            "description": "Hora de consultoría",
+            "quantity": 3,
+            "unit_price": 587.07,
+            "discount_percent": null,
+            "amount": 1761.21
+          },
+          {
+            "description": "Pintura interior",
+            "quantity": 1,
+            "unit_price": 495.5,
+            "discount_percent": null,
+            "amount": 495.5
+          },
+          {
+            "description": "Impresión de folletos",
+            "quantity": 1,
+            "unit_price": 210.79,
+            "discount_percent": null,
+            "amount": 210.79
+          },
+          {
+            "description": "Mantenimiento mensual",
+            "quantity": 3,
+            "unit_price": 364.02,
+            "discount_percent": null,
+            "amount": 1092.06
+          },
+          {
+            "description": "Hora de consultoría",
+            "quantity": 3,
+            "unit_price": 403.86,
+            "discount_percent": null,
+            "amount": 1211.58
+          },
+          {
+            "description": "Hora de consultoría",
+            "quantity": 3,
+            "unit_price": 669.06,
+            "discount_percent": null,
+            "amount": 2007.18
+          },
+          {
+            "description": "Impresión de folletos",
+            "quantity": 1,
+            "unit_price": 254.94,
+            "discount_percent": null,
+            "amount": 254.94
+          },
+          {
+            "description": "Pintura interior",
+            "quantity": 2,
+            "unit_price": 828.58,
+            "discount_percent": null,
+            "amount": 1657.16
+          },
+          {
+            "description": "Desplazamiento",
+            "quantity": 5,
+            "unit_price": 375.78,
+            "discount_percent": null,
+            "amount": 1878.9
+          },
+          {
+            "description": "Impresión de folletos",
+            "quantity": 1,
+            "unit_price": 825.48,
+            "discount_percent": null,
+            "amount": 825.48
+          }
+        ],
+        "subtotal": 34256.76,
+        "discount_amount": 0,
+        "tax_amount": 3425.68,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 37682.44
+      }
+    },
+    {
+      "id": "syn-039",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": false,
+      "flagged": true,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.015972,
+      "ms": 3268,
+      "issues": [
+        {
+          "field": "supplier_tax_id",
+          "message": "invalid tax id IT4051825479"
+        }
+      ],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": false,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Idraulica Valli Srl",
+        "supplier_tax_id": "IT4051825479",
+        "invoice_number": "572/2023",
+        "issue_date": "2023-04-24",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Materiale di consumo",
+            "quantity": 3,
+            "unit_price": 123.21,
+            "discount_percent": null,
+            "amount": 369.63
+          },
+          {
+            "description": "Manutenzione impianto",
+            "quantity": 2,
+            "unit_price": 216.19,
+            "discount_percent": null,
+            "amount": 432.38
+          },
+          {
+            "description": "Licenza software annuale",
+            "quantity": 1,
+            "unit_price": 219.71,
+            "discount_percent": null,
+            "amount": 219.71
+          }
+        ],
+        "subtotal": 1021.72,
+        "discount_amount": 0,
+        "tax_amount": 224.78,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 1246.5
+      }
+    },
+    {
+      "id": "syn-040",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.010808,
+      "ms": 2445,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Café Rambla SL",
+        "supplier_tax_id": "53541332T",
+        "invoice_number": "548/2023",
+        "issue_date": "2023-02-04",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Pintura interior",
+            "quantity": 10,
+            "unit_price": 835.82,
+            "discount_percent": null,
+            "amount": 8358.2
+          },
+          {
+            "description": "Desplazamiento",
+            "quantity": 10,
+            "unit_price": 721.31,
+            "discount_percent": null,
+            "amount": 7213.1
+          }
+        ],
+        "subtotal": 15571.3,
+        "discount_amount": 0,
+        "tax_amount": 3269.97,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 18841.27
+      }
+    },
+    {
+      "id": "syn-042",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.018556,
+      "ms": 4482,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Talleres Montaner SA",
+        "supplier_tax_id": "B08537539",
+        "invoice_number": "575/2025",
+        "issue_date": "2025-09-14",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Desplazamiento",
+            "quantity": 5,
+            "unit_price": 835.52,
+            "discount_percent": 15,
+            "amount": 3550.96
+          },
+          {
+            "description": "Hora de consultoría",
+            "quantity": 1,
+            "unit_price": 144.17,
+            "discount_percent": null,
+            "amount": 144.17
+          },
+          {
+            "description": "Hora de consultoría",
+            "quantity": 10,
+            "unit_price": 58.25,
+            "discount_percent": null,
+            "amount": 582.5
+          },
+          {
+            "description": "Material de oficina",
+            "quantity": 1,
+            "unit_price": 441.87,
+            "discount_percent": null,
+            "amount": 441.87
+          }
+        ],
+        "subtotal": 4719.5,
+        "discount_amount": 0,
+        "tax_amount": 471.95,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 5191.45
+      }
+    },
+    {
+      "id": "syn-043",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.054516,
+      "ms": 13100,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Idraulica Valli Srl",
+        "supplier_tax_id": "IT69475402199",
+        "invoice_number": "779/2023",
+        "issue_date": "2023-09-12",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Licenza software annuale",
+            "quantity": 1,
+            "unit_price": 172.53,
+            "discount_percent": null,
+            "amount": 172.53
+          },
+          {
+            "description": "Stampa biglietti da visita",
+            "quantity": 10,
+            "unit_price": 345.67,
+            "discount_percent": null,
+            "amount": 3456.7
+          },
+          {
+            "description": "Consulenza oraria",
+            "quantity": 2,
+            "unit_price": 679.55,
+            "discount_percent": null,
+            "amount": 1359.1
+          },
+          {
+            "description": "Pannello in legno",
+            "quantity": 1,
+            "unit_price": 400.07,
+            "discount_percent": null,
+            "amount": 400.07
+          },
+          {
+            "description": "Consulenza oraria",
+            "quantity": 2,
+            "unit_price": 61.75,
+            "discount_percent": null,
+            "amount": 123.5
+          },
+          {
+            "description": "Pannello in legno",
+            "quantity": 2.5,
+            "unit_price": 525.14,
+            "discount_percent": null,
+            "amount": 1312.85
+          },
+          {
+            "description": "Manutenzione impianto",
+            "quantity": 3,
+            "unit_price": 379.57,
+            "discount_percent": null,
+            "amount": 1138.71
+          },
+          {
+            "description": "Trasferta",
+            "quantity": 1,
+            "unit_price": 717.49,
+            "discount_percent": null,
+            "amount": 717.49
+          },
+          {
+            "description": "Pannello in legno",
+            "quantity": 1,
+            "unit_price": 823.37,
+            "discount_percent": null,
+            "amount": 823.37
+          },
+          {
+            "description": "Stampa biglietti da visita",
+            "quantity": 5,
+            "unit_price": 387.08,
+            "discount_percent": null,
+            "amount": 1935.4
+          },
+          {
+            "description": "Stampa biglietti da visita",
+            "quantity": 10,
+            "unit_price": 192.77,
+            "discount_percent": null,
+            "amount": 1927.7
+          },
+          {
+            "description": "Manutenzione impianto",
+            "quantity": 5,
+            "unit_price": 834.4,
+            "discount_percent": null,
+            "amount": 4172
+          },
+          {
+            "description": "Pannello in legno",
+            "quantity": 2.5,
+            "unit_price": 161.69,
+            "discount_percent": null,
+            "amount": 404.23
+          },
+          {
+            "description": "Manutenzione impianto",
+            "quantity": 2,
+            "unit_price": 359.89,
+            "discount_percent": null,
+            "amount": 719.78
+          },
+          {
+            "description": "Pannello in legno",
+            "quantity": 2,
+            "unit_price": 460.06,
+            "discount_percent": null,
+            "amount": 920.12
+          },
+          {
+            "description": "Consulenza oraria",
+            "quantity": 10,
+            "unit_price": 408.45,
+            "discount_percent": null,
+            "amount": 4084.5
+          },
+          {
+            "description": "Licenza software annuale",
+            "quantity": 1,
+            "unit_price": 86.06,
+            "discount_percent": null,
+            "amount": 86.06
+          },
+          {
+            "description": "Licenza software annuale",
+            "quantity": 3,
+            "unit_price": 27.9,
+            "discount_percent": null,
+            "amount": 83.7
+          },
+          {
+            "description": "Materiale di consumo",
+            "quantity": 10,
+            "unit_price": 665.49,
+            "discount_percent": null,
+            "amount": 6654.9
+          },
+          {
+            "description": "Pannello in legno",
+            "quantity": 5,
+            "unit_price": 658.22,
+            "discount_percent": null,
+            "amount": 3291.1
+          },
+          {
+            "description": "Materiale di consumo",
+            "quantity": 1,
+            "unit_price": 718.51,
+            "discount_percent": null,
+            "amount": 718.51
+          },
+          {
+            "description": "Licenza software annuale",
+            "quantity": 3,
+            "unit_price": 871.82,
+            "discount_percent": null,
+            "amount": 2615.46
+          },
+          {
+            "description": "Materiale di consumo",
+            "quantity": 5,
+            "unit_price": 171.97,
+            "discount_percent": null,
+            "amount": 859.85
+          },
+          {
+            "description": "Pannello in legno",
+            "quantity": 1,
+            "unit_price": 795.54,
+            "discount_percent": null,
+            "amount": 795.54
+          },
+          {
+            "description": "Stampa biglietti da visita",
+            "quantity": 5,
+            "unit_price": 859.26,
+            "discount_percent": null,
+            "amount": 4296.3
+          },
+          {
+            "description": "Materiale di consumo",
+            "quantity": 1,
+            "unit_price": 650.73,
+            "discount_percent": null,
+            "amount": 650.73
+          },
+          {
+            "description": "Materiale di consumo",
+            "quantity": 1,
+            "unit_price": 143.21,
+            "discount_percent": null,
+            "amount": 143.21
+          },
+          {
+            "description": "Pannello in legno",
+            "quantity": 1,
+            "unit_price": 895.73,
+            "discount_percent": null,
+            "amount": 895.73
+          },
+          {
+            "description": "Materiale di consumo",
+            "quantity": 3,
+            "unit_price": 273.31,
+            "discount_percent": null,
+            "amount": 819.93
+          },
+          {
+            "description": "Stampa biglietti da visita",
+            "quantity": 3,
+            "unit_price": 226.72,
+            "discount_percent": null,
+            "amount": 680.16
+          },
+          {
+            "description": "Pannello in legno",
+            "quantity": 1,
+            "unit_price": 97.43,
+            "discount_percent": null,
+            "amount": 97.43
+          },
+          {
+            "description": "Consulenza oraria",
+            "quantity": 1,
+            "unit_price": 424.36,
+            "discount_percent": null,
+            "amount": 424.36
+          }
+        ],
+        "subtotal": 46781.02,
+        "discount_amount": 0,
+        "tax_amount": 10291.82,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 57072.84
+      }
+    },
+    {
+      "id": "syn-044",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.014892,
+      "ms": 3581,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Laura Peña Fotografía",
+        "supplier_tax_id": "B03172568",
+        "invoice_number": "954/2023",
+        "issue_date": "2023-04-25",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Sesión de fotos",
+            "quantity": 1,
+            "unit_price": 515.43,
+            "discount_percent": null,
+            "amount": 515.43
+          },
+          {
+            "description": "Pintura interior",
+            "quantity": 1,
+            "unit_price": 849.04,
+            "discount_percent": null,
+            "amount": 849.04
+          }
+        ],
+        "subtotal": 1364.47,
+        "discount_amount": 0,
+        "tax_amount": 136.45,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 1500.92
+      }
+    },
+    {
+      "id": "syn-047",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.021208,
+      "ms": 4926,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Idraulica Valli Srl",
+        "supplier_tax_id": "IT91897288550",
+        "invoice_number": "293/2024",
+        "issue_date": "2024-07-27",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Licenza software annuale",
+            "quantity": 1,
+            "unit_price": 7.5,
+            "discount_percent": null,
+            "amount": 7.5
+          },
+          {
+            "description": "Materiale di consumo",
+            "quantity": 2.5,
+            "unit_price": 773.38,
+            "discount_percent": null,
+            "amount": 1933.45
+          },
+          {
+            "description": "Stampa biglietti da visita",
+            "quantity": 2.5,
+            "unit_price": 771.47,
+            "discount_percent": null,
+            "amount": 1928.68
+          },
+          {
+            "description": "Stampa biglietti da visita",
+            "quantity": 2.5,
+            "unit_price": 373.51,
+            "discount_percent": 10,
+            "amount": 840.4
+          },
+          {
+            "description": "Stampa biglietti da visita",
+            "quantity": 2,
+            "unit_price": 304.53,
+            "discount_percent": 20,
+            "amount": 487.25
+          },
+          {
+            "description": "Pannello in legno",
+            "quantity": 2.5,
+            "unit_price": 32.59,
+            "discount_percent": 5,
+            "amount": 77.4
+          }
+        ],
+        "subtotal": 5274.68,
+        "discount_amount": 0,
+        "tax_amount": 527.47,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 5802.15
+      }
+    },
+    {
+      "id": "syn-048",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.062316,
+      "ms": 15140,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Talleres Montaner SA",
+        "supplier_tax_id": "50816695N",
+        "invoice_number": "276/2023",
+        "issue_date": "2023-04-27",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Desplazamiento",
+            "quantity": 1,
+            "unit_price": 661.86,
+            "discount_percent": null,
+            "amount": 661.86
+          },
+          {
+            "description": "Hora de consultoría",
+            "quantity": 3,
+            "unit_price": 611.23,
+            "discount_percent": null,
+            "amount": 1833.69
+          },
+          {
+            "description": "Desplazamiento",
+            "quantity": 5,
+            "unit_price": 326.13,
+            "discount_percent": null,
+            "amount": 1630.65
+          },
+          {
+            "description": "Hora de consultoría",
+            "quantity": 1,
+            "unit_price": 95.9,
+            "discount_percent": null,
+            "amount": 95.9
+          },
+          {
+            "description": "Mantenimiento mensual",
+            "quantity": 3,
+            "unit_price": 129.94,
+            "discount_percent": null,
+            "amount": 389.82
+          },
+          {
+            "description": "Desplazamiento",
+            "quantity": 0.5,
+            "unit_price": 106.8,
+            "discount_percent": null,
+            "amount": 53.4
+          },
+          {
+            "description": "Pintura interior",
+            "quantity": 1,
+            "unit_price": 101.1,
+            "discount_percent": null,
+            "amount": 101.1
+          },
+          {
+            "description": "Impresión de folletos",
+            "quantity": 1,
+            "unit_price": 707.18,
+            "discount_percent": null,
+            "amount": 707.18
+          },
+          {
+            "description": "Material de oficina",
+            "quantity": 1,
+            "unit_price": 229.62,
+            "discount_percent": null,
+            "amount": 229.62
+          },
+          {
+            "description": "Desplazamiento",
+            "quantity": 3,
+            "unit_price": 888.77,
+            "discount_percent": null,
+            "amount": 2666.31
+          },
+          {
+            "description": "Desplazamiento",
+            "quantity": 10,
+            "unit_price": 346.14,
+            "discount_percent": null,
+            "amount": 3461.4
+          },
+          {
+            "description": "Desplazamiento",
+            "quantity": 3,
+            "unit_price": 70.5,
+            "discount_percent": null,
+            "amount": 211.5
+          },
+          {
+            "description": "Hora de consultoría",
+            "quantity": 2.5,
+            "unit_price": 156.09,
+            "discount_percent": null,
+            "amount": 390.23
+          },
+          {
+            "description": "Impresión de folletos",
+            "quantity": 2.5,
+            "unit_price": 725.69,
+            "discount_percent": null,
+            "amount": 1814.23
+          },
+          {
+            "description": "Desplazamiento",
+            "quantity": 1,
+            "unit_price": 497.13,
+            "discount_percent": null,
+            "amount": 497.13
+          },
+          {
+            "description": "Hora de consultoría",
+            "quantity": 3,
+            "unit_price": 708.17,
+            "discount_percent": null,
+            "amount": 2124.51
+          },
+          {
+            "description": "Hora de consultoría",
+            "quantity": 0.5,
+            "unit_price": 392.96,
+            "discount_percent": null,
+            "amount": 196.48
+          },
+          {
+            "description": "Desplazamiento",
+            "quantity": 2.5,
+            "unit_price": 892.34,
+            "discount_percent": null,
+            "amount": 2230.85
+          },
+          {
+            "description": "Mantenimiento mensual",
+            "quantity": 10,
+            "unit_price": 567.91,
+            "discount_percent": null,
+            "amount": 5679.1
+          },
+          {
+            "description": "Sesión de fotos",
+            "quantity": 1,
+            "unit_price": 254.52,
+            "discount_percent": null,
+            "amount": 254.52
+          },
+          {
+            "description": "Sesión de fotos",
+            "quantity": 1,
+            "unit_price": 612.32,
+            "discount_percent": null,
+            "amount": 612.32
+          },
+          {
+            "description": "Pintura interior",
+            "quantity": 5,
+            "unit_price": 149.74,
+            "discount_percent": null,
+            "amount": 748.7
+          },
+          {
+            "description": "Sesión de fotos",
+            "quantity": 3,
+            "unit_price": 733.61,
+            "discount_percent": null,
+            "amount": 2200.83
+          },
+          {
+            "description": "Desplazamiento",
+            "quantity": 1,
+            "unit_price": 784.15,
+            "discount_percent": null,
+            "amount": 784.15
+          },
+          {
+            "description": "Desplazamiento",
+            "quantity": 1,
+            "unit_price": 175.75,
+            "discount_percent": null,
+            "amount": 175.75
+          },
+          {
+            "description": "Material de oficina",
+            "quantity": 2.5,
+            "unit_price": 243.19,
+            "discount_percent": null,
+            "amount": 607.98
+          },
+          {
+            "description": "Hora de consultoría",
+            "quantity": 1,
+            "unit_price": 565.25,
+            "discount_percent": null,
+            "amount": 565.25
+          },
+          {
+            "description": "Hora de consultoría",
+            "quantity": 1,
+            "unit_price": 481.35,
+            "discount_percent": null,
+            "amount": 481.35
+          },
+          {
+            "description": "Sesión de fotos",
+            "quantity": 1,
+            "unit_price": 172.23,
+            "discount_percent": null,
+            "amount": 172.23
+          },
+          {
+            "description": "Sesión de fotos",
+            "quantity": 1,
+            "unit_price": 155.59,
+            "discount_percent": null,
+            "amount": 155.59
+          },
+          {
+            "description": "Hora de consultoría",
+            "quantity": 2,
+            "unit_price": 288.3,
+            "discount_percent": null,
+            "amount": 576.6
+          },
+          {
+            "description": "Sesión de fotos",
+            "quantity": 5,
+            "unit_price": 597.65,
+            "discount_percent": null,
+            "amount": 2988.25
+          },
+          {
+            "description": "Sesión de fotos",
+            "quantity": 1,
+            "unit_price": 553.04,
+            "discount_percent": null,
+            "amount": 553.04
+          },
+          {
+            "description": "Hora de consultoría",
+            "quantity": 1,
+            "unit_price": 713.26,
+            "discount_percent": null,
+            "amount": 713.26
+          },
+          {
+            "description": "Desplazamiento",
+            "quantity": 2,
+            "unit_price": 329.69,
+            "discount_percent": null,
+            "amount": 659.38
+          },
+          {
+            "description": "Material de oficina",
+            "quantity": 1,
+            "unit_price": 59.98,
+            "discount_percent": null,
+            "amount": 59.98
+          },
+          {
+            "description": "Material de oficina",
+            "quantity": 2,
+            "unit_price": 652.05,
+            "discount_percent": null,
+            "amount": 1304.1
+          },
+          {
+            "description": "Sesión de fotos",
+            "quantity": 2.5,
+            "unit_price": 542.4,
+            "discount_percent": null,
+            "amount": 1356
+          },
+          {
+            "description": "Desplazamiento",
+            "quantity": 3,
+            "unit_price": 834.83,
+            "discount_percent": null,
+            "amount": 2504.49
+          },
+          {
+            "description": "Pintura interior",
+            "quantity": 1,
+            "unit_price": 794.1,
+            "discount_percent": null,
+            "amount": 794.1
+          }
+        ],
+        "subtotal": 43242.83,
+        "discount_amount": 0,
+        "tax_amount": 4324.28,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 47567.11
+      }
+    },
+    {
+      "id": "syn-049",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.018852,
+      "ms": 6014,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Panificio Rinaldi",
+        "supplier_tax_id": "IT56866432810",
+        "invoice_number": "392/2024",
+        "issue_date": "2024-01-17",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Licenza software annuale",
+            "quantity": 1,
+            "unit_price": 238.67,
+            "discount_percent": null,
+            "amount": 238.67
+          },
+          {
+            "description": "Licenza software annuale",
+            "quantity": 3,
+            "unit_price": 170.14,
+            "discount_percent": null,
+            "amount": 510.42
+          },
+          {
+            "description": "Trasferta",
+            "quantity": 1,
+            "unit_price": 607.3,
+            "discount_percent": null,
+            "amount": 607.3
+          },
+          {
+            "description": "Stampa biglietti da visita",
+            "quantity": 2.5,
+            "unit_price": 375.48,
+            "discount_percent": null,
+            "amount": 938.7
+          },
+          {
+            "description": "Licenza software annuale",
+            "quantity": 2,
+            "unit_price": 287.84,
+            "discount_percent": null,
+            "amount": 575.68
+          },
+          {
+            "description": "Pannello in legno",
+            "quantity": 0.5,
+            "unit_price": 443.37,
+            "discount_percent": null,
+            "amount": 221.69
+          }
+        ],
+        "subtotal": 3092.46,
+        "discount_amount": 0,
+        "tax_amount": 309.25,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 3401.71
+      }
+    }
+  ]
+}
