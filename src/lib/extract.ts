@@ -1,7 +1,7 @@
 import Anthropic from "@anthropic-ai/sdk";
 import { betaZodOutputFormat } from "@anthropic-ai/sdk/helpers/beta/zod";
 import { InvoiceSchema, type Invoice } from "./schema";
-import { validateInvoice, type Issue } from "./validate";
+import { reviewReason, validateInvoice, type Issue } from "./validate";
 
 const client = new Anthropic();
 
@@ -50,6 +50,7 @@ export async function extractRouted(data: string, mediaType: MediaType) {
   const last = attempts.at(-1)!;
   return {
     status: last.issues.length ? "needs_review" : "ok",
+    review_reason: reviewReason(attempts[0].issues, last.issues),
     invoice: last.invoice,
     issues: last.issues,
     attempts: attempts.map(({ model, issues, costUsd, ms }) => ({ model, issues, costUsd, ms })),

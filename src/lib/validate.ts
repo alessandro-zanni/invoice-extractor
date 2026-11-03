@@ -38,6 +38,16 @@ export function validateTaxId(raw: string): boolean | null {
   return null;
 }
 
+export type ReviewReason = "document_inconsistent" | "uncertain_extraction";
+
+// Why a document that still fails checks after escalation goes to review: if both models fail the
+// same checks, the document itself doesn't add up; otherwise the reading is uncertain.
+export function reviewReason(first: Issue[], last: Issue[]): ReviewReason | null {
+  if (!last.length) return null;
+  const fields = (xs: Issue[]) => xs.map((i) => i.field).sort().join();
+  return first !== last && fields(first) === fields(last) ? "document_inconsistent" : "uncertain_extraction";
+}
+
 export function validateInvoice(inv: Invoice, today = new Date()): Issue[] {
   const issues: Issue[] = [];
 

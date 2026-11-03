@@ -30,10 +30,11 @@ async function runCase(c: Case) {
   const data = Buffer.from(await Bun.file(`${c.dir}/${c.file}`).arrayBuffer()).toString("base64");
   const media = MEDIA[c.file.split(".").pop()!];
   const start = Date.now();
-  let invoice: Invoice | null, issues, costUsd, models: string[];
+  let invoice: Invoice | null, issues, costUsd, models: string[], reason: string | null = null;
   if (strategy === "routed") {
     const r = await extractRouted(data, media);
     ({ invoice, issues, costUsd } = r);
+    reason = r.review_reason;
     models = r.attempts.map((a) => a.model);
   } else {
     const a = await extract(data, media, strategy === "haiku" ? "claude-haiku-5-5" : "claude-opus-5-5");
@@ -41,7 +42,7 @@ async function runCase(c: Case) {
     models = [a.model];
   }
   const flagged = issues.length > 0;
-  return { id: c.id, scored: c.fields ?? [...FIELDS], expect_review: c.expect_review, flagged, models, costUsd, ms: Date.now() - start, issues, fields: scoreFields(invoice, c.invoice), invoice };
+  return { id: c.id, reason, scored: c.fields ?? [...FIELDS], expect_review: c.expect_review, flagged, models, costUsd, ms: Date.now() - start, issues, fields: scoreFields(invoice, c.invoice), invoice };
 }
 
 // Small worker pool: a few documents in flight, well under the rate limits.
@@ -78,6 +79,7 @@ const summary = {
   docs_all_fields_right: pct(ok.filter((r) => r.scored.every((f) => r.fields[f])).length, ok.length),
   printed_errors_caught: `${dirty.filter((r) => r.flagged).length}/${dirty.length}`,
   clean_docs_flagged: `${clean.filter((r) => r.flagged).length}/${clean.length}`,
+  review_reasons: strategy === "routed" ? Object.fromEntries(["document_inconsistent", "uncertain_extraction"].map((k) => [k, ok.filter((r) => r.reason === k).map((r) => r.id).join(" ")])) : undefined,
   escalated_to_opus: strategy === "routed" ? pct(ok.filter((r) => r.models.length > 1).length, ok.length) : undefined,
   cost_usd_total: +ok.reduce((s, r) => s + r.costUsd, 0).toFixed(4),
   cost_usd_per_doc: +(ok.reduce((s, r) => s + r.costUsd, 0) / (ok.length || 1)).toFixed(5),

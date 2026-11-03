@@ -1,6 +1,6 @@
 import { expect, test } from "bun:test";
 import type { Invoice } from "./schema";
-import { validateInvoice, validateTaxId } from "./validate";
+import { reviewReason, validateInvoice, validateTaxId } from "./validate";
 
 const ok: Invoice = {
   supplier_name: "Acme Srl",
@@ -48,6 +48,14 @@ test("document discount, rounding and tax-inclusive prices", () => {
   expect(validateInvoice({ ...ok, rounding: -0.01, total: 121.95 }, today)).toEqual([]);
   expect(validateInvoice({ ...ok, prices_include_tax: true, tax_amount: 18.03, total: 99.97 }, today)).toEqual([]);
   expect(validateInvoice({ ...ok, prices_include_tax: true, total: 121.96 }, today).map((i) => i.field)).toEqual(["total"]);
+});
+
+test("review reason", () => {
+  const total = [{ field: "total", message: "a" }];
+  expect(reviewReason(total, [])).toBe(null);
+  expect(reviewReason(total, [{ field: "total", message: "b" }])).toBe("document_inconsistent");
+  expect(reviewReason(total, [{ field: "subtotal", message: "c" }])).toBe("uncertain_extraction");
+  expect(reviewReason(total, total)).toBe("uncertain_extraction"); // same attempt: nobody double-checked
 });
 
 test("tax ids", () => {
