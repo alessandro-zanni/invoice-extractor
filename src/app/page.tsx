@@ -7,6 +7,9 @@ import { UploadForm } from "@/components/upload-form";
 import type { Invoice } from "@/lib/schema";
 import { createClient } from "@/lib/supabase/server";
 
+// Per-user data behind login: nothing to prerender, render on request.
+export const instant = false;
+
 export default async function Home() {
   const supabase = await createClient();
   const { data: docs } = await supabase

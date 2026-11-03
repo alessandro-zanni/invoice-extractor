@@ -12,6 +12,9 @@ import type { Issue } from "@/lib/validate";
 
 const EMPTY_LINE = { description: "", quantity: 1, unit_price: 0, discount_percent: null, amount: 0 };
 
+// Per-user data behind login: nothing to prerender, render on request.
+export const instant = false;
+
 export default async function DocumentPage({ params }: PageProps<"/documents/[id]">) {
   const { id } = await params;
   const supabase = await createClient();
