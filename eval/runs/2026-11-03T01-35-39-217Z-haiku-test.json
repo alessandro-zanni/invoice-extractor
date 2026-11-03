@@ -1,0 +1,3206 @@
+{
+  "summary": {
+    "strategy": "haiku",
+    "split": "test",
+    "docs": 46,
+    "errors": 0,
+    "field_accuracy": {
+      "supplier_name": "96.3% (27)",
+      "supplier_tax_id": "88.2% (17)",
+      "invoice_number": "96.3% (27)",
+      "issue_date": "97.3% (37)",
+      "currency": "100.0% (25)",
+      "subtotal": "100.0% (17)",
+      "tax_amount": "100.0% (17)",
+      "total": "95.7% (46)",
+      "lines": "92.3% (26)"
+    },
+    "docs_all_fields_right": "87.0%",
+    "printed_errors_caught": "2/2",
+    "clean_docs_flagged": "1/15",
+    "cost_usd_total": 0.0213,
+    "cost_usd_per_doc": 0.00046,
+    "latency_ms_p50": 2182,
+    "latency_ms_p95": 4989
+  },
+  "results": [
+    {
+      "id": "cord-001",
+      "scored": [
+        "total",
+        "lines"
+      ],
+      "expect_review": null,
+      "flagged": true,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.0005067,
+      "ms": 5543,
+      "issues": [
+        {
+          "field": "lines.0.amount",
+          "message": "2 × 60 − 0% ≠ 60"
+        },
+        {
+          "field": "total",
+          "message": "60 − 60 + 0 + 0 ≠ 60"
+        }
+      ],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": false,
+        "total": false,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "CGV",
+        "supplier_tax_id": null,
+        "invoice_number": null,
+        "issue_date": null,
+        "currency": "IDR",
+        "lines": [
+          {
+            "description": "-TICKET CP",
+            "quantity": 2,
+            "unit_price": 60,
+            "discount_percent": null,
+            "amount": 60
+          }
+        ],
+        "subtotal": 60,
+        "discount_amount": 60,
+        "tax_amount": 5.455,
+        "prices_include_tax": true,
+        "rounding": 0,
+        "total": 60
+      }
+    },
+    {
+      "id": "cord-005",
+      "scored": [
+        "total",
+        "lines"
+      ],
+      "expect_review": null,
+      "flagged": false,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.0006435,
+      "ms": 5671,
+      "issues": [],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "unknown",
+        "supplier_tax_id": null,
+        "invoice_number": null,
+        "issue_date": null,
+        "currency": "IDR",
+        "lines": [
+          {
+            "description": "ICE BLACKCOFFEE",
+            "quantity": 2,
+            "unit_price": 41000,
+            "discount_percent": null,
+            "amount": 82000
+          },
+          {
+            "description": "AVOCADO COFFEE",
+            "quantity": 1,
+            "unit_price": 61000,
+            "discount_percent": null,
+            "amount": 61000
+          },
+          {
+            "description": "CHIKEN KATSU FF",
+            "quantity": 1,
+            "unit_price": 51000,
+            "discount_percent": null,
+            "amount": 51000
+          }
+        ],
+        "subtotal": 194000,
+        "discount_amount": 19400,
+        "tax_amount": 0,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 174600
+      }
+    },
+    {
+      "id": "cord-009",
+      "scored": [
+        "total",
+        "lines"
+      ],
+      "expect_review": null,
+      "flagged": false,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.0003985,
+      "ms": 2478,
+      "issues": [],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "null",
+        "supplier_tax_id": null,
+        "invoice_number": null,
+        "issue_date": null,
+        "currency": "IDR",
+        "lines": [
+          {
+            "description": "1 [REG] BLACK SAKURA",
+            "quantity": 1,
+            "unit_price": 45455,
+            "discount_percent": null,
+            "amount": 45455
+          },
+          {
+            "description": "1 COOKIE DOH SAUCES",
+            "quantity": 1,
+            "unit_price": 0,
+            "discount_percent": null,
+            "amount": 0
+          },
+          {
+            "description": "1 NATA DE COCO",
+            "quantity": 1,
+            "unit_price": 0,
+            "discount_percent": null,
+            "amount": 0
+          }
+        ],
+        "subtotal": 45455,
+        "discount_amount": 0,
+        "tax_amount": 4545,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 50000
+      }
+    },
+    {
+      "id": "cord-014",
+      "scored": [
+        "total",
+        "lines"
+      ],
+      "expect_review": null,
+      "flagged": false,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.0006015,
+      "ms": 4989,
+      "issues": [],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "A FUNG",
+        "supplier_tax_id": null,
+        "invoice_number": null,
+        "issue_date": null,
+        "currency": "IDR",
+        "lines": [
+          {
+            "description": "BASO KUAH",
+            "quantity": 1,
+            "unit_price": 43636,
+            "discount_percent": null,
+            "amount": 43636
+          },
+          {
+            "description": "A.MINERAL GELAS",
+            "quantity": 1,
+            "unit_price": 3000,
+            "discount_percent": null,
+            "amount": 3000
+          }
+        ],
+        "subtotal": 46636,
+        "discount_amount": 0,
+        "tax_amount": 4664,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 51300
+      }
+    },
+    {
+      "id": "cord-018",
+      "scored": [
+        "total",
+        "lines"
+      ],
+      "expect_review": null,
+      "flagged": false,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.0004793,
+      "ms": 1979,
+      "issues": [],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "삼진어묵",
+        "supplier_tax_id": null,
+        "invoice_number": null,
+        "issue_date": null,
+        "currency": "IDR",
+        "lines": [
+          {
+            "description": "Goblin's Mace",
+            "quantity": 1,
+            "unit_price": 25000,
+            "discount_percent": null,
+            "amount": 25000
+          },
+          {
+            "description": "Mozarella Hot Dog",
+            "quantity": 2,
+            "unit_price": 19000,
+            "discount_percent": null,
+            "amount": 38000
+          },
+          {
+            "description": "Chili Pepper Croquette",
+            "quantity": 1,
+            "unit_price": 14000,
+            "discount_percent": null,
+            "amount": 14000
+          },
+          {
+            "description": "Cheese Croquette",
+            "quantity": 1,
+            "unit_price": 14000,
+            "discount_percent": null,
+            "amount": 14000
+          },
+          {
+            "description": "Plastik Amook",
+            "quantity": 1,
+            "unit_price": 0,
+            "discount_percent": null,
+            "amount": 0
+          },
+          {
+            "description": "Plastik Putih Take Away",
+            "quantity": 1,
+            "unit_price": 0,
+            "discount_percent": null,
+            "amount": 0
+          }
+        ],
+        "subtotal": 91000,
+        "discount_amount": 0,
+        "tax_amount": 0,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 91000
+      }
+    },
+    {
+      "id": "cord-019",
+      "scored": [
+        "total",
+        "lines"
+      ],
+      "expect_review": null,
+      "flagged": false,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.0002669,
+      "ms": 1943,
+      "issues": [],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "null",
+        "supplier_tax_id": null,
+        "invoice_number": null,
+        "issue_date": null,
+        "currency": "IDR",
+        "lines": [
+          {
+            "description": "Propolis Cair 1",
+            "quantity": 1,
+            "unit_price": 156000,
+            "discount_percent": null,
+            "amount": 156000
+          }
+        ],
+        "subtotal": 156000,
+        "discount_amount": 0,
+        "tax_amount": 0,
+        "prices_include_tax": true,
+        "rounding": 0,
+        "total": 156000
+      }
+    },
+    {
+      "id": "cord-023",
+      "scored": [
+        "total",
+        "lines"
+      ],
+      "expect_review": null,
+      "flagged": true,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.0003865,
+      "ms": 1575,
+      "issues": [
+        {
+          "field": "lines.0.amount",
+          "message": "2 × 20000 − 0% ≠ 20000"
+        },
+        {
+          "field": "lines.1.amount",
+          "message": "2 × 20000 − 0% ≠ 20000"
+        }
+      ],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": false,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Thao Lee Juice",
+        "supplier_tax_id": null,
+        "invoice_number": null,
+        "issue_date": null,
+        "currency": "VND",
+        "lines": [
+          {
+            "description": "2 [MD] SOFT STEAMED CHEESEC",
+            "quantity": 2,
+            "unit_price": 20000,
+            "discount_percent": null,
+            "amount": 20000
+          },
+          {
+            "description": "2 [MD] SOFT STEAMED CHOCOCA",
+            "quantity": 2,
+            "unit_price": 20000,
+            "discount_percent": null,
+            "amount": 20000
+          }
+        ],
+        "subtotal": 40000,
+        "discount_amount": 0,
+        "tax_amount": 0,
+        "prices_include_tax": true,
+        "rounding": 0,
+        "total": 40000
+      }
+    },
+    {
+      "id": "cord-027",
+      "scored": [
+        "total",
+        "lines"
+      ],
+      "expect_review": null,
+      "flagged": false,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.0006839,
+      "ms": 4429,
+      "issues": [],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "Bakmi Bangka",
+        "supplier_tax_id": null,
+        "invoice_number": null,
+        "issue_date": null,
+        "currency": "IDR",
+        "lines": [
+          {
+            "description": "Cap Cay Nasi Cap Cay Porsi Besar",
+            "quantity": 1,
+            "unit_price": 65000,
+            "discount_percent": null,
+            "amount": 65000
+          },
+          {
+            "description": "Teh Tawar",
+            "quantity": 2,
+            "unit_price": 4000,
+            "discount_percent": null,
+            "amount": 8000
+          },
+          {
+            "description": "Fu Yung Hai",
+            "quantity": 1,
+            "unit_price": 65000,
+            "discount_percent": null,
+            "amount": 65000
+          }
+        ],
+        "subtotal": 138000,
+        "discount_amount": 0,
+        "tax_amount": 0,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 138000
+      }
+    },
+    {
+      "id": "cord-028",
+      "scored": [
+        "total",
+        "lines"
+      ],
+      "expect_review": null,
+      "flagged": false,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.0003725,
+      "ms": 2182,
+      "issues": [],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "FOODPOINT",
+        "supplier_tax_id": null,
+        "invoice_number": null,
+        "issue_date": null,
+        "currency": "IDR",
+        "lines": [
+          {
+            "description": "PKT AYAM",
+            "quantity": 1,
+            "unit_price": 33000,
+            "discount_percent": null,
+            "amount": 33000
+          },
+          {
+            "description": "GULAI OTAK",
+            "quantity": 1,
+            "unit_price": 23000,
+            "discount_percent": null,
+            "amount": 23000
+          }
+        ],
+        "subtotal": 56000,
+        "discount_amount": 0,
+        "tax_amount": 5600,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 61600
+      }
+    },
+    {
+      "id": "fat-001",
+      "scored": [
+        "total",
+        "currency",
+        "issue_date",
+        "invoice_number"
+      ],
+      "expect_review": null,
+      "flagged": true,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.0003085,
+      "ms": 1430,
+      "issues": [
+        {
+          "field": "total",
+          "message": "438.7 − 9.39 + 0 + 0 ≠ 441.14"
+        },
+        {
+          "field": "issue_date",
+          "message": "implausible date 1994-01-03"
+        }
+      ],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "Mclean-Cochran",
+        "supplier_tax_id": null,
+        "invoice_number": "INV/30-14/832",
+        "issue_date": "1994-01-03",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Prove amount sell.",
+            "quantity": 1,
+            "unit_price": 64.54,
+            "discount_percent": null,
+            "amount": 64.54
+          },
+          {
+            "description": "Assume against.",
+            "quantity": 6,
+            "unit_price": 62.36,
+            "discount_percent": null,
+            "amount": 374.16
+          }
+        ],
+        "subtotal": 438.7,
+        "discount_amount": 9.39,
+        "tax_amount": 0,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 441.14
+      }
+    },
+    {
+      "id": "fat-005",
+      "scored": [
+        "total",
+        "currency",
+        "issue_date",
+        "invoice_number"
+      ],
+      "expect_review": null,
+      "flagged": true,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.000351,
+      "ms": 1754,
+      "issues": [
+        {
+          "field": "total",
+          "message": "153.51 − 1.7 + 0 + 0 ≠ 156.25"
+        }
+      ],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "Mclean-Cochran",
+        "supplier_tax_id": null,
+        "invoice_number": "INV07820771",
+        "issue_date": "2015-12-23",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Middle teach.",
+            "quantity": 1,
+            "unit_price": 22.02,
+            "discount_percent": null,
+            "amount": 22.02
+          },
+          {
+            "description": "Away situation.",
+            "quantity": 3,
+            "unit_price": 33.31,
+            "discount_percent": null,
+            "amount": 99.93
+          },
+          {
+            "description": "This firm.",
+            "quantity": 3,
+            "unit_price": 8.91,
+            "discount_percent": null,
+            "amount": 26.73
+          },
+          {
+            "description": "Author student.",
+            "quantity": 1,
+            "unit_price": 4.83,
+            "discount_percent": null,
+            "amount": 4.83
+          }
+        ],
+        "subtotal": 153.51,
+        "discount_amount": 1.7,
+        "tax_amount": 0,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 156.25
+      }
+    },
+    {
+      "id": "fat-009",
+      "scored": [
+        "total",
+        "currency",
+        "issue_date",
+        "invoice_number"
+      ],
+      "expect_review": null,
+      "flagged": true,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.000377,
+      "ms": 2396,
+      "issues": [
+        {
+          "field": "total",
+          "message": "631.62 − 9.54 + 0 + 0 ≠ 646.66"
+        }
+      ],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "Mclean-Cochran",
+        "supplier_tax_id": null,
+        "invoice_number": "4Y4M8d-044",
+        "issue_date": "2002-02-26",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "During article.",
+            "quantity": 4,
+            "unit_price": 90.74,
+            "discount_percent": null,
+            "amount": 362.96
+          },
+          {
+            "description": "Agreement until economy.",
+            "quantity": 4,
+            "unit_price": 35.14,
+            "discount_percent": null,
+            "amount": 140.56
+          },
+          {
+            "description": "As each safe.",
+            "quantity": 6,
+            "unit_price": 1.46,
+            "discount_percent": null,
+            "amount": 8.76
+          },
+          {
+            "description": "Trade these.",
+            "quantity": 1,
+            "unit_price": 94.29,
+            "discount_percent": null,
+            "amount": 94.29
+          },
+          {
+            "description": "Role executive.",
+            "quantity": 1,
+            "unit_price": 25.05,
+            "discount_percent": null,
+            "amount": 25.05
+          }
+        ],
+        "subtotal": 631.62,
+        "discount_amount": 9.54,
+        "tax_amount": 0,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 646.66
+      }
+    },
+    {
+      "id": "fat-010",
+      "scored": [
+        "total",
+        "currency",
+        "issue_date",
+        "invoice_number"
+      ],
+      "expect_review": null,
+      "flagged": true,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.0003035,
+      "ms": 2121,
+      "issues": [
+        {
+          "field": "total",
+          "message": "114.89 − 1.39 + 0 + 0 ≠ 119.26"
+        }
+      ],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "Mclean-Cochran",
+        "supplier_tax_id": null,
+        "invoice_number": "0923-334",
+        "issue_date": "2000-02-29",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Action claim.",
+            "quantity": 1,
+            "unit_price": 50.06,
+            "discount_percent": null,
+            "amount": 50.06
+          },
+          {
+            "description": "Her college.",
+            "quantity": 3,
+            "unit_price": 21.61,
+            "discount_percent": null,
+            "amount": 64.83
+          }
+        ],
+        "subtotal": 114.89,
+        "discount_amount": 1.39,
+        "tax_amount": 0,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 119.26
+      }
+    },
+    {
+      "id": "fat-014",
+      "scored": [
+        "total",
+        "currency",
+        "issue_date",
+        "invoice_number"
+      ],
+      "expect_review": null,
+      "flagged": true,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.000328,
+      "ms": 1959,
+      "issues": [
+        {
+          "field": "total",
+          "message": "793.06 − 32.28 + 0 + 0 ≠ 791.65"
+        }
+      ],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "Mclean-Cochran",
+        "supplier_tax_id": null,
+        "invoice_number": "1218-245",
+        "issue_date": "2017-01-08",
+        "currency": "USD",
+        "lines": [
+          {
+            "description": "Interview move fast.",
+            "quantity": 5,
+            "unit_price": 64.06,
+            "discount_percent": null,
+            "amount": 320.3
+          },
+          {
+            "description": "Public list.",
+            "quantity": 4,
+            "unit_price": 90.45,
+            "discount_percent": null,
+            "amount": 361.8
+          },
+          {
+            "description": "Point protect carry.",
+            "quantity": 4,
+            "unit_price": 27.74,
+            "discount_percent": null,
+            "amount": 110.96
+          }
+        ],
+        "subtotal": 793.06,
+        "discount_amount": 32.28,
+        "tax_amount": 0,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 791.65
+      }
+    },
+    {
+      "id": "fat-018",
+      "scored": [
+        "total",
+        "currency",
+        "issue_date",
+        "invoice_number"
+      ],
+      "expect_review": null,
+      "flagged": true,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.000518,
+      "ms": 3650,
+      "issues": [
+        {
+          "field": "total",
+          "message": "780.33 − 30.67 + 0 + 0 ≠ 800.81"
+        },
+        {
+          "field": "issue_date",
+          "message": "implausible date 1995-09-02"
+        }
+      ],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "Mclean-Cochran",
+        "supplier_tax_id": null,
+        "invoice_number": "5852-411",
+        "issue_date": "1995-09-02",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Hour choose scene.",
+            "quantity": 2,
+            "unit_price": 85.7,
+            "discount_percent": null,
+            "amount": 171.4
+          },
+          {
+            "description": "Lay sign speak.",
+            "quantity": 2,
+            "unit_price": 26.07,
+            "discount_percent": null,
+            "amount": 52.14
+          },
+          {
+            "description": "Vote seek.",
+            "quantity": 2,
+            "unit_price": 43.27,
+            "discount_percent": null,
+            "amount": 86.54
+          },
+          {
+            "description": "Central stay program.",
+            "quantity": 5,
+            "unit_price": 74.53,
+            "discount_percent": null,
+            "amount": 372.65
+          },
+          {
+            "description": "Class fly.",
+            "quantity": 5,
+            "unit_price": 19.52,
+            "discount_percent": null,
+            "amount": 97.6
+          }
+        ],
+        "subtotal": 780.33,
+        "discount_amount": 30.67,
+        "tax_amount": 0,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 800.81
+      }
+    },
+    {
+      "id": "fat-019",
+      "scored": [
+        "total",
+        "currency",
+        "issue_date",
+        "invoice_number"
+      ],
+      "expect_review": null,
+      "flagged": true,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.000349,
+      "ms": 1827,
+      "issues": [
+        {
+          "field": "total",
+          "message": "369.18 − 14.99 + 0 + 0 ≠ 375.97"
+        }
+      ],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "Mclean-Cochran",
+        "supplier_tax_id": null,
+        "invoice_number": "1801-830",
+        "issue_date": "2022-04-27",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "More partner new.",
+            "quantity": 1,
+            "unit_price": 60.67,
+            "discount_percent": null,
+            "amount": 60.67
+          },
+          {
+            "description": "She camera school.",
+            "quantity": 3,
+            "unit_price": 20.39,
+            "discount_percent": null,
+            "amount": 61.17
+          },
+          {
+            "description": "At young important.",
+            "quantity": 5,
+            "unit_price": 20.86,
+            "discount_percent": null,
+            "amount": 104.3
+          },
+          {
+            "description": "During.",
+            "quantity": 2,
+            "unit_price": 71.52,
+            "discount_percent": null,
+            "amount": 143.04
+          }
+        ],
+        "subtotal": 369.18,
+        "discount_amount": 14.99,
+        "tax_amount": 0,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 375.97
+      }
+    },
+    {
+      "id": "fat-023",
+      "scored": [
+        "total",
+        "issue_date",
+        "invoice_number"
+      ],
+      "expect_review": null,
+      "flagged": true,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.000304,
+      "ms": 2018,
+      "issues": [
+        {
+          "field": "total",
+          "message": "132 − 2.1 + 0 + 0 ≠ 134.64"
+        }
+      ],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": false,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "Mclean-Cochran",
+        "supplier_tax_id": null,
+        "invoice_number": "INV92194248",
+        "issue_date": "2016-12-15",
+        "currency": "USD",
+        "lines": [
+          {
+            "description": "Inside for.",
+            "quantity": 2,
+            "unit_price": 61.89,
+            "discount_percent": null,
+            "amount": 123.78
+          },
+          {
+            "description": "Forget for plant.",
+            "quantity": 2,
+            "unit_price": 4.11,
+            "discount_percent": null,
+            "amount": 8.22
+          }
+        ],
+        "subtotal": 132,
+        "discount_amount": 2.1,
+        "tax_amount": 0,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 134.64
+      }
+    },
+    {
+      "id": "fat-027",
+      "scored": [
+        "total",
+        "issue_date",
+        "invoice_number"
+      ],
+      "expect_review": null,
+      "flagged": true,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.0003305,
+      "ms": 2716,
+      "issues": [
+        {
+          "field": "subtotal",
+          "message": "lines sum to 392.09, subtotal is 391.09"
+        },
+        {
+          "field": "total",
+          "message": "391.09 − 6.98 + 0 + 0 ≠ 398.16"
+        }
+      ],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": false,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "Mclean-Cochran",
+        "supplier_tax_id": null,
+        "invoice_number": "1Y7M8d-444",
+        "issue_date": "2018-07-06",
+        "currency": "USD",
+        "lines": [
+          {
+            "description": "Have good book.",
+            "quantity": 4,
+            "unit_price": 52.22,
+            "discount_percent": null,
+            "amount": 208.88
+          },
+          {
+            "description": "Two reach imagine.",
+            "quantity": 3,
+            "unit_price": 30.45,
+            "discount_percent": null,
+            "amount": 91.35
+          },
+          {
+            "description": "High because growth.",
+            "quantity": 2,
+            "unit_price": 45.93,
+            "discount_percent": null,
+            "amount": 91.86
+          }
+        ],
+        "subtotal": 391.09,
+        "discount_amount": 6.98,
+        "tax_amount": 0,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 398.16
+      }
+    },
+    {
+      "id": "fat-028",
+      "scored": [
+        "total",
+        "currency",
+        "issue_date",
+        "invoice_number"
+      ],
+      "expect_review": null,
+      "flagged": true,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.000304,
+      "ms": 1791,
+      "issues": [
+        {
+          "field": "total",
+          "message": "90.68 − 1.38 + 0 + 0 ≠ 90.4"
+        }
+      ],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "Mclean-Cochran",
+        "supplier_tax_id": null,
+        "invoice_number": "INV30327603",
+        "issue_date": "2016-04-09",
+        "currency": "USD",
+        "lines": [
+          {
+            "description": "Effort total deep.",
+            "quantity": 1,
+            "unit_price": 16.75,
+            "discount_percent": null,
+            "amount": 16.75
+          },
+          {
+            "description": "Effort around.",
+            "quantity": 1,
+            "unit_price": 73.93,
+            "discount_percent": null,
+            "amount": 73.93
+          }
+        ],
+        "subtotal": 90.68,
+        "discount_amount": 1.38,
+        "tax_amount": 0,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 90.4
+      }
+    },
+    {
+      "id": "sroie-001",
+      "scored": [
+        "total",
+        "issue_date",
+        "supplier_name"
+      ],
+      "expect_review": null,
+      "flagged": false,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.00029020000000000006,
+      "ms": 1847,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": false,
+        "invoice_number": false,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "BOOK TA K (TAMAN DAYA) SDN BHD",
+        "supplier_tax_id": "789417-W",
+        "invoice_number": "TD01167104",
+        "issue_date": "2018-12-25",
+        "currency": "MYR",
+        "lines": [
+          {
+            "description": "KF MODELLING CLAY KIDDY FISH",
+            "quantity": 1,
+            "unit_price": 9,
+            "discount_percent": null,
+            "amount": 9
+          }
+        ],
+        "subtotal": 9,
+        "discount_amount": 0,
+        "tax_amount": 0,
+        "prices_include_tax": true,
+        "rounding": 0,
+        "total": 9
+      }
+    },
+    {
+      "id": "sroie-005",
+      "scored": [
+        "total",
+        "issue_date",
+        "supplier_name"
+      ],
+      "expect_review": null,
+      "flagged": false,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.00044970000000000003,
+      "ms": 2358,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": false,
+        "invoice_number": false,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "MR D.I.Y. (M) SDN BHD",
+        "supplier_tax_id": "002671-D",
+        "invoice_number": "T2 R000002902",
+        "issue_date": "2018-11-18",
+        "currency": "MYR",
+        "lines": [
+          {
+            "description": "KILAT AUTO ECO WASH & SHINE ES1000 1L WA45-/2A - 12 9555916500133",
+            "quantity": 1,
+            "unit_price": 3.11,
+            "discount_percent": null,
+            "amount": 3.11
+          },
+          {
+            "description": "KILAT ECO AUTO WASH &WAX EW-1000-1L WA44-A - 12 9555916500126",
+            "quantity": 1,
+            "unit_price": 4.62,
+            "discount_percent": null,
+            "amount": 4.62
+          },
+          {
+            "description": "WD40 277ml MOQ 2572 WA43-A - 24 079567600084",
+            "quantity": 1,
+            "unit_price": 11.23,
+            "discount_percent": null,
+            "amount": 11.23
+          },
+          {
+            "description": "KLEENSO AJAIB 99 SERAI WANYI 900G WD00 - 15 9555651400385",
+            "quantity": 1,
+            "unit_price": 7.45,
+            "discount_percent": null,
+            "amount": 7.45
+          },
+          {
+            "description": "HANDKERCHIEF 71386#2PCS PI12PJ11-4 - 6/300 9090822",
+            "quantity": 1,
+            "unit_price": 4.5,
+            "discount_percent": null,
+            "amount": 4.5
+          }
+        ],
+        "subtotal": 30.91,
+        "discount_amount": 0,
+        "tax_amount": 0,
+        "prices_include_tax": true,
+        "rounding": -0.01,
+        "total": 30.9
+      }
+    },
+    {
+      "id": "sroie-009",
+      "scored": [
+        "total",
+        "issue_date",
+        "supplier_name"
+      ],
+      "expect_review": null,
+      "flagged": false,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.0008744000000000001,
+      "ms": 4640,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": false,
+        "invoice_number": false,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": false,
+        "total": false,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "PERNIAGAAN ZHENG HUI",
+        "supplier_tax_id": "JM0325955-V",
+        "invoice_number": "CS00082652",
+        "issue_date": "2018-02-12",
+        "currency": "MYR",
+        "lines": [
+          {
+            "description": "8239 SR: 11\" PROWESS H/DUTY SILICONE GUN G-D2",
+            "quantity": 1,
+            "unit_price": 15,
+            "discount_percent": null,
+            "amount": 15
+          },
+          {
+            "description": "855075109147 SR: XTRASEAL RTV ACETIC SILICONE SA-107",
+            "quantity": 3,
+            "unit_price": 7,
+            "discount_percent": null,
+            "amount": 21
+          },
+          {
+            "description": "9744 SR: CENTRAL PUNCH SET 3PCS - 1/4\",5/32\",1/4\"",
+            "quantity": 1,
+            "unit_price": 18,
+            "discount_percent": null,
+            "amount": 18
+          },
+          {
+            "description": "12525 SR: 24\" MARKSMAN PIPE WRENCH",
+            "quantity": 1,
+            "unit_price": 50,
+            "discount_percent": null,
+            "amount": 50
+          },
+          {
+            "description": "2016 SR: PVC WIRE TAPE 1PC X 7YD",
+            "quantity": 3,
+            "unit_price": 0.7,
+            "discount_percent": null,
+            "amount": 2.1
+          }
+        ],
+        "subtotal": 106.1,
+        "discount_amount": 0,
+        "tax_amount": 6.37,
+        "prices_include_tax": false,
+        "rounding": -0.02,
+        "total": 112.46
+      }
+    },
+    {
+      "id": "sroie-010",
+      "scored": [
+        "total",
+        "issue_date",
+        "supplier_name"
+      ],
+      "expect_review": null,
+      "flagged": false,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.0004232,
+      "ms": 1987,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": false,
+        "invoice_number": false,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": false,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "Gerbang Alaf Restaurants Sdn Bhd",
+        "supplier_tax_id": "000504664064",
+        "invoice_number": "003281900229170",
+        "issue_date": "2018-01-18",
+        "currency": "MYR",
+        "lines": [
+          {
+            "description": "ChicMcMuffin",
+            "quantity": 2,
+            "unit_price": 5.5,
+            "discount_percent": null,
+            "amount": 11
+          },
+          {
+            "description": "M Porridge",
+            "quantity": 1,
+            "unit_price": 5.6,
+            "discount_percent": null,
+            "amount": 5.6
+          },
+          {
+            "description": "BM 2HotCakes",
+            "quantity": 1,
+            "unit_price": 10,
+            "discount_percent": null,
+            "amount": 10
+          },
+          {
+            "description": "L Coke",
+            "quantity": 1,
+            "unit_price": 0,
+            "discount_percent": null,
+            "amount": 0
+          }
+        ],
+        "subtotal": 26.6,
+        "discount_amount": 0,
+        "tax_amount": 1.51,
+        "prices_include_tax": true,
+        "rounding": 0,
+        "total": 26.6
+      }
+    },
+    {
+      "id": "sroie-014",
+      "scored": [
+        "total",
+        "issue_date",
+        "supplier_name"
+      ],
+      "expect_review": null,
+      "flagged": false,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.0003593,
+      "ms": 2192,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": false,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "RESTORAN HASSANBISTRO",
+        "supplier_tax_id": null,
+        "invoice_number": "C1-0170778",
+        "issue_date": "2017-12-28",
+        "currency": "MYR",
+        "lines": [
+          {
+            "description": "MAKANAN",
+            "quantity": 1,
+            "unit_price": 15,
+            "discount_percent": null,
+            "amount": 15
+          }
+        ],
+        "subtotal": 15,
+        "discount_amount": 0,
+        "tax_amount": 0,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 15
+      }
+    },
+    {
+      "id": "sroie-018",
+      "scored": [
+        "total",
+        "issue_date",
+        "supplier_name"
+      ],
+      "expect_review": null,
+      "flagged": false,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.0004893,
+      "ms": 2456,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": false,
+        "invoice_number": false,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": false,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "LIGHTROOM GALLERY SDN BHD",
+        "supplier_tax_id": "000584089600",
+        "invoice_number": "LCN00211",
+        "issue_date": "2017-11-20",
+        "currency": "MYR",
+        "lines": [
+          {
+            "description": "YT51775 1059 18W SQ WW BK SUR LED LIGHT 1059 SQUARE BLACK FRAME",
+            "quantity": 2,
+            "unit_price": 18.77,
+            "discount_percent": null,
+            "amount": 37.55
+          }
+        ],
+        "subtotal": 37.55,
+        "discount_amount": 0,
+        "tax_amount": 2.25,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 39.8
+      }
+    },
+    {
+      "id": "sroie-019",
+      "scored": [
+        "total",
+        "issue_date",
+        "supplier_name"
+      ],
+      "expect_review": null,
+      "flagged": false,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.0004663,
+      "ms": 2090,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": false,
+        "invoice_number": false,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": false,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "LIGHTROOM GALLERY SDN BHD",
+        "supplier_tax_id": "000584089600",
+        "invoice_number": "LCS03908",
+        "issue_date": "2017-12-20",
+        "currency": "MYR",
+        "lines": [
+          {
+            "description": "CH50514 T5 JOINT 2PIN 2PCS",
+            "quantity": 1,
+            "unit_price": 2.83,
+            "discount_percent": null,
+            "amount": 2.83
+          },
+          {
+            "description": "YT51874 YE30 BK 7W WW LED TRACK LIGHT",
+            "quantity": 2,
+            "unit_price": 33.02,
+            "discount_percent": null,
+            "amount": 66.04
+          }
+        ],
+        "subtotal": 68.87,
+        "discount_amount": 0,
+        "tax_amount": 4.13,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 73
+      }
+    },
+    {
+      "id": "sroie-023",
+      "scored": [
+        "total",
+        "issue_date",
+        "supplier_name"
+      ],
+      "expect_review": null,
+      "flagged": true,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.0004288,
+      "ms": 1421,
+      "issues": [
+        {
+          "field": "total",
+          "message": "8.49 − 0 + 0 + 0 ≠ 9"
+        }
+      ],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": false,
+        "invoice_number": false,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": false,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "FUYI MINI MARKET",
+        "supplier_tax_id": "001601310720",
+        "invoice_number": "TRN: 1CR0576494",
+        "issue_date": "2018-01-25",
+        "currency": "MYR",
+        "lines": [
+          {
+            "description": "013 SUMMER CUP 48X230ML",
+            "quantity": 1,
+            "unit_price": 8.49,
+            "discount_percent": null,
+            "amount": 8.49
+          }
+        ],
+        "subtotal": 8.49,
+        "discount_amount": 0,
+        "tax_amount": 0.51,
+        "prices_include_tax": true,
+        "rounding": 0,
+        "total": 9
+      }
+    },
+    {
+      "id": "sroie-027",
+      "scored": [
+        "total",
+        "issue_date",
+        "supplier_name"
+      ],
+      "expect_review": null,
+      "flagged": true,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.0009079,
+      "ms": 3289,
+      "issues": [
+        {
+          "field": "lines.0.amount",
+          "message": "10 × 10.57 − 0% ≠ 105.66"
+        }
+      ],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": false,
+        "invoice_number": false,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": false,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "TEO HENG STATIONERY & BOOKS",
+        "supplier_tax_id": "000689913856",
+        "invoice_number": "CS1802/27714",
+        "issue_date": "2018-02-12",
+        "currency": "MYR",
+        "lines": [
+          {
+            "description": "9555067700208 - IK YELLOW 70GRAMS",
+            "quantity": 10,
+            "unit_price": 10.57,
+            "discount_percent": 0,
+            "amount": 105.66
+          },
+          {
+            "description": "9557583450025 - PAPYRUS DARK COLOUR PAPER",
+            "quantity": 1,
+            "unit_price": 17.45,
+            "discount_percent": 0,
+            "amount": 17.45
+          },
+          {
+            "description": "4974052801334 - ARTLINE 70",
+            "quantity": 1,
+            "unit_price": 2.7,
+            "discount_percent": 0,
+            "amount": 2.7
+          },
+          {
+            "description": "9557546953990 - FASTER CX5N BALL PEN",
+            "quantity": 1,
+            "unit_price": 0.85,
+            "discount_percent": 0,
+            "amount": 0.85
+          },
+          {
+            "description": "6924238702311 - CBE HANDYCUTTER",
+            "quantity": 2,
+            "unit_price": 0.85,
+            "discount_percent": 0,
+            "amount": 1.7
+          },
+          {
+            "description": "9556655112694 - CBE A4 SIZE 20 POCKETS REFILLABLE NEW CLEAR HOLDER",
+            "quantity": 1,
+            "unit_price": 8.4,
+            "discount_percent": 0,
+            "amount": 8.4
+          },
+          {
+            "description": "9557369305006 - EAGLE F4 120 NUMBERING FOOLSCAP BOOK",
+            "quantity": 2,
+            "unit_price": 3.96,
+            "discount_percent": 0,
+            "amount": 7.92
+          }
+        ],
+        "subtotal": 144.68,
+        "discount_amount": 0,
+        "tax_amount": 8.68,
+        "prices_include_tax": false,
+        "rounding": -0.01,
+        "total": 153.35
+      }
+    },
+    {
+      "id": "sroie-028",
+      "scored": [
+        "total",
+        "issue_date",
+        "supplier_name"
+      ],
+      "expect_review": null,
+      "flagged": false,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.0007684,
+      "ms": 3184,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": false,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": false,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "MR. D.I.Y. (M) SDN BHD",
+        "supplier_tax_id": "000306020352",
+        "invoice_number": null,
+        "issue_date": "2018-03-14",
+        "currency": "MYR",
+        "lines": [
+          {
+            "description": "SOURING PAD 1018-4 4S WA03 - 24/240",
+            "quantity": 4,
+            "unit_price": 2.8,
+            "discount_percent": null,
+            "amount": 11.2
+          },
+          {
+            "description": "SCISSOR G/FISH AD51 - 24/360",
+            "quantity": 2,
+            "unit_price": 1.5,
+            "discount_percent": null,
+            "amount": 3
+          },
+          {
+            "description": "TRAILING SKT 5GN+SP 3X1.25MM CABLE 2 WA27 - 20",
+            "quantity": 1,
+            "unit_price": 22.9,
+            "discount_percent": null,
+            "amount": 22.9
+          }
+        ],
+        "subtotal": 37.1,
+        "discount_amount": 0,
+        "tax_amount": 2.1,
+        "prices_include_tax": true,
+        "rounding": 0,
+        "total": 37.1
+      }
+    },
+    {
+      "id": "syn-001",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.0004465,
+      "ms": 1668,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Studio Grafico Lunetta",
+        "supplier_tax_id": "IT56604805020",
+        "invoice_number": "62/2026",
+        "issue_date": "2026-07-09",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Stampa biglietti da visita",
+            "quantity": 0.5,
+            "unit_price": 603.26,
+            "discount_percent": null,
+            "amount": 301.63
+          },
+          {
+            "description": "Trasferta",
+            "quantity": 3,
+            "unit_price": 246.99,
+            "discount_percent": null,
+            "amount": 740.97
+          },
+          {
+            "description": "Stampa biglietti da visita",
+            "quantity": 0.5,
+            "unit_price": 425.88,
+            "discount_percent": null,
+            "amount": 212.94
+          }
+        ],
+        "subtotal": 1255.54,
+        "discount_amount": 0,
+        "tax_amount": 125.55,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 1381.09
+      }
+    },
+    {
+      "id": "syn-005",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.0003728,
+      "ms": 1424,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Ferramenta Corsini & C. Snc",
+        "supplier_tax_id": "IT18307689267",
+        "invoice_number": "489/2026",
+        "issue_date": "2026-03-23",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Trasferta",
+            "quantity": 2,
+            "unit_price": 148.35,
+            "discount_percent": null,
+            "amount": 296.7
+          },
+          {
+            "description": "Trasferta",
+            "quantity": 2,
+            "unit_price": 187.45,
+            "discount_percent": null,
+            "amount": 374.9
+          }
+        ],
+        "subtotal": 671.6,
+        "discount_amount": 0,
+        "tax_amount": 26.86,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 698.46
+      }
+    },
+    {
+      "id": "syn-009",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.0004969,
+      "ms": 2552,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Idraulica Valli Srl",
+        "supplier_tax_id": "IT38130067986",
+        "invoice_number": "466/2025",
+        "issue_date": "2025-04-27",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Stampa biglietti da visita",
+            "quantity": 1,
+            "unit_price": 63.8,
+            "discount_percent": null,
+            "amount": 63.8
+          },
+          {
+            "description": "Licenza software annuale",
+            "quantity": 3,
+            "unit_price": 609.48,
+            "discount_percent": null,
+            "amount": 1828.44
+          },
+          {
+            "description": "Trasferta",
+            "quantity": 2.5,
+            "unit_price": 734.66,
+            "discount_percent": null,
+            "amount": 1836.65
+          },
+          {
+            "description": "Trasferta",
+            "quantity": 0.5,
+            "unit_price": 767.89,
+            "discount_percent": null,
+            "amount": 383.95
+          },
+          {
+            "description": "Pannello in legno",
+            "quantity": 2,
+            "unit_price": 403.05,
+            "discount_percent": null,
+            "amount": 806.1
+          }
+        ],
+        "subtotal": 4918.94,
+        "discount_amount": 0,
+        "tax_amount": 196.76,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 5115.7
+      }
+    },
+    {
+      "id": "syn-010",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.0004168,
+      "ms": 1640,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Laura Peña Fotografía",
+        "supplier_tax_id": "49918939S",
+        "invoice_number": "469/2026",
+        "issue_date": "2026-08-06",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Mantenimiento mensual",
+            "quantity": 1,
+            "unit_price": 44.33,
+            "discount_percent": null,
+            "amount": 44.33
+          },
+          {
+            "description": "Sesión de fotos",
+            "quantity": 2,
+            "unit_price": 512.54,
+            "discount_percent": null,
+            "amount": 1025.08
+          }
+        ],
+        "subtotal": 1069.41,
+        "discount_amount": 0,
+        "tax_amount": 224.58,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 1293.99
+      }
+    },
+    {
+      "id": "syn-014",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": true,
+      "flagged": true,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.0004448,
+      "ms": 2749,
+      "issues": [
+        {
+          "field": "lines.0.amount",
+          "message": "1 × 259.13 − 0% ≠ 269.13"
+        },
+        {
+          "field": "subtotal",
+          "message": "lines sum to 9700.25, subtotal is 9690.25"
+        }
+      ],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Talleres Montaner SA",
+        "supplier_tax_id": "B61586277",
+        "invoice_number": "518/2024",
+        "issue_date": "2024-09-19",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Pintura interior",
+            "quantity": 1,
+            "unit_price": 259.13,
+            "discount_percent": null,
+            "amount": 269.13
+          },
+          {
+            "description": "Desplazamiento",
+            "quantity": 3,
+            "unit_price": 248.43,
+            "discount_percent": null,
+            "amount": 745.29
+          },
+          {
+            "description": "Sesión de fotos",
+            "quantity": 10,
+            "unit_price": 664.86,
+            "discount_percent": null,
+            "amount": 6648.6
+          },
+          {
+            "description": "Pintura interior",
+            "quantity": 1,
+            "unit_price": 762.29,
+            "discount_percent": null,
+            "amount": 762.29
+          },
+          {
+            "description": "Hora de consultoría",
+            "quantity": 3,
+            "unit_price": 424.98,
+            "discount_percent": null,
+            "amount": 1274.94
+          }
+        ],
+        "subtotal": 9690.25,
+        "discount_amount": 0,
+        "tax_amount": 969.03,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 10659.28
+      }
+    },
+    {
+      "id": "syn-018",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.0004717,
+      "ms": 2526,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Talleres Montaner SA",
+        "supplier_tax_id": "B25218554",
+        "invoice_number": "35/2023",
+        "issue_date": "2023-05-22",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Mantenimiento mensual",
+            "quantity": 2.5,
+            "unit_price": 746.57,
+            "discount_percent": null,
+            "amount": 1866.43
+          }
+        ],
+        "subtotal": 1866.43,
+        "discount_amount": 0,
+        "tax_amount": 186.64,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 2053.07
+      }
+    },
+    {
+      "id": "syn-019",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.0004471,
+      "ms": 1588,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Ferramenta Corsini & C. Snc",
+        "supplier_tax_id": "IT54450706137",
+        "invoice_number": "726/2023",
+        "issue_date": "2023-06-16",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Consulenza oraria",
+            "quantity": 1,
+            "unit_price": 454.31,
+            "discount_percent": null,
+            "amount": 454.31
+          },
+          {
+            "description": "Pannello in legno",
+            "quantity": 5,
+            "unit_price": 59.69,
+            "discount_percent": null,
+            "amount": 298.45
+          },
+          {
+            "description": "Licenza software annuale",
+            "quantity": 10,
+            "unit_price": 592.64,
+            "discount_percent": null,
+            "amount": 5926.4
+          }
+        ],
+        "subtotal": 6679.16,
+        "discount_amount": 0,
+        "tax_amount": 667.92,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 7347.08
+      }
+    },
+    {
+      "id": "syn-023",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": true,
+      "flagged": true,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.0004243,
+      "ms": 3320,
+      "issues": [
+        {
+          "field": "total",
+          "message": "9137.65 − 0 + 913.77 + 0 ≠ 10052.42"
+        }
+      ],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Tipografia Bassi Srl",
+        "supplier_tax_id": "IT90050760488",
+        "invoice_number": "346/2026",
+        "issue_date": "2026-01-02",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Trasferta",
+            "quantity": 0.5,
+            "unit_price": 353.63,
+            "discount_percent": null,
+            "amount": 176.82
+          },
+          {
+            "description": "Stampa biglietti da visita",
+            "quantity": 1,
+            "unit_price": 878.92,
+            "discount_percent": null,
+            "amount": 878.92
+          },
+          {
+            "description": "Materiale di consumo",
+            "quantity": 10,
+            "unit_price": 637.86,
+            "discount_percent": null,
+            "amount": 6378.6
+          },
+          {
+            "description": "Pannello in legno",
+            "quantity": 3,
+            "unit_price": 567.77,
+            "discount_percent": null,
+            "amount": 1703.31
+          }
+        ],
+        "subtotal": 9137.65,
+        "discount_amount": 0,
+        "tax_amount": 913.77,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 10052.42
+      }
+    },
+    {
+      "id": "syn-027",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.00044469999999999997,
+      "ms": 1911,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Idraulica Valli Srl",
+        "supplier_tax_id": "IT79431951080",
+        "invoice_number": "95/2024",
+        "issue_date": "2024-02-19",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Licenza software annuale",
+            "quantity": 5,
+            "unit_price": 421.83,
+            "discount_percent": null,
+            "amount": 2109.15
+          },
+          {
+            "description": "Manutenzione impianto",
+            "quantity": 1,
+            "unit_price": 180.66,
+            "discount_percent": null,
+            "amount": 180.66
+          },
+          {
+            "description": "Pannello in legno",
+            "quantity": 0.5,
+            "unit_price": 772.86,
+            "discount_percent": null,
+            "amount": 386.43
+          }
+        ],
+        "subtotal": 2676.24,
+        "discount_amount": 0,
+        "tax_amount": 267.62,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 2943.86
+      }
+    },
+    {
+      "id": "syn-028",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.000466,
+      "ms": 1663,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Talleres Montaner SA",
+        "supplier_tax_id": "88442568R",
+        "invoice_number": "881/2024",
+        "issue_date": "2024-03-11",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Desplazamiento",
+            "quantity": 2.5,
+            "unit_price": 473.99,
+            "discount_percent": null,
+            "amount": 1184.97
+          },
+          {
+            "description": "Pintura interior",
+            "quantity": 3,
+            "unit_price": 810.87,
+            "discount_percent": null,
+            "amount": 2432.61
+          },
+          {
+            "description": "Pintura interior",
+            "quantity": 1,
+            "unit_price": 203.85,
+            "discount_percent": null,
+            "amount": 203.85
+          },
+          {
+            "description": "Material de oficina",
+            "quantity": 2,
+            "unit_price": 633.39,
+            "discount_percent": null,
+            "amount": 1266.78
+          }
+        ],
+        "subtotal": 5088.21,
+        "discount_amount": 0,
+        "tax_amount": 508.82,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 5597.03
+      }
+    },
+    {
+      "id": "syn-032",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.0005285,
+      "ms": 2267,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Reformas Garrido SL",
+        "supplier_tax_id": "B63793165",
+        "invoice_number": "600/2026",
+        "issue_date": "2026-02-11",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Hora de consultoría",
+            "quantity": 10,
+            "unit_price": 570.24,
+            "discount_percent": 10,
+            "amount": 5132.16
+          },
+          {
+            "description": "Hora de consultoría",
+            "quantity": 10,
+            "unit_price": 714.59,
+            "discount_percent": 20,
+            "amount": 5716.72
+          },
+          {
+            "description": "Mantenimiento mensual",
+            "quantity": 1,
+            "unit_price": 473.71,
+            "discount_percent": null,
+            "amount": 473.71
+          },
+          {
+            "description": "Pintura interior",
+            "quantity": 1,
+            "unit_price": 810.31,
+            "discount_percent": 10,
+            "amount": 729.28
+          },
+          {
+            "description": "Sesión de fotos",
+            "quantity": 1,
+            "unit_price": 31.75,
+            "discount_percent": null,
+            "amount": 31.75
+          },
+          {
+            "description": "Pintura interior",
+            "quantity": 2.5,
+            "unit_price": 304.38,
+            "discount_percent": 20,
+            "amount": 608.76
+          }
+        ],
+        "subtotal": 12692.38,
+        "discount_amount": 0,
+        "tax_amount": 2665.4,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 15357.78
+      }
+    },
+    {
+      "id": "syn-036",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.0005262999999999999,
+      "ms": 2477,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Imprenta Soler SL",
+        "supplier_tax_id": "B06999697",
+        "invoice_number": "476/2025",
+        "issue_date": "2025-07-08",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Material de oficina",
+            "quantity": 1,
+            "unit_price": 519.9,
+            "discount_percent": null,
+            "amount": 519.9
+          },
+          {
+            "description": "Material de oficina",
+            "quantity": 5,
+            "unit_price": 319.19,
+            "discount_percent": null,
+            "amount": 1595.95
+          },
+          {
+            "description": "Desplazamiento",
+            "quantity": 3,
+            "unit_price": 441.61,
+            "discount_percent": null,
+            "amount": 1324.83
+          },
+          {
+            "description": "Sesión de fotos",
+            "quantity": 1,
+            "unit_price": 615.9,
+            "discount_percent": null,
+            "amount": 615.9
+          },
+          {
+            "description": "Mantenimiento mensual",
+            "quantity": 5,
+            "unit_price": 124.14,
+            "discount_percent": null,
+            "amount": 620.7
+          },
+          {
+            "description": "Hora de consultoría",
+            "quantity": 1,
+            "unit_price": 786.42,
+            "discount_percent": null,
+            "amount": 786.42
+          }
+        ],
+        "subtotal": 5463.7,
+        "discount_amount": 0,
+        "tax_amount": 817.57,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 6281.27
+      }
+    },
+    {
+      "id": "syn-037",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.0004776,
+      "ms": 2027,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Ferramenta Corsini & C. Snc",
+        "supplier_tax_id": "IT89783105623",
+        "invoice_number": "968/2025",
+        "issue_date": "2025-07-27",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Pannello in legno",
+            "quantity": 3,
+            "unit_price": 755.53,
+            "discount_percent": null,
+            "amount": 2266.59
+          },
+          {
+            "description": "Licenza software annuale",
+            "quantity": 1,
+            "unit_price": 743.51,
+            "discount_percent": 10,
+            "amount": 669.16
+          },
+          {
+            "description": "Stampa biglietti da visita",
+            "quantity": 1,
+            "unit_price": 246.04,
+            "discount_percent": 15,
+            "amount": 209.13
+          },
+          {
+            "description": "Manutenzione impianto",
+            "quantity": 3,
+            "unit_price": 119.38,
+            "discount_percent": 10,
+            "amount": 322.33
+          }
+        ],
+        "subtotal": 3467.21,
+        "discount_amount": 0,
+        "tax_amount": 346.72,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 3813.93
+      }
+    },
+    {
+      "id": "syn-041",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.00047660000000000004,
+      "ms": 1661,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Panificio Rinaldi",
+        "supplier_tax_id": "IT36347783114",
+        "invoice_number": "493/2026",
+        "issue_date": "2026-06-02",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Licenza software annuale",
+            "quantity": 2.5,
+            "unit_price": 788.22,
+            "discount_percent": null,
+            "amount": 1970.55
+          },
+          {
+            "description": "Pannello in legno",
+            "quantity": 1,
+            "unit_price": 475.35,
+            "discount_percent": null,
+            "amount": 475.35
+          },
+          {
+            "description": "Consulenza oraria",
+            "quantity": 1,
+            "unit_price": 97.31,
+            "discount_percent": null,
+            "amount": 97.31
+          },
+          {
+            "description": "Licenza software annuale",
+            "quantity": 2,
+            "unit_price": 253.7,
+            "discount_percent": null,
+            "amount": 507.4
+          }
+        ],
+        "subtotal": 3050.61,
+        "discount_amount": 0,
+        "tax_amount": 596.58,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 3647.19
+      }
+    },
+    {
+      "id": "syn-045",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.0005127,
+      "ms": 3263,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": false,
+        "invoice_number": true,
+        "issue_date": false,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Studio Grafico Lunetta",
+        "supplier_tax_id": null,
+        "invoice_number": "792/2023",
+        "issue_date": "2023-05-26",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Consulenza oraria",
+            "quantity": 1,
+            "unit_price": 894.46,
+            "discount_percent": null,
+            "amount": 894.46
+          },
+          {
+            "description": "Stampa biglietti da visita",
+            "quantity": 2,
+            "unit_price": 118.34,
+            "discount_percent": null,
+            "amount": 236.68
+          }
+        ],
+        "subtotal": 1131.14,
+        "discount_amount": 0,
+        "tax_amount": 248.85,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 1379.99
+      }
+    },
+    {
+      "id": "syn-046",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.0005315,
+      "ms": 2151,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Imprenta Soler SL",
+        "supplier_tax_id": "64376750A",
+        "invoice_number": "772/2024",
+        "issue_date": "2024-05-20",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Sesión de fotos",
+            "quantity": 10,
+            "unit_price": 335.46,
+            "discount_percent": null,
+            "amount": 3354.6
+          },
+          {
+            "description": "Hora de consultoría",
+            "quantity": 1,
+            "unit_price": 283.47,
+            "discount_percent": null,
+            "amount": 283.47
+          },
+          {
+            "description": "Mantenimiento mensual",
+            "quantity": 0.5,
+            "unit_price": 290.43,
+            "discount_percent": null,
+            "amount": 145.22
+          },
+          {
+            "description": "Mantenimiento mensual",
+            "quantity": 10,
+            "unit_price": 413.96,
+            "discount_percent": null,
+            "amount": 4139.6
+          },
+          {
+            "description": "Desplazamiento",
+            "quantity": 1,
+            "unit_price": 560.61,
+            "discount_percent": null,
+            "amount": 560.61
+          },
+          {
+            "description": "Hora de consultoría",
+            "quantity": 10,
+            "unit_price": 641.08,
+            "discount_percent": null,
+            "amount": 6410.8
+          }
+        ],
+        "subtotal": 14894.3,
+        "discount_amount": 0,
+        "tax_amount": 1936.08,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 16830.38
+      }
+    },
+    {
+      "id": "syn-050",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": false,
+      "flagged": true,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.0005127,
+      "ms": 3610,
+      "issues": [
+        {
+          "field": "supplier_tax_id",
+          "message": "invalid tax id 25815391R"
+        }
+      ],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": false,
+        "invoice_number": false,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Imprenta Soler SL",
+        "supplier_tax_id": "25815391R",
+        "invoice_number": "50/2026",
+        "issue_date": "2026-07-19",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Mantenimiento mensual",
+            "quantity": 3,
+            "unit_price": 104.84,
+            "discount_percent": null,
+            "amount": 314.52
+          },
+          {
+            "description": "Pintura interior",
+            "quantity": 1,
+            "unit_price": 841.63,
+            "discount_percent": null,
+            "amount": 841.63
+          },
+          {
+            "description": "Hora de consultoría",
+            "quantity": 1,
+            "unit_price": 735.6,
+            "discount_percent": null,
+            "amount": 735.6
+          }
+        ],
+        "subtotal": 1891.75,
+        "discount_amount": 0,
+        "tax_amount": 189.18,
+        "prices_include_tax": false,
+        "rounding": 0,
+        "total": 2080.93
+      }
+    }
+  ]
+}

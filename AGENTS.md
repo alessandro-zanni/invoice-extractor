@@ -31,9 +31,8 @@ eval cases.*
 
 - [x] 1. Scaffold, upload, extraction with Zod schema (`POST /api/extract`)
 - [x] 2. Deterministic validation + unit tests
-- [ ] 3. Golden set + eval runner: synthetic (50, incl. 20 hard variants), CORD (29), FATURA (30),
-  SROIE (30, external) done,
-  dev runs recorded; still to do: first test-split run for the README numbers
+- [x] 3. Golden set (synthetic 50, CORD 29, FATURA 30, SROIE 30 external) + eval runner, test-split
+  numbers recorded below
 - [x] 4. Routing Haiku → Opus → `needs_review` (code done; strategy comparison needs the eval)
 - [ ] 5. Review UI; corrections → golden set (Supabase from here)
 - [ ] 6. Prod: rate limit, cost logs, spend limit, Vercel deploy
@@ -73,6 +72,18 @@ bun run eval --strategy haiku|opus|routed --split dev|test|all [--limit N]
   currency, issue date, invoice number (no line items in its labels).
 - `data/external/sroie/`: 30 SROIE receipts (research-only licence): `bun run golden:sroie`
   downloads them, gitignored, never committed. The runner reads `data/external/*` when present.
+- **Test split, first run (2026-11-03, 46 docs, never used for tuning):**
+
+  | Strategy | Docs fully right | False alarms | Printed errors caught | Cost | p50 / p95 |
+  |---|---|---|---|---|---|
+  | Haiku only | 87.0% | 1/15 | 2/2 | $0.021 | 2.2 s / 5.0 s |
+  | Opus only | 93.5% | 1/15 | 2/2 | $0.76 | 3.7 s / 5.3 s |
+  | Routed | 89.1% | 0/15 | 2/2 | $0.28 (36% of Opus) | 4.3 s / 7.1 s |
+
+  Routed vs Opus is 2 docs: one is Opus run-to-run variance (cord-001), one a silent Haiku error
+  that breaks no check (sroie-009). Routing only catches errors that break the arithmetic.
+- FATURA totals don't add up on the page (lines − discount ≠ total, no tax): validation rightly
+  flags all of them, so routing sends 100% of FATURA to Opus. A dataset defect, not a model one.
 - Known waste: routing escalates documents with printed errors to Opus, which can't fix them.
 - Routing is only as good as validation precision: rules that don't fit a document type escalate
   everything. On FATURA 100% goes to Opus (document-level discounts have no field; some dates
