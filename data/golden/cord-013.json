@@ -19,17 +19,22 @@
         "description": "BLUS WANITA",
         "quantity": 1,
         "unit_price": 120000,
+        "discount_percent": null,
         "amount": 120000
       },
       {
         "description": "SHOPPING BAG",
         "quantity": 1,
         "unit_price": 0,
+        "discount_percent": null,
         "amount": 0
       }
     ],
     "subtotal": 0,
+    "discount_amount": 0,
     "tax_amount": 0,
+    "prices_include_tax": false,
+    "rounding": 0,
     "total": 120000
   }
 }

@@ -19,11 +19,15 @@
         "description": "CINNAMON SUGAR",
         "quantity": 1,
         "unit_price": 17000,
+        "discount_percent": null,
         "amount": 17000
       }
     ],
     "subtotal": 17000,
+    "discount_amount": 0,
     "tax_amount": 0,
+    "prices_include_tax": false,
+    "rounding": 0,
     "total": 17000
   }
 }

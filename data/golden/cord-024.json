@@ -19,17 +19,22 @@
         "description": "TWIST DONUT",
         "quantity": 6,
         "unit_price": 9000,
+        "discount_percent": null,
         "amount": 54000
       },
       {
         "description": "REDBEAN BREAD",
         "quantity": 1,
         "unit_price": 9000,
+        "discount_percent": null,
         "amount": 9000
       }
     ],
     "subtotal": 0,
+    "discount_amount": 0,
     "tax_amount": 0,
+    "prices_include_tax": false,
+    "rounding": 0,
     "total": 63000
   }
 }

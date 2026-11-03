@@ -19,17 +19,22 @@
         "description": "Lemon Tea (L)",
         "quantity": 1,
         "unit_price": 25000,
+        "discount_percent": null,
         "amount": 25000
       },
       {
         "description": "Caramel Small",
         "quantity": 1,
         "unit_price": 38000,
+        "discount_percent": null,
         "amount": 38000
       }
     ],
     "subtotal": 0,
+    "discount_amount": 0,
     "tax_amount": 0,
+    "prices_include_tax": false,
+    "rounding": 0,
     "total": 63000
   }
 }

@@ -19,11 +19,15 @@
         "description": "TRAD KY TOAST CARTE",
         "quantity": 1,
         "unit_price": 28182,
+        "discount_percent": null,
         "amount": 28182
       }
     ],
     "subtotal": 28182,
+    "discount_amount": 0,
     "tax_amount": 2818,
+    "prices_include_tax": false,
+    "rounding": 0,
     "total": 31000
   }
 }

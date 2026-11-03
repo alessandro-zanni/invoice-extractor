@@ -32,7 +32,7 @@ for (const [i, { row }] of rows.entries()) {
   });
   const invoice: Invoice = {
     supplier_name: "", supplier_tax_id: null, invoice_number: null, issue_date: null, currency: "IDR",
-    lines, subtotal: idr(gt.sub_total?.subtotal_price), tax_amount: idr(gt.sub_total?.tax_price), total,
+    lines, subtotal: idr(gt.sub_total?.subtotal_price), discount_amount: 0, tax_amount: idr(gt.sub_total?.tax_price), prices_include_tax: false, rounding: 0, total,
   };
   const id = `cord-${String(i + 1).padStart(3, "0")}`;
   const file = `${id}.jpg`;

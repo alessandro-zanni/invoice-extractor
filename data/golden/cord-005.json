@@ -19,23 +19,29 @@
         "description": "ICE BLACKCOFFE",
         "quantity": 2,
         "unit_price": 41000,
+        "discount_percent": null,
         "amount": 82000
       },
       {
         "description": "AVOCADO COFFEE",
         "quantity": 1,
         "unit_price": 61000,
+        "discount_percent": null,
         "amount": 61000
       },
       {
         "description": "CHIKEN KATSU FF",
         "quantity": 1,
         "unit_price": 51000,
+        "discount_percent": null,
         "amount": 51000
       }
     ],
     "subtotal": 194000,
+    "discount_amount": 0,
     "tax_amount": 0,
+    "prices_include_tax": false,
+    "rounding": 0,
     "total": 174600
   }
 }

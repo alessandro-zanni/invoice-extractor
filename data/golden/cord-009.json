@@ -19,23 +19,29 @@
         "description": "[REG] BLACK SAKURA",
         "quantity": 1,
         "unit_price": 45455,
+        "discount_percent": null,
         "amount": 45455
       },
       {
         "description": "COOKIE DOH SAUCES",
         "quantity": 1,
         "unit_price": 0,
+        "discount_percent": null,
         "amount": 0
       },
       {
         "description": "NATA DE COCO",
         "quantity": 1,
         "unit_price": 0,
+        "discount_percent": null,
         "amount": 0
       }
     ],
     "subtotal": 45455,
+    "discount_amount": 0,
     "tax_amount": 4545,
+    "prices_include_tax": false,
+    "rounding": 0,
     "total": 50000
   }
 }

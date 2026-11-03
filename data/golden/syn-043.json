@@ -238,7 +238,10 @@
       }
     ],
     "subtotal": 46781.02,
+    "discount_amount": 0,
     "tax_amount": 10291.82,
+    "prices_include_tax": false,
+    "rounding": 0,
     "total": 57072.84
   }
 }

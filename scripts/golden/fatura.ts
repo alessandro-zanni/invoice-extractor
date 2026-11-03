@@ -36,7 +36,7 @@ for (const [i, { row }] of rows.entries()) {
   const fields = ["total", ...(currency ? ["currency"] : []), ...(date ? ["issue_date"] : []), ...(number ? ["invoice_number"] : [])];
   const invoice: Invoice = {
     supplier_name: "", supplier_tax_id: null, invoice_number: number, issue_date: date, currency: currency ?? "",
-    lines: [], subtotal: 0, tax_amount: 0, total,
+    lines: [], subtotal: 0, discount_amount: 0, tax_amount: 0, prices_include_tax: false, rounding: 0, total,
   };
   const id = `fat-${String(i + 1).padStart(3, "0")}`;
   const file = `${id}.jpg`;

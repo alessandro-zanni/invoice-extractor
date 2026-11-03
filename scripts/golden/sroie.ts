@@ -32,7 +32,7 @@ for (const [i, { row }] of rows.entries()) {
   const fields = ["total", ...(date ? ["issue_date"] : []), ...(company ? ["supplier_name"] : [])];
   const invoice: Invoice = {
     supplier_name: company ?? "", supplier_tax_id: null, invoice_number: null, issue_date: date, currency: "MYR",
-    lines: [], subtotal: 0, tax_amount: 0, total,
+    lines: [], subtotal: 0, discount_amount: 0, tax_amount: 0, prices_include_tax: false, rounding: 0, total,
   };
   const id = `sroie-${String(i + 1).padStart(3, "0")}`;
   const file = `${id}.jpg`;

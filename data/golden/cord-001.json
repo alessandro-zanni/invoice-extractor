@@ -19,11 +19,15 @@
         "description": "-TICKET CP",
         "quantity": 2,
         "unit_price": 30000,
+        "discount_percent": null,
         "amount": 60000
       }
     ],
     "subtotal": 60000,
+    "discount_amount": 0,
     "tax_amount": 5455,
+    "prices_include_tax": false,
+    "rounding": 0,
     "total": 60000
   }
 }

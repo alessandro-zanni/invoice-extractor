@@ -19,23 +19,29 @@
         "description": "TWIST STRAWBERRY DONUT",
         "quantity": 1,
         "unit_price": 10000,
+        "discount_percent": null,
         "amount": 10000
       },
       {
         "description": "TLJ CROQUETTE",
         "quantity": 1,
         "unit_price": 17000,
+        "discount_percent": null,
         "amount": 17000
       },
       {
         "description": "POTATO PEPPER BAGEL",
         "quantity": 1,
         "unit_price": 16000,
+        "discount_percent": null,
         "amount": 16000
       }
     ],
     "subtotal": 0,
+    "discount_amount": 0,
     "tax_amount": 0,
+    "prices_include_tax": false,
+    "rounding": 0,
     "total": 43000
   }
 }

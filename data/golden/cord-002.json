@@ -19,23 +19,29 @@
         "description": "J.STB PROMO",
         "quantity": 1,
         "unit_price": 17500,
+        "discount_percent": null,
         "amount": 17500
       },
       {
         "description": "Y.B.BAT",
         "quantity": 1,
         "unit_price": 46000,
+        "discount_percent": null,
         "amount": 46000
       },
       {
         "description": "Y.BASO PROM",
         "quantity": 1,
         "unit_price": 27500,
+        "discount_percent": null,
         "amount": 27500
       }
     ],
     "subtotal": 0,
+    "discount_amount": 0,
     "tax_amount": 0,
+    "prices_include_tax": false,
+    "rounding": 0,
     "total": 91000
   }
 }

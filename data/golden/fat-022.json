@@ -18,7 +18,10 @@
     "currency": "EUR",
     "lines": [],
     "subtotal": 0,
+    "discount_amount": 0,
     "tax_amount": 0,
+    "prices_include_tax": false,
+    "rounding": 0,
     "total": 1036.97
   }
 }

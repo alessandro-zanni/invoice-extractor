@@ -89,7 +89,10 @@ function makeInvoice(i: number, error: ErrorKind | null, variant: Variant) {
     currency: "EUR",
     lines,
     subtotal,
+    discount_amount: 0,
     tax_amount,
+    prices_include_tax: false,
+    rounding: 0,
     total: round2(subtotal + tax_amount),
   };
   if (error === "total") invoice.total = round2(invoice.total + pick([1, 10, 0.9, -5]));

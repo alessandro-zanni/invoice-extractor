@@ -19,41 +19,50 @@
         "description": "Goblin's Mace",
         "quantity": 1,
         "unit_price": 25000,
+        "discount_percent": null,
         "amount": 25000
       },
       {
         "description": "Mozarella Hot Dog",
         "quantity": 2,
         "unit_price": 19000,
+        "discount_percent": null,
         "amount": 38000
       },
       {
         "description": "Chili Pepper Croquette",
         "quantity": 1,
         "unit_price": 14000,
+        "discount_percent": null,
         "amount": 14000
       },
       {
         "description": "Cheese Croquette",
         "quantity": 1,
         "unit_price": 14000,
+        "discount_percent": null,
         "amount": 14000
       },
       {
         "description": "Plastik Amook",
         "quantity": 1,
         "unit_price": 0,
+        "discount_percent": null,
         "amount": 0
       },
       {
         "description": "Plastik Putih Take Away",
         "quantity": 1,
         "unit_price": 0,
+        "discount_percent": null,
         "amount": 0
       }
     ],
     "subtotal": 91000,
+    "discount_amount": 0,
     "tax_amount": 0,
+    "prices_include_tax": false,
+    "rounding": 0,
     "total": 91000
   }
 }

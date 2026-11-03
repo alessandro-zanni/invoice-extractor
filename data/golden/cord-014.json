@@ -19,17 +19,22 @@
         "description": "BASO KUAH",
         "quantity": 1,
         "unit_price": 43636,
+        "discount_percent": null,
         "amount": 43636
       },
       {
         "description": "A.MINERAL GELAS",
         "quantity": 1,
         "unit_price": 3000,
+        "discount_percent": null,
         "amount": 3000
       }
     ],
     "subtotal": 4663646636,
+    "discount_amount": 0,
     "tax_amount": 4664,
+    "prices_include_tax": false,
+    "rounding": 0,
     "total": 51300
   }
 }

@@ -19,35 +19,43 @@
         "description": "[LG] BLACK SAKURA",
         "quantity": 1,
         "unit_price": 59091,
+        "discount_percent": null,
         "amount": 59091
       },
       {
         "description": "LONGAN",
         "quantity": 1,
         "unit_price": 0,
+        "discount_percent": null,
         "amount": 0
       },
       {
         "description": "ROASTED ALMOND",
         "quantity": 1,
         "unit_price": 0,
+        "discount_percent": null,
         "amount": 0
       },
       {
         "description": "IVANGGO",
         "quantity": 1,
         "unit_price": 0,
+        "discount_percent": null,
         "amount": 0
       },
       {
         "description": "IVINERAL WATER (bundling) 5k",
         "quantity": 1,
         "unit_price": 4545,
+        "discount_percent": null,
         "amount": 4545
       }
     ],
     "subtotal": 63636,
+    "discount_amount": 0,
     "tax_amount": 6364,
+    "prices_include_tax": false,
+    "rounding": 0,
     "total": 70000
   }
 }

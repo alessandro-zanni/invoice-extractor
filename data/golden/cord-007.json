@@ -19,23 +19,29 @@
         "description": "EGG TART",
         "quantity": 1,
         "unit_price": 13000,
+        "discount_percent": null,
         "amount": 13000
       },
       {
         "description": "CHOCO CUS ARD PASTRY",
         "quantity": 2,
         "unit_price": 12000,
+        "discount_percent": null,
         "amount": 24000
       },
       {
         "description": "REDBEAN BREAD",
         "quantity": 1,
         "unit_price": 9000,
+        "discount_percent": null,
         "amount": 9000
       }
     ],
     "subtotal": 0,
+    "discount_amount": 0,
     "tax_amount": 0,
+    "prices_include_tax": false,
+    "rounding": 0,
     "total": 46000
   }
 }

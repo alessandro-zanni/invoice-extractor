@@ -19,23 +19,29 @@
         "description": "Nasi Cap Cay Porsi B esar",
         "quantity": 1,
         "unit_price": 65000,
+        "discount_percent": null,
         "amount": 65000
       },
       {
         "description": "Teh Tawar",
         "quantity": 2,
         "unit_price": 0,
+        "discount_percent": null,
         "amount": 0
       },
       {
         "description": "Fu Yung Hai",
         "quantity": 1,
         "unit_price": 65000,
+        "discount_percent": null,
         "amount": 65000
       }
     ],
     "subtotal": 138000,
+    "discount_amount": 0,
     "tax_amount": 0,
+    "prices_include_tax": false,
+    "rounding": 0,
     "total": 138000
   }
 }

@@ -19,11 +19,15 @@
         "description": "BANABERRY FRESH CREAM CAK",
         "quantity": 1,
         "unit_price": 230000,
+        "discount_percent": null,
         "amount": 230000
       }
     ],
     "subtotal": 0,
+    "discount_amount": 0,
     "tax_amount": 0,
+    "prices_include_tax": false,
+    "rounding": 0,
     "total": 230000
   }
 }

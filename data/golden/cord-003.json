@@ -19,17 +19,22 @@
         "description": "JASMINE MT ( L )",
         "quantity": 1,
         "unit_price": 24000,
+        "discount_percent": null,
         "amount": 24000
       },
       {
         "description": "COCONUT JELLY ( L )",
         "quantity": 1,
         "unit_price": 4000,
+        "discount_percent": null,
         "amount": 4000
       }
     ],
     "subtotal": 28000,
+    "discount_amount": 0,
     "tax_amount": 0,
+    "prices_include_tax": false,
+    "rounding": 0,
     "total": 28000
   }
 }

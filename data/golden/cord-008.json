@@ -19,17 +19,22 @@
         "description": "Kupon 15",
         "quantity": 1,
         "unit_price": 100000,
+        "discount_percent": null,
         "amount": 100000
       },
       {
         "description": "ADD CHICKEN BOX",
         "quantity": 1,
         "unit_price": 909,
+        "discount_percent": null,
         "amount": 909
       }
     ],
     "subtotal": 100909,
+    "discount_amount": 0,
     "tax_amount": 10091,
+    "prices_include_tax": false,
+    "rounding": 0,
     "total": 111000
   }
 }
