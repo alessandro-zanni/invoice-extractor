@@ -1,0 +1,300 @@
+{
+  "id": "syn-038",
+  "file": "syn-038.pdf",
+  "split": "dev",
+  "expect_review": false,
+  "error": null,
+  "variant": "twopage",
+  "invoice": {
+    "supplier_name": "Laura Peña Fotografía",
+    "supplier_tax_id": "B65662115",
+    "invoice_number": "254/2025",
+    "issue_date": "2025-08-15",
+    "currency": "EUR",
+    "lines": [
+      {
+        "description": "Hora de consultoría",
+        "quantity": 1,
+        "unit_price": 716.25,
+        "discount_percent": null,
+        "amount": 716.25
+      },
+      {
+        "description": "Desplazamiento",
+        "quantity": 1,
+        "unit_price": 465.23,
+        "discount_percent": null,
+        "amount": 465.23
+      },
+      {
+        "description": "Sesión de fotos",
+        "quantity": 2.5,
+        "unit_price": 684.98,
+        "discount_percent": null,
+        "amount": 1712.45
+      },
+      {
+        "description": "Sesión de fotos",
+        "quantity": 0.5,
+        "unit_price": 894.57,
+        "discount_percent": null,
+        "amount": 447.29
+      },
+      {
+        "description": "Pintura interior",
+        "quantity": 0.5,
+        "unit_price": 541.37,
+        "discount_percent": null,
+        "amount": 270.69
+      },
+      {
+        "description": "Hora de consultoría",
+        "quantity": 2,
+        "unit_price": 501.7,
+        "discount_percent": null,
+        "amount": 1003.4
+      },
+      {
+        "description": "Sesión de fotos",
+        "quantity": 2,
+        "unit_price": 181.31,
+        "discount_percent": null,
+        "amount": 362.62
+      },
+      {
+        "description": "Impresión de folletos",
+        "quantity": 1,
+        "unit_price": 609.46,
+        "discount_percent": null,
+        "amount": 609.46
+      },
+      {
+        "description": "Hora de consultoría",
+        "quantity": 0.5,
+        "unit_price": 268.83,
+        "discount_percent": null,
+        "amount": 134.42
+      },
+      {
+        "description": "Pintura interior",
+        "quantity": 1,
+        "unit_price": 171.92,
+        "discount_percent": null,
+        "amount": 171.92
+      },
+      {
+        "description": "Mantenimiento mensual",
+        "quantity": 2.5,
+        "unit_price": 309.98,
+        "discount_percent": null,
+        "amount": 774.95
+      },
+      {
+        "description": "Impresión de folletos",
+        "quantity": 2.5,
+        "unit_price": 670.01,
+        "discount_percent": null,
+        "amount": 1675.03
+      },
+      {
+        "description": "Desplazamiento",
+        "quantity": 1,
+        "unit_price": 154.36,
+        "discount_percent": null,
+        "amount": 154.36
+      },
+      {
+        "description": "Sesión de fotos",
+        "quantity": 2.5,
+        "unit_price": 632.22,
+        "discount_percent": null,
+        "amount": 1580.55
+      },
+      {
+        "description": "Sesión de fotos",
+        "quantity": 0.5,
+        "unit_price": 626.33,
+        "discount_percent": null,
+        "amount": 313.17
+      },
+      {
+        "description": "Mantenimiento mensual",
+        "quantity": 1,
+        "unit_price": 234.96,
+        "discount_percent": null,
+        "amount": 234.96
+      },
+      {
+        "description": "Impresión de folletos",
+        "quantity": 1,
+        "unit_price": 863.85,
+        "discount_percent": null,
+        "amount": 863.85
+      },
+      {
+        "description": "Mantenimiento mensual",
+        "quantity": 5,
+        "unit_price": 740.13,
+        "discount_percent": null,
+        "amount": 3700.65
+      },
+      {
+        "description": "Sesión de fotos",
+        "quantity": 2.5,
+        "unit_price": 852.31,
+        "discount_percent": null,
+        "amount": 2130.77
+      },
+      {
+        "description": "Material de oficina",
+        "quantity": 1,
+        "unit_price": 179.59,
+        "discount_percent": null,
+        "amount": 179.59
+      },
+      {
+        "description": "Sesión de fotos",
+        "quantity": 0.5,
+        "unit_price": 361.11,
+        "discount_percent": null,
+        "amount": 180.56
+      },
+      {
+        "description": "Desplazamiento",
+        "quantity": 1,
+        "unit_price": 37.5,
+        "discount_percent": null,
+        "amount": 37.5
+      },
+      {
+        "description": "Desplazamiento",
+        "quantity": 2,
+        "unit_price": 118.54,
+        "discount_percent": null,
+        "amount": 237.08
+      },
+      {
+        "description": "Hora de consultoría",
+        "quantity": 0.5,
+        "unit_price": 181.38,
+        "discount_percent": null,
+        "amount": 90.69
+      },
+      {
+        "description": "Impresión de folletos",
+        "quantity": 1,
+        "unit_price": 175.88,
+        "discount_percent": null,
+        "amount": 175.88
+      },
+      {
+        "description": "Mantenimiento mensual",
+        "quantity": 2.5,
+        "unit_price": 809.72,
+        "discount_percent": null,
+        "amount": 2024.3
+      },
+      {
+        "description": "Material de oficina",
+        "quantity": 3,
+        "unit_price": 300.64,
+        "discount_percent": null,
+        "amount": 901.92
+      },
+      {
+        "description": "Desplazamiento",
+        "quantity": 1,
+        "unit_price": 237.53,
+        "discount_percent": null,
+        "amount": 237.53
+      },
+      {
+        "description": "Pintura interior",
+        "quantity": 3,
+        "unit_price": 433.51,
+        "discount_percent": null,
+        "amount": 1300.53
+      },
+      {
+        "description": "Pintura interior",
+        "quantity": 3,
+        "unit_price": 58.12,
+        "discount_percent": null,
+        "amount": 174.36
+      },
+      {
+        "description": "Hora de consultoría",
+        "quantity": 3,
+        "unit_price": 587.07,
+        "discount_percent": null,
+        "amount": 1761.21
+      },
+      {
+        "description": "Pintura interior",
+        "quantity": 1,
+        "unit_price": 495.5,
+        "discount_percent": null,
+        "amount": 495.5
+      },
+      {
+        "description": "Impresión de folletos",
+        "quantity": 1,
+        "unit_price": 210.79,
+        "discount_percent": null,
+        "amount": 210.79
+      },
+      {
+        "description": "Mantenimiento mensual",
+        "quantity": 3,
+        "unit_price": 364.02,
+        "discount_percent": null,
+        "amount": 1092.06
+      },
+      {
+        "description": "Hora de consultoría",
+        "quantity": 3,
+        "unit_price": 403.86,
+        "discount_percent": null,
+        "amount": 1211.58
+      },
+      {
+        "description": "Hora de consultoría",
+        "quantity": 3,
+        "unit_price": 669.06,
+        "discount_percent": null,
+        "amount": 2007.18
+      },
+      {
+        "description": "Impresión de folletos",
+        "quantity": 1,
+        "unit_price": 254.94,
+        "discount_percent": null,
+        "amount": 254.94
+      },
+      {
+        "description": "Pintura interior",
+        "quantity": 2,
+        "unit_price": 828.58,
+        "discount_percent": null,
+        "amount": 1657.16
+      },
+      {
+        "description": "Desplazamiento",
+        "quantity": 5,
+        "unit_price": 375.78,
+        "discount_percent": null,
+        "amount": 1878.9
+      },
+      {
+        "description": "Impresión de folletos",
+        "quantity": 1,
+        "unit_price": 825.48,
+        "discount_percent": null,
+        "amount": 825.48
+      }
+    ],
+    "subtotal": 34256.76,
+    "tax_amount": 3425.68,
+    "total": 37682.44
+  }
+}

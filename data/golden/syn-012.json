@@ -4,6 +4,7 @@
   "split": "dev",
   "expect_review": false,
   "error": null,
+  "variant": null,
   "invoice": {
     "supplier_name": "Distribuciones Arnau SL",
     "supplier_tax_id": "28446942J",
@@ -15,30 +16,35 @@
         "description": "Material de oficina",
         "quantity": 5,
         "unit_price": 717.05,
+        "discount_percent": null,
         "amount": 3585.25
       },
       {
         "description": "Impresión de folletos",
         "quantity": 0.5,
         "unit_price": 475.06,
+        "discount_percent": null,
         "amount": 237.53
       },
       {
         "description": "Hora de consultoría",
         "quantity": 1,
         "unit_price": 87.64,
+        "discount_percent": null,
         "amount": 87.64
       },
       {
         "description": "Desplazamiento",
         "quantity": 1,
         "unit_price": 605.42,
+        "discount_percent": null,
         "amount": 605.42
       },
       {
         "description": "Hora de consultoría",
         "quantity": 5,
         "unit_price": 879.02,
+        "discount_percent": null,
         "amount": 4395.1
       }
     ],

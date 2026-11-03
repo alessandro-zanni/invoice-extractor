@@ -1,0 +1,48 @@
+{
+  "id": "syn-042",
+  "file": "syn-042.pdf",
+  "split": "dev",
+  "expect_review": false,
+  "error": null,
+  "variant": "discount",
+  "invoice": {
+    "supplier_name": "Talleres Montaner SA",
+    "supplier_tax_id": "B08537539",
+    "invoice_number": "575/2025",
+    "issue_date": "2025-09-14",
+    "currency": "EUR",
+    "lines": [
+      {
+        "description": "Desplazamiento",
+        "quantity": 5,
+        "unit_price": 835.52,
+        "discount_percent": 15,
+        "amount": 3550.96
+      },
+      {
+        "description": "Hora de consultoría",
+        "quantity": 1,
+        "unit_price": 144.17,
+        "discount_percent": null,
+        "amount": 144.17
+      },
+      {
+        "description": "Hora de consultoría",
+        "quantity": 10,
+        "unit_price": 58.25,
+        "discount_percent": null,
+        "amount": 582.5
+      },
+      {
+        "description": "Material de oficina",
+        "quantity": 1,
+        "unit_price": 441.87,
+        "discount_percent": null,
+        "amount": 441.87
+      }
+    ],
+    "subtotal": 4719.5,
+    "tax_amount": 471.95,
+    "total": 5191.45
+  }
+}

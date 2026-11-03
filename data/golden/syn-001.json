@@ -4,6 +4,7 @@
   "split": "test",
   "expect_review": false,
   "error": null,
+  "variant": null,
   "invoice": {
     "supplier_name": "Studio Grafico Lunetta",
     "supplier_tax_id": "IT56604805020",
@@ -15,18 +16,21 @@
         "description": "Stampa biglietti da visita",
         "quantity": 0.5,
         "unit_price": 603.26,
+        "discount_percent": null,
         "amount": 301.63
       },
       {
         "description": "Trasferta",
         "quantity": 3,
         "unit_price": 246.99,
+        "discount_percent": null,
         "amount": 740.97
       },
       {
         "description": "Stampa biglietti da visita",
         "quantity": 0.5,
         "unit_price": 425.88,
+        "discount_percent": null,
         "amount": 212.94
       }
     ],

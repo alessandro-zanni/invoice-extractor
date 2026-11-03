@@ -4,6 +4,7 @@
   "split": "test",
   "expect_review": false,
   "error": null,
+  "variant": null,
   "invoice": {
     "supplier_name": "Idraulica Valli Srl",
     "supplier_tax_id": "IT38130067986",
@@ -15,30 +16,35 @@
         "description": "Stampa biglietti da visita",
         "quantity": 1,
         "unit_price": 63.8,
+        "discount_percent": null,
         "amount": 63.8
       },
       {
         "description": "Licenza software annuale",
         "quantity": 3,
         "unit_price": 609.48,
+        "discount_percent": null,
         "amount": 1828.44
       },
       {
         "description": "Trasferta",
         "quantity": 2.5,
         "unit_price": 734.66,
+        "discount_percent": null,
         "amount": 1836.65
       },
       {
         "description": "Trasferta",
         "quantity": 0.5,
         "unit_price": 767.89,
+        "discount_percent": null,
         "amount": 383.95
       },
       {
         "description": "Pannello in legno",
         "quantity": 2,
         "unit_price": 403.05,
+        "discount_percent": null,
         "amount": 806.1
       }
     ],

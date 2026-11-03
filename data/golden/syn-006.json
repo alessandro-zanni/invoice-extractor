@@ -4,6 +4,7 @@
   "split": "dev",
   "expect_review": false,
   "error": null,
+  "variant": null,
   "invoice": {
     "supplier_name": "Laura Peña Fotografía",
     "supplier_tax_id": "B39465634",
@@ -15,12 +16,14 @@
         "description": "Hora de consultoría",
         "quantity": 1,
         "unit_price": 303.93,
+        "discount_percent": null,
         "amount": 303.93
       },
       {
         "description": "Desplazamiento",
         "quantity": 1,
         "unit_price": 894.18,
+        "discount_percent": null,
         "amount": 894.18
       }
     ],

@@ -4,6 +4,7 @@
   "split": "test",
   "expect_review": false,
   "error": null,
+  "variant": null,
   "invoice": {
     "supplier_name": "Laura Peña Fotografía",
     "supplier_tax_id": "49918939S",
@@ -15,12 +16,14 @@
         "description": "Mantenimiento mensual",
         "quantity": 1,
         "unit_price": 44.33,
+        "discount_percent": null,
         "amount": 44.33
       },
       {
         "description": "Sesión de fotos",
         "quantity": 2,
         "unit_price": 512.54,
+        "discount_percent": null,
         "amount": 1025.08
       }
     ],

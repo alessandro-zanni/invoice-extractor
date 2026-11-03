@@ -4,6 +4,7 @@
   "split": "dev",
   "expect_review": false,
   "error": null,
+  "variant": null,
   "invoice": {
     "supplier_name": "Studio Grafico Lunetta",
     "supplier_tax_id": "IT63130524372",
@@ -15,18 +16,21 @@
         "description": "Materiale di consumo",
         "quantity": 2.5,
         "unit_price": 295.59,
+        "discount_percent": null,
         "amount": 738.97
       },
       {
         "description": "Trasferta",
         "quantity": 5,
         "unit_price": 492.41,
+        "discount_percent": null,
         "amount": 2462.05
       },
       {
         "description": "Manutenzione impianto",
         "quantity": 1,
         "unit_price": 293.84,
+        "discount_percent": null,
         "amount": 293.84
       }
     ],

@@ -4,6 +4,7 @@
   "split": "dev",
   "expect_review": false,
   "error": null,
+  "variant": null,
   "invoice": {
     "supplier_name": "Talleres Montaner SA",
     "supplier_tax_id": "22293355F",
@@ -15,24 +16,28 @@
         "description": "Desplazamiento",
         "quantity": 3,
         "unit_price": 529.88,
+        "discount_percent": null,
         "amount": 1589.64
       },
       {
         "description": "Impresión de folletos",
         "quantity": 5,
         "unit_price": 368.77,
+        "discount_percent": null,
         "amount": 1843.85
       },
       {
         "description": "Mantenimiento mensual",
         "quantity": 1,
         "unit_price": 639.5,
+        "discount_percent": null,
         "amount": 639.5
       },
       {
         "description": "Hora de consultoría",
         "quantity": 1,
         "unit_price": 18.52,
+        "discount_percent": null,
         "amount": 18.52
       }
     ],

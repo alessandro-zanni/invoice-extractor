@@ -4,6 +4,7 @@
   "split": "dev",
   "expect_review": false,
   "error": null,
+  "variant": null,
   "invoice": {
     "supplier_name": "Talleres Montaner SA",
     "supplier_tax_id": "98095784W",
@@ -15,24 +16,28 @@
         "description": "Mantenimiento mensual",
         "quantity": 0.5,
         "unit_price": 522.66,
+        "discount_percent": null,
         "amount": 261.33
       },
       {
         "description": "Desplazamiento",
         "quantity": 5,
         "unit_price": 370.98,
+        "discount_percent": null,
         "amount": 1854.9
       },
       {
         "description": "Desplazamiento",
         "quantity": 1,
         "unit_price": 122.94,
+        "discount_percent": null,
         "amount": 122.94
       },
       {
         "description": "Pintura interior",
         "quantity": 10,
         "unit_price": 254.82,
+        "discount_percent": null,
         "amount": 2548.2
       }
     ],

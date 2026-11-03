@@ -1,0 +1,34 @@
+{
+  "id": "syn-045",
+  "file": "syn-045.jpg",
+  "split": "test",
+  "expect_review": false,
+  "error": null,
+  "variant": "lowres",
+  "invoice": {
+    "supplier_name": "Studio Grafico Lunetta",
+    "supplier_tax_id": "IT37285618510",
+    "invoice_number": "792/2023",
+    "issue_date": "2023-03-28",
+    "currency": "EUR",
+    "lines": [
+      {
+        "description": "Consulenza oraria",
+        "quantity": 1,
+        "unit_price": 894.46,
+        "discount_percent": null,
+        "amount": 894.46
+      },
+      {
+        "description": "Stampa biglietti da visita",
+        "quantity": 2,
+        "unit_price": 118.34,
+        "discount_percent": null,
+        "amount": 236.68
+      }
+    ],
+    "subtotal": 1131.14,
+    "tax_amount": 248.85,
+    "total": 1379.99
+  }
+}

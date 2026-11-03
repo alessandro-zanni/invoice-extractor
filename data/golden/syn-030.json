@@ -4,6 +4,7 @@
   "split": "dev",
   "expect_review": false,
   "error": null,
+  "variant": null,
   "invoice": {
     "supplier_name": "Café Rambla SL",
     "supplier_tax_id": "B97205014",
@@ -15,6 +16,7 @@
         "description": "Hora de consultoría",
         "quantity": 10,
         "unit_price": 518.23,
+        "discount_percent": null,
         "amount": 5182.3
       }
     ],

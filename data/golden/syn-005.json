@@ -4,6 +4,7 @@
   "split": "test",
   "expect_review": false,
   "error": null,
+  "variant": null,
   "invoice": {
     "supplier_name": "Ferramenta Corsini & C. Snc",
     "supplier_tax_id": "IT18307689267",
@@ -15,12 +16,14 @@
         "description": "Trasferta",
         "quantity": 2,
         "unit_price": 148.35,
+        "discount_percent": null,
         "amount": 296.7
       },
       {
         "description": "Trasferta",
         "quantity": 2,
         "unit_price": 187.45,
+        "discount_percent": null,
         "amount": 374.9
       }
     ],

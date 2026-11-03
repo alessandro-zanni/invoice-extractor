@@ -4,6 +4,7 @@
   "split": "dev",
   "expect_review": true,
   "error": "total",
+  "variant": null,
   "invoice": {
     "supplier_name": "Imprenta Soler SL",
     "supplier_tax_id": "B82195081",
@@ -15,18 +16,21 @@
         "description": "Pintura interior",
         "quantity": 0.5,
         "unit_price": 626.02,
+        "discount_percent": null,
         "amount": 313.01
       },
       {
         "description": "Material de oficina",
         "quantity": 2.5,
         "unit_price": 389.55,
+        "discount_percent": null,
         "amount": 973.88
       },
       {
         "description": "Desplazamiento",
         "quantity": 1,
         "unit_price": 92.13,
+        "discount_percent": null,
         "amount": 92.13
       }
     ],

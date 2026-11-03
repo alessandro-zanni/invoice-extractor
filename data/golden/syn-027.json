@@ -4,6 +4,7 @@
   "split": "test",
   "expect_review": false,
   "error": null,
+  "variant": null,
   "invoice": {
     "supplier_name": "Idraulica Valli Srl",
     "supplier_tax_id": "IT79431951080",
@@ -15,18 +16,21 @@
         "description": "Licenza software annuale",
         "quantity": 5,
         "unit_price": 421.83,
+        "discount_percent": null,
         "amount": 2109.15
       },
       {
         "description": "Manutenzione impianto",
         "quantity": 1,
         "unit_price": 180.66,
+        "discount_percent": null,
         "amount": 180.66
       },
       {
         "description": "Pannello in legno",
         "quantity": 0.5,
         "unit_price": 772.86,
+        "discount_percent": null,
         "amount": 386.43
       }
     ],

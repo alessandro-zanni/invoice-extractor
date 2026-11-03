@@ -1,0 +1,48 @@
+{
+  "id": "syn-041",
+  "file": "syn-041.pdf",
+  "split": "test",
+  "expect_review": false,
+  "error": null,
+  "variant": "multirate",
+  "invoice": {
+    "supplier_name": "Panificio Rinaldi",
+    "supplier_tax_id": "IT36347783114",
+    "invoice_number": "493/2026",
+    "issue_date": "2026-06-02",
+    "currency": "EUR",
+    "lines": [
+      {
+        "description": "Licenza software annuale",
+        "quantity": 2.5,
+        "unit_price": 788.22,
+        "discount_percent": null,
+        "amount": 1970.55
+      },
+      {
+        "description": "Pannello in legno",
+        "quantity": 1,
+        "unit_price": 475.35,
+        "discount_percent": null,
+        "amount": 475.35
+      },
+      {
+        "description": "Consulenza oraria",
+        "quantity": 1,
+        "unit_price": 97.31,
+        "discount_percent": null,
+        "amount": 97.31
+      },
+      {
+        "description": "Licenza software annuale",
+        "quantity": 2,
+        "unit_price": 253.7,
+        "discount_percent": null,
+        "amount": 507.4
+      }
+    ],
+    "subtotal": 3050.61,
+    "tax_amount": 596.58,
+    "total": 3647.19
+  }
+}

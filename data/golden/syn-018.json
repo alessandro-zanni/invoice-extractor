@@ -4,6 +4,7 @@
   "split": "test",
   "expect_review": false,
   "error": null,
+  "variant": null,
   "invoice": {
     "supplier_name": "Talleres Montaner SA",
     "supplier_tax_id": "B25218554",
@@ -15,6 +16,7 @@
         "description": "Mantenimiento mensual",
         "quantity": 2.5,
         "unit_price": 746.57,
+        "discount_percent": null,
         "amount": 1866.43
       }
     ],

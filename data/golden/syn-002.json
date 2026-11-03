@@ -4,6 +4,7 @@
   "split": "dev",
   "expect_review": false,
   "error": null,
+  "variant": null,
   "invoice": {
     "supplier_name": "Distribuciones Arnau SL",
     "supplier_tax_id": "55719666G",
@@ -15,24 +16,28 @@
         "description": "Sesión de fotos",
         "quantity": 1,
         "unit_price": 156.94,
+        "discount_percent": null,
         "amount": 156.94
       },
       {
         "description": "Mantenimiento mensual",
         "quantity": 3,
         "unit_price": 728.41,
+        "discount_percent": null,
         "amount": 2185.23
       },
       {
         "description": "Hora de consultoría",
         "quantity": 3,
         "unit_price": 35.13,
+        "discount_percent": null,
         "amount": 105.39
       },
       {
         "description": "Impresión de folletos",
         "quantity": 5,
         "unit_price": 537.66,
+        "discount_percent": null,
         "amount": 2688.3
       }
     ],

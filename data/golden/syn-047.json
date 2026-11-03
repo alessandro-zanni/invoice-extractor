@@ -1,0 +1,62 @@
+{
+  "id": "syn-047",
+  "file": "syn-047.pdf",
+  "split": "dev",
+  "expect_review": false,
+  "error": null,
+  "variant": "discount",
+  "invoice": {
+    "supplier_name": "Idraulica Valli Srl",
+    "supplier_tax_id": "IT91897288550",
+    "invoice_number": "293/2024",
+    "issue_date": "2024-07-27",
+    "currency": "EUR",
+    "lines": [
+      {
+        "description": "Licenza software annuale",
+        "quantity": 1,
+        "unit_price": 7.5,
+        "discount_percent": null,
+        "amount": 7.5
+      },
+      {
+        "description": "Materiale di consumo",
+        "quantity": 2.5,
+        "unit_price": 773.38,
+        "discount_percent": null,
+        "amount": 1933.45
+      },
+      {
+        "description": "Stampa biglietti da visita",
+        "quantity": 2.5,
+        "unit_price": 771.47,
+        "discount_percent": null,
+        "amount": 1928.68
+      },
+      {
+        "description": "Stampa biglietti da visita",
+        "quantity": 2.5,
+        "unit_price": 373.51,
+        "discount_percent": 10,
+        "amount": 840.4
+      },
+      {
+        "description": "Stampa biglietti da visita",
+        "quantity": 2,
+        "unit_price": 304.53,
+        "discount_percent": 20,
+        "amount": 487.25
+      },
+      {
+        "description": "Pannello in legno",
+        "quantity": 2.5,
+        "unit_price": 32.59,
+        "discount_percent": 5,
+        "amount": 77.4
+      }
+    ],
+    "subtotal": 5274.68,
+    "tax_amount": 527.47,
+    "total": 5802.15
+  }
+}

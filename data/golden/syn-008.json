@@ -4,6 +4,7 @@
   "split": "dev",
   "expect_review": true,
   "error": "subtotal",
+  "variant": null,
   "invoice": {
     "supplier_name": "Laura Peña Fotografía",
     "supplier_tax_id": "28756869S",
@@ -15,6 +16,7 @@
         "description": "Sesión de fotos",
         "quantity": 0.5,
         "unit_price": 473.82,
+        "discount_percent": null,
         "amount": 236.91
       }
     ],

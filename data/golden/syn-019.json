@@ -4,6 +4,7 @@
   "split": "test",
   "expect_review": false,
   "error": null,
+  "variant": null,
   "invoice": {
     "supplier_name": "Ferramenta Corsini & C. Snc",
     "supplier_tax_id": "IT54450706137",
@@ -15,18 +16,21 @@
         "description": "Consulenza oraria",
         "quantity": 1,
         "unit_price": 454.31,
+        "discount_percent": null,
         "amount": 454.31
       },
       {
         "description": "Pannello in legno",
         "quantity": 5,
         "unit_price": 59.69,
+        "discount_percent": null,
         "amount": 298.45
       },
       {
         "description": "Licenza software annuale",
         "quantity": 10,
         "unit_price": 592.64,
+        "discount_percent": null,
         "amount": 5926.4
       }
     ],

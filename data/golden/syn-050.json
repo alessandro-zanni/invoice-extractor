@@ -1,0 +1,41 @@
+{
+  "id": "syn-050",
+  "file": "syn-050.jpg",
+  "split": "test",
+  "expect_review": false,
+  "error": null,
+  "variant": "lowres",
+  "invoice": {
+    "supplier_name": "Imprenta Soler SL",
+    "supplier_tax_id": "25919391R",
+    "invoice_number": "60/2026",
+    "issue_date": "2026-07-19",
+    "currency": "EUR",
+    "lines": [
+      {
+        "description": "Mantenimiento mensual",
+        "quantity": 3,
+        "unit_price": 104.84,
+        "discount_percent": null,
+        "amount": 314.52
+      },
+      {
+        "description": "Pintura interior",
+        "quantity": 1,
+        "unit_price": 841.63,
+        "discount_percent": null,
+        "amount": 841.63
+      },
+      {
+        "description": "Hora de consultoría",
+        "quantity": 1,
+        "unit_price": 735.6,
+        "discount_percent": null,
+        "amount": 735.6
+      }
+    ],
+    "subtotal": 1891.75,
+    "tax_amount": 189.18,
+    "total": 2080.93
+  }
+}

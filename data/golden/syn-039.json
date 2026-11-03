@@ -1,0 +1,41 @@
+{
+  "id": "syn-039",
+  "file": "syn-039.jpg",
+  "split": "dev",
+  "expect_review": false,
+  "error": null,
+  "variant": "rot90",
+  "invoice": {
+    "supplier_name": "Idraulica Valli Srl",
+    "supplier_tax_id": "IT40511825479",
+    "invoice_number": "572/2023",
+    "issue_date": "2023-04-24",
+    "currency": "EUR",
+    "lines": [
+      {
+        "description": "Materiale di consumo",
+        "quantity": 3,
+        "unit_price": 123.21,
+        "discount_percent": null,
+        "amount": 369.63
+      },
+      {
+        "description": "Manutenzione impianto",
+        "quantity": 2,
+        "unit_price": 216.19,
+        "discount_percent": null,
+        "amount": 432.38
+      },
+      {
+        "description": "Licenza software annuale",
+        "quantity": 1,
+        "unit_price": 219.71,
+        "discount_percent": null,
+        "amount": 219.71
+      }
+    ],
+    "subtotal": 1021.72,
+    "tax_amount": 224.78,
+    "total": 1246.5
+  }
+}

@@ -4,6 +4,7 @@
   "split": "dev",
   "expect_review": false,
   "error": null,
+  "variant": null,
   "invoice": {
     "supplier_name": "Café Rambla SL",
     "supplier_tax_id": "B59455200",
@@ -15,12 +16,14 @@
         "description": "Material de oficina",
         "quantity": 5,
         "unit_price": 809.67,
+        "discount_percent": null,
         "amount": 4048.35
       },
       {
         "description": "Desplazamiento",
         "quantity": 2,
         "unit_price": 758,
+        "discount_percent": null,
         "amount": 1516
       }
     ],

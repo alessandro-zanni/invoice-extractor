@@ -4,6 +4,7 @@
   "split": "dev",
   "expect_review": false,
   "error": null,
+  "variant": null,
   "invoice": {
     "supplier_name": "Studio Grafico Lunetta",
     "supplier_tax_id": "IT58195945355",
@@ -15,30 +16,35 @@
         "description": "Consulenza oraria",
         "quantity": 10,
         "unit_price": 835.17,
+        "discount_percent": null,
         "amount": 8351.7
       },
       {
         "description": "Pannello in legno",
         "quantity": 2.5,
         "unit_price": 388.88,
+        "discount_percent": null,
         "amount": 972.2
       },
       {
         "description": "Consulenza oraria",
         "quantity": 1,
         "unit_price": 101.18,
+        "discount_percent": null,
         "amount": 101.18
       },
       {
         "description": "Trasferta",
         "quantity": 2,
         "unit_price": 434.33,
+        "discount_percent": null,
         "amount": 868.66
       },
       {
         "description": "Licenza software annuale",
         "quantity": 2.5,
         "unit_price": 71.2,
+        "discount_percent": null,
         "amount": 178
       }
     ],
