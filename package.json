@@ -11,7 +11,8 @@
     "test": "bun test",
     "typecheck": "next typegen && tsc --noEmit",
     "golden": "bun scripts/golden/generate.ts",
-    "eval": "bun scripts/eval.ts"
+    "eval": "bun scripts/eval.ts",
+    "golden:sroie": "bun scripts/golden/sroie.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^1.3.0",

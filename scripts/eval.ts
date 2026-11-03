@@ -1,6 +1,7 @@
 // Runs one extraction strategy over the golden set and scores it against ground truth.
-//   bun scripts/eval.ts --strategy haiku|opus|routed [--split dev|test|all] [--source syn|cord] [--limit N]
+//   bun scripts/eval.ts --strategy haiku|opus|routed [--split dev|test|all] [--source syn|cord|fat|sroie] [--limit N]
 import { readdir, mkdir } from "node:fs/promises";
+import { existsSync } from "node:fs";
 import { parseArgs } from "node:util";
 import { extract, extractRouted, type MediaType } from "../src/lib/extract";
 import type { Invoice } from "../src/lib/schema";
@@ -12,12 +13,13 @@ const { values: args } = parseArgs({
 const strategy = args.strategy!;
 if (!["haiku", "opus", "routed"].includes(strategy)) throw new Error(`unknown strategy ${strategy}`);
 
-const DIR = "data/golden";
+// data/external holds research-only sets (SROIE) that are downloaded, never committed.
+const DIRS = ["data/golden", ...(existsSync("data/external") ? (await readdir("data/external")).map((d) => `data/external/${d}`) : [])];
 // `fields`: which fields this case scores (default all); `expect_review: null` = not scored.
-type Case = { id: string; file: string; split: string; expect_review: boolean | null; fields?: Field[]; invoice: Invoice };
+type Case = { dir: string; id: string; file: string; split: string; expect_review: boolean | null; fields?: Field[]; invoice: Invoice };
 const cases: Case[] = [];
-for (const f of (await readdir(DIR)).filter((f) => f.endsWith(".json")).sort()) {
-  const c: Case = await Bun.file(`${DIR}/${f}`).json();
+for (const dir of DIRS) for (const f of (await readdir(dir)).filter((f) => f.endsWith(".json")).sort()) {
+  const c: Case = { ...(await Bun.file(`${dir}/${f}`).json()), dir };
   if ((args.split === "all" || c.split === args.split) && (!args.source || c.id.startsWith(args.source))) cases.push(c);
 }
 const selected = args.limit ? cases.slice(0, Number(args.limit)) : cases;
@@ -25,7 +27,7 @@ const selected = args.limit ? cases.slice(0, Number(args.limit)) : cases;
 const MEDIA: Record<string, MediaType> = { pdf: "application/pdf", jpg: "image/jpeg", png: "image/png" };
 
 async function runCase(c: Case) {
-  const data = Buffer.from(await Bun.file(`${DIR}/${c.file}`).arrayBuffer()).toString("base64");
+  const data = Buffer.from(await Bun.file(`${c.dir}/${c.file}`).arrayBuffer()).toString("base64");
   const media = MEDIA[c.file.split(".").pop()!];
   const start = Date.now();
   let invoice: Invoice | null, issues, costUsd, models: string[];

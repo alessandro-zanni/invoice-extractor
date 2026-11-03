@@ -44,3 +44,6 @@ next-env.d.ts
 
 # claude code (personal config)
 .claude/settings.local.json
+
+# research-only datasets (SROIE): downloaded by scripts/golden/sroie.ts, never committed
+/data/external
