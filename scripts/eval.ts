@@ -1,5 +1,5 @@
 // Runs one extraction strategy over the golden set and scores it against ground truth.
-//   bun scripts/eval.ts --strategy haiku|opus|routed [--split dev|test|all] [--source syn|cord|fat|sroie] [--limit N]
+//   bun scripts/eval.ts --strategy haiku|opus|routed [--split dev|test|all] [--source syn|cord|fat|sroie|rev] [--limit N]
 import { readdir, mkdir } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import { parseArgs } from "node:util";

@@ -13,7 +13,8 @@
     "golden": "bun scripts/golden/generate.ts",
     "eval": "bun scripts/eval.ts",
     "golden:sroie": "bun scripts/golden/sroie.ts",
-    "db:types": "supabase gen types typescript --local > src/lib/database.types.ts"
+    "db:types": "supabase gen types typescript --local > src/lib/database.types.ts",
+    "golden:reviews": "bun scripts/golden/reviews.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^1.3.0",
