@@ -44,7 +44,7 @@ export type ReviewReason = "document_inconsistent" | "uncertain_extraction";
 // same checks, the document itself doesn't add up; otherwise the reading is uncertain.
 export function reviewReason(first: Issue[], last: Issue[]): ReviewReason | null {
   if (!last.length) return null;
-  const fields = (xs: Issue[]) => xs.map((i) => i.field).sort().join();
+  const fields = (xs: Issue[]) => xs.map((i) => i.field).sort((a, b) => a.localeCompare(b)).join();
   return first !== last && fields(first) === fields(last) ? "document_inconsistent" : "uncertain_extraction";
 }
 
