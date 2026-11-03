@@ -5,10 +5,10 @@ import { createClient } from "@/lib/supabase/server";
 
 export async function signIn(_: string | undefined, form: FormData) {
   const supabase = await createClient();
-  const { error } = await supabase.auth.signInWithPassword({
-    email: String(form.get("email")),
-    password: String(form.get("password")),
-  });
+  const email = form.get("email");
+  const password = form.get("password");
+  if (typeof email !== "string" || typeof password !== "string") return "Wrong email or password.";
+  const { error } = await supabase.auth.signInWithPassword({ email, password });
   if (error) return "Wrong email or password.";
   redirect("/");
 }
