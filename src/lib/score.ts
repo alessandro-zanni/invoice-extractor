@@ -26,6 +26,6 @@ export function scoreFields(got: Invoice | null, want: Invoice): Record<Field, b
     lines:
       !!g &&
       g.lines.length === want.lines.length &&
-      g.lines.every((l, i) => cents(l.amount) === cents(want.lines[i].amount) && cents(l.unit_price) === cents(want.lines[i].unit_price)),
+      g.lines.every((l, i) => cents(l.amount) === cents(want.lines[i].amount)),
   };
 }

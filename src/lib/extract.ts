@@ -15,7 +15,8 @@ export type Model = keyof typeof PRICES;
 export type MediaType = "application/pdf" | "image/jpeg" | "image/png" | "image/webp";
 
 const PROMPT = `Extract the invoice or receipt data. Copy numbers exactly as printed; do not fix
-arithmetic that does not add up. Use null for fields that are not on the document.`;
+arithmetic that does not add up. Use null for fields that are not on the document.
+One line per printed item: add-ons or modifiers printed under an item are separate lines.`;
 
 export type Attempt = { model: Model; invoice: Invoice | null; issues: Issue[]; costUsd: number; ms: number };
 

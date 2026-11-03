@@ -1,23 +1,24 @@
 // Runs one extraction strategy over the golden set and scores it against ground truth.
-//   bun scripts/eval.ts --strategy haiku|opus|routed [--split dev|test|all] [--limit N]
+//   bun scripts/eval.ts --strategy haiku|opus|routed [--split dev|test|all] [--source syn|cord] [--limit N]
 import { readdir, mkdir } from "node:fs/promises";
 import { parseArgs } from "node:util";
 import { extract, extractRouted, type MediaType } from "../src/lib/extract";
 import type { Invoice } from "../src/lib/schema";
-import { FIELDS, scoreFields } from "../src/lib/score";
+import { FIELDS, scoreFields, type Field } from "../src/lib/score";
 
 const { values: args } = parseArgs({
-  options: { strategy: { type: "string", default: "routed" }, split: { type: "string", default: "dev" }, limit: { type: "string" } },
+  options: { strategy: { type: "string", default: "routed" }, split: { type: "string", default: "dev" }, source: { type: "string" }, limit: { type: "string" } },
 });
 const strategy = args.strategy!;
 if (!["haiku", "opus", "routed"].includes(strategy)) throw new Error(`unknown strategy ${strategy}`);
 
 const DIR = "data/golden";
-type Case = { id: string; file: string; split: string; expect_review: boolean; invoice: Invoice };
+// `fields`: which fields this case scores (default all); `expect_review: null` = not scored.
+type Case = { id: string; file: string; split: string; expect_review: boolean | null; fields?: Field[]; invoice: Invoice };
 const cases: Case[] = [];
 for (const f of (await readdir(DIR)).filter((f) => f.endsWith(".json")).sort()) {
   const c: Case = await Bun.file(`${DIR}/${f}`).json();
-  if (args.split === "all" || c.split === args.split) cases.push(c);
+  if ((args.split === "all" || c.split === args.split) && (!args.source || c.id.startsWith(args.source))) cases.push(c);
 }
 const selected = args.limit ? cases.slice(0, Number(args.limit)) : cases;
 
@@ -38,7 +39,7 @@ async function runCase(c: Case) {
     models = [a.model];
   }
   const flagged = issues.length > 0;
-  return { id: c.id, expect_review: c.expect_review, flagged, models, costUsd, ms: Date.now() - start, issues, fields: scoreFields(invoice, c.invoice), invoice };
+  return { id: c.id, scored: c.fields ?? [...FIELDS], expect_review: c.expect_review, flagged, models, costUsd, ms: Date.now() - start, issues, fields: scoreFields(invoice, c.invoice), invoice };
 }
 
 // Small worker pool: a few documents in flight, well under the rate limits.
@@ -62,13 +63,17 @@ process.stderr.write("\n");
 
 const ok = results.filter((r) => !("error" in r)) as Awaited<ReturnType<typeof runCase>>[];
 const pct = (n: number, d: number) => (d ? `${((100 * n) / d).toFixed(1)}%` : "n/a");
-const clean = ok.filter((r) => !r.expect_review);
-const dirty = ok.filter((r) => r.expect_review);
+const clean = ok.filter((r) => r.expect_review === false);
+const dirty = ok.filter((r) => r.expect_review === true);
+const fieldPct = (f: Field) => {
+  const xs = ok.filter((r) => r.scored.includes(f));
+  return xs.length ? `${pct(xs.filter((r) => r.fields[f]).length, xs.length)} (${xs.length})` : "n/a";
+};
 const ms = ok.map((r) => r.ms).sort((a, b) => a - b);
 const summary = {
   strategy, split: args.split, docs: selected.length, errors: results.length - ok.length,
-  field_accuracy: Object.fromEntries(FIELDS.map((f) => [f, pct(ok.filter((r) => r.fields[f]).length, ok.length)])),
-  docs_all_fields_right: pct(ok.filter((r) => FIELDS.every((f) => r.fields[f])).length, ok.length),
+  field_accuracy: Object.fromEntries(FIELDS.map((f) => [f, fieldPct(f)])),
+  docs_all_fields_right: pct(ok.filter((r) => r.scored.every((f) => r.fields[f])).length, ok.length),
   printed_errors_caught: `${dirty.filter((r) => r.flagged).length}/${dirty.length}`,
   clean_docs_flagged: `${clean.filter((r) => r.flagged).length}/${clean.length}`,
   escalated_to_opus: strategy === "routed" ? pct(ok.filter((r) => r.models.length > 1).length, ok.length) : undefined,
