@@ -1,0 +1,24 @@
+{
+  "id": "fat-005",
+  "file": "fat-005.jpg",
+  "split": "test",
+  "expect_review": null,
+  "fields": [
+    "total",
+    "currency",
+    "issue_date",
+    "invoice_number"
+  ],
+  "source": "FATURA (FATURA2-invoices test split), CC BY 4.0",
+  "invoice": {
+    "supplier_name": "",
+    "supplier_tax_id": null,
+    "invoice_number": "INV07820771",
+    "issue_date": "2015-12-23",
+    "currency": "EUR",
+    "lines": [],
+    "subtotal": 0,
+    "tax_amount": 0,
+    "total": 156.25
+  }
+}

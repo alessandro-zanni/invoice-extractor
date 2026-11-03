@@ -1,0 +1,23 @@
+{
+  "id": "fat-015",
+  "file": "fat-015.jpg",
+  "split": "dev",
+  "expect_review": null,
+  "fields": [
+    "total",
+    "issue_date",
+    "invoice_number"
+  ],
+  "source": "FATURA (FATURA2-invoices test split), CC BY 4.0",
+  "invoice": {
+    "supplier_name": "",
+    "supplier_tax_id": null,
+    "invoice_number": "6Y6M3d-631",
+    "issue_date": "2007-07-04",
+    "currency": "",
+    "lines": [],
+    "subtotal": 0,
+    "tax_amount": 0,
+    "total": 906.48
+  }
+}

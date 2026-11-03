@@ -1,0 +1,24 @@
+{
+  "id": "fat-021",
+  "file": "fat-021.jpg",
+  "split": "dev",
+  "expect_review": null,
+  "fields": [
+    "total",
+    "currency",
+    "issue_date",
+    "invoice_number"
+  ],
+  "source": "FATURA (FATURA2-invoices test split), CC BY 4.0",
+  "invoice": {
+    "supplier_name": "",
+    "supplier_tax_id": null,
+    "invoice_number": "3Y2M9d-132",
+    "issue_date": "2007-01-24",
+    "currency": "USD",
+    "lines": [],
+    "subtotal": 0,
+    "tax_amount": 0,
+    "total": 964.16
+  }
+}
