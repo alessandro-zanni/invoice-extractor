@@ -28,11 +28,14 @@ function isSpanishNif(id: string) {
   return /^[ABCDEFGHJNPQRSUVW]\d{7}[0-9A-J]$/.test(id); // ponytail: CIF format only, add control digit if false positives show up in eval
 }
 
-export function validateTaxId(raw: string) {
+// true/false for Italian and Spanish ids, null for ids we can't check (other countries).
+export function validateTaxId(raw: string): boolean | null {
   const id = raw.replace(/[\s.-]/g, "").toUpperCase();
   if (id.startsWith("IT")) return isItalianVat(id.slice(2));
   if (id.startsWith("ES")) return isSpanishNif(id.slice(2));
-  return isItalianVat(id) || isSpanishNif(id);
+  if (/^\d{11}$/.test(id)) return isItalianVat(id);
+  if (/^(\d{8}|[XYZ]\d{7}|[ABCDEFGHJNPQRSUVW]\d{7})[0-9A-Z]$/.test(id)) return isSpanishNif(id);
+  return null;
 }
 
 export function validateInvoice(inv: Invoice, today = new Date()): Issue[] {
@@ -53,7 +56,7 @@ export function validateInvoice(inv: Invoice, today = new Date()): Issue[] {
   if (!close(inv.subtotal + inv.tax_amount, inv.total, 2))
     issues.push({ field: "total", message: `${inv.subtotal} + ${inv.tax_amount} ≠ ${inv.total}` });
 
-  if (inv.supplier_tax_id && !validateTaxId(inv.supplier_tax_id))
+  if (inv.supplier_tax_id && validateTaxId(inv.supplier_tax_id) === false)
     issues.push({ field: "supplier_tax_id", message: `invalid tax id ${inv.supplier_tax_id}` });
 
   if (inv.issue_date) {

@@ -46,4 +46,6 @@ test("tax ids", () => {
   expect(validateTaxId("ES12345678A")).toBe(false);
   expect(validateTaxId("X1234567L")).toBe(true); // NIE
   expect(validateTaxId("B12345678")).toBe(true); // CIF format
+  expect(validateTaxId("GST 001234567890")).toBe(null); // other countries: not checkable, not invalid
+  expect(validateTaxId("00743110158")).toBe(false);
 });
