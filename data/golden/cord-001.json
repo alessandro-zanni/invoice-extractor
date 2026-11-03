@@ -1,0 +1,29 @@
+{
+  "id": "cord-001",
+  "file": "cord-001.jpg",
+  "split": "test",
+  "expect_review": null,
+  "fields": [
+    "total",
+    "lines"
+  ],
+  "source": "CORD v2 test split, CC BY 4.0",
+  "invoice": {
+    "supplier_name": "",
+    "supplier_tax_id": null,
+    "invoice_number": null,
+    "issue_date": null,
+    "currency": "IDR",
+    "lines": [
+      {
+        "description": "-TICKET CP",
+        "quantity": 2,
+        "unit_price": 30000,
+        "amount": 60000
+      }
+    ],
+    "subtotal": 60000,
+    "tax_amount": 5455,
+    "total": 60000
+  }
+}

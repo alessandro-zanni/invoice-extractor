@@ -1,0 +1,41 @@
+{
+  "id": "cord-005",
+  "file": "cord-005.jpg",
+  "split": "test",
+  "expect_review": null,
+  "fields": [
+    "total",
+    "lines"
+  ],
+  "source": "CORD v2 test split, CC BY 4.0",
+  "invoice": {
+    "supplier_name": "",
+    "supplier_tax_id": null,
+    "invoice_number": null,
+    "issue_date": null,
+    "currency": "IDR",
+    "lines": [
+      {
+        "description": "ICE BLACKCOFFE",
+        "quantity": 2,
+        "unit_price": 41000,
+        "amount": 82000
+      },
+      {
+        "description": "AVOCADO COFFEE",
+        "quantity": 1,
+        "unit_price": 61000,
+        "amount": 61000
+      },
+      {
+        "description": "CHIKEN KATSU FF",
+        "quantity": 1,
+        "unit_price": 51000,
+        "amount": 51000
+      }
+    ],
+    "subtotal": 194000,
+    "tax_amount": 0,
+    "total": 174600
+  }
+}

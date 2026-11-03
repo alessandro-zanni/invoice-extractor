@@ -1,0 +1,41 @@
+{
+  "id": "cord-007",
+  "file": "cord-007.jpg",
+  "split": "dev",
+  "expect_review": null,
+  "fields": [
+    "total",
+    "lines"
+  ],
+  "source": "CORD v2 test split, CC BY 4.0",
+  "invoice": {
+    "supplier_name": "",
+    "supplier_tax_id": null,
+    "invoice_number": null,
+    "issue_date": null,
+    "currency": "IDR",
+    "lines": [
+      {
+        "description": "EGG TART",
+        "quantity": 1,
+        "unit_price": 13000,
+        "amount": 13000
+      },
+      {
+        "description": "CHOCO CUS ARD PASTRY",
+        "quantity": 2,
+        "unit_price": 12000,
+        "amount": 24000
+      },
+      {
+        "description": "REDBEAN BREAD",
+        "quantity": 1,
+        "unit_price": 9000,
+        "amount": 9000
+      }
+    ],
+    "subtotal": 0,
+    "tax_amount": 0,
+    "total": 46000
+  }
+}

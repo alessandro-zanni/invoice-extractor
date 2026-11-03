@@ -1,0 +1,35 @@
+{
+  "id": "cord-024",
+  "file": "cord-024.jpg",
+  "split": "dev",
+  "expect_review": null,
+  "fields": [
+    "total",
+    "lines"
+  ],
+  "source": "CORD v2 test split, CC BY 4.0",
+  "invoice": {
+    "supplier_name": "",
+    "supplier_tax_id": null,
+    "invoice_number": null,
+    "issue_date": null,
+    "currency": "IDR",
+    "lines": [
+      {
+        "description": "TWIST DONUT",
+        "quantity": 6,
+        "unit_price": 9000,
+        "amount": 54000
+      },
+      {
+        "description": "REDBEAN BREAD",
+        "quantity": 1,
+        "unit_price": 9000,
+        "amount": 9000
+      }
+    ],
+    "subtotal": 0,
+    "tax_amount": 0,
+    "total": 63000
+  }
+}

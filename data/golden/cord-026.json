@@ -1,0 +1,41 @@
+{
+  "id": "cord-026",
+  "file": "cord-026.jpg",
+  "split": "dev",
+  "expect_review": null,
+  "fields": [
+    "total",
+    "lines"
+  ],
+  "source": "CORD v2 test split, CC BY 4.0",
+  "invoice": {
+    "supplier_name": "",
+    "supplier_tax_id": null,
+    "invoice_number": null,
+    "issue_date": null,
+    "currency": "IDR",
+    "lines": [
+      {
+        "description": "TWIST STRAWBERRY DONUT",
+        "quantity": 1,
+        "unit_price": 10000,
+        "amount": 10000
+      },
+      {
+        "description": "TLJ CROQUETTE",
+        "quantity": 1,
+        "unit_price": 17000,
+        "amount": 17000
+      },
+      {
+        "description": "POTATO PEPPER BAGEL",
+        "quantity": 1,
+        "unit_price": 16000,
+        "amount": 16000
+      }
+    ],
+    "subtotal": 0,
+    "tax_amount": 0,
+    "total": 43000
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "id": "cord-002",
+  "file": "cord-002.jpg",
+  "split": "dev",
+  "expect_review": null,
+  "fields": [
+    "total",
+    "lines"
+  ],
+  "source": "CORD v2 test split, CC BY 4.0",
+  "invoice": {
+    "supplier_name": "",
+    "supplier_tax_id": null,
+    "invoice_number": null,
+    "issue_date": null,
+    "currency": "IDR",
+    "lines": [
+      {
+        "description": "J.STB PROMO",
+        "quantity": 1,
+        "unit_price": 17500,
+        "amount": 17500
+      },
+      {
+        "description": "Y.B.BAT",
+        "quantity": 1,
+        "unit_price": 46000,
+        "amount": 46000
+      },
+      {
+        "description": "Y.BASO PROM",
+        "quantity": 1,
+        "unit_price": 27500,
+        "amount": 27500
+      }
+    ],
+    "subtotal": 0,
+    "tax_amount": 0,
+    "total": 91000
+  }
+}

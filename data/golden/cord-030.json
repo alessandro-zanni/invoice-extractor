@@ -1,0 +1,71 @@
+{
+  "id": "cord-030",
+  "file": "cord-030.jpg",
+  "split": "dev",
+  "expect_review": null,
+  "fields": [
+    "total",
+    "lines"
+  ],
+  "source": "CORD v2 test split, CC BY 4.0",
+  "invoice": {
+    "supplier_name": "",
+    "supplier_tax_id": null,
+    "invoice_number": null,
+    "issue_date": null,
+    "currency": "IDR",
+    "lines": [
+      {
+        "description": "COLD OCHA",
+        "quantity": 1,
+        "unit_price": 10909,
+        "amount": 10909
+      },
+      {
+        "description": "BCA PROMO",
+        "quantity": 1,
+        "unit_price": 54455,
+        "amount": 54455
+      },
+      {
+        "description": "ABURA UDON SPICY",
+        "quantity": 1,
+        "unit_price": 0,
+        "amount": 0
+      },
+      {
+        "description": ":-KAKE UDON",
+        "quantity": 1,
+        "unit_price": 0,
+        "amount": 0
+      },
+      {
+        "description": "SKEWERED SHUMAI",
+        "quantity": 1,
+        "unit_price": 12727,
+        "amount": 12727
+      },
+      {
+        "description": "SKEWERED TOFU ROLL",
+        "quantity": 1,
+        "unit_price": 12727,
+        "amount": 12727
+      },
+      {
+        "description": "EBI TEMPURA",
+        "quantity": 1,
+        "unit_price": 13636,
+        "amount": 13636
+      },
+      {
+        "description": "KITSUNE UDON (KIDS)",
+        "quantity": 1,
+        "unit_price": 28182,
+        "amount": 28182
+      }
+    ],
+    "subtotal": 132636,
+    "tax_amount": 13264,
+    "total": 145900
+  }
+}

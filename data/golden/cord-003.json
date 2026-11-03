@@ -1,0 +1,35 @@
+{
+  "id": "cord-003",
+  "file": "cord-003.jpg",
+  "split": "dev",
+  "expect_review": null,
+  "fields": [
+    "total",
+    "lines"
+  ],
+  "source": "CORD v2 test split, CC BY 4.0",
+  "invoice": {
+    "supplier_name": "",
+    "supplier_tax_id": null,
+    "invoice_number": null,
+    "issue_date": null,
+    "currency": "IDR",
+    "lines": [
+      {
+        "description": "JASMINE MT ( L )",
+        "quantity": 1,
+        "unit_price": 24000,
+        "amount": 24000
+      },
+      {
+        "description": "COCONUT JELLY ( L )",
+        "quantity": 1,
+        "unit_price": 4000,
+        "amount": 4000
+      }
+    ],
+    "subtotal": 28000,
+    "tax_amount": 0,
+    "total": 28000
+  }
+}

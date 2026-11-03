@@ -1,0 +1,59 @@
+{
+  "id": "cord-018",
+  "file": "cord-018.jpg",
+  "split": "test",
+  "expect_review": null,
+  "fields": [
+    "total",
+    "lines"
+  ],
+  "source": "CORD v2 test split, CC BY 4.0",
+  "invoice": {
+    "supplier_name": "",
+    "supplier_tax_id": null,
+    "invoice_number": null,
+    "issue_date": null,
+    "currency": "IDR",
+    "lines": [
+      {
+        "description": "Goblin's Mace",
+        "quantity": 1,
+        "unit_price": 25000,
+        "amount": 25000
+      },
+      {
+        "description": "Mozarella Hot Dog",
+        "quantity": 2,
+        "unit_price": 19000,
+        "amount": 38000
+      },
+      {
+        "description": "Chili Pepper Croquette",
+        "quantity": 1,
+        "unit_price": 14000,
+        "amount": 14000
+      },
+      {
+        "description": "Cheese Croquette",
+        "quantity": 1,
+        "unit_price": 14000,
+        "amount": 14000
+      },
+      {
+        "description": "Plastik Amook",
+        "quantity": 1,
+        "unit_price": 0,
+        "amount": 0
+      },
+      {
+        "description": "Plastik Putih Take Away",
+        "quantity": 1,
+        "unit_price": 0,
+        "amount": 0
+      }
+    ],
+    "subtotal": 91000,
+    "tax_amount": 0,
+    "total": 91000
+  }
+}

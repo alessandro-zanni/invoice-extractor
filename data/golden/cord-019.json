@@ -1,0 +1,29 @@
+{
+  "id": "cord-019",
+  "file": "cord-019.jpg",
+  "split": "test",
+  "expect_review": null,
+  "fields": [
+    "total",
+    "lines"
+  ],
+  "source": "CORD v2 test split, CC BY 4.0",
+  "invoice": {
+    "supplier_name": "",
+    "supplier_tax_id": null,
+    "invoice_number": null,
+    "issue_date": null,
+    "currency": "IDR",
+    "lines": [
+      {
+        "description": "Propolis Cair",
+        "quantity": 1,
+        "unit_price": 156000,
+        "amount": 156000
+      }
+    ],
+    "subtotal": 0,
+    "tax_amount": 0,
+    "total": 156000
+  }
+}

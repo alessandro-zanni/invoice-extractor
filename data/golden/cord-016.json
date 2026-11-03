@@ -1,0 +1,35 @@
+{
+  "id": "cord-016",
+  "file": "cord-016.jpg",
+  "split": "dev",
+  "expect_review": null,
+  "fields": [
+    "total",
+    "lines"
+  ],
+  "source": "CORD v2 test split, CC BY 4.0",
+  "invoice": {
+    "supplier_name": "",
+    "supplier_tax_id": null,
+    "invoice_number": null,
+    "issue_date": null,
+    "currency": "IDR",
+    "lines": [
+      {
+        "description": "Lemon Tea (L)",
+        "quantity": 1,
+        "unit_price": 25000,
+        "amount": 25000
+      },
+      {
+        "description": "Caramel Small",
+        "quantity": 1,
+        "unit_price": 38000,
+        "amount": 38000
+      }
+    ],
+    "subtotal": 0,
+    "tax_amount": 0,
+    "total": 63000
+  }
+}
