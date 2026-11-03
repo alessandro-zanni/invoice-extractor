@@ -10,6 +10,9 @@ import type { Invoice } from "@/lib/schema";
 import { createClient } from "@/lib/supabase/server";
 import type { Issue } from "@/lib/validate";
 
+// Money always with two decimals: the browser would show 4.4 for 4.40.
+const money = (n: number | null | undefined) => (n == null ? "" : n.toFixed(2));
+
 const EMPTY_LINE = { description: "", quantity: 1, unit_price: 0, discount_percent: null, amount: 0 };
 
 // Per-user data behind login: nothing to prerender, render on request.
@@ -82,13 +85,13 @@ export default async function DocumentPage({ params }: PageProps<"/documents/[id
               <div key={i} className="grid grid-cols-2 gap-2 sm:grid-cols-[1fr_5rem_6rem_4rem_6rem]">
                 <Input name={`lines.${i}.description`} defaultValue={l.description} placeholder="New line" aria-label="Description" className="col-span-2 sm:col-span-1" />
                 <Input name={`lines.${i}.quantity`} type="number" step="any" defaultValue={l.quantity} aria-label="Quantity" />
-                <Input name={`lines.${i}.unit_price`} type="number" step="any" defaultValue={l.unit_price} aria-label="Unit price" />
+                <Input name={`lines.${i}.unit_price`} type="number" step="any" defaultValue={money(l.unit_price)} aria-label="Unit price" />
                 <Input name={`lines.${i}.discount_percent`} type="number" step="any" defaultValue={l.discount_percent ?? ""} aria-label="Discount percent" />
                 <Input
                   name={`lines.${i}.amount`}
                   type="number"
                   step="any"
-                  defaultValue={l.amount}
+                  defaultValue={money(l.amount)}
                   aria-label="Amount"
                   aria-invalid={flagged.has(`lines.${i}.amount`)}
                   className={cn(flagged.has(`lines.${i}.amount`) && "border-destructive")}
@@ -98,11 +101,11 @@ export default async function DocumentPage({ params }: PageProps<"/documents/[id
           </fieldset>
 
           <div className="grid gap-3 sm:grid-cols-3">
-            {field("subtotal", "Subtotal", inv?.subtotal, "number")}
-            {field("discount_amount", "Document discount", inv?.discount_amount, "number")}
-            {field("tax_amount", "Tax", inv?.tax_amount, "number")}
-            {field("rounding", "Rounding", inv?.rounding, "number")}
-            {field("total", "Total", inv?.total, "number")}
+            {field("subtotal", "Subtotal", money(inv?.subtotal), "number")}
+            {field("discount_amount", "Document discount", money(inv?.discount_amount), "number")}
+            {field("tax_amount", "Tax", money(inv?.tax_amount), "number")}
+            {field("rounding", "Rounding", money(inv?.rounding), "number")}
+            {field("total", "Total", money(inv?.total), "number")}
             <label className="flex items-center gap-2 self-end pb-2 text-sm">
               <input type="checkbox" name="prices_include_tax" defaultChecked={inv?.prices_include_tax} className="size-4" />
               Prices include tax
