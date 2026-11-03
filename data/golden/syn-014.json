@@ -1,0 +1,58 @@
+{
+  "id": "syn-014",
+  "file": "syn-014.jpg",
+  "split": "test",
+  "expect_review": true,
+  "error": "line",
+  "variant": null,
+  "invoice": {
+    "supplier_name": "Talleres Montaner SA",
+    "supplier_tax_id": "B61586277",
+    "invoice_number": "518/2024",
+    "issue_date": "2024-09-19",
+    "currency": "EUR",
+    "lines": [
+      {
+        "description": "Pintura interior",
+        "quantity": 1,
+        "unit_price": 259.13,
+        "discount_percent": null,
+        "amount": 269.13
+      },
+      {
+        "description": "Desplazamiento",
+        "quantity": 3,
+        "unit_price": 248.43,
+        "discount_percent": null,
+        "amount": 745.29
+      },
+      {
+        "description": "Sesión de fotos",
+        "quantity": 10,
+        "unit_price": 664.86,
+        "discount_percent": null,
+        "amount": 6648.6
+      },
+      {
+        "description": "Pintura interior",
+        "quantity": 1,
+        "unit_price": 762.29,
+        "discount_percent": null,
+        "amount": 762.29
+      },
+      {
+        "description": "Hora de consultoría",
+        "quantity": 3,
+        "unit_price": 424.98,
+        "discount_percent": null,
+        "amount": 1274.94
+      }
+    ],
+    "subtotal": 9690.25,
+    "discount_amount": 0,
+    "tax_amount": 969.03,
+    "prices_include_tax": false,
+    "rounding": 0,
+    "total": 10659.28
+  }
+}

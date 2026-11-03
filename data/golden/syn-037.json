@@ -1,0 +1,51 @@
+{
+  "id": "syn-037",
+  "file": "syn-037.pdf",
+  "split": "test",
+  "expect_review": false,
+  "error": null,
+  "variant": "discount",
+  "invoice": {
+    "supplier_name": "Ferramenta Corsini & C. Snc",
+    "supplier_tax_id": "IT89783105623",
+    "invoice_number": "968/2025",
+    "issue_date": "2025-07-27",
+    "currency": "EUR",
+    "lines": [
+      {
+        "description": "Pannello in legno",
+        "quantity": 3,
+        "unit_price": 755.53,
+        "discount_percent": null,
+        "amount": 2266.59
+      },
+      {
+        "description": "Licenza software annuale",
+        "quantity": 1,
+        "unit_price": 743.51,
+        "discount_percent": 10,
+        "amount": 669.16
+      },
+      {
+        "description": "Stampa biglietti da visita",
+        "quantity": 1,
+        "unit_price": 246.04,
+        "discount_percent": 15,
+        "amount": 209.13
+      },
+      {
+        "description": "Manutenzione impianto",
+        "quantity": 3,
+        "unit_price": 119.38,
+        "discount_percent": 10,
+        "amount": 322.33
+      }
+    ],
+    "subtotal": 3467.21,
+    "discount_amount": 0,
+    "tax_amount": 346.72,
+    "prices_include_tax": false,
+    "rounding": 0,
+    "total": 3813.93
+  }
+}

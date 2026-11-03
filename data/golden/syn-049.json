@@ -1,0 +1,65 @@
+{
+  "id": "syn-049",
+  "file": "syn-049.jpg",
+  "split": "dev",
+  "expect_review": false,
+  "error": null,
+  "variant": "rot90",
+  "invoice": {
+    "supplier_name": "Panificio Rinaldi",
+    "supplier_tax_id": "IT56866432810",
+    "invoice_number": "392/2024",
+    "issue_date": "2024-01-17",
+    "currency": "EUR",
+    "lines": [
+      {
+        "description": "Licenza software annuale",
+        "quantity": 1,
+        "unit_price": 238.67,
+        "discount_percent": null,
+        "amount": 238.67
+      },
+      {
+        "description": "Licenza software annuale",
+        "quantity": 3,
+        "unit_price": 170.14,
+        "discount_percent": null,
+        "amount": 510.42
+      },
+      {
+        "description": "Trasferta",
+        "quantity": 1,
+        "unit_price": 607.3,
+        "discount_percent": null,
+        "amount": 607.3
+      },
+      {
+        "description": "Stampa biglietti da visita",
+        "quantity": 2.5,
+        "unit_price": 375.48,
+        "discount_percent": null,
+        "amount": 938.7
+      },
+      {
+        "description": "Licenza software annuale",
+        "quantity": 2,
+        "unit_price": 287.84,
+        "discount_percent": null,
+        "amount": 575.68
+      },
+      {
+        "description": "Pannello in legno",
+        "quantity": 0.5,
+        "unit_price": 443.37,
+        "discount_percent": null,
+        "amount": 221.69
+      }
+    ],
+    "subtotal": 3092.46,
+    "discount_amount": 0,
+    "tax_amount": 309.25,
+    "prices_include_tax": false,
+    "rounding": 0,
+    "total": 3401.71
+  }
+}

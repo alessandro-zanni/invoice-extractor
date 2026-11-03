@@ -1,0 +1,61 @@
+{
+  "id": "cord-021",
+  "file": "cord-021.jpg",
+  "split": "dev",
+  "expect_review": null,
+  "fields": [
+    "total",
+    "lines"
+  ],
+  "source": "CORD v2 test split, CC BY 4.0",
+  "invoice": {
+    "supplier_name": "",
+    "supplier_tax_id": null,
+    "invoice_number": null,
+    "issue_date": null,
+    "currency": "IDR",
+    "lines": [
+      {
+        "description": "cashew nuts chkn",
+        "quantity": 1,
+        "unit_price": 64500,
+        "discount_percent": null,
+        "amount": 64500
+      },
+      {
+        "description": "garlic pepper beef",
+        "quantity": 1,
+        "unit_price": 79500,
+        "discount_percent": null,
+        "amount": 79500
+      },
+      {
+        "description": "red curry beef",
+        "quantity": 1,
+        "unit_price": 69500,
+        "discount_percent": null,
+        "amount": 69500
+      },
+      {
+        "description": "phad thai",
+        "quantity": 1,
+        "unit_price": 64500,
+        "discount_percent": null,
+        "amount": 64500
+      },
+      {
+        "description": "steamed rice",
+        "quantity": 4,
+        "unit_price": 11900,
+        "discount_percent": null,
+        "amount": 47600
+      }
+    ],
+    "subtotal": 325600,
+    "discount_amount": 0,
+    "tax_amount": 34351,
+    "prices_include_tax": false,
+    "rounding": 0,
+    "total": 377859
+  }
+}

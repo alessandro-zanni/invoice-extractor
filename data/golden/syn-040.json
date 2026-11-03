@@ -1,0 +1,37 @@
+{
+  "id": "syn-040",
+  "file": "syn-040.jpg",
+  "split": "dev",
+  "expect_review": false,
+  "error": null,
+  "variant": "lowres",
+  "invoice": {
+    "supplier_name": "Café Rambla SL",
+    "supplier_tax_id": "53541332T",
+    "invoice_number": "548/2023",
+    "issue_date": "2023-02-04",
+    "currency": "EUR",
+    "lines": [
+      {
+        "description": "Pintura interior",
+        "quantity": 10,
+        "unit_price": 835.82,
+        "discount_percent": null,
+        "amount": 8358.2
+      },
+      {
+        "description": "Desplazamiento",
+        "quantity": 10,
+        "unit_price": 721.31,
+        "discount_percent": null,
+        "amount": 7213.1
+      }
+    ],
+    "subtotal": 15571.3,
+    "discount_amount": 0,
+    "tax_amount": 3269.97,
+    "prices_include_tax": false,
+    "rounding": 0,
+    "total": 18841.27
+  }
+}

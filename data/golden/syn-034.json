@@ -1,0 +1,37 @@
+{
+  "id": "syn-034",
+  "file": "syn-034.jpg",
+  "split": "dev",
+  "expect_review": false,
+  "error": null,
+  "variant": "rot90",
+  "invoice": {
+    "supplier_name": "Café Rambla SL",
+    "supplier_tax_id": "66454673Z",
+    "invoice_number": "626/2025",
+    "issue_date": "2025-06-08",
+    "currency": "EUR",
+    "lines": [
+      {
+        "description": "Sesión de fotos",
+        "quantity": 1,
+        "unit_price": 650.98,
+        "discount_percent": null,
+        "amount": 650.98
+      },
+      {
+        "description": "Impresión de folletos",
+        "quantity": 2.5,
+        "unit_price": 441.18,
+        "discount_percent": null,
+        "amount": 1102.95
+      }
+    ],
+    "subtotal": 1753.93,
+    "discount_amount": 0,
+    "tax_amount": 368.33,
+    "prices_include_tax": false,
+    "rounding": 0,
+    "total": 2122.26
+  }
+}

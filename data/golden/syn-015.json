@@ -1,0 +1,58 @@
+{
+  "id": "syn-015",
+  "file": "syn-015.pdf",
+  "split": "dev",
+  "expect_review": false,
+  "error": null,
+  "variant": null,
+  "invoice": {
+    "supplier_name": "Consulenze Moretti",
+    "supplier_tax_id": "IT54517691009",
+    "invoice_number": "341/2024",
+    "issue_date": "2024-03-08",
+    "currency": "EUR",
+    "lines": [
+      {
+        "description": "Consulenza oraria",
+        "quantity": 0.5,
+        "unit_price": 615.49,
+        "discount_percent": null,
+        "amount": 307.75
+      },
+      {
+        "description": "Trasferta",
+        "quantity": 1,
+        "unit_price": 244.33,
+        "discount_percent": null,
+        "amount": 244.33
+      },
+      {
+        "description": "Trasferta",
+        "quantity": 1,
+        "unit_price": 770.68,
+        "discount_percent": null,
+        "amount": 770.68
+      },
+      {
+        "description": "Manutenzione impianto",
+        "quantity": 2.5,
+        "unit_price": 799.5,
+        "discount_percent": null,
+        "amount": 1998.75
+      },
+      {
+        "description": "Stampa biglietti da visita",
+        "quantity": 1,
+        "unit_price": 565.06,
+        "discount_percent": null,
+        "amount": 565.06
+      }
+    ],
+    "subtotal": 3886.57,
+    "discount_amount": 0,
+    "tax_amount": 388.66,
+    "prices_include_tax": false,
+    "rounding": 0,
+    "total": 4275.23
+  }
+}

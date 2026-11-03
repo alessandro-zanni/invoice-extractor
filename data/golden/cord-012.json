@@ -1,0 +1,33 @@
+{
+  "id": "cord-012",
+  "file": "cord-012.jpg",
+  "split": "dev",
+  "expect_review": null,
+  "fields": [
+    "total",
+    "lines"
+  ],
+  "source": "CORD v2 test split, CC BY 4.0",
+  "invoice": {
+    "supplier_name": "",
+    "supplier_tax_id": null,
+    "invoice_number": null,
+    "issue_date": null,
+    "currency": "IDR",
+    "lines": [
+      {
+        "description": "BANABERRY FRESH CREAM CAK",
+        "quantity": 1,
+        "unit_price": 230000,
+        "discount_percent": null,
+        "amount": 230000
+      }
+    ],
+    "subtotal": 0,
+    "discount_amount": 0,
+    "tax_amount": 0,
+    "prices_include_tax": false,
+    "rounding": 0,
+    "total": 230000
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "id": "syn-032",
+  "file": "syn-032.pdf",
+  "split": "test",
+  "expect_review": false,
+  "error": null,
+  "variant": "discount",
+  "invoice": {
+    "supplier_name": "Reformas Garrido SL",
+    "supplier_tax_id": "B63793165",
+    "invoice_number": "600/2026",
+    "issue_date": "2026-02-11",
+    "currency": "EUR",
+    "lines": [
+      {
+        "description": "Hora de consultoría",
+        "quantity": 10,
+        "unit_price": 570.24,
+        "discount_percent": 10,
+        "amount": 5132.16
+      },
+      {
+        "description": "Hora de consultoría",
+        "quantity": 10,
+        "unit_price": 714.59,
+        "discount_percent": 20,
+        "amount": 5716.72
+      },
+      {
+        "description": "Mantenimiento mensual",
+        "quantity": 1,
+        "unit_price": 473.71,
+        "discount_percent": null,
+        "amount": 473.71
+      },
+      {
+        "description": "Pintura interior",
+        "quantity": 1,
+        "unit_price": 810.31,
+        "discount_percent": 10,
+        "amount": 729.28
+      },
+      {
+        "description": "Sesión de fotos",
+        "quantity": 1,
+        "unit_price": 31.75,
+        "discount_percent": null,
+        "amount": 31.75
+      },
+      {
+        "description": "Pintura interior",
+        "quantity": 2.5,
+        "unit_price": 304.38,
+        "discount_percent": 20,
+        "amount": 608.76
+      }
+    ],
+    "subtotal": 12692.38,
+    "discount_amount": 0,
+    "tax_amount": 2665.4,
+    "prices_include_tax": false,
+    "rounding": 0,
+    "total": 15357.78
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "id": "syn-027",
+  "file": "syn-027.pdf",
+  "split": "test",
+  "expect_review": false,
+  "error": null,
+  "variant": null,
+  "invoice": {
+    "supplier_name": "Idraulica Valli Srl",
+    "supplier_tax_id": "IT79431951080",
+    "invoice_number": "95/2024",
+    "issue_date": "2024-02-19",
+    "currency": "EUR",
+    "lines": [
+      {
+        "description": "Licenza software annuale",
+        "quantity": 5,
+        "unit_price": 421.83,
+        "discount_percent": null,
+        "amount": 2109.15
+      },
+      {
+        "description": "Manutenzione impianto",
+        "quantity": 1,
+        "unit_price": 180.66,
+        "discount_percent": null,
+        "amount": 180.66
+      },
+      {
+        "description": "Pannello in legno",
+        "quantity": 0.5,
+        "unit_price": 772.86,
+        "discount_percent": null,
+        "amount": 386.43
+      }
+    ],
+    "subtotal": 2676.24,
+    "discount_amount": 0,
+    "tax_amount": 267.62,
+    "prices_include_tax": false,
+    "rounding": 0,
+    "total": 2943.86
+  }
+}

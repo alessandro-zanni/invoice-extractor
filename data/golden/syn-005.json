@@ -1,0 +1,37 @@
+{
+  "id": "syn-005",
+  "file": "syn-005.jpg",
+  "split": "test",
+  "expect_review": false,
+  "error": null,
+  "variant": null,
+  "invoice": {
+    "supplier_name": "Ferramenta Corsini & C. Snc",
+    "supplier_tax_id": "IT18307689267",
+    "invoice_number": "489/2026",
+    "issue_date": "2026-03-23",
+    "currency": "EUR",
+    "lines": [
+      {
+        "description": "Trasferta",
+        "quantity": 2,
+        "unit_price": 148.35,
+        "discount_percent": null,
+        "amount": 296.7
+      },
+      {
+        "description": "Trasferta",
+        "quantity": 2,
+        "unit_price": 187.45,
+        "discount_percent": null,
+        "amount": 374.9
+      }
+    ],
+    "subtotal": 671.6,
+    "discount_amount": 0,
+    "tax_amount": 26.86,
+    "prices_include_tax": false,
+    "rounding": 0,
+    "total": 698.46
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "fat-010",
+  "file": "fat-010.jpg",
+  "split": "test",
+  "expect_review": null,
+  "fields": [
+    "total",
+    "currency",
+    "issue_date",
+    "invoice_number"
+  ],
+  "source": "FATURA (FATURA2-invoices test split), CC BY 4.0",
+  "invoice": {
+    "supplier_name": "",
+    "supplier_tax_id": null,
+    "invoice_number": "0923-334",
+    "issue_date": "2000-02-29",
+    "currency": "EUR",
+    "lines": [],
+    "subtotal": 0,
+    "discount_amount": 0,
+    "tax_amount": 0,
+    "prices_include_tax": false,
+    "rounding": 0,
+    "total": 119.26
+  }
+}

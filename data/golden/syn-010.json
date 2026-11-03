@@ -1,0 +1,37 @@
+{
+  "id": "syn-010",
+  "file": "syn-010.pdf",
+  "split": "test",
+  "expect_review": false,
+  "error": null,
+  "variant": null,
+  "invoice": {
+    "supplier_name": "Laura Peña Fotografía",
+    "supplier_tax_id": "49918939S",
+    "invoice_number": "469/2026",
+    "issue_date": "2026-08-06",
+    "currency": "EUR",
+    "lines": [
+      {
+        "description": "Mantenimiento mensual",
+        "quantity": 1,
+        "unit_price": 44.33,
+        "discount_percent": null,
+        "amount": 44.33
+      },
+      {
+        "description": "Sesión de fotos",
+        "quantity": 2,
+        "unit_price": 512.54,
+        "discount_percent": null,
+        "amount": 1025.08
+      }
+    ],
+    "subtotal": 1069.41,
+    "discount_amount": 0,
+    "tax_amount": 224.58,
+    "prices_include_tax": false,
+    "rounding": 0,
+    "total": 1293.99
+  }
+}

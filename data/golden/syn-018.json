@@ -1,0 +1,30 @@
+{
+  "id": "syn-018",
+  "file": "syn-018.pdf",
+  "split": "test",
+  "expect_review": false,
+  "error": null,
+  "variant": null,
+  "invoice": {
+    "supplier_name": "Talleres Montaner SA",
+    "supplier_tax_id": "B25218554",
+    "invoice_number": "35/2023",
+    "issue_date": "2023-05-22",
+    "currency": "EUR",
+    "lines": [
+      {
+        "description": "Mantenimiento mensual",
+        "quantity": 2.5,
+        "unit_price": 746.57,
+        "discount_percent": null,
+        "amount": 1866.43
+      }
+    ],
+    "subtotal": 1866.43,
+    "discount_amount": 0,
+    "tax_amount": 186.64,
+    "prices_include_tax": false,
+    "rounding": 0,
+    "total": 2053.07
+  }
+}

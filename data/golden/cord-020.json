@@ -1,0 +1,40 @@
+{
+  "id": "cord-020",
+  "file": "cord-020.jpg",
+  "split": "dev",
+  "expect_review": null,
+  "fields": [
+    "total",
+    "lines"
+  ],
+  "source": "CORD v2 test split, CC BY 4.0",
+  "invoice": {
+    "supplier_name": "",
+    "supplier_tax_id": null,
+    "invoice_number": null,
+    "issue_date": null,
+    "currency": "IDR",
+    "lines": [
+      {
+        "description": "AMBUSH DBL CHS",
+        "quantity": 4,
+        "unit_price": 15000,
+        "discount_percent": null,
+        "amount": 60000
+      },
+      {
+        "description": "AMBUSH CHS BUR",
+        "quantity": 10,
+        "unit_price": 10000,
+        "discount_percent": null,
+        "amount": 100000
+      }
+    ],
+    "subtotal": 160000,
+    "discount_amount": 0,
+    "tax_amount": 16000,
+    "prices_include_tax": false,
+    "rounding": 0,
+    "total": 176000
+  }
+}

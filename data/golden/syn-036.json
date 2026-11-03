@@ -1,0 +1,65 @@
+{
+  "id": "syn-036",
+  "file": "syn-036.pdf",
+  "split": "test",
+  "expect_review": false,
+  "error": null,
+  "variant": "multirate",
+  "invoice": {
+    "supplier_name": "Imprenta Soler SL",
+    "supplier_tax_id": "B06999697",
+    "invoice_number": "476/2025",
+    "issue_date": "2025-07-08",
+    "currency": "EUR",
+    "lines": [
+      {
+        "description": "Material de oficina",
+        "quantity": 1,
+        "unit_price": 519.9,
+        "discount_percent": null,
+        "amount": 519.9
+      },
+      {
+        "description": "Material de oficina",
+        "quantity": 5,
+        "unit_price": 319.19,
+        "discount_percent": null,
+        "amount": 1595.95
+      },
+      {
+        "description": "Desplazamiento",
+        "quantity": 3,
+        "unit_price": 441.61,
+        "discount_percent": null,
+        "amount": 1324.83
+      },
+      {
+        "description": "Sesión de fotos",
+        "quantity": 1,
+        "unit_price": 615.9,
+        "discount_percent": null,
+        "amount": 615.9
+      },
+      {
+        "description": "Mantenimiento mensual",
+        "quantity": 5,
+        "unit_price": 124.14,
+        "discount_percent": null,
+        "amount": 620.7
+      },
+      {
+        "description": "Hora de consultoría",
+        "quantity": 1,
+        "unit_price": 786.42,
+        "discount_percent": null,
+        "amount": 786.42
+      }
+    ],
+    "subtotal": 5463.7,
+    "discount_amount": 0,
+    "tax_amount": 817.57,
+    "prices_include_tax": false,
+    "rounding": 0,
+    "total": 6281.27
+  }
+}

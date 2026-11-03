@@ -1,0 +1,40 @@
+{
+  "id": "cord-022",
+  "file": "cord-022.jpg",
+  "split": "dev",
+  "expect_review": null,
+  "fields": [
+    "total",
+    "lines"
+  ],
+  "source": "CORD v2 test split, CC BY 4.0",
+  "invoice": {
+    "supplier_name": "",
+    "supplier_tax_id": null,
+    "invoice_number": null,
+    "issue_date": null,
+    "currency": "IDR",
+    "lines": [
+      {
+        "description": "NASI GOR SFD TLR",
+        "quantity": 1,
+        "unit_price": 35000,
+        "discount_percent": null,
+        "amount": 35000
+      },
+      {
+        "description": "ES TEH TAWAR",
+        "quantity": 1,
+        "unit_price": 3000,
+        "discount_percent": null,
+        "amount": 3000
+      }
+    ],
+    "subtotal": 0,
+    "discount_amount": 0,
+    "tax_amount": 0,
+    "prices_include_tax": false,
+    "rounding": 0,
+    "total": 38000
+  }
+}

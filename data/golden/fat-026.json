@@ -1,0 +1,27 @@
+{
+  "id": "fat-026",
+  "file": "fat-026.jpg",
+  "split": "dev",
+  "expect_review": null,
+  "fields": [
+    "total",
+    "currency",
+    "issue_date",
+    "invoice_number"
+  ],
+  "source": "FATURA (FATURA2-invoices test split), CC BY 4.0",
+  "invoice": {
+    "supplier_name": "",
+    "supplier_tax_id": null,
+    "invoice_number": "2Y1M4d-299",
+    "issue_date": "1998-03-27",
+    "currency": "USD",
+    "lines": [],
+    "subtotal": 0,
+    "discount_amount": 0,
+    "tax_amount": 0,
+    "prices_include_tax": false,
+    "rounding": 0,
+    "total": 1037.12
+  }
+}

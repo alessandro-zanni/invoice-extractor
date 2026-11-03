@@ -1,0 +1,30 @@
+{
+  "id": "syn-008",
+  "file": "syn-008.jpg",
+  "split": "dev",
+  "expect_review": true,
+  "error": "subtotal",
+  "variant": null,
+  "invoice": {
+    "supplier_name": "Laura Peña Fotografía",
+    "supplier_tax_id": "28756869S",
+    "invoice_number": "390/2026",
+    "issue_date": "2026-05-05",
+    "currency": "EUR",
+    "lines": [
+      {
+        "description": "Sesión de fotos",
+        "quantity": 0.5,
+        "unit_price": 473.82,
+        "discount_percent": null,
+        "amount": 236.91
+      }
+    ],
+    "subtotal": 237.91,
+    "discount_amount": 0,
+    "tax_amount": 49.75,
+    "prices_include_tax": false,
+    "rounding": 0,
+    "total": 286.66
+  }
+}

@@ -1,0 +1,3326 @@
+{
+  "summary": {
+    "strategy": "haiku",
+    "split": "dev",
+    "docs": 33,
+    "errors": 0,
+    "field_accuracy": {
+      "supplier_name": "97.0% (33)",
+      "supplier_tax_id": "90.9% (33)",
+      "invoice_number": "93.9% (33)",
+      "issue_date": "100.0% (33)",
+      "currency": "100.0% (33)",
+      "subtotal": "100.0% (33)",
+      "tax_amount": "100.0% (33)",
+      "total": "100.0% (33)",
+      "lines": "97.0% (33)"
+    },
+    "docs_all_fields_right": "87.9%",
+    "printed_errors_caught": "5/5",
+    "clean_docs_flagged": "3/28",
+    "cost_usd_total": 0.0193,
+    "cost_usd_per_doc": 0.00058,
+    "latency_ms_p50": 2350,
+    "latency_ms_p95": 7031
+  },
+  "results": [
+    {
+      "id": "syn-002",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.0003933,
+      "ms": 5198,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Distribuciones Arnau SL",
+        "supplier_tax_id": "55719666G",
+        "invoice_number": "204/2025",
+        "issue_date": "2025-02-09",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Sesión de fotos",
+            "quantity": 1,
+            "unit_price": 156.94,
+            "discount_percent": null,
+            "amount": 156.94
+          },
+          {
+            "description": "Mantenimiento mensual",
+            "quantity": 3,
+            "unit_price": 728.41,
+            "discount_percent": null,
+            "amount": 2185.23
+          },
+          {
+            "description": "Hora de consultoría",
+            "quantity": 3,
+            "unit_price": 35.13,
+            "discount_percent": null,
+            "amount": 105.39
+          },
+          {
+            "description": "Impresión de folletos",
+            "quantity": 5,
+            "unit_price": 537.66,
+            "discount_percent": null,
+            "amount": 2688.3
+          }
+        ],
+        "subtotal": 5135.86,
+        "tax_amount": 513.59,
+        "total": 5649.45
+      }
+    },
+    {
+      "id": "syn-003",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.0004662,
+      "ms": 5432,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Studio Grafico Lunetta",
+        "supplier_tax_id": "IT58195945355",
+        "invoice_number": "323/2026",
+        "issue_date": "2026-03-20",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Consulenza oraria",
+            "quantity": 10,
+            "unit_price": 835.17,
+            "discount_percent": null,
+            "amount": 8351.7
+          },
+          {
+            "description": "Pannello in legno",
+            "quantity": 2.5,
+            "unit_price": 388.88,
+            "discount_percent": null,
+            "amount": 972.2
+          },
+          {
+            "description": "Consulenza oraria",
+            "quantity": 1,
+            "unit_price": 101.18,
+            "discount_percent": null,
+            "amount": 101.18
+          },
+          {
+            "description": "Trasferta",
+            "quantity": 2,
+            "unit_price": 434.33,
+            "discount_percent": null,
+            "amount": 868.66
+          },
+          {
+            "description": "Licenza software annuale",
+            "quantity": 2.5,
+            "unit_price": 71.2,
+            "discount_percent": null,
+            "amount": 178
+          }
+        ],
+        "subtotal": 10471.74,
+        "tax_amount": 1047.17,
+        "total": 11518.91
+      }
+    },
+    {
+      "id": "syn-004",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": true,
+      "flagged": true,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.0004069,
+      "ms": 5235,
+      "issues": [
+        {
+          "field": "total",
+          "message": "1379.02 + 289.59 ≠ 1669.61"
+        }
+      ],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Imprenta Soler SL",
+        "supplier_tax_id": "B82195081",
+        "invoice_number": "972/2024",
+        "issue_date": "2024-08-26",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Pintura interior",
+            "quantity": 0.5,
+            "unit_price": 626.02,
+            "discount_percent": null,
+            "amount": 313.01
+          },
+          {
+            "description": "Material de oficina",
+            "quantity": 2.5,
+            "unit_price": 389.55,
+            "discount_percent": null,
+            "amount": 973.88
+          },
+          {
+            "description": "Desplazamiento",
+            "quantity": 1,
+            "unit_price": 92.13,
+            "discount_percent": null,
+            "amount": 92.13
+          }
+        ],
+        "subtotal": 1379.02,
+        "tax_amount": 289.59,
+        "total": 1669.61
+      }
+    },
+    {
+      "id": "syn-006",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.00038290000000000004,
+      "ms": 6190,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Laura Peña Fotografía",
+        "supplier_tax_id": "B39465634",
+        "invoice_number": "418/2026",
+        "issue_date": "2026-02-05",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Hora de consultoría",
+            "quantity": 1,
+            "unit_price": 303.93,
+            "discount_percent": null,
+            "amount": 303.93
+          },
+          {
+            "description": "Desplazamiento",
+            "quantity": 1,
+            "unit_price": 894.18,
+            "discount_percent": null,
+            "amount": 894.18
+          }
+        ],
+        "subtotal": 1198.11,
+        "tax_amount": 119.81,
+        "total": 1317.92
+      }
+    },
+    {
+      "id": "syn-007",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.0004126,
+      "ms": 1572,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Studio Grafico Lunetta",
+        "supplier_tax_id": "IT63130524372",
+        "invoice_number": "912/2024",
+        "issue_date": "2024-07-07",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Materiale di consumo",
+            "quantity": 2.5,
+            "unit_price": 295.59,
+            "discount_percent": null,
+            "amount": 738.97
+          },
+          {
+            "description": "Trasferta",
+            "quantity": 5,
+            "unit_price": 492.41,
+            "discount_percent": null,
+            "amount": 2462.05
+          },
+          {
+            "description": "Manutenzione impianto",
+            "quantity": 1,
+            "unit_price": 293.84,
+            "discount_percent": null,
+            "amount": 293.84
+          }
+        ],
+        "subtotal": 3494.86,
+        "tax_amount": 349.49,
+        "total": 3844.35
+      }
+    },
+    {
+      "id": "syn-008",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": true,
+      "flagged": true,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.0003163,
+      "ms": 1938,
+      "issues": [
+        {
+          "field": "subtotal",
+          "message": "lines sum to 236.91, subtotal is 237.91"
+        },
+        {
+          "field": "total",
+          "message": "237.91 + 49.75 ≠ 286.66"
+        }
+      ],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Laura Peña Fotografía",
+        "supplier_tax_id": "28756869S",
+        "invoice_number": "390/2026",
+        "issue_date": "2026-05-05",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Sesión de fotos",
+            "quantity": 0.5,
+            "unit_price": 473.82,
+            "discount_percent": null,
+            "amount": 236.91
+          }
+        ],
+        "subtotal": 237.91,
+        "tax_amount": 49.75,
+        "total": 286.66
+      }
+    },
+    {
+      "id": "syn-011",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.0003423,
+      "ms": 1347,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Tipografia Bassi Srl",
+        "supplier_tax_id": "IT19084508035",
+        "invoice_number": "230/2025",
+        "issue_date": "2025-04-04",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Materiale di consumo",
+            "quantity": 1,
+            "unit_price": 134.16,
+            "discount_percent": null,
+            "amount": 134.16
+          },
+          {
+            "description": "Materiale di consumo",
+            "quantity": 1,
+            "unit_price": 478.21,
+            "discount_percent": null,
+            "amount": 478.21
+          }
+        ],
+        "subtotal": 612.37,
+        "tax_amount": 61.24,
+        "total": 673.61
+      }
+    },
+    {
+      "id": "syn-012",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.0004645,
+      "ms": 1889,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Distribuciones Arnau SL",
+        "supplier_tax_id": "28446942J",
+        "invoice_number": "944/2024",
+        "issue_date": "2024-04-08",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Material de oficina",
+            "quantity": 5,
+            "unit_price": 717.05,
+            "discount_percent": null,
+            "amount": 3585.25
+          },
+          {
+            "description": "Impresión de folletos",
+            "quantity": 0.5,
+            "unit_price": 475.06,
+            "discount_percent": null,
+            "amount": 237.53
+          },
+          {
+            "description": "Hora de consultoría",
+            "quantity": 1,
+            "unit_price": 87.64,
+            "discount_percent": null,
+            "amount": 87.64
+          },
+          {
+            "description": "Desplazamiento",
+            "quantity": 1,
+            "unit_price": 605.42,
+            "discount_percent": null,
+            "amount": 605.42
+          },
+          {
+            "description": "Hora de consultoría",
+            "quantity": 5,
+            "unit_price": 879.02,
+            "discount_percent": null,
+            "amount": 4395.1
+          }
+        ],
+        "subtotal": 8910.94,
+        "tax_amount": 891.09,
+        "total": 9802.03
+      }
+    },
+    {
+      "id": "syn-013",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.00043860000000000004,
+      "ms": 2325,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Studio Grafico Lunetta",
+        "supplier_tax_id": "IT66838384353",
+        "invoice_number": "836/2026",
+        "issue_date": "2026-09-22",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Trasferta",
+            "quantity": 0.5,
+            "unit_price": 841.91,
+            "discount_percent": null,
+            "amount": 420.96
+          },
+          {
+            "description": "Manutenzione impianto",
+            "quantity": 5,
+            "unit_price": 729.21,
+            "discount_percent": null,
+            "amount": 3646.05
+          },
+          {
+            "description": "Materiale di consumo",
+            "quantity": 3,
+            "unit_price": 675.6,
+            "discount_percent": null,
+            "amount": 2026.8
+          },
+          {
+            "description": "Materiale di consumo",
+            "quantity": 10,
+            "unit_price": 499.53,
+            "discount_percent": null,
+            "amount": 4995.3
+          }
+        ],
+        "subtotal": 11089.11,
+        "tax_amount": 2439.6,
+        "total": 13528.71
+      }
+    },
+    {
+      "id": "syn-015",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.0004648,
+      "ms": 2443,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Consulenze Moretti",
+        "supplier_tax_id": "IT54517691009",
+        "invoice_number": "341/2024",
+        "issue_date": "2024-03-08",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Consulenza oraria",
+            "quantity": 0.5,
+            "unit_price": 615.49,
+            "discount_percent": null,
+            "amount": 307.75
+          },
+          {
+            "description": "Trasferta",
+            "quantity": 1,
+            "unit_price": 244.33,
+            "discount_percent": null,
+            "amount": 244.33
+          },
+          {
+            "description": "Trasferta",
+            "quantity": 1,
+            "unit_price": 770.68,
+            "discount_percent": null,
+            "amount": 770.68
+          },
+          {
+            "description": "Manutenzione impianto",
+            "quantity": 2.5,
+            "unit_price": 799.5,
+            "discount_percent": null,
+            "amount": 1998.75
+          },
+          {
+            "description": "Stampa biglietti da visita",
+            "quantity": 1,
+            "unit_price": 565.06,
+            "discount_percent": null,
+            "amount": 565.06
+          }
+        ],
+        "subtotal": 3886.57,
+        "tax_amount": 388.66,
+        "total": 4275.23
+      }
+    },
+    {
+      "id": "syn-016",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.0004915,
+      "ms": 2228,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Laura Peña Fotografía",
+        "supplier_tax_id": "28590533S",
+        "invoice_number": "770/2026",
+        "issue_date": "2026-02-05",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Mantenimiento mensual",
+            "quantity": 5,
+            "unit_price": 756.25,
+            "discount_percent": null,
+            "amount": 3781.25
+          },
+          {
+            "description": "Sesión de fotos",
+            "quantity": 5,
+            "unit_price": 30.32,
+            "discount_percent": null,
+            "amount": 151.6
+          },
+          {
+            "description": "Impresión de folletos",
+            "quantity": 0.5,
+            "unit_price": 339.23,
+            "discount_percent": null,
+            "amount": 169.62
+          },
+          {
+            "description": "Hora de consultoría",
+            "quantity": 0.5,
+            "unit_price": 455.31,
+            "discount_percent": null,
+            "amount": 227.66
+          },
+          {
+            "description": "Material de oficina",
+            "quantity": 1,
+            "unit_price": 695.64,
+            "discount_percent": null,
+            "amount": 695.64
+          },
+          {
+            "description": "Material de oficina",
+            "quantity": 0.5,
+            "unit_price": 713.22,
+            "discount_percent": null,
+            "amount": 356.61
+          }
+        ],
+        "subtotal": 5382.38,
+        "tax_amount": 1130.3,
+        "total": 6512.68
+      }
+    },
+    {
+      "id": "syn-017",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": true,
+      "flagged": true,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.0003933,
+      "ms": 2075,
+      "issues": [
+        {
+          "field": "supplier_tax_id",
+          "message": "invalid tax id IT41651801925"
+        }
+      ],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Panificio Rinaldi",
+        "supplier_tax_id": "IT41651801925",
+        "invoice_number": "472/2025",
+        "issue_date": "2025-07-08",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Stampa biglietti da visita",
+            "quantity": 5,
+            "unit_price": 500.55,
+            "discount_percent": null,
+            "amount": 2502.75
+          },
+          {
+            "description": "Licenza software annuale",
+            "quantity": 2.5,
+            "unit_price": 470.3,
+            "discount_percent": null,
+            "amount": 1175.75
+          },
+          {
+            "description": "Trasferta",
+            "quantity": 1,
+            "unit_price": 861.84,
+            "discount_percent": null,
+            "amount": 861.84
+          },
+          {
+            "description": "Manutenzione impianto",
+            "quantity": 1,
+            "unit_price": 43.78,
+            "discount_percent": null,
+            "amount": 43.78
+          }
+        ],
+        "subtotal": 4584.12,
+        "tax_amount": 1008.51,
+        "total": 5592.63
+      }
+    },
+    {
+      "id": "syn-020",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.0003868,
+      "ms": 1522,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Café Rambla SL",
+        "supplier_tax_id": "B51607984",
+        "invoice_number": "682/2026",
+        "issue_date": "2026-05-01",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Hora de consultoría",
+            "quantity": 2.5,
+            "unit_price": 416.71,
+            "discount_percent": null,
+            "amount": 1041.77
+          },
+          {
+            "description": "Material de oficina",
+            "quantity": 5,
+            "unit_price": 446.19,
+            "discount_percent": null,
+            "amount": 2230.95
+          },
+          {
+            "description": "Hora de consultoría",
+            "quantity": 3,
+            "unit_price": 678.8,
+            "discount_percent": null,
+            "amount": 2036.4
+          },
+          {
+            "description": "Pintura interior",
+            "quantity": 10,
+            "unit_price": 536.17,
+            "discount_percent": null,
+            "amount": 5361.7
+          }
+        ],
+        "subtotal": 10670.82,
+        "tax_amount": 2240.87,
+        "total": 12911.69
+      }
+    },
+    {
+      "id": "syn-021",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.0004944,
+      "ms": 2011,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Consulenze Moretti",
+        "supplier_tax_id": "IT01263694778",
+        "invoice_number": "17/2024",
+        "issue_date": "2024-02-11",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Licenza software annuale",
+            "quantity": 2.5,
+            "unit_price": 870.47,
+            "discount_percent": null,
+            "amount": 2176.18
+          },
+          {
+            "description": "Stampa biglietti da visita",
+            "quantity": 2.5,
+            "unit_price": 730.42,
+            "discount_percent": null,
+            "amount": 1826.05
+          },
+          {
+            "description": "Consulenza oraria",
+            "quantity": 1,
+            "unit_price": 893.67,
+            "discount_percent": null,
+            "amount": 893.67
+          },
+          {
+            "description": "Trasferta",
+            "quantity": 3,
+            "unit_price": 787.05,
+            "discount_percent": null,
+            "amount": 2361.15
+          },
+          {
+            "description": "Licenza software annuale",
+            "quantity": 10,
+            "unit_price": 295.87,
+            "discount_percent": null,
+            "amount": 2958.7
+          },
+          {
+            "description": "Trasferta",
+            "quantity": 3,
+            "unit_price": 830.91,
+            "discount_percent": null,
+            "amount": 2492.73
+          }
+        ],
+        "subtotal": 12708.48,
+        "tax_amount": 1270.85,
+        "total": 13979.33
+      }
+    },
+    {
+      "id": "syn-022",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.00038110000000000005,
+      "ms": 1835,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Café Rambla SL",
+        "supplier_tax_id": "B59455200",
+        "invoice_number": "644/2024",
+        "issue_date": "2024-05-15",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Material de oficina",
+            "quantity": 5,
+            "unit_price": 809.67,
+            "discount_percent": null,
+            "amount": 4048.35
+          },
+          {
+            "description": "Desplazamiento",
+            "quantity": 2,
+            "unit_price": 758,
+            "discount_percent": null,
+            "amount": 1516
+          }
+        ],
+        "subtotal": 5564.35,
+        "tax_amount": 556.44,
+        "total": 6120.79
+      }
+    },
+    {
+      "id": "syn-024",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.00043690000000000005,
+      "ms": 2350,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Talleres Montaner SA",
+        "supplier_tax_id": "98095784W",
+        "invoice_number": "891/2026",
+        "issue_date": "2026-04-17",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Mantenimiento mensual",
+            "quantity": 0.5,
+            "unit_price": 522.66,
+            "discount_percent": null,
+            "amount": 261.33
+          },
+          {
+            "description": "Desplazamiento",
+            "quantity": 5,
+            "unit_price": 370.98,
+            "discount_percent": null,
+            "amount": 1854.9
+          },
+          {
+            "description": "Desplazamiento",
+            "quantity": 1,
+            "unit_price": 122.94,
+            "discount_percent": null,
+            "amount": 122.94
+          },
+          {
+            "description": "Pintura interior",
+            "quantity": 10,
+            "unit_price": 254.82,
+            "discount_percent": null,
+            "amount": 2548.2
+          }
+        ],
+        "subtotal": 4787.37,
+        "tax_amount": 478.74,
+        "total": 5266.11
+      }
+    },
+    {
+      "id": "syn-025",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": true,
+      "flagged": true,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.0004973,
+      "ms": 2205,
+      "issues": [
+        {
+          "field": "subtotal",
+          "message": "lines sum to 9679.01, subtotal is 9680.01"
+        },
+        {
+          "field": "total",
+          "message": "9680.01 + 967.9 ≠ 10646.91"
+        }
+      ],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Panificio Rinaldi",
+        "supplier_tax_id": "IT63534158652",
+        "invoice_number": "888/2024",
+        "issue_date": "2024-02-09",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Stampa biglietti da visita",
+            "quantity": 3,
+            "unit_price": 825.86,
+            "discount_percent": null,
+            "amount": 2477.58
+          },
+          {
+            "description": "Pannello in legno",
+            "quantity": 1,
+            "unit_price": 288.91,
+            "discount_percent": null,
+            "amount": 288.91
+          },
+          {
+            "description": "Consulenza oraria",
+            "quantity": 3,
+            "unit_price": 878.4,
+            "discount_percent": null,
+            "amount": 2635.2
+          },
+          {
+            "description": "Pannello in legno",
+            "quantity": 5,
+            "unit_price": 543.74,
+            "discount_percent": null,
+            "amount": 2718.7
+          },
+          {
+            "description": "Stampa biglietti da visita",
+            "quantity": 1,
+            "unit_price": 866.92,
+            "discount_percent": null,
+            "amount": 866.92
+          },
+          {
+            "description": "Materiale di consumo",
+            "quantity": 2.5,
+            "unit_price": 276.68,
+            "discount_percent": null,
+            "amount": 691.7
+          }
+        ],
+        "subtotal": 9680.01,
+        "tax_amount": 967.9,
+        "total": 10646.91
+      }
+    },
+    {
+      "id": "syn-026",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.00039180000000000004,
+      "ms": 1615,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Talleres Montaner SA",
+        "supplier_tax_id": "22293355F",
+        "invoice_number": "708/2025",
+        "issue_date": "2025-03-02",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Desplazamiento",
+            "quantity": 3,
+            "unit_price": 529.88,
+            "discount_percent": null,
+            "amount": 1589.64
+          },
+          {
+            "description": "Impresión de folletos",
+            "quantity": 5,
+            "unit_price": 368.77,
+            "discount_percent": null,
+            "amount": 1843.85
+          },
+          {
+            "description": "Mantenimiento mensual",
+            "quantity": 1,
+            "unit_price": 639.5,
+            "discount_percent": null,
+            "amount": 639.5
+          },
+          {
+            "description": "Hora de consultoría",
+            "quantity": 1,
+            "unit_price": 18.52,
+            "discount_percent": null,
+            "amount": 18.52
+          }
+        ],
+        "subtotal": 4091.51,
+        "tax_amount": 859.22,
+        "total": 4950.73
+      }
+    },
+    {
+      "id": "syn-029",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": true,
+      "flagged": true,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.0003688,
+      "ms": 1618,
+      "issues": [
+        {
+          "field": "lines.0.amount",
+          "message": "3 × 656.37 − 0% ≠ 1979.11"
+        },
+        {
+          "field": "subtotal",
+          "message": "lines sum to 3852.93, subtotal is 3842.93"
+        }
+      ],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Consulenze Moretti",
+        "supplier_tax_id": "IT54397437259",
+        "invoice_number": "264/2023",
+        "issue_date": "2023-02-10",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Trasferta",
+            "quantity": 3,
+            "unit_price": 656.37,
+            "discount_percent": null,
+            "amount": 1979.11
+          },
+          {
+            "description": "Stampa biglietti da visita",
+            "quantity": 2,
+            "unit_price": 897.39,
+            "discount_percent": null,
+            "amount": 1794.78
+          },
+          {
+            "description": "Stampa biglietti da visita",
+            "quantity": 2,
+            "unit_price": 39.52,
+            "discount_percent": null,
+            "amount": 79.04
+          }
+        ],
+        "subtotal": 3842.93,
+        "tax_amount": 384.29,
+        "total": 4227.22
+      }
+    },
+    {
+      "id": "syn-030",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.0003553,
+      "ms": 1254,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Café Rambla SL",
+        "supplier_tax_id": "B97205014",
+        "invoice_number": "418/2025",
+        "issue_date": "2025-08-06",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Hora de consultoría",
+            "quantity": 10,
+            "unit_price": 518.23,
+            "discount_percent": null,
+            "amount": 5182.3
+          }
+        ],
+        "subtotal": 5182.3,
+        "tax_amount": 518.23,
+        "total": 5700.53
+      }
+    },
+    {
+      "id": "syn-031",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.00042040000000000003,
+      "ms": 1935,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Panificio Rinaldi",
+        "supplier_tax_id": "IT82758208993",
+        "invoice_number": "227/2025",
+        "issue_date": "2025-08-28",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Manutenzione impianto",
+            "quantity": 2,
+            "unit_price": 434.5,
+            "discount_percent": null,
+            "amount": 869
+          },
+          {
+            "description": "Licenza software annuale",
+            "quantity": 1,
+            "unit_price": 866.15,
+            "discount_percent": null,
+            "amount": 866.15
+          },
+          {
+            "description": "Stampa biglietti da visita",
+            "quantity": 1,
+            "unit_price": 113.34,
+            "discount_percent": null,
+            "amount": 113.34
+          }
+        ],
+        "subtotal": 1848.49,
+        "tax_amount": 282.33,
+        "total": 2130.82
+      }
+    },
+    {
+      "id": "syn-033",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.0013545,
+      "ms": 6110,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Tipografia Bassi Srl",
+        "supplier_tax_id": "IT71213947881",
+        "invoice_number": "266/2023",
+        "issue_date": "2023-06-01",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Trasferta",
+            "quantity": 0.5,
+            "unit_price": 616.65,
+            "discount_percent": null,
+            "amount": 308.33
+          },
+          {
+            "description": "Stampa biglietti da visita",
+            "quantity": 2,
+            "unit_price": 727.64,
+            "discount_percent": null,
+            "amount": 1455.28
+          },
+          {
+            "description": "Pannello in legno",
+            "quantity": 2,
+            "unit_price": 93.72,
+            "discount_percent": null,
+            "amount": 187.44
+          },
+          {
+            "description": "Trasferta",
+            "quantity": 1,
+            "unit_price": 208.97,
+            "discount_percent": null,
+            "amount": 208.97
+          },
+          {
+            "description": "Manutenzione impianto",
+            "quantity": 5,
+            "unit_price": 503.34,
+            "discount_percent": null,
+            "amount": 2516.7
+          },
+          {
+            "description": "Materiale di consumo",
+            "quantity": 2,
+            "unit_price": 317.84,
+            "discount_percent": null,
+            "amount": 635.68
+          },
+          {
+            "description": "Trasferta",
+            "quantity": 10,
+            "unit_price": 73.9,
+            "discount_percent": null,
+            "amount": 739
+          },
+          {
+            "description": "Pannello in legno",
+            "quantity": 5,
+            "unit_price": 584.16,
+            "discount_percent": null,
+            "amount": 2920.8
+          },
+          {
+            "description": "Licenza software annuale",
+            "quantity": 0.5,
+            "unit_price": 437.8,
+            "discount_percent": null,
+            "amount": 218.9
+          },
+          {
+            "description": "Trasferta",
+            "quantity": 1,
+            "unit_price": 413.87,
+            "discount_percent": null,
+            "amount": 413.87
+          },
+          {
+            "description": "Pannello in legno",
+            "quantity": 2,
+            "unit_price": 176.41,
+            "discount_percent": null,
+            "amount": 352.82
+          },
+          {
+            "description": "Pannello in legno",
+            "quantity": 2.5,
+            "unit_price": 390.15,
+            "discount_percent": null,
+            "amount": 975.38
+          },
+          {
+            "description": "Materiale di consumo",
+            "quantity": 2.5,
+            "unit_price": 88.49,
+            "discount_percent": null,
+            "amount": 221.23
+          },
+          {
+            "description": "Materiale di consumo",
+            "quantity": 0.5,
+            "unit_price": 244.9,
+            "discount_percent": null,
+            "amount": 122.45
+          },
+          {
+            "description": "Licenza software annuale",
+            "quantity": 0.5,
+            "unit_price": 310.46,
+            "discount_percent": null,
+            "amount": 155.23
+          },
+          {
+            "description": "Consulenza oraria",
+            "quantity": 2,
+            "unit_price": 861.6,
+            "discount_percent": null,
+            "amount": 1723.2
+          },
+          {
+            "description": "Materiale di consumo",
+            "quantity": 2.5,
+            "unit_price": 667.13,
+            "discount_percent": null,
+            "amount": 1667.83
+          },
+          {
+            "description": "Manutenzione impianto",
+            "quantity": 1,
+            "unit_price": 242.13,
+            "discount_percent": null,
+            "amount": 242.13
+          },
+          {
+            "description": "Consulenza oraria",
+            "quantity": 1,
+            "unit_price": 187.62,
+            "discount_percent": null,
+            "amount": 187.62
+          },
+          {
+            "description": "Stampa biglietti da visita",
+            "quantity": 10,
+            "unit_price": 141.15,
+            "discount_percent": null,
+            "amount": 1411.5
+          },
+          {
+            "description": "Consulenza oraria",
+            "quantity": 1,
+            "unit_price": 718.06,
+            "discount_percent": null,
+            "amount": 718.06
+          },
+          {
+            "description": "Materiale di consumo",
+            "quantity": 10,
+            "unit_price": 495.26,
+            "discount_percent": null,
+            "amount": 4952.6
+          },
+          {
+            "description": "Trasferta",
+            "quantity": 2,
+            "unit_price": 579.03,
+            "discount_percent": null,
+            "amount": 1158.06
+          },
+          {
+            "description": "Pannello in legno",
+            "quantity": 1,
+            "unit_price": 703.98,
+            "discount_percent": null,
+            "amount": 703.98
+          },
+          {
+            "description": "Materiale di consumo",
+            "quantity": 10,
+            "unit_price": 599.96,
+            "discount_percent": null,
+            "amount": 5999.6
+          },
+          {
+            "description": "Pannello in legno",
+            "quantity": 2,
+            "unit_price": 539.13,
+            "discount_percent": null,
+            "amount": 1078.26
+          },
+          {
+            "description": "Manutenzione impianto",
+            "quantity": 1,
+            "unit_price": 370.81,
+            "discount_percent": null,
+            "amount": 370.81
+          },
+          {
+            "description": "Manutenzione impianto",
+            "quantity": 1,
+            "unit_price": 612.06,
+            "discount_percent": null,
+            "amount": 612.06
+          },
+          {
+            "description": "Licenza software annuale",
+            "quantity": 1,
+            "unit_price": 580.61,
+            "discount_percent": null,
+            "amount": 580.61
+          },
+          {
+            "description": "Pannello in legno",
+            "quantity": 5,
+            "unit_price": 889.66,
+            "discount_percent": null,
+            "amount": 4448.3
+          },
+          {
+            "description": "Materiale di consumo",
+            "quantity": 2.5,
+            "unit_price": 535.95,
+            "discount_percent": null,
+            "amount": 1339.88
+          },
+          {
+            "description": "Stampa biglietti da visita",
+            "quantity": 2,
+            "unit_price": 769.78,
+            "discount_percent": null,
+            "amount": 1539.56
+          }
+        ],
+        "subtotal": 40166.14,
+        "tax_amount": 4016.61,
+        "total": 44182.75
+      }
+    },
+    {
+      "id": "syn-034",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.0005202999999999999,
+      "ms": 3161,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Café Rambla SL",
+        "supplier_tax_id": "66454673Z",
+        "invoice_number": "626/2025",
+        "issue_date": "2025-06-08",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Sesión de fotos",
+            "quantity": 1,
+            "unit_price": 650.98,
+            "discount_percent": null,
+            "amount": 650.98
+          },
+          {
+            "description": "Impresión de folletos",
+            "quantity": 2.5,
+            "unit_price": 441.18,
+            "discount_percent": null,
+            "amount": 1102.95
+          }
+        ],
+        "subtotal": 1753.93,
+        "tax_amount": 368.33,
+        "total": 2122.26
+      }
+    },
+    {
+      "id": "syn-035",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": false,
+      "flagged": true,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.0005652000000000001,
+      "ms": 4097,
+      "issues": [
+        {
+          "field": "subtotal",
+          "message": "lines sum to 1382.14, subtotal is 1384.14"
+        },
+        {
+          "field": "supplier_tax_id",
+          "message": "invalid tax id IT10823960329"
+        }
+      ],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": false,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "Idraulica Valli Srl",
+        "supplier_tax_id": "IT10823960329",
+        "invoice_number": "226/2026",
+        "issue_date": "2026-09-16",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Licenza software annuale",
+            "quantity": 1,
+            "unit_price": 786.46,
+            "discount_percent": null,
+            "amount": 786.46
+          },
+          {
+            "description": "Consulenza oraria",
+            "quantity": 0.5,
+            "unit_price": 219.66,
+            "discount_percent": null,
+            "amount": 109.83
+          },
+          {
+            "description": "Materiale di consumo",
+            "quantity": 0.5,
+            "unit_price": 353.86,
+            "discount_percent": null,
+            "amount": 176.93
+          },
+          {
+            "description": "Manutenzione impianto",
+            "quantity": 0.5,
+            "unit_price": 369.5,
+            "discount_percent": null,
+            "amount": 184.75
+          },
+          {
+            "description": "Manutenzione impianto",
+            "quantity": 3,
+            "unit_price": 41.39,
+            "discount_percent": null,
+            "amount": 124.17
+          }
+        ],
+        "subtotal": 1384.14,
+        "tax_amount": 55.37,
+        "total": 1439.51
+      }
+    },
+    {
+      "id": "syn-038",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.0021430999999999998,
+      "ms": 11860,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Laura Peña Fotografía",
+        "supplier_tax_id": "B65662115",
+        "invoice_number": "254/2025",
+        "issue_date": "2025-08-15",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Hora de consultoría",
+            "quantity": 1,
+            "unit_price": 716.25,
+            "discount_percent": null,
+            "amount": 716.25
+          },
+          {
+            "description": "Desplazamiento",
+            "quantity": 1,
+            "unit_price": 465.23,
+            "discount_percent": null,
+            "amount": 465.23
+          },
+          {
+            "description": "Sesión de fotos",
+            "quantity": 2.5,
+            "unit_price": 684.98,
+            "discount_percent": null,
+            "amount": 1712.45
+          },
+          {
+            "description": "Sesión de fotos",
+            "quantity": 0.5,
+            "unit_price": 894.57,
+            "discount_percent": null,
+            "amount": 447.29
+          },
+          {
+            "description": "Pintura interior",
+            "quantity": 0.5,
+            "unit_price": 541.37,
+            "discount_percent": null,
+            "amount": 270.69
+          },
+          {
+            "description": "Hora de consultoría",
+            "quantity": 2,
+            "unit_price": 501.7,
+            "discount_percent": null,
+            "amount": 1003.4
+          },
+          {
+            "description": "Sesión de fotos",
+            "quantity": 2,
+            "unit_price": 181.31,
+            "discount_percent": null,
+            "amount": 362.62
+          },
+          {
+            "description": "Impresión de folletos",
+            "quantity": 1,
+            "unit_price": 609.46,
+            "discount_percent": null,
+            "amount": 609.46
+          },
+          {
+            "description": "Hora de consultoría",
+            "quantity": 0.5,
+            "unit_price": 268.83,
+            "discount_percent": null,
+            "amount": 134.42
+          },
+          {
+            "description": "Pintura interior",
+            "quantity": 1,
+            "unit_price": 171.92,
+            "discount_percent": null,
+            "amount": 171.92
+          },
+          {
+            "description": "Mantenimiento mensual",
+            "quantity": 2.5,
+            "unit_price": 309.98,
+            "discount_percent": null,
+            "amount": 774.95
+          },
+          {
+            "description": "Impresión de folletos",
+            "quantity": 2.5,
+            "unit_price": 670.01,
+            "discount_percent": null,
+            "amount": 1675.03
+          },
+          {
+            "description": "Desplazamiento",
+            "quantity": 1,
+            "unit_price": 154.36,
+            "discount_percent": null,
+            "amount": 154.36
+          },
+          {
+            "description": "Sesión de fotos",
+            "quantity": 2.5,
+            "unit_price": 632.22,
+            "discount_percent": null,
+            "amount": 1580.55
+          },
+          {
+            "description": "Sesión de fotos",
+            "quantity": 0.5,
+            "unit_price": 626.33,
+            "discount_percent": null,
+            "amount": 313.17
+          },
+          {
+            "description": "Mantenimiento mensual",
+            "quantity": 1,
+            "unit_price": 234.96,
+            "discount_percent": null,
+            "amount": 234.96
+          },
+          {
+            "description": "Impresión de folletos",
+            "quantity": 1,
+            "unit_price": 863.85,
+            "discount_percent": null,
+            "amount": 863.85
+          },
+          {
+            "description": "Mantenimiento mensual",
+            "quantity": 5,
+            "unit_price": 740.13,
+            "discount_percent": null,
+            "amount": 3700.65
+          },
+          {
+            "description": "Sesión de fotos",
+            "quantity": 2.5,
+            "unit_price": 852.31,
+            "discount_percent": null,
+            "amount": 2130.77
+          },
+          {
+            "description": "Material de oficina",
+            "quantity": 1,
+            "unit_price": 179.59,
+            "discount_percent": null,
+            "amount": 179.59
+          },
+          {
+            "description": "Sesión de fotos",
+            "quantity": 0.5,
+            "unit_price": 361.11,
+            "discount_percent": null,
+            "amount": 180.56
+          },
+          {
+            "description": "Desplazamiento",
+            "quantity": 1,
+            "unit_price": 37.5,
+            "discount_percent": null,
+            "amount": 37.5
+          },
+          {
+            "description": "Desplazamiento",
+            "quantity": 2,
+            "unit_price": 118.54,
+            "discount_percent": null,
+            "amount": 237.08
+          },
+          {
+            "description": "Hora de consultoría",
+            "quantity": 0.5,
+            "unit_price": 181.38,
+            "discount_percent": null,
+            "amount": 90.69
+          },
+          {
+            "description": "Impresión de folletos",
+            "quantity": 1,
+            "unit_price": 175.88,
+            "discount_percent": null,
+            "amount": 175.88
+          },
+          {
+            "description": "Mantenimiento mensual",
+            "quantity": 2.5,
+            "unit_price": 809.72,
+            "discount_percent": null,
+            "amount": 2024.3
+          },
+          {
+            "description": "Material de oficina",
+            "quantity": 3,
+            "unit_price": 300.64,
+            "discount_percent": null,
+            "amount": 901.92
+          },
+          {
+            "description": "Desplazamiento",
+            "quantity": 1,
+            "unit_price": 237.53,
+            "discount_percent": null,
+            "amount": 237.53
+          },
+          {
+            "description": "Pintura interior",
+            "quantity": 3,
+            "unit_price": 433.51,
+            "discount_percent": null,
+            "amount": 1300.53
+          },
+          {
+            "description": "Pintura interior",
+            "quantity": 3,
+            "unit_price": 58.12,
+            "discount_percent": null,
+            "amount": 174.36
+          },
+          {
+            "description": "Hora de consultoría",
+            "quantity": 3,
+            "unit_price": 587.07,
+            "discount_percent": null,
+            "amount": 1761.21
+          },
+          {
+            "description": "Pintura interior",
+            "quantity": 1,
+            "unit_price": 495.5,
+            "discount_percent": null,
+            "amount": 495.5
+          },
+          {
+            "description": "Impresión de folletos",
+            "quantity": 1,
+            "unit_price": 210.79,
+            "discount_percent": null,
+            "amount": 210.79
+          },
+          {
+            "description": "Mantenimiento mensual",
+            "quantity": 3,
+            "unit_price": 364.02,
+            "discount_percent": null,
+            "amount": 1092.06
+          },
+          {
+            "description": "Hora de consultoría",
+            "quantity": 3,
+            "unit_price": 403.86,
+            "discount_percent": null,
+            "amount": 1211.58
+          },
+          {
+            "description": "Hora de consultoría",
+            "quantity": 3,
+            "unit_price": 669.06,
+            "discount_percent": null,
+            "amount": 2007.18
+          },
+          {
+            "description": "Impresión de folletos",
+            "quantity": 1,
+            "unit_price": 254.94,
+            "discount_percent": null,
+            "amount": 254.94
+          },
+          {
+            "description": "Pintura interior",
+            "quantity": 2,
+            "unit_price": 828.58,
+            "discount_percent": null,
+            "amount": 1657.16
+          },
+          {
+            "description": "Desplazamiento",
+            "quantity": 5,
+            "unit_price": 375.78,
+            "discount_percent": null,
+            "amount": 1878.9
+          },
+          {
+            "description": "Impresión de folletos",
+            "quantity": 1,
+            "unit_price": 825.48,
+            "discount_percent": null,
+            "amount": 825.48
+          }
+        ],
+        "subtotal": 34256.76,
+        "tax_amount": 3425.68,
+        "total": 37682.44
+      }
+    },
+    {
+      "id": "syn-039",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.0005503,
+      "ms": 3263,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": false,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Idraulica Valli Srl",
+        "supplier_tax_id": "IT40511825479",
+        "invoice_number": "574/2023",
+        "issue_date": "2023-04-24",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Materiale di consumo",
+            "quantity": 3,
+            "unit_price": 123.21,
+            "discount_percent": null,
+            "amount": 369.63
+          },
+          {
+            "description": "Manutenzione impianto",
+            "quantity": 2,
+            "unit_price": 216.19,
+            "discount_percent": null,
+            "amount": 432.38
+          },
+          {
+            "description": "Licenza software annuale",
+            "quantity": 1,
+            "unit_price": 219.71,
+            "discount_percent": null,
+            "amount": 219.71
+          }
+        ],
+        "subtotal": 1021.72,
+        "tax_amount": 224.78,
+        "total": 1246.5
+      }
+    },
+    {
+      "id": "syn-040",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": false,
+      "flagged": true,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.00042670000000000007,
+      "ms": 3519,
+      "issues": [
+        {
+          "field": "supplier_tax_id",
+          "message": "invalid tax id S3641330T"
+        }
+      ],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": false,
+        "invoice_number": false,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Café Ramble SL",
+        "supplier_tax_id": "S3641330T",
+        "invoice_number": "048/2023",
+        "issue_date": "2023-02-04",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Pintura interior",
+            "quantity": 10,
+            "unit_price": 835.82,
+            "discount_percent": null,
+            "amount": 8358.2
+          },
+          {
+            "description": "Desplazamiento",
+            "quantity": 10,
+            "unit_price": 721.31,
+            "discount_percent": null,
+            "amount": 7213.1
+          }
+        ],
+        "subtotal": 15571.3,
+        "tax_amount": 3269.97,
+        "total": 18841.27
+      }
+    },
+    {
+      "id": "syn-042",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.0005699000000000001,
+      "ms": 3182,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Talleres Montaner SA",
+        "supplier_tax_id": "B08537539",
+        "invoice_number": "575/2025",
+        "issue_date": "2025-09-14",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Desplazamiento",
+            "quantity": 5,
+            "unit_price": 835.52,
+            "discount_percent": 15,
+            "amount": 3550.96
+          },
+          {
+            "description": "Hora de consultoría",
+            "quantity": 1,
+            "unit_price": 144.17,
+            "discount_percent": null,
+            "amount": 144.17
+          },
+          {
+            "description": "Hora de consultoría",
+            "quantity": 10,
+            "unit_price": 58.25,
+            "discount_percent": null,
+            "amount": 582.5
+          },
+          {
+            "description": "Material de oficina",
+            "quantity": 1,
+            "unit_price": 441.87,
+            "discount_percent": null,
+            "amount": 441.87
+          }
+        ],
+        "subtotal": 4719.5,
+        "tax_amount": 471.95,
+        "total": 5191.45
+      }
+    },
+    {
+      "id": "syn-043",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.0013624000000000002,
+      "ms": 5404,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Idraulica Valli Srl",
+        "supplier_tax_id": "IT69475402199",
+        "invoice_number": "779/2023",
+        "issue_date": "2023-09-12",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Licenza software annuale",
+            "quantity": 1,
+            "unit_price": 172.53,
+            "discount_percent": null,
+            "amount": 172.53
+          },
+          {
+            "description": "Stampa biglietti da visita",
+            "quantity": 10,
+            "unit_price": 345.67,
+            "discount_percent": null,
+            "amount": 3456.7
+          },
+          {
+            "description": "Consulenza oraria",
+            "quantity": 2,
+            "unit_price": 679.55,
+            "discount_percent": null,
+            "amount": 1359.1
+          },
+          {
+            "description": "Pannello in legno",
+            "quantity": 1,
+            "unit_price": 400.07,
+            "discount_percent": null,
+            "amount": 400.07
+          },
+          {
+            "description": "Consulenza oraria",
+            "quantity": 2,
+            "unit_price": 61.75,
+            "discount_percent": null,
+            "amount": 123.5
+          },
+          {
+            "description": "Pannello in legno",
+            "quantity": 2.5,
+            "unit_price": 525.14,
+            "discount_percent": null,
+            "amount": 1312.85
+          },
+          {
+            "description": "Manutenzione impianto",
+            "quantity": 3,
+            "unit_price": 379.57,
+            "discount_percent": null,
+            "amount": 1138.71
+          },
+          {
+            "description": "Trasferta",
+            "quantity": 1,
+            "unit_price": 717.49,
+            "discount_percent": null,
+            "amount": 717.49
+          },
+          {
+            "description": "Pannello in legno",
+            "quantity": 1,
+            "unit_price": 823.37,
+            "discount_percent": null,
+            "amount": 823.37
+          },
+          {
+            "description": "Stampa biglietti da visita",
+            "quantity": 5,
+            "unit_price": 387.08,
+            "discount_percent": null,
+            "amount": 1935.4
+          },
+          {
+            "description": "Stampa biglietti da visita",
+            "quantity": 10,
+            "unit_price": 192.77,
+            "discount_percent": null,
+            "amount": 1927.7
+          },
+          {
+            "description": "Manutenzione impianto",
+            "quantity": 5,
+            "unit_price": 834.4,
+            "discount_percent": null,
+            "amount": 4172
+          },
+          {
+            "description": "Pannello in legno",
+            "quantity": 2.5,
+            "unit_price": 161.69,
+            "discount_percent": null,
+            "amount": 404.23
+          },
+          {
+            "description": "Manutenzione impianto",
+            "quantity": 2,
+            "unit_price": 359.89,
+            "discount_percent": null,
+            "amount": 719.78
+          },
+          {
+            "description": "Pannello in legno",
+            "quantity": 2,
+            "unit_price": 460.06,
+            "discount_percent": null,
+            "amount": 920.12
+          },
+          {
+            "description": "Consulenza oraria",
+            "quantity": 10,
+            "unit_price": 408.45,
+            "discount_percent": null,
+            "amount": 4084.5
+          },
+          {
+            "description": "Licenza software annuale",
+            "quantity": 1,
+            "unit_price": 86.06,
+            "discount_percent": null,
+            "amount": 86.06
+          },
+          {
+            "description": "Licenza software annuale",
+            "quantity": 3,
+            "unit_price": 27.9,
+            "discount_percent": null,
+            "amount": 83.7
+          },
+          {
+            "description": "Materiale di consumo",
+            "quantity": 10,
+            "unit_price": 665.49,
+            "discount_percent": null,
+            "amount": 6654.9
+          },
+          {
+            "description": "Pannello in legno",
+            "quantity": 5,
+            "unit_price": 658.22,
+            "discount_percent": null,
+            "amount": 3291.1
+          },
+          {
+            "description": "Materiale di consumo",
+            "quantity": 1,
+            "unit_price": 718.51,
+            "discount_percent": null,
+            "amount": 718.51
+          },
+          {
+            "description": "Licenza software annuale",
+            "quantity": 3,
+            "unit_price": 871.82,
+            "discount_percent": null,
+            "amount": 2615.46
+          },
+          {
+            "description": "Materiale di consumo",
+            "quantity": 5,
+            "unit_price": 171.97,
+            "discount_percent": null,
+            "amount": 859.85
+          },
+          {
+            "description": "Pannello in legno",
+            "quantity": 1,
+            "unit_price": 795.54,
+            "discount_percent": null,
+            "amount": 795.54
+          },
+          {
+            "description": "Stampa biglietti da visita",
+            "quantity": 5,
+            "unit_price": 859.26,
+            "discount_percent": null,
+            "amount": 4296.3
+          },
+          {
+            "description": "Materiale di consumo",
+            "quantity": 1,
+            "unit_price": 650.73,
+            "discount_percent": null,
+            "amount": 650.73
+          },
+          {
+            "description": "Materiale di consumo",
+            "quantity": 1,
+            "unit_price": 143.21,
+            "discount_percent": null,
+            "amount": 143.21
+          },
+          {
+            "description": "Pannello in legno",
+            "quantity": 1,
+            "unit_price": 895.73,
+            "discount_percent": null,
+            "amount": 895.73
+          },
+          {
+            "description": "Materiale di consumo",
+            "quantity": 3,
+            "unit_price": 273.31,
+            "discount_percent": null,
+            "amount": 819.93
+          },
+          {
+            "description": "Stampa biglietti da visita",
+            "quantity": 3,
+            "unit_price": 226.72,
+            "discount_percent": null,
+            "amount": 680.16
+          },
+          {
+            "description": "Pannello in legno",
+            "quantity": 1,
+            "unit_price": 97.43,
+            "discount_percent": null,
+            "amount": 97.43
+          },
+          {
+            "description": "Consulenza oraria",
+            "quantity": 1,
+            "unit_price": 424.36,
+            "discount_percent": null,
+            "amount": 424.36
+          }
+        ],
+        "subtotal": 46781.02,
+        "tax_amount": 10291.82,
+        "total": 57072.84
+      }
+    },
+    {
+      "id": "syn-044",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.0003408,
+      "ms": 1384,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Laura Peña Fotografía",
+        "supplier_tax_id": "B03172568",
+        "invoice_number": "954/2023",
+        "issue_date": "2023-04-25",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Sesión de fotos",
+            "quantity": 1,
+            "unit_price": 515.43,
+            "discount_percent": null,
+            "amount": 515.43
+          },
+          {
+            "description": "Pintura interior",
+            "quantity": 1,
+            "unit_price": 849.04,
+            "discount_percent": null,
+            "amount": 849.04
+          }
+        ],
+        "subtotal": 1364.47,
+        "tax_amount": 136.45,
+        "total": 1500.92
+      }
+    },
+    {
+      "id": "syn-047",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.0005007,
+      "ms": 2535,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Idraulica Valli Srl",
+        "supplier_tax_id": "IT91897288550",
+        "invoice_number": "293/2024",
+        "issue_date": "2024-07-27",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Licenza software annuale",
+            "quantity": 1,
+            "unit_price": 7.5,
+            "discount_percent": null,
+            "amount": 7.5
+          },
+          {
+            "description": "Materiale di consumo",
+            "quantity": 2.5,
+            "unit_price": 773.38,
+            "discount_percent": null,
+            "amount": 1933.45
+          },
+          {
+            "description": "Stampa biglietti da visita",
+            "quantity": 2.5,
+            "unit_price": 771.47,
+            "discount_percent": null,
+            "amount": 1928.68
+          },
+          {
+            "description": "Stampa biglietti da visita",
+            "quantity": 2.5,
+            "unit_price": 373.51,
+            "discount_percent": 10,
+            "amount": 840.4
+          },
+          {
+            "description": "Stampa biglietti da visita",
+            "quantity": 2,
+            "unit_price": 304.53,
+            "discount_percent": 20,
+            "amount": 487.25
+          },
+          {
+            "description": "Pannello in legno",
+            "quantity": 2.5,
+            "unit_price": 32.59,
+            "discount_percent": 5,
+            "amount": 77.4
+          }
+        ],
+        "subtotal": 5274.68,
+        "tax_amount": 527.47,
+        "total": 5802.15
+      }
+    },
+    {
+      "id": "syn-048",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.0015594,
+      "ms": 7031,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Talleres Montaner SA",
+        "supplier_tax_id": "50816695N",
+        "invoice_number": "276/2023",
+        "issue_date": "2023-04-27",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Desplazamiento",
+            "quantity": 1,
+            "unit_price": 661.86,
+            "discount_percent": null,
+            "amount": 661.86
+          },
+          {
+            "description": "Hora de consultoría",
+            "quantity": 3,
+            "unit_price": 611.23,
+            "discount_percent": null,
+            "amount": 1833.69
+          },
+          {
+            "description": "Desplazamiento",
+            "quantity": 5,
+            "unit_price": 326.13,
+            "discount_percent": null,
+            "amount": 1630.65
+          },
+          {
+            "description": "Hora de consultoría",
+            "quantity": 1,
+            "unit_price": 95.9,
+            "discount_percent": null,
+            "amount": 95.9
+          },
+          {
+            "description": "Mantenimiento mensual",
+            "quantity": 3,
+            "unit_price": 129.94,
+            "discount_percent": null,
+            "amount": 389.82
+          },
+          {
+            "description": "Desplazamiento",
+            "quantity": 0.5,
+            "unit_price": 106.8,
+            "discount_percent": null,
+            "amount": 53.4
+          },
+          {
+            "description": "Pintura interior",
+            "quantity": 1,
+            "unit_price": 101.1,
+            "discount_percent": null,
+            "amount": 101.1
+          },
+          {
+            "description": "Impresión de folletos",
+            "quantity": 1,
+            "unit_price": 707.18,
+            "discount_percent": null,
+            "amount": 707.18
+          },
+          {
+            "description": "Material de oficina",
+            "quantity": 1,
+            "unit_price": 229.62,
+            "discount_percent": null,
+            "amount": 229.62
+          },
+          {
+            "description": "Desplazamiento",
+            "quantity": 3,
+            "unit_price": 888.77,
+            "discount_percent": null,
+            "amount": 2666.31
+          },
+          {
+            "description": "Desplazamiento",
+            "quantity": 10,
+            "unit_price": 346.14,
+            "discount_percent": null,
+            "amount": 3461.4
+          },
+          {
+            "description": "Desplazamiento",
+            "quantity": 3,
+            "unit_price": 70.5,
+            "discount_percent": null,
+            "amount": 211.5
+          },
+          {
+            "description": "Hora de consultoría",
+            "quantity": 2.5,
+            "unit_price": 156.09,
+            "discount_percent": null,
+            "amount": 390.23
+          },
+          {
+            "description": "Impresión de folletos",
+            "quantity": 2.5,
+            "unit_price": 725.69,
+            "discount_percent": null,
+            "amount": 1814.23
+          },
+          {
+            "description": "Desplazamiento",
+            "quantity": 1,
+            "unit_price": 497.13,
+            "discount_percent": null,
+            "amount": 497.13
+          },
+          {
+            "description": "Hora de consultoría",
+            "quantity": 3,
+            "unit_price": 708.17,
+            "discount_percent": null,
+            "amount": 2124.51
+          },
+          {
+            "description": "Hora de consultoría",
+            "quantity": 0.5,
+            "unit_price": 392.96,
+            "discount_percent": null,
+            "amount": 196.48
+          },
+          {
+            "description": "Desplazamiento",
+            "quantity": 2.5,
+            "unit_price": 892.34,
+            "discount_percent": null,
+            "amount": 2230.85
+          },
+          {
+            "description": "Mantenimiento mensual",
+            "quantity": 10,
+            "unit_price": 567.91,
+            "discount_percent": null,
+            "amount": 5679.1
+          },
+          {
+            "description": "Sesión de fotos",
+            "quantity": 1,
+            "unit_price": 254.52,
+            "discount_percent": null,
+            "amount": 254.52
+          },
+          {
+            "description": "Sesión de fotos",
+            "quantity": 1,
+            "unit_price": 612.32,
+            "discount_percent": null,
+            "amount": 612.32
+          },
+          {
+            "description": "Pintura interior",
+            "quantity": 5,
+            "unit_price": 149.74,
+            "discount_percent": null,
+            "amount": 748.7
+          },
+          {
+            "description": "Sesión de fotos",
+            "quantity": 3,
+            "unit_price": 733.61,
+            "discount_percent": null,
+            "amount": 2200.83
+          },
+          {
+            "description": "Desplazamiento",
+            "quantity": 1,
+            "unit_price": 784.15,
+            "discount_percent": null,
+            "amount": 784.15
+          },
+          {
+            "description": "Desplazamiento",
+            "quantity": 1,
+            "unit_price": 175.75,
+            "discount_percent": null,
+            "amount": 175.75
+          },
+          {
+            "description": "Material de oficina",
+            "quantity": 2.5,
+            "unit_price": 243.19,
+            "discount_percent": null,
+            "amount": 607.98
+          },
+          {
+            "description": "Hora de consultoría",
+            "quantity": 1,
+            "unit_price": 565.25,
+            "discount_percent": null,
+            "amount": 565.25
+          },
+          {
+            "description": "Hora de consultoría",
+            "quantity": 1,
+            "unit_price": 481.35,
+            "discount_percent": null,
+            "amount": 481.35
+          },
+          {
+            "description": "Sesión de fotos",
+            "quantity": 1,
+            "unit_price": 172.23,
+            "discount_percent": null,
+            "amount": 172.23
+          },
+          {
+            "description": "Sesión de fotos",
+            "quantity": 1,
+            "unit_price": 155.59,
+            "discount_percent": null,
+            "amount": 155.59
+          },
+          {
+            "description": "Hora de consultoría",
+            "quantity": 2,
+            "unit_price": 288.3,
+            "discount_percent": null,
+            "amount": 576.6
+          },
+          {
+            "description": "Sesión de fotos",
+            "quantity": 5,
+            "unit_price": 597.65,
+            "discount_percent": null,
+            "amount": 2988.25
+          },
+          {
+            "description": "Sesión de fotos",
+            "quantity": 1,
+            "unit_price": 553.04,
+            "discount_percent": null,
+            "amount": 553.04
+          },
+          {
+            "description": "Hora de consultoría",
+            "quantity": 1,
+            "unit_price": 713.26,
+            "discount_percent": null,
+            "amount": 713.26
+          },
+          {
+            "description": "Desplazamiento",
+            "quantity": 2,
+            "unit_price": 329.69,
+            "discount_percent": null,
+            "amount": 659.38
+          },
+          {
+            "description": "Material de oficina",
+            "quantity": 1,
+            "unit_price": 59.98,
+            "discount_percent": null,
+            "amount": 59.98
+          },
+          {
+            "description": "Material de oficina",
+            "quantity": 2,
+            "unit_price": 652.05,
+            "discount_percent": null,
+            "amount": 1304.1
+          },
+          {
+            "description": "Sesión de fotos",
+            "quantity": 2.5,
+            "unit_price": 542.4,
+            "discount_percent": null,
+            "amount": 1356
+          },
+          {
+            "description": "Desplazamiento",
+            "quantity": 3,
+            "unit_price": 834.83,
+            "discount_percent": null,
+            "amount": 2504.49
+          },
+          {
+            "description": "Pintura interior",
+            "quantity": 1,
+            "unit_price": 794.1,
+            "discount_percent": null,
+            "amount": 794.1
+          }
+        ],
+        "subtotal": 43242.83,
+        "tax_amount": 4324.28,
+        "total": 47567.11
+      }
+    },
+    {
+      "id": "syn-049",
+      "scored": [
+        "supplier_name",
+        "supplier_tax_id",
+        "invoice_number",
+        "issue_date",
+        "currency",
+        "subtotal",
+        "tax_amount",
+        "total",
+        "lines"
+      ],
+      "expect_review": false,
+      "flagged": true,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.0006837999999999999,
+      "ms": 4358,
+      "issues": [
+        {
+          "field": "supplier_tax_id",
+          "message": "invalid tax id IT56864328810"
+        }
+      ],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": false,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Panificio Rinaldi",
+        "supplier_tax_id": "IT56864328810",
+        "invoice_number": "392/2024",
+        "issue_date": "2024-01-17",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Licenza software annuale",
+            "quantity": 1,
+            "unit_price": 238.67,
+            "discount_percent": null,
+            "amount": 238.67
+          },
+          {
+            "description": "Licenza software annuale",
+            "quantity": 3,
+            "unit_price": 170.14,
+            "discount_percent": null,
+            "amount": 510.42
+          },
+          {
+            "description": "Trasferta",
+            "quantity": 1,
+            "unit_price": 607.3,
+            "discount_percent": null,
+            "amount": 607.3
+          },
+          {
+            "description": "Stampa biglietti da visita",
+            "quantity": 2.5,
+            "unit_price": 375.48,
+            "discount_percent": null,
+            "amount": 938.7
+          },
+          {
+            "description": "Licenza software annuale",
+            "quantity": 2,
+            "unit_price": 287.84,
+            "discount_percent": null,
+            "amount": 575.68
+          },
+          {
+            "description": "Pannello in legno",
+            "quantity": 0.5,
+            "unit_price": 443.37,
+            "discount_percent": null,
+            "amount": 221.69
+          }
+        ],
+        "subtotal": 3092.46,
+        "tax_amount": 309.25,
+        "total": 3401.71
+      }
+    }
+  ]
+}

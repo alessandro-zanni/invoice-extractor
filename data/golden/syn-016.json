@@ -1,0 +1,65 @@
+{
+  "id": "syn-016",
+  "file": "syn-016.pdf",
+  "split": "dev",
+  "expect_review": false,
+  "error": null,
+  "variant": null,
+  "invoice": {
+    "supplier_name": "Laura Peña Fotografía",
+    "supplier_tax_id": "28590533S",
+    "invoice_number": "770/2026",
+    "issue_date": "2026-02-05",
+    "currency": "EUR",
+    "lines": [
+      {
+        "description": "Mantenimiento mensual",
+        "quantity": 5,
+        "unit_price": 756.25,
+        "discount_percent": null,
+        "amount": 3781.25
+      },
+      {
+        "description": "Sesión de fotos",
+        "quantity": 5,
+        "unit_price": 30.32,
+        "discount_percent": null,
+        "amount": 151.6
+      },
+      {
+        "description": "Impresión de folletos",
+        "quantity": 0.5,
+        "unit_price": 339.23,
+        "discount_percent": null,
+        "amount": 169.62
+      },
+      {
+        "description": "Hora de consultoría",
+        "quantity": 0.5,
+        "unit_price": 455.31,
+        "discount_percent": null,
+        "amount": 227.66
+      },
+      {
+        "description": "Material de oficina",
+        "quantity": 1,
+        "unit_price": 695.64,
+        "discount_percent": null,
+        "amount": 695.64
+      },
+      {
+        "description": "Material de oficina",
+        "quantity": 0.5,
+        "unit_price": 713.22,
+        "discount_percent": null,
+        "amount": 356.61
+      }
+    ],
+    "subtotal": 5382.38,
+    "discount_amount": 0,
+    "tax_amount": 1130.3,
+    "prices_include_tax": false,
+    "rounding": 0,
+    "total": 6512.68
+  }
+}

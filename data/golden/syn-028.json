@@ -1,0 +1,51 @@
+{
+  "id": "syn-028",
+  "file": "syn-028.pdf",
+  "split": "test",
+  "expect_review": false,
+  "error": null,
+  "variant": null,
+  "invoice": {
+    "supplier_name": "Talleres Montaner SA",
+    "supplier_tax_id": "88442568R",
+    "invoice_number": "881/2024",
+    "issue_date": "2024-03-11",
+    "currency": "EUR",
+    "lines": [
+      {
+        "description": "Desplazamiento",
+        "quantity": 2.5,
+        "unit_price": 473.99,
+        "discount_percent": null,
+        "amount": 1184.97
+      },
+      {
+        "description": "Pintura interior",
+        "quantity": 3,
+        "unit_price": 810.87,
+        "discount_percent": null,
+        "amount": 2432.61
+      },
+      {
+        "description": "Pintura interior",
+        "quantity": 1,
+        "unit_price": 203.85,
+        "discount_percent": null,
+        "amount": 203.85
+      },
+      {
+        "description": "Material de oficina",
+        "quantity": 2,
+        "unit_price": 633.39,
+        "discount_percent": null,
+        "amount": 1266.78
+      }
+    ],
+    "subtotal": 5088.21,
+    "discount_amount": 0,
+    "tax_amount": 508.82,
+    "prices_include_tax": false,
+    "rounding": 0,
+    "total": 5597.03
+  }
+}

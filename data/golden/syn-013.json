@@ -1,0 +1,51 @@
+{
+  "id": "syn-013",
+  "file": "syn-013.pdf",
+  "split": "dev",
+  "expect_review": false,
+  "error": null,
+  "variant": null,
+  "invoice": {
+    "supplier_name": "Studio Grafico Lunetta",
+    "supplier_tax_id": "IT66838384353",
+    "invoice_number": "836/2026",
+    "issue_date": "2026-09-22",
+    "currency": "EUR",
+    "lines": [
+      {
+        "description": "Trasferta",
+        "quantity": 0.5,
+        "unit_price": 841.91,
+        "discount_percent": null,
+        "amount": 420.96
+      },
+      {
+        "description": "Manutenzione impianto",
+        "quantity": 5,
+        "unit_price": 729.21,
+        "discount_percent": null,
+        "amount": 3646.05
+      },
+      {
+        "description": "Materiale di consumo",
+        "quantity": 3,
+        "unit_price": 675.6,
+        "discount_percent": null,
+        "amount": 2026.8
+      },
+      {
+        "description": "Materiale di consumo",
+        "quantity": 10,
+        "unit_price": 499.53,
+        "discount_percent": null,
+        "amount": 4995.3
+      }
+    ],
+    "subtotal": 11089.11,
+    "discount_amount": 0,
+    "tax_amount": 2439.6,
+    "prices_include_tax": false,
+    "rounding": 0,
+    "total": 13528.71
+  }
+}

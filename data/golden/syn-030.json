@@ -1,0 +1,30 @@
+{
+  "id": "syn-030",
+  "file": "syn-030.pdf",
+  "split": "dev",
+  "expect_review": false,
+  "error": null,
+  "variant": null,
+  "invoice": {
+    "supplier_name": "Café Rambla SL",
+    "supplier_tax_id": "B97205014",
+    "invoice_number": "418/2025",
+    "issue_date": "2025-08-06",
+    "currency": "EUR",
+    "lines": [
+      {
+        "description": "Hora de consultoría",
+        "quantity": 10,
+        "unit_price": 518.23,
+        "discount_percent": null,
+        "amount": 5182.3
+      }
+    ],
+    "subtotal": 5182.3,
+    "discount_amount": 0,
+    "tax_amount": 518.23,
+    "prices_include_tax": false,
+    "rounding": 0,
+    "total": 5700.53
+  }
+}

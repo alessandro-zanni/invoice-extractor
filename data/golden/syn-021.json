@@ -1,0 +1,65 @@
+{
+  "id": "syn-021",
+  "file": "syn-021.pdf",
+  "split": "dev",
+  "expect_review": false,
+  "error": null,
+  "variant": null,
+  "invoice": {
+    "supplier_name": "Consulenze Moretti",
+    "supplier_tax_id": "IT01263694778",
+    "invoice_number": "17/2024",
+    "issue_date": "2024-02-11",
+    "currency": "EUR",
+    "lines": [
+      {
+        "description": "Licenza software annuale",
+        "quantity": 2.5,
+        "unit_price": 870.47,
+        "discount_percent": null,
+        "amount": 2176.18
+      },
+      {
+        "description": "Stampa biglietti da visita",
+        "quantity": 2.5,
+        "unit_price": 730.42,
+        "discount_percent": null,
+        "amount": 1826.05
+      },
+      {
+        "description": "Consulenza oraria",
+        "quantity": 1,
+        "unit_price": 893.67,
+        "discount_percent": null,
+        "amount": 893.67
+      },
+      {
+        "description": "Trasferta",
+        "quantity": 3,
+        "unit_price": 787.05,
+        "discount_percent": null,
+        "amount": 2361.15
+      },
+      {
+        "description": "Licenza software annuale",
+        "quantity": 10,
+        "unit_price": 295.87,
+        "discount_percent": null,
+        "amount": 2958.7
+      },
+      {
+        "description": "Trasferta",
+        "quantity": 3,
+        "unit_price": 830.91,
+        "discount_percent": null,
+        "amount": 2492.73
+      }
+    ],
+    "subtotal": 12708.48,
+    "discount_amount": 0,
+    "tax_amount": 1270.85,
+    "prices_include_tax": false,
+    "rounding": 0,
+    "total": 13979.33
+  }
+}

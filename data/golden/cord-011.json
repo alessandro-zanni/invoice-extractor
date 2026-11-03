@@ -1,0 +1,33 @@
+{
+  "id": "cord-011",
+  "file": "cord-011.jpg",
+  "split": "dev",
+  "expect_review": null,
+  "fields": [
+    "total",
+    "lines"
+  ],
+  "source": "CORD v2 test split, CC BY 4.0",
+  "invoice": {
+    "supplier_name": "",
+    "supplier_tax_id": null,
+    "invoice_number": null,
+    "issue_date": null,
+    "currency": "IDR",
+    "lines": [
+      {
+        "description": "CINNAMON SUGAR",
+        "quantity": 1,
+        "unit_price": 17000,
+        "discount_percent": null,
+        "amount": 17000
+      }
+    ],
+    "subtotal": 17000,
+    "discount_amount": 0,
+    "tax_amount": 0,
+    "prices_include_tax": false,
+    "rounding": 0,
+    "total": 17000
+  }
+}

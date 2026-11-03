@@ -1,0 +1,44 @@
+{
+  "id": "syn-019",
+  "file": "syn-019.pdf",
+  "split": "test",
+  "expect_review": false,
+  "error": null,
+  "variant": null,
+  "invoice": {
+    "supplier_name": "Ferramenta Corsini & C. Snc",
+    "supplier_tax_id": "IT54450706137",
+    "invoice_number": "726/2023",
+    "issue_date": "2023-06-16",
+    "currency": "EUR",
+    "lines": [
+      {
+        "description": "Consulenza oraria",
+        "quantity": 1,
+        "unit_price": 454.31,
+        "discount_percent": null,
+        "amount": 454.31
+      },
+      {
+        "description": "Pannello in legno",
+        "quantity": 5,
+        "unit_price": 59.69,
+        "discount_percent": null,
+        "amount": 298.45
+      },
+      {
+        "description": "Licenza software annuale",
+        "quantity": 10,
+        "unit_price": 592.64,
+        "discount_percent": null,
+        "amount": 5926.4
+      }
+    ],
+    "subtotal": 6679.16,
+    "discount_amount": 0,
+    "tax_amount": 667.92,
+    "prices_include_tax": false,
+    "rounding": 0,
+    "total": 7347.08
+  }
+}

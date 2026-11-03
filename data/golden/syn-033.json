@@ -1,0 +1,247 @@
+{
+  "id": "syn-033",
+  "file": "syn-033.pdf",
+  "split": "dev",
+  "expect_review": false,
+  "error": null,
+  "variant": "twopage",
+  "invoice": {
+    "supplier_name": "Tipografia Bassi Srl",
+    "supplier_tax_id": "IT71213947881",
+    "invoice_number": "266/2023",
+    "issue_date": "2023-06-01",
+    "currency": "EUR",
+    "lines": [
+      {
+        "description": "Trasferta",
+        "quantity": 0.5,
+        "unit_price": 616.65,
+        "discount_percent": null,
+        "amount": 308.33
+      },
+      {
+        "description": "Stampa biglietti da visita",
+        "quantity": 2,
+        "unit_price": 727.64,
+        "discount_percent": null,
+        "amount": 1455.28
+      },
+      {
+        "description": "Pannello in legno",
+        "quantity": 2,
+        "unit_price": 93.72,
+        "discount_percent": null,
+        "amount": 187.44
+      },
+      {
+        "description": "Trasferta",
+        "quantity": 1,
+        "unit_price": 208.97,
+        "discount_percent": null,
+        "amount": 208.97
+      },
+      {
+        "description": "Manutenzione impianto",
+        "quantity": 5,
+        "unit_price": 503.34,
+        "discount_percent": null,
+        "amount": 2516.7
+      },
+      {
+        "description": "Materiale di consumo",
+        "quantity": 2,
+        "unit_price": 317.84,
+        "discount_percent": null,
+        "amount": 635.68
+      },
+      {
+        "description": "Trasferta",
+        "quantity": 10,
+        "unit_price": 73.9,
+        "discount_percent": null,
+        "amount": 739
+      },
+      {
+        "description": "Pannello in legno",
+        "quantity": 5,
+        "unit_price": 584.16,
+        "discount_percent": null,
+        "amount": 2920.8
+      },
+      {
+        "description": "Licenza software annuale",
+        "quantity": 0.5,
+        "unit_price": 437.8,
+        "discount_percent": null,
+        "amount": 218.9
+      },
+      {
+        "description": "Trasferta",
+        "quantity": 1,
+        "unit_price": 413.87,
+        "discount_percent": null,
+        "amount": 413.87
+      },
+      {
+        "description": "Pannello in legno",
+        "quantity": 2,
+        "unit_price": 176.41,
+        "discount_percent": null,
+        "amount": 352.82
+      },
+      {
+        "description": "Pannello in legno",
+        "quantity": 2.5,
+        "unit_price": 390.15,
+        "discount_percent": null,
+        "amount": 975.38
+      },
+      {
+        "description": "Materiale di consumo",
+        "quantity": 2.5,
+        "unit_price": 88.49,
+        "discount_percent": null,
+        "amount": 221.23
+      },
+      {
+        "description": "Materiale di consumo",
+        "quantity": 0.5,
+        "unit_price": 244.9,
+        "discount_percent": null,
+        "amount": 122.45
+      },
+      {
+        "description": "Licenza software annuale",
+        "quantity": 0.5,
+        "unit_price": 310.46,
+        "discount_percent": null,
+        "amount": 155.23
+      },
+      {
+        "description": "Consulenza oraria",
+        "quantity": 2,
+        "unit_price": 861.6,
+        "discount_percent": null,
+        "amount": 1723.2
+      },
+      {
+        "description": "Materiale di consumo",
+        "quantity": 2.5,
+        "unit_price": 667.13,
+        "discount_percent": null,
+        "amount": 1667.83
+      },
+      {
+        "description": "Manutenzione impianto",
+        "quantity": 1,
+        "unit_price": 242.13,
+        "discount_percent": null,
+        "amount": 242.13
+      },
+      {
+        "description": "Consulenza oraria",
+        "quantity": 1,
+        "unit_price": 187.62,
+        "discount_percent": null,
+        "amount": 187.62
+      },
+      {
+        "description": "Stampa biglietti da visita",
+        "quantity": 10,
+        "unit_price": 141.15,
+        "discount_percent": null,
+        "amount": 1411.5
+      },
+      {
+        "description": "Consulenza oraria",
+        "quantity": 1,
+        "unit_price": 718.06,
+        "discount_percent": null,
+        "amount": 718.06
+      },
+      {
+        "description": "Materiale di consumo",
+        "quantity": 10,
+        "unit_price": 495.26,
+        "discount_percent": null,
+        "amount": 4952.6
+      },
+      {
+        "description": "Trasferta",
+        "quantity": 2,
+        "unit_price": 579.03,
+        "discount_percent": null,
+        "amount": 1158.06
+      },
+      {
+        "description": "Pannello in legno",
+        "quantity": 1,
+        "unit_price": 703.98,
+        "discount_percent": null,
+        "amount": 703.98
+      },
+      {
+        "description": "Materiale di consumo",
+        "quantity": 10,
+        "unit_price": 599.96,
+        "discount_percent": null,
+        "amount": 5999.6
+      },
+      {
+        "description": "Pannello in legno",
+        "quantity": 2,
+        "unit_price": 539.13,
+        "discount_percent": null,
+        "amount": 1078.26
+      },
+      {
+        "description": "Manutenzione impianto",
+        "quantity": 1,
+        "unit_price": 370.81,
+        "discount_percent": null,
+        "amount": 370.81
+      },
+      {
+        "description": "Manutenzione impianto",
+        "quantity": 1,
+        "unit_price": 612.06,
+        "discount_percent": null,
+        "amount": 612.06
+      },
+      {
+        "description": "Licenza software annuale",
+        "quantity": 1,
+        "unit_price": 580.61,
+        "discount_percent": null,
+        "amount": 580.61
+      },
+      {
+        "description": "Pannello in legno",
+        "quantity": 5,
+        "unit_price": 889.66,
+        "discount_percent": null,
+        "amount": 4448.3
+      },
+      {
+        "description": "Materiale di consumo",
+        "quantity": 2.5,
+        "unit_price": 535.95,
+        "discount_percent": null,
+        "amount": 1339.88
+      },
+      {
+        "description": "Stampa biglietti da visita",
+        "quantity": 2,
+        "unit_price": 769.78,
+        "discount_percent": null,
+        "amount": 1539.56
+      }
+    ],
+    "subtotal": 40166.14,
+    "discount_amount": 0,
+    "tax_amount": 4016.61,
+    "prices_include_tax": false,
+    "rounding": 0,
+    "total": 44182.75
+  }
+}

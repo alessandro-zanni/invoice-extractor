@@ -1,0 +1,37 @@
+{
+  "id": "syn-044",
+  "file": "syn-044.jpg",
+  "split": "dev",
+  "expect_review": false,
+  "error": null,
+  "variant": "rot90",
+  "invoice": {
+    "supplier_name": "Laura Peña Fotografía",
+    "supplier_tax_id": "B03172568",
+    "invoice_number": "954/2023",
+    "issue_date": "2023-04-25",
+    "currency": "EUR",
+    "lines": [
+      {
+        "description": "Sesión de fotos",
+        "quantity": 1,
+        "unit_price": 515.43,
+        "discount_percent": null,
+        "amount": 515.43
+      },
+      {
+        "description": "Pintura interior",
+        "quantity": 1,
+        "unit_price": 849.04,
+        "discount_percent": null,
+        "amount": 849.04
+      }
+    ],
+    "subtotal": 1364.47,
+    "discount_amount": 0,
+    "tax_amount": 136.45,
+    "prices_include_tax": false,
+    "rounding": 0,
+    "total": 1500.92
+  }
+}

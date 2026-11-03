@@ -1,0 +1,58 @@
+{
+  "id": "syn-035",
+  "file": "syn-035.jpg",
+  "split": "dev",
+  "expect_review": false,
+  "error": null,
+  "variant": "lowres",
+  "invoice": {
+    "supplier_name": "Idraulica Valli Srl",
+    "supplier_tax_id": "IT10822962329",
+    "invoice_number": "226/2026",
+    "issue_date": "2026-09-16",
+    "currency": "EUR",
+    "lines": [
+      {
+        "description": "Licenza software annuale",
+        "quantity": 1,
+        "unit_price": 788.46,
+        "discount_percent": null,
+        "amount": 788.46
+      },
+      {
+        "description": "Consulenza oraria",
+        "quantity": 0.5,
+        "unit_price": 219.66,
+        "discount_percent": null,
+        "amount": 109.83
+      },
+      {
+        "description": "Materiale di consumo",
+        "quantity": 0.5,
+        "unit_price": 353.86,
+        "discount_percent": null,
+        "amount": 176.93
+      },
+      {
+        "description": "Manutenzione impianto",
+        "quantity": 0.5,
+        "unit_price": 369.5,
+        "discount_percent": null,
+        "amount": 184.75
+      },
+      {
+        "description": "Manutenzione impianto",
+        "quantity": 3,
+        "unit_price": 41.39,
+        "discount_percent": null,
+        "amount": 124.17
+      }
+    ],
+    "subtotal": 1384.14,
+    "discount_amount": 0,
+    "tax_amount": 55.37,
+    "prices_include_tax": false,
+    "rounding": 0,
+    "total": 1439.51
+  }
+}

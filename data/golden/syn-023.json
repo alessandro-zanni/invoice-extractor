@@ -1,0 +1,51 @@
+{
+  "id": "syn-023",
+  "file": "syn-023.jpg",
+  "split": "test",
+  "expect_review": true,
+  "error": "total",
+  "variant": null,
+  "invoice": {
+    "supplier_name": "Tipografia Bassi Srl",
+    "supplier_tax_id": "IT90050760488",
+    "invoice_number": "346/2026",
+    "issue_date": "2026-01-02",
+    "currency": "EUR",
+    "lines": [
+      {
+        "description": "Trasferta",
+        "quantity": 0.5,
+        "unit_price": 353.63,
+        "discount_percent": null,
+        "amount": 176.82
+      },
+      {
+        "description": "Stampa biglietti da visita",
+        "quantity": 1,
+        "unit_price": 878.92,
+        "discount_percent": null,
+        "amount": 878.92
+      },
+      {
+        "description": "Materiale di consumo",
+        "quantity": 10,
+        "unit_price": 637.86,
+        "discount_percent": null,
+        "amount": 6378.6
+      },
+      {
+        "description": "Pannello in legno",
+        "quantity": 3,
+        "unit_price": 567.77,
+        "discount_percent": null,
+        "amount": 1703.31
+      }
+    ],
+    "subtotal": 9137.65,
+    "discount_amount": 0,
+    "tax_amount": 913.77,
+    "prices_include_tax": false,
+    "rounding": 0,
+    "total": 10052.42
+  }
+}
