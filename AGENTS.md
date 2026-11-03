@@ -31,7 +31,8 @@ eval cases.*
 
 - [x] 1. Scaffold, upload, extraction with Zod schema (`POST /api/extract`)
 - [x] 2. Deterministic validation + unit tests
-- [ ] 3. Golden set + eval runner (field accuracy, cost, latency)
+- [ ] 3. Golden set + eval runner (field accuracy, cost, latency): synthetic set and runner done;
+  first run is 100% for every strategy, so the set needs harder documents (real receipts, worse photos)
 - [x] 4. Routing Haiku → Opus → `needs_review` (code done; strategy comparison needs the eval)
 - [ ] 5. Review UI; corrections → golden set (Supabase from here)
 - [ ] 6. Prod: rate limit, cost logs, spend limit, Vercel deploy
@@ -45,7 +46,19 @@ bun dev                     # app on :3000 (check the port in the log if others 
 bun test                    # unit tests
 bun run lint && bun run typecheck
 curl -F file=@invoice.pdf localhost:3000/api/extract
+bun run golden              # regenerate data/golden (needs CHROME, default Brave)
+bun run eval --strategy haiku|opus|routed --split dev|test|all [--limit N]
 ```
+
+## Eval notes
+
+- `data/golden/syn-*`: synthetic IT/ES invoices from a seeded generator, exact ground truth by
+  construction. 1 in 3 is a degraded JPEG "photo"; 7 of 30 carry a printed error (total, subtotal,
+  line, tax id) and must end in review. The generator asserts that clean ones pass validation and
+  the others fail.
+- Split: 20 dev, 10 test. Tune on dev only; the README numbers come from test.
+- Ground truth for documents with printed errors is the printed value: the model must copy, not fix.
+- Runs land in `eval/runs/`. Cost per doc on dev (2026-11-03): Haiku $0.0004, Opus $0.015.
 
 ## Git
 

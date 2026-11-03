@@ -1,0 +1,1189 @@
+{
+  "summary": {
+    "strategy": "opus",
+    "split": "dev",
+    "docs": 20,
+    "errors": 0,
+    "field_accuracy": {
+      "supplier_name": "100.0%",
+      "supplier_tax_id": "100.0%",
+      "invoice_number": "100.0%",
+      "issue_date": "100.0%",
+      "currency": "100.0%",
+      "subtotal": "100.0%",
+      "tax_amount": "100.0%",
+      "total": "100.0%",
+      "lines": "100.0%"
+    },
+    "docs_all_fields_right": "100.0%",
+    "printed_errors_caught": "5/5",
+    "clean_docs_flagged": "0/15",
+    "cost_usd_total": 0.3051,
+    "cost_usd_per_doc": 0.01526,
+    "latency_ms_p50": 4335,
+    "latency_ms_p95": 5926
+  },
+  "results": [
+    {
+      "id": "syn-002",
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.014268,
+      "ms": 4728,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Distribuciones Arnau SL",
+        "supplier_tax_id": "55719666G",
+        "invoice_number": "204/2025",
+        "issue_date": "2025-02-09",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Sesión de fotos",
+            "quantity": 1,
+            "unit_price": 156.94,
+            "amount": 156.94
+          },
+          {
+            "description": "Mantenimiento mensual",
+            "quantity": 3,
+            "unit_price": 728.41,
+            "amount": 2185.23
+          },
+          {
+            "description": "Hora de consultoría",
+            "quantity": 3,
+            "unit_price": 35.13,
+            "amount": 105.39
+          },
+          {
+            "description": "Impresión de folletos",
+            "quantity": 5,
+            "unit_price": 537.66,
+            "amount": 2688.3
+          }
+        ],
+        "subtotal": 5135.86,
+        "tax_amount": 513.59,
+        "total": 5649.45
+      }
+    },
+    {
+      "id": "syn-003",
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.017164,
+      "ms": 5926,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Studio Grafico Lunetta",
+        "supplier_tax_id": "IT58195945355",
+        "invoice_number": "323/2026",
+        "issue_date": "2026-03-20",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Consulenza oraria",
+            "quantity": 10,
+            "unit_price": 835.17,
+            "amount": 8351.7
+          },
+          {
+            "description": "Pannello in legno",
+            "quantity": 2.5,
+            "unit_price": 388.88,
+            "amount": 972.2
+          },
+          {
+            "description": "Consulenza oraria",
+            "quantity": 1,
+            "unit_price": 101.18,
+            "amount": 101.18
+          },
+          {
+            "description": "Trasferta",
+            "quantity": 2,
+            "unit_price": 434.33,
+            "amount": 868.66
+          },
+          {
+            "description": "Licenza software annuale",
+            "quantity": 2.5,
+            "unit_price": 71.2,
+            "amount": 178
+          }
+        ],
+        "subtotal": 10471.74,
+        "tax_amount": 1047.17,
+        "total": 11518.91
+      }
+    },
+    {
+      "id": "syn-004",
+      "expect_review": true,
+      "flagged": true,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.015112,
+      "ms": 4335,
+      "issues": [
+        {
+          "field": "total",
+          "message": "1379.02 + 289.59 ≠ 1669.61"
+        }
+      ],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Imprenta Soler SL",
+        "supplier_tax_id": "B82195081",
+        "invoice_number": "972/2024",
+        "issue_date": "2024-08-26",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Pintura interior",
+            "quantity": 0.5,
+            "unit_price": 626.02,
+            "amount": 313.01
+          },
+          {
+            "description": "Material de oficina",
+            "quantity": 2.5,
+            "unit_price": 389.55,
+            "amount": 973.88
+          },
+          {
+            "description": "Desplazamiento",
+            "quantity": 1,
+            "unit_price": 92.13,
+            "amount": 92.13
+          }
+        ],
+        "subtotal": 1379.02,
+        "tax_amount": 289.59,
+        "total": 1669.61
+      }
+    },
+    {
+      "id": "syn-006",
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.014292,
+      "ms": 3970,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Laura Peña Fotografía",
+        "supplier_tax_id": "B39465634",
+        "invoice_number": "418/2026",
+        "issue_date": "2026-02-05",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Hora de consultoría",
+            "quantity": 1,
+            "unit_price": 303.93,
+            "amount": 303.93
+          },
+          {
+            "description": "Desplazamiento",
+            "quantity": 1,
+            "unit_price": 894.18,
+            "amount": 894.18
+          }
+        ],
+        "subtotal": 1198.11,
+        "tax_amount": 119.81,
+        "total": 1317.92
+      }
+    },
+    {
+      "id": "syn-007",
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.0153,
+      "ms": 2763,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Studio Grafico Lunetta",
+        "supplier_tax_id": "IT63130524372",
+        "invoice_number": "912/2024",
+        "issue_date": "2024-07-07",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Materiale di consumo",
+            "quantity": 2.5,
+            "unit_price": 295.59,
+            "amount": 738.97
+          },
+          {
+            "description": "Trasferta",
+            "quantity": 5,
+            "unit_price": 492.41,
+            "amount": 2462.05
+          },
+          {
+            "description": "Manutenzione impianto",
+            "quantity": 1,
+            "unit_price": 293.84,
+            "amount": 293.84
+          }
+        ],
+        "subtotal": 3494.86,
+        "tax_amount": 349.49,
+        "total": 3844.35
+      }
+    },
+    {
+      "id": "syn-008",
+      "expect_review": true,
+      "flagged": true,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.011888,
+      "ms": 3062,
+      "issues": [
+        {
+          "field": "subtotal",
+          "message": "lines sum to 236.91, subtotal is 237.91"
+        },
+        {
+          "field": "total",
+          "message": "237.91 + 49.75 ≠ 286.66"
+        }
+      ],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Laura Peña Fotografía",
+        "supplier_tax_id": "28756869S",
+        "invoice_number": "390/2026",
+        "issue_date": "2026-05-05",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Sesión de fotos",
+            "quantity": 0.5,
+            "unit_price": 473.82,
+            "amount": 236.91
+          }
+        ],
+        "subtotal": 237.91,
+        "tax_amount": 49.75,
+        "total": 286.66
+      }
+    },
+    {
+      "id": "syn-011",
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.012748,
+      "ms": 2328,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Tipografia Bassi Srl",
+        "supplier_tax_id": "IT19084508035",
+        "invoice_number": "230/2025",
+        "issue_date": "2025-04-04",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Materiale di consumo",
+            "quantity": 1,
+            "unit_price": 134.16,
+            "amount": 134.16
+          },
+          {
+            "description": "Materiale di consumo",
+            "quantity": 1,
+            "unit_price": 478.21,
+            "amount": 478.21
+          }
+        ],
+        "subtotal": 612.37,
+        "tax_amount": 61.24,
+        "total": 673.61
+      }
+    },
+    {
+      "id": "syn-012",
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.016936,
+      "ms": 4592,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Distribuciones Arnau SL",
+        "supplier_tax_id": "28446942J",
+        "invoice_number": "944/2024",
+        "issue_date": "2024-04-08",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Material de oficina",
+            "quantity": 5,
+            "unit_price": 717.05,
+            "amount": 3585.25
+          },
+          {
+            "description": "Impresión de folletos",
+            "quantity": 0.5,
+            "unit_price": 475.06,
+            "amount": 237.53
+          },
+          {
+            "description": "Hora de consultoría",
+            "quantity": 1,
+            "unit_price": 87.64,
+            "amount": 87.64
+          },
+          {
+            "description": "Desplazamiento",
+            "quantity": 1,
+            "unit_price": 605.42,
+            "amount": 605.42
+          },
+          {
+            "description": "Hora de consultoría",
+            "quantity": 5,
+            "unit_price": 879.02,
+            "amount": 4395.1
+          }
+        ],
+        "subtotal": 8910.94,
+        "tax_amount": 891.09,
+        "total": 9802.03
+      }
+    },
+    {
+      "id": "syn-013",
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.01624,
+      "ms": 4107,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Studio Grafico Lunetta",
+        "supplier_tax_id": "IT66838384353",
+        "invoice_number": "836/2026",
+        "issue_date": "2026-09-22",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Trasferta",
+            "quantity": 0.5,
+            "unit_price": 841.91,
+            "amount": 420.96
+          },
+          {
+            "description": "Manutenzione impianto",
+            "quantity": 5,
+            "unit_price": 729.21,
+            "amount": 3646.05
+          },
+          {
+            "description": "Materiale di consumo",
+            "quantity": 3,
+            "unit_price": 675.6,
+            "amount": 2026.8
+          },
+          {
+            "description": "Materiale di consumo",
+            "quantity": 10,
+            "unit_price": 499.53,
+            "amount": 4995.3
+          }
+        ],
+        "subtotal": 11089.11,
+        "tax_amount": 2439.6,
+        "total": 13528.71
+      }
+    },
+    {
+      "id": "syn-015",
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.016988,
+      "ms": 4428,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Consulenze Moretti",
+        "supplier_tax_id": "IT54517691009",
+        "invoice_number": "341/2024",
+        "issue_date": "2024-03-08",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Consulenza oraria",
+            "quantity": 0.5,
+            "unit_price": 615.49,
+            "amount": 307.75
+          },
+          {
+            "description": "Trasferta",
+            "quantity": 1,
+            "unit_price": 244.33,
+            "amount": 244.33
+          },
+          {
+            "description": "Trasferta",
+            "quantity": 1,
+            "unit_price": 770.68,
+            "amount": 770.68
+          },
+          {
+            "description": "Manutenzione impianto",
+            "quantity": 2.5,
+            "unit_price": 799.5,
+            "amount": 1998.75
+          },
+          {
+            "description": "Stampa biglietti da visita",
+            "quantity": 1,
+            "unit_price": 565.06,
+            "amount": 565.06
+          }
+        ],
+        "subtotal": 3886.57,
+        "tax_amount": 388.66,
+        "total": 4275.23
+      }
+    },
+    {
+      "id": "syn-016",
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.017996,
+      "ms": 3456,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Laura Peña Fotografía",
+        "supplier_tax_id": "28590533S",
+        "invoice_number": "770/2026",
+        "issue_date": "2026-02-05",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Mantenimiento mensual",
+            "quantity": 5,
+            "unit_price": 756.25,
+            "amount": 3781.25
+          },
+          {
+            "description": "Sesión de fotos",
+            "quantity": 5,
+            "unit_price": 30.32,
+            "amount": 151.6
+          },
+          {
+            "description": "Impresión de folletos",
+            "quantity": 0.5,
+            "unit_price": 339.23,
+            "amount": 169.62
+          },
+          {
+            "description": "Hora de consultoría",
+            "quantity": 0.5,
+            "unit_price": 455.31,
+            "amount": 227.66
+          },
+          {
+            "description": "Material de oficina",
+            "quantity": 1,
+            "unit_price": 695.64,
+            "amount": 695.64
+          },
+          {
+            "description": "Material de oficina",
+            "quantity": 0.5,
+            "unit_price": 713.22,
+            "amount": 356.61
+          }
+        ],
+        "subtotal": 5382.38,
+        "tax_amount": 1130.3,
+        "total": 6512.68
+      }
+    },
+    {
+      "id": "syn-017",
+      "expect_review": true,
+      "flagged": true,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.014428,
+      "ms": 4347,
+      "issues": [
+        {
+          "field": "supplier_tax_id",
+          "message": "invalid tax id IT41651801925"
+        }
+      ],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Panificio Rinaldi",
+        "supplier_tax_id": "IT41651801925",
+        "invoice_number": "472/2025",
+        "issue_date": "2025-07-08",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Stampa biglietti da visita",
+            "quantity": 5,
+            "unit_price": 500.55,
+            "amount": 2502.75
+          },
+          {
+            "description": "Licenza software annuale",
+            "quantity": 2.5,
+            "unit_price": 470.3,
+            "amount": 1175.75
+          },
+          {
+            "description": "Trasferta",
+            "quantity": 1,
+            "unit_price": 861.84,
+            "amount": 861.84
+          },
+          {
+            "description": "Manutenzione impianto",
+            "quantity": 1,
+            "unit_price": 43.78,
+            "amount": 43.78
+          }
+        ],
+        "subtotal": 4584.12,
+        "tax_amount": 1008.51,
+        "total": 5592.63
+      }
+    },
+    {
+      "id": "syn-020",
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.014168,
+      "ms": 4306,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Café Rambla SL",
+        "supplier_tax_id": "B51607984",
+        "invoice_number": "682/2026",
+        "issue_date": "2026-05-01",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Hora de consultoría",
+            "quantity": 2.5,
+            "unit_price": 416.71,
+            "amount": 1041.77
+          },
+          {
+            "description": "Material de oficina",
+            "quantity": 5,
+            "unit_price": 446.19,
+            "amount": 2230.95
+          },
+          {
+            "description": "Hora de consultoría",
+            "quantity": 3,
+            "unit_price": 678.8,
+            "amount": 2036.4
+          },
+          {
+            "description": "Pintura interior",
+            "quantity": 10,
+            "unit_price": 536.17,
+            "amount": 5361.7
+          }
+        ],
+        "subtotal": 10670.82,
+        "tax_amount": 2240.87,
+        "total": 12911.69
+      }
+    },
+    {
+      "id": "syn-021",
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.017952,
+      "ms": 4568,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Consulenze Moretti",
+        "supplier_tax_id": "IT01263694778",
+        "invoice_number": "17/2024",
+        "issue_date": "2024-02-11",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Licenza software annuale",
+            "quantity": 2.5,
+            "unit_price": 870.47,
+            "amount": 2176.18
+          },
+          {
+            "description": "Stampa biglietti da visita",
+            "quantity": 2.5,
+            "unit_price": 730.42,
+            "amount": 1826.05
+          },
+          {
+            "description": "Consulenza oraria",
+            "quantity": 1,
+            "unit_price": 893.67,
+            "amount": 893.67
+          },
+          {
+            "description": "Trasferta",
+            "quantity": 3,
+            "unit_price": 787.05,
+            "amount": 2361.15
+          },
+          {
+            "description": "Licenza software annuale",
+            "quantity": 10,
+            "unit_price": 295.87,
+            "amount": 2958.7
+          },
+          {
+            "description": "Trasferta",
+            "quantity": 3,
+            "unit_price": 830.91,
+            "amount": 2492.73
+          }
+        ],
+        "subtotal": 12708.48,
+        "tax_amount": 1270.85,
+        "total": 13979.33
+      }
+    },
+    {
+      "id": "syn-022",
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.01414,
+      "ms": 3381,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Café Rambla SL",
+        "supplier_tax_id": "B59455200",
+        "invoice_number": "644/2024",
+        "issue_date": "2024-05-15",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Material de oficina",
+            "quantity": 5,
+            "unit_price": 809.67,
+            "amount": 4048.35
+          },
+          {
+            "description": "Desplazamiento",
+            "quantity": 2,
+            "unit_price": 758,
+            "amount": 1516
+          }
+        ],
+        "subtotal": 5564.35,
+        "tax_amount": 556.44,
+        "total": 6120.79
+      }
+    },
+    {
+      "id": "syn-024",
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.016052,
+      "ms": 4044,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Talleres Montaner SA",
+        "supplier_tax_id": "98095784W",
+        "invoice_number": "891/2026",
+        "issue_date": "2026-04-17",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Mantenimiento mensual",
+            "quantity": 0.5,
+            "unit_price": 522.66,
+            "amount": 261.33
+          },
+          {
+            "description": "Desplazamiento",
+            "quantity": 5,
+            "unit_price": 370.98,
+            "amount": 1854.9
+          },
+          {
+            "description": "Desplazamiento",
+            "quantity": 1,
+            "unit_price": 122.94,
+            "amount": 122.94
+          },
+          {
+            "description": "Pintura interior",
+            "quantity": 10,
+            "unit_price": 254.82,
+            "amount": 2548.2
+          }
+        ],
+        "subtotal": 4787.37,
+        "tax_amount": 478.74,
+        "total": 5266.11
+      }
+    },
+    {
+      "id": "syn-025",
+      "expect_review": true,
+      "flagged": true,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.018228,
+      "ms": 5004,
+      "issues": [
+        {
+          "field": "subtotal",
+          "message": "lines sum to 9679.01, subtotal is 9680.01"
+        },
+        {
+          "field": "total",
+          "message": "9680.01 + 967.9 ≠ 10646.91"
+        }
+      ],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Panificio Rinaldi",
+        "supplier_tax_id": "IT63534158652",
+        "invoice_number": "888/2024",
+        "issue_date": "2024-02-09",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Stampa biglietti da visita",
+            "quantity": 3,
+            "unit_price": 825.86,
+            "amount": 2477.58
+          },
+          {
+            "description": "Pannello in legno",
+            "quantity": 1,
+            "unit_price": 288.91,
+            "amount": 288.91
+          },
+          {
+            "description": "Consulenza oraria",
+            "quantity": 3,
+            "unit_price": 878.4,
+            "amount": 2635.2
+          },
+          {
+            "description": "Pannello in legno",
+            "quantity": 5,
+            "unit_price": 543.74,
+            "amount": 2718.7
+          },
+          {
+            "description": "Stampa biglietti da visita",
+            "quantity": 1,
+            "unit_price": 866.92,
+            "amount": 866.92
+          },
+          {
+            "description": "Materiale di consumo",
+            "quantity": 2.5,
+            "unit_price": 276.68,
+            "amount": 691.7
+          }
+        ],
+        "subtotal": 9680.01,
+        "tax_amount": 967.9,
+        "total": 10646.91
+      }
+    },
+    {
+      "id": "syn-026",
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.014208,
+      "ms": 4881,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Talleres Montaner SA",
+        "supplier_tax_id": "22293355F",
+        "invoice_number": "708/2025",
+        "issue_date": "2025-03-02",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Desplazamiento",
+            "quantity": 3,
+            "unit_price": 529.88,
+            "amount": 1589.64
+          },
+          {
+            "description": "Impresión de folletos",
+            "quantity": 5,
+            "unit_price": 368.77,
+            "amount": 1843.85
+          },
+          {
+            "description": "Mantenimiento mensual",
+            "quantity": 1,
+            "unit_price": 639.5,
+            "amount": 639.5
+          },
+          {
+            "description": "Hora de consultoría",
+            "quantity": 1,
+            "unit_price": 18.52,
+            "amount": 18.52
+          }
+        ],
+        "subtotal": 4091.51,
+        "tax_amount": 859.22,
+        "total": 4950.73
+      }
+    },
+    {
+      "id": "syn-029",
+      "expect_review": true,
+      "flagged": true,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.013628,
+      "ms": 4710,
+      "issues": [
+        {
+          "field": "lines.0.amount",
+          "message": "3 × 656.37 ≠ 1979.11"
+        },
+        {
+          "field": "subtotal",
+          "message": "lines sum to 3852.93, subtotal is 3842.93"
+        }
+      ],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Consulenze Moretti",
+        "supplier_tax_id": "IT54397437259",
+        "invoice_number": "264/2023",
+        "issue_date": "2023-02-10",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Trasferta",
+            "quantity": 3,
+            "unit_price": 656.37,
+            "amount": 1979.11
+          },
+          {
+            "description": "Stampa biglietti da visita",
+            "quantity": 2,
+            "unit_price": 897.39,
+            "amount": 1794.78
+          },
+          {
+            "description": "Stampa biglietti da visita",
+            "quantity": 2,
+            "unit_price": 39.52,
+            "amount": 79.04
+          }
+        ],
+        "subtotal": 3842.93,
+        "tax_amount": 384.29,
+        "total": 4227.22
+      }
+    },
+    {
+      "id": "syn-030",
+      "expect_review": false,
+      "flagged": false,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.013408,
+      "ms": 2704,
+      "issues": [],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "total": true,
+        "lines": true
+      },
+      "invoice": {
+        "supplier_name": "Café Rambla SL",
+        "supplier_tax_id": "B97205014",
+        "invoice_number": "418/2025",
+        "issue_date": "2025-08-06",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Hora de consultoría",
+            "quantity": 10,
+            "unit_price": 518.23,
+            "amount": 5182.3
+          }
+        ],
+        "subtotal": 5182.3,
+        "tax_amount": 518.23,
+        "total": 5700.53
+      }
+    }
+  ]
+}
