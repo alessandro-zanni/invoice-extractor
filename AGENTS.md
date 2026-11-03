@@ -14,7 +14,7 @@ eval cases.*
 |---|---|
 | App | Next.js 16 App Router, TypeScript, Tailwind v4, bun |
 | LLM | Claude API: `claude-haiku-5-5` first, `claude-opus-5-5` on failed checks; structured output via Zod (`betaZodOutputFormat`) |
-| Data | Supabase (Postgres + Storage + Auth), from the review queue phase on |
+| Data | Supabase (Postgres + Storage + Auth), org "Invoice Extractor" on the dedicated account, `eu-central-1`: staging `wymqwkotbpqpdwmyzxaw`, prod `ghoitleeytzxdxqcbxym`. Local stack on ports 5652x |
 | Hosting | Vercel team AZ Projects, `fra1`, Git integration (each project builds only its branch), Vercel login on all deploys. Prod `main`: invoices.alessandrozanni.dev. Staging `develop`: staging-invoices.alessandrozanni.dev. DNS: CNAME on Cloudflare, DNS only |
 
 ## Constraints
@@ -34,10 +34,11 @@ eval cases.*
 - [x] 3. Golden set (synthetic 50, CORD 29, FATURA 30, SROIE 30 external) + eval runner, test-split
   numbers recorded below
 - [x] 4. Routing Haiku → Opus → `needs_review` (code done; strategy comparison needs the eval)
-- [ ] 5. Review UI; corrections → golden set (Supabase from here)
+- [x] 5. Review UI (login, upload, list, review page with flagged fields); corrections → golden set
+  via `bun run golden:reviews`
 - [ ] 6. Prod: rate limit, cost logs, spend limit, Vercel deploy
 - [ ] 7. Showcase: README with numbers table, diagram, GIF; link from the portfolio; set the GitHub
-  default branch back to `main` (it is `develop` until `main` has a release). README done 2026-11-03; GIF waits for the review UI
+  default branch back to `main` (it is `develop` until `main` has a release). README and demo GIF done 2026-11-03
 
 ## Commands
 
@@ -48,6 +49,9 @@ bun run lint && bun run typecheck
 curl -F file=@invoice.pdf localhost:3000/api/extract
 bun run golden              # regenerate synthetic invoices (needs CHROME, default Brave)
 bun run golden:sroie        # download SROIE into data/external (research-only, not committed)
+SUPABASE_URL=… SUPABASE_SECRET_KEY=… bun run golden:reviews   # corrections → data/external/reviews
+supabase start              # local stack; `bun run db:types` after a migration
+scripts/cloud-setup.sh <ref> <vercel-project> <site-url>   # migrations, auth, advisors, Vercel env
 bun run eval --strategy haiku|opus|routed --split dev|test|all [--limit N]
 ```
 
@@ -90,6 +94,24 @@ bun run eval --strategy haiku|opus|routed --split dev|test|all [--limit N]
   before 2000); on SROIE 50% (rounding, VAT-inclusive prices) after foreign tax ids became
   "not checkable" instead of "invalid" (was 90%).
 - Runs land in `eval/runs/`. Cost per doc on dev (2026-11-03): Haiku $0.0004, Opus $0.015.
+
+## App notes
+
+- Accounts are created by the owner (Supabase dashboard → Authentication → Add user): signup is
+  closed in `config.toml` and on both cloud projects, min password 10.
+- `src/proxy.ts` puts everything behind login; `/api/*` answers 401 instead of redirecting.
+- Files live in the private `documents` bucket under `<user_id>/<document_id>.<ext>`; RLS on the
+  table and on storage restricts every user to their own rows and files (verified: another user
+  gets 404).
+- Uploads are processed in `src/lib/documents.ts`, shared by the form and `POST /api/extract`.
+- A correction is the ground truth: checks re-run on it only to show what still doesn't add up.
+- `supabase link` should point at staging when idle, so a stray `db push` never hits prod.
+- Local UI checks: `supabase start`, then sign in as `test@local.test` (local stack only, created
+  through the local admin API; recreate it after `supabase db reset`).
+- Demo GIF (`docs/demo.gif`): Playwright MCP screenshots per step into `~/.playwright-mcp/gif/`
+  (01 login … 05 list), then
+  `ffmpeg -f concat -safe 0 -i list.txt -vf "fps=10,scale=960:-1:flags=lanczos,split[a][b];[a]palettegen=max_colors=96[p];[b][p]paletteuse=dither=bayer" -loop 0 docs/demo.gif`
+  with `list.txt` holding `file …` / `duration …` pairs.
 
 ## Git
 

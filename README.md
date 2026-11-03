@@ -4,6 +4,8 @@ Extracts structured data from invoices and receipts (PDF or photo) with Claude, 
 deterministic rules, and only pays for the strong model when the checks fail. Every design choice
 below is backed by an eval on a held-out test set.
 
+![Upload a photo of an invoice with a wrong tax id: Haiku extracts it, the checksum fails, Opus confirms, and the document goes to review as "document doesn't add up".](docs/demo.gif)
+
 ## Results
 
 Held-out test split, 46 documents (synthetic invoices, real receipts from CORD and SROIE, FATURA

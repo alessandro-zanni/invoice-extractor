@@ -47,3 +47,6 @@ next-env.d.ts
 
 # research-only datasets (SROIE): downloaded by scripts/golden/sroie.ts, never committed
 /data/external
+
+# Playwright MCP snapshots and logs
+.playwright-mcp/
