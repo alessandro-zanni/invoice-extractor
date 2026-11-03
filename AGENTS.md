@@ -15,7 +15,7 @@ eval cases.*
 | App | Next.js 16 App Router, TypeScript, Tailwind v4, bun |
 | LLM | Claude API: `claude-haiku-5-5` first, `claude-opus-5-5` on failed checks; structured output via Zod (`betaZodOutputFormat`) |
 | Data | Supabase (Postgres + Storage + Auth), from the review queue phase on |
-| Hosting | Vercel (`fra1`), deploy from GitHub Actions |
+| Hosting | Vercel team AZ Projects, `fra1`, Git integration (each project builds only its branch), Vercel login on all deploys. Prod `main`: invoice-extractor-orcin-eta.vercel.app (the plain name belongs to someone else). Staging `develop`: invoice-extractor-staging.vercel.app |
 
 ## Constraints
 
