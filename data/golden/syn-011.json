@@ -1,0 +1,31 @@
+{
+  "id": "syn-011",
+  "file": "syn-011.jpg",
+  "split": "dev",
+  "expect_review": false,
+  "error": null,
+  "invoice": {
+    "supplier_name": "Tipografia Bassi Srl",
+    "supplier_tax_id": "IT19084508035",
+    "invoice_number": "230/2025",
+    "issue_date": "2025-04-04",
+    "currency": "EUR",
+    "lines": [
+      {
+        "description": "Materiale di consumo",
+        "quantity": 1,
+        "unit_price": 134.16,
+        "amount": 134.16
+      },
+      {
+        "description": "Materiale di consumo",
+        "quantity": 1,
+        "unit_price": 478.21,
+        "amount": 478.21
+      }
+    ],
+    "subtotal": 612.37,
+    "tax_amount": 61.24,
+    "total": 673.61
+  }
+}

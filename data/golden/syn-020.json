@@ -1,0 +1,43 @@
+{
+  "id": "syn-020",
+  "file": "syn-020.jpg",
+  "split": "dev",
+  "expect_review": false,
+  "error": null,
+  "invoice": {
+    "supplier_name": "Café Rambla SL",
+    "supplier_tax_id": "B51607984",
+    "invoice_number": "682/2026",
+    "issue_date": "2026-05-01",
+    "currency": "EUR",
+    "lines": [
+      {
+        "description": "Hora de consultoría",
+        "quantity": 2.5,
+        "unit_price": 416.71,
+        "amount": 1041.77
+      },
+      {
+        "description": "Material de oficina",
+        "quantity": 5,
+        "unit_price": 446.19,
+        "amount": 2230.95
+      },
+      {
+        "description": "Hora de consultoría",
+        "quantity": 3,
+        "unit_price": 678.8,
+        "amount": 2036.4
+      },
+      {
+        "description": "Pintura interior",
+        "quantity": 10,
+        "unit_price": 536.17,
+        "amount": 5361.7
+      }
+    ],
+    "subtotal": 10670.82,
+    "tax_amount": 2240.87,
+    "total": 12911.69
+  }
+}

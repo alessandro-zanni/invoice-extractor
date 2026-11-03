@@ -1,0 +1,37 @@
+{
+  "id": "syn-001",
+  "file": "syn-001.pdf",
+  "split": "test",
+  "expect_review": false,
+  "error": null,
+  "invoice": {
+    "supplier_name": "Studio Grafico Lunetta",
+    "supplier_tax_id": "IT56604805020",
+    "invoice_number": "62/2026",
+    "issue_date": "2026-07-09",
+    "currency": "EUR",
+    "lines": [
+      {
+        "description": "Stampa biglietti da visita",
+        "quantity": 0.5,
+        "unit_price": 603.26,
+        "amount": 301.63
+      },
+      {
+        "description": "Trasferta",
+        "quantity": 3,
+        "unit_price": 246.99,
+        "amount": 740.97
+      },
+      {
+        "description": "Stampa biglietti da visita",
+        "quantity": 0.5,
+        "unit_price": 425.88,
+        "amount": 212.94
+      }
+    ],
+    "subtotal": 1255.54,
+    "tax_amount": 125.55,
+    "total": 1381.09
+  }
+}

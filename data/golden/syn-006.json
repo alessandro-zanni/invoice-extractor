@@ -1,0 +1,31 @@
+{
+  "id": "syn-006",
+  "file": "syn-006.pdf",
+  "split": "dev",
+  "expect_review": false,
+  "error": null,
+  "invoice": {
+    "supplier_name": "Laura Peña Fotografía",
+    "supplier_tax_id": "B39465634",
+    "invoice_number": "418/2026",
+    "issue_date": "2026-02-05",
+    "currency": "EUR",
+    "lines": [
+      {
+        "description": "Hora de consultoría",
+        "quantity": 1,
+        "unit_price": 303.93,
+        "amount": 303.93
+      },
+      {
+        "description": "Desplazamiento",
+        "quantity": 1,
+        "unit_price": 894.18,
+        "amount": 894.18
+      }
+    ],
+    "subtotal": 1198.11,
+    "tax_amount": 119.81,
+    "total": 1317.92
+  }
+}

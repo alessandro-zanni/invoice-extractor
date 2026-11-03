@@ -1,0 +1,49 @@
+{
+  "id": "syn-003",
+  "file": "syn-003.pdf",
+  "split": "dev",
+  "expect_review": false,
+  "error": null,
+  "invoice": {
+    "supplier_name": "Studio Grafico Lunetta",
+    "supplier_tax_id": "IT58195945355",
+    "invoice_number": "323/2026",
+    "issue_date": "2026-03-20",
+    "currency": "EUR",
+    "lines": [
+      {
+        "description": "Consulenza oraria",
+        "quantity": 10,
+        "unit_price": 835.17,
+        "amount": 8351.7
+      },
+      {
+        "description": "Pannello in legno",
+        "quantity": 2.5,
+        "unit_price": 388.88,
+        "amount": 972.2
+      },
+      {
+        "description": "Consulenza oraria",
+        "quantity": 1,
+        "unit_price": 101.18,
+        "amount": 101.18
+      },
+      {
+        "description": "Trasferta",
+        "quantity": 2,
+        "unit_price": 434.33,
+        "amount": 868.66
+      },
+      {
+        "description": "Licenza software annuale",
+        "quantity": 2.5,
+        "unit_price": 71.2,
+        "amount": 178
+      }
+    ],
+    "subtotal": 10471.74,
+    "tax_amount": 1047.17,
+    "total": 11518.91
+  }
+}

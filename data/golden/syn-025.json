@@ -1,0 +1,55 @@
+{
+  "id": "syn-025",
+  "file": "syn-025.pdf",
+  "split": "dev",
+  "expect_review": true,
+  "error": "subtotal",
+  "invoice": {
+    "supplier_name": "Panificio Rinaldi",
+    "supplier_tax_id": "IT63534158652",
+    "invoice_number": "888/2024",
+    "issue_date": "2024-02-09",
+    "currency": "EUR",
+    "lines": [
+      {
+        "description": "Stampa biglietti da visita",
+        "quantity": 3,
+        "unit_price": 825.86,
+        "amount": 2477.58
+      },
+      {
+        "description": "Pannello in legno",
+        "quantity": 1,
+        "unit_price": 288.91,
+        "amount": 288.91
+      },
+      {
+        "description": "Consulenza oraria",
+        "quantity": 3,
+        "unit_price": 878.4,
+        "amount": 2635.2
+      },
+      {
+        "description": "Pannello in legno",
+        "quantity": 5,
+        "unit_price": 543.74,
+        "amount": 2718.7
+      },
+      {
+        "description": "Stampa biglietti da visita",
+        "quantity": 1,
+        "unit_price": 866.92,
+        "amount": 866.92
+      },
+      {
+        "description": "Materiale di consumo",
+        "quantity": 2.5,
+        "unit_price": 276.68,
+        "amount": 691.7
+      }
+    ],
+    "subtotal": 9680.01,
+    "tax_amount": 967.9,
+    "total": 10646.91
+  }
+}

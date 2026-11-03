@@ -1,0 +1,37 @@
+{
+  "id": "syn-029",
+  "file": "syn-029.jpg",
+  "split": "dev",
+  "expect_review": true,
+  "error": "line",
+  "invoice": {
+    "supplier_name": "Consulenze Moretti",
+    "supplier_tax_id": "IT54397437259",
+    "invoice_number": "264/2023",
+    "issue_date": "2023-02-10",
+    "currency": "EUR",
+    "lines": [
+      {
+        "description": "Trasferta",
+        "quantity": 3,
+        "unit_price": 656.37,
+        "amount": 1979.11
+      },
+      {
+        "description": "Stampa biglietti da visita",
+        "quantity": 2,
+        "unit_price": 897.39,
+        "amount": 1794.78
+      },
+      {
+        "description": "Stampa biglietti da visita",
+        "quantity": 2,
+        "unit_price": 39.52,
+        "amount": 79.04
+      }
+    ],
+    "subtotal": 3842.93,
+    "tax_amount": 384.29,
+    "total": 4227.22
+  }
+}

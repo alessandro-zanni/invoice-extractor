@@ -1,0 +1,37 @@
+{
+  "id": "syn-007",
+  "file": "syn-007.pdf",
+  "split": "dev",
+  "expect_review": false,
+  "error": null,
+  "invoice": {
+    "supplier_name": "Studio Grafico Lunetta",
+    "supplier_tax_id": "IT63130524372",
+    "invoice_number": "912/2024",
+    "issue_date": "2024-07-07",
+    "currency": "EUR",
+    "lines": [
+      {
+        "description": "Materiale di consumo",
+        "quantity": 2.5,
+        "unit_price": 295.59,
+        "amount": 738.97
+      },
+      {
+        "description": "Trasferta",
+        "quantity": 5,
+        "unit_price": 492.41,
+        "amount": 2462.05
+      },
+      {
+        "description": "Manutenzione impianto",
+        "quantity": 1,
+        "unit_price": 293.84,
+        "amount": 293.84
+      }
+    ],
+    "subtotal": 3494.86,
+    "tax_amount": 349.49,
+    "total": 3844.35
+  }
+}

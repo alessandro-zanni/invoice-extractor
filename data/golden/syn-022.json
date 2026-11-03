@@ -1,0 +1,31 @@
+{
+  "id": "syn-022",
+  "file": "syn-022.pdf",
+  "split": "dev",
+  "expect_review": false,
+  "error": null,
+  "invoice": {
+    "supplier_name": "Café Rambla SL",
+    "supplier_tax_id": "B59455200",
+    "invoice_number": "644/2024",
+    "issue_date": "2024-05-15",
+    "currency": "EUR",
+    "lines": [
+      {
+        "description": "Material de oficina",
+        "quantity": 5,
+        "unit_price": 809.67,
+        "amount": 4048.35
+      },
+      {
+        "description": "Desplazamiento",
+        "quantity": 2,
+        "unit_price": 758,
+        "amount": 1516
+      }
+    ],
+    "subtotal": 5564.35,
+    "tax_amount": 556.44,
+    "total": 6120.79
+  }
+}

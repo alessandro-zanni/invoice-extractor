@@ -1,0 +1,49 @@
+{
+  "id": "syn-009",
+  "file": "syn-009.pdf",
+  "split": "test",
+  "expect_review": false,
+  "error": null,
+  "invoice": {
+    "supplier_name": "Idraulica Valli Srl",
+    "supplier_tax_id": "IT38130067986",
+    "invoice_number": "466/2025",
+    "issue_date": "2025-04-27",
+    "currency": "EUR",
+    "lines": [
+      {
+        "description": "Stampa biglietti da visita",
+        "quantity": 1,
+        "unit_price": 63.8,
+        "amount": 63.8
+      },
+      {
+        "description": "Licenza software annuale",
+        "quantity": 3,
+        "unit_price": 609.48,
+        "amount": 1828.44
+      },
+      {
+        "description": "Trasferta",
+        "quantity": 2.5,
+        "unit_price": 734.66,
+        "amount": 1836.65
+      },
+      {
+        "description": "Trasferta",
+        "quantity": 0.5,
+        "unit_price": 767.89,
+        "amount": 383.95
+      },
+      {
+        "description": "Pannello in legno",
+        "quantity": 2,
+        "unit_price": 403.05,
+        "amount": 806.1
+      }
+    ],
+    "subtotal": 4918.94,
+    "tax_amount": 196.76,
+    "total": 5115.7
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "id": "syn-012",
+  "file": "syn-012.pdf",
+  "split": "dev",
+  "expect_review": false,
+  "error": null,
+  "invoice": {
+    "supplier_name": "Distribuciones Arnau SL",
+    "supplier_tax_id": "28446942J",
+    "invoice_number": "944/2024",
+    "issue_date": "2024-04-08",
+    "currency": "EUR",
+    "lines": [
+      {
+        "description": "Material de oficina",
+        "quantity": 5,
+        "unit_price": 717.05,
+        "amount": 3585.25
+      },
+      {
+        "description": "Impresión de folletos",
+        "quantity": 0.5,
+        "unit_price": 475.06,
+        "amount": 237.53
+      },
+      {
+        "description": "Hora de consultoría",
+        "quantity": 1,
+        "unit_price": 87.64,
+        "amount": 87.64
+      },
+      {
+        "description": "Desplazamiento",
+        "quantity": 1,
+        "unit_price": 605.42,
+        "amount": 605.42
+      },
+      {
+        "description": "Hora de consultoría",
+        "quantity": 5,
+        "unit_price": 879.02,
+        "amount": 4395.1
+      }
+    ],
+    "subtotal": 8910.94,
+    "tax_amount": 891.09,
+    "total": 9802.03
+  }
+}

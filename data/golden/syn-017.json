@@ -1,0 +1,43 @@
+{
+  "id": "syn-017",
+  "file": "syn-017.jpg",
+  "split": "dev",
+  "expect_review": true,
+  "error": "tax_id",
+  "invoice": {
+    "supplier_name": "Panificio Rinaldi",
+    "supplier_tax_id": "IT41651801925",
+    "invoice_number": "472/2025",
+    "issue_date": "2025-07-08",
+    "currency": "EUR",
+    "lines": [
+      {
+        "description": "Stampa biglietti da visita",
+        "quantity": 5,
+        "unit_price": 500.55,
+        "amount": 2502.75
+      },
+      {
+        "description": "Licenza software annuale",
+        "quantity": 2.5,
+        "unit_price": 470.3,
+        "amount": 1175.75
+      },
+      {
+        "description": "Trasferta",
+        "quantity": 1,
+        "unit_price": 861.84,
+        "amount": 861.84
+      },
+      {
+        "description": "Manutenzione impianto",
+        "quantity": 1,
+        "unit_price": 43.78,
+        "amount": 43.78
+      }
+    ],
+    "subtotal": 4584.12,
+    "tax_amount": 1008.51,
+    "total": 5592.63
+  }
+}
