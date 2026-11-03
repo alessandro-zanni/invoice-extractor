@@ -10,7 +10,10 @@ const want: Invoice = {
   currency: "EUR",
   lines: [{ description: "Viti", quantity: 2, unit_price: 1.5, discount_percent: null, amount: 3 }],
   subtotal: 3,
+  discount_amount: 0,
   tax_amount: 0.66,
+  prices_include_tax: false,
+  rounding: 0,
   total: 3.66,
 };
 

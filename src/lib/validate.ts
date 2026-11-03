@@ -53,8 +53,9 @@ export function validateInvoice(inv: Invoice, today = new Date()): Issue[] {
       issues.push({ field: "subtotal", message: `lines sum to ${sum.toFixed(2)}, subtotal is ${inv.subtotal}` });
   }
 
-  if (!close(inv.subtotal + inv.tax_amount, inv.total, 2))
-    issues.push({ field: "total", message: `${inv.subtotal} + ${inv.tax_amount} ≠ ${inv.total}` });
+  const tax = inv.prices_include_tax ? 0 : inv.tax_amount;
+  if (!close(inv.subtotal - inv.discount_amount + tax + inv.rounding, inv.total, 2))
+    issues.push({ field: "total", message: `${inv.subtotal} − ${inv.discount_amount} + ${tax} + ${inv.rounding} ≠ ${inv.total}` });
 
   if (inv.supplier_tax_id && validateTaxId(inv.supplier_tax_id) === false)
     issues.push({ field: "supplier_tax_id", message: `invalid tax id ${inv.supplier_tax_id}` });

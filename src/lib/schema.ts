@@ -15,9 +15,12 @@ export const InvoiceSchema = z.object({
       amount: z.number().describe("Line total before tax, after any line discount"),
     }),
   ),
-  subtotal: z.number().describe("Total before tax"),
+  subtotal: z.number().describe("Sum of the lines, before document discount and tax"),
+  discount_amount: z.number().describe("Document-level discount as a positive number, 0 if none"),
   tax_amount: z.number(),
-  total: z.number().describe("Total including tax"),
+  prices_include_tax: z.boolean().describe("True when the printed prices already include tax (common on receipts)"),
+  rounding: z.number().describe("Rounding adjustment as printed (positive or negative), 0 if none"),
+  total: z.number().describe("Amount due"),
 });
 
 export type Invoice = z.infer<typeof InvoiceSchema>;

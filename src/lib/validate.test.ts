@@ -13,7 +13,10 @@ const ok: Invoice = {
     { description: "Setup", quantity: 1, unit_price: 70, discount_percent: null, amount: 70 },
   ],
   subtotal: 99.97,
+  discount_amount: 0,
   tax_amount: 21.99,
+  prices_include_tax: false,
+  rounding: 0,
   total: 121.96,
 };
 const today = new Date("2026-10-29");
@@ -38,6 +41,13 @@ test("line discounts", () => {
   const disc = { ...ok, lines: [{ ...ok.lines[0], discount_percent: 10, amount: 26.97 }, ok.lines[1]], subtotal: 96.97, tax_amount: 21.33, total: 118.3 };
   expect(validateInvoice(disc, today)).toEqual([]);
   expect(validateInvoice({ ...disc, lines: [{ ...disc.lines[0], discount_percent: null }, ok.lines[1]] }, today).map((i) => i.field)).toEqual(["lines.0.amount"]);
+});
+
+test("document discount, rounding and tax-inclusive prices", () => {
+  expect(validateInvoice({ ...ok, discount_amount: 9.97, tax_amount: 19.8, total: 109.8 }, today)).toEqual([]);
+  expect(validateInvoice({ ...ok, rounding: -0.01, total: 121.95 }, today)).toEqual([]);
+  expect(validateInvoice({ ...ok, prices_include_tax: true, tax_amount: 18.03, total: 99.97 }, today)).toEqual([]);
+  expect(validateInvoice({ ...ok, prices_include_tax: true, total: 121.96 }, today).map((i) => i.field)).toEqual(["total"]);
 });
 
 test("tax ids", () => {
