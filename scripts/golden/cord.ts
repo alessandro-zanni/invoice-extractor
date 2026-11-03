@@ -28,7 +28,7 @@ for (const [i, { row }] of rows.entries()) {
   const lines = items.map((m) => {
     const amount = idr(m.price ?? m.itemsubtotal);
     const quantity = idr(m.cnt) || 1;
-    return { description: m.nm ?? "", quantity, unit_price: amount / quantity, amount };
+    return { description: m.nm ?? "", quantity, unit_price: amount / quantity, discount_percent: null, amount };
   });
   const invoice: Invoice = {
     supplier_name: "", supplier_tax_id: null, invoice_number: null, issue_date: null, currency: "IDR",

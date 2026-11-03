@@ -9,8 +9,8 @@ const ok: Invoice = {
   issue_date: "2026-10-01",
   currency: "EUR",
   lines: [
-    { description: "Widget", quantity: 3, unit_price: 9.99, amount: 29.97 },
-    { description: "Setup", quantity: 1, unit_price: 70, amount: 70 },
+    { description: "Widget", quantity: 3, unit_price: 9.99, discount_percent: null, amount: 29.97 },
+    { description: "Setup", quantity: 1, unit_price: 70, discount_percent: null, amount: 70 },
   ],
   subtotal: 99.97,
   tax_amount: 21.99,
@@ -32,6 +32,12 @@ test("catches wrong sums, tax id and date", () => {
 test("catches line math", () => {
   const bad = { ...ok, lines: [{ ...ok.lines[0], amount: 30.97 }, ok.lines[1]] };
   expect(validateInvoice(bad, today).map((i) => i.field)).toContain("lines.0.amount");
+});
+
+test("line discounts", () => {
+  const disc = { ...ok, lines: [{ ...ok.lines[0], discount_percent: 10, amount: 26.97 }, ok.lines[1]], subtotal: 96.97, tax_amount: 21.33, total: 118.3 };
+  expect(validateInvoice(disc, today)).toEqual([]);
+  expect(validateInvoice({ ...disc, lines: [{ ...disc.lines[0], discount_percent: null }, ok.lines[1]] }, today).map((i) => i.field)).toEqual(["lines.0.amount"]);
 });
 
 test("tax ids", () => {

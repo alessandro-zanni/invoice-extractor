@@ -8,7 +8,7 @@ const want: Invoice = {
   invoice_number: "42/2026",
   issue_date: "2026-10-01",
   currency: "EUR",
-  lines: [{ description: "Viti", quantity: 2, unit_price: 1.5, amount: 3 }],
+  lines: [{ description: "Viti", quantity: 2, unit_price: 1.5, discount_percent: null, amount: 3 }],
   subtotal: 3,
   tax_amount: 0.66,
   total: 3.66,

@@ -39,8 +39,9 @@ export function validateInvoice(inv: Invoice, today = new Date()): Issue[] {
   const issues: Issue[] = [];
 
   inv.lines.forEach((l, i) => {
-    if (!close(l.quantity * l.unit_price, l.amount))
-      issues.push({ field: `lines.${i}.amount`, message: `${l.quantity} × ${l.unit_price} ≠ ${l.amount}` });
+    const expected = l.quantity * l.unit_price * (1 - (l.discount_percent ?? 0) / 100);
+    if (!close(expected, l.amount))
+      issues.push({ field: `lines.${i}.amount`, message: `${l.quantity} × ${l.unit_price} − ${l.discount_percent ?? 0}% ≠ ${l.amount}` });
   });
 
   if (inv.lines.length) {
