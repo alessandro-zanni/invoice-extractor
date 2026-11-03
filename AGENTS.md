@@ -106,6 +106,12 @@ bun run eval --strategy haiku|opus|routed --split dev|test|all [--limit N]
 - Uploads are processed in `src/lib/documents.ts`, shared by the form and `POST /api/extract`.
 - A correction is the ground truth: checks re-run on it only to show what still doesn't add up.
 - `supabase link` should point at staging when idle, so a stray `db push` never hits prod.
+- Local UI checks: `supabase start`, then sign in as `test@local.test` (local stack only, created
+  through the local admin API; recreate it after `supabase db reset`).
+- Demo GIF (`docs/demo.gif`): Playwright MCP screenshots per step into `~/.playwright-mcp/gif/`
+  (01 login … 05 list), then
+  `ffmpeg -f concat -safe 0 -i list.txt -vf "fps=10,scale=960:-1:flags=lanczos,split[a][b];[a]palettegen=max_colors=96[p];[b][p]paletteuse=dither=bayer" -loop 0 docs/demo.gif`
+  with `list.txt` holding `file …` / `duration …` pairs.
 
 ## Git
 
