@@ -31,8 +31,8 @@ eval cases.*
 
 - [x] 1. Scaffold, upload, extraction with Zod schema (`POST /api/extract`)
 - [x] 2. Deterministic validation + unit tests
-- [ ] 3. Golden set + eval runner (field accuracy, cost, latency): synthetic set and runner done;
-  first run is 100% for every strategy, so the set needs harder documents (real receipts, worse photos)
+- [ ] 3. Golden set + eval runner: synthetic (50, incl. 20 hard variants) and CORD (29) done,
+  dev runs recorded; still to do: first test-split run for the README numbers
 - [x] 4. Routing Haiku → Opus → `needs_review` (code done; strategy comparison needs the eval)
 - [ ] 5. Review UI; corrections → golden set (Supabase from here)
 - [ ] 6. Prod: rate limit, cost logs, spend limit, Vercel deploy
@@ -57,7 +57,17 @@ bun run eval --strategy haiku|opus|routed --split dev|test|all [--limit N]
   line, tax id) and must end in review. The generator asserts that clean ones pass validation and
   the others fail.
 - Split: 20 dev, 10 test. Tune on dev only; the README numbers come from test.
+- `syn-031`…`syn-050`: hard variants in rotation (multi-rate VAT, line discounts, two pages,
+  photo rotated 90°, low-res photo), no printed errors. Regenerating keeps `syn-001`…`syn-030`
+  identical: variants draw random numbers only for themselves. The generator deletes only `syn-*`.
+- `data/golden/cord-*`: 29 real receipts from CORD v2 (CC BY 4.0), scored on `total` and `lines`
+  only (`fields` in the case JSON), `expect_review: null`. Add-ons printed under an item are
+  separate lines, in the ground truth and in the prompt.
 - Ground truth for documents with printed errors is the printed value: the model must copy, not fix.
+- Dev results (2026-11-03, synthetic dev, 33 docs): Haiku 87.9% docs fully right, 3 false alarms
+  (low-res, rot90), $0.019; Opus 97.0%, 1 false alarm, $0.69; routed 97.0%, 0 false alarms,
+  $0.14 (20% of Opus). Small n: one document is 3 points.
+- Known waste: routing escalates documents with printed errors to Opus, which can't fix them.
 - Runs land in `eval/runs/`. Cost per doc on dev (2026-11-03): Haiku $0.0004, Opus $0.015.
 
 ## Git
