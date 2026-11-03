@@ -13,7 +13,11 @@ export async function upload(_: string | undefined, form: FormData) {
   redirect(`/documents/${result.id}`);
 }
 
-const text = (form: FormData, key: string) => String(form.get(key) ?? "").trim();
+// Only text fields: a File sent under a text field's name must not become "[object File]".
+const text = (form: FormData, key: string) => {
+  const v = form.get(key);
+  return typeof v === "string" ? v.trim() : "";
+};
 const num = (form: FormData, key: string) => Number(text(form, key).replace(",", ".")) || 0;
 const orNull = (s: string) => s || null;
 
