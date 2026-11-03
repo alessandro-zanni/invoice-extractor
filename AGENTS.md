@@ -31,7 +31,8 @@ eval cases.*
 
 - [x] 1. Scaffold, upload, extraction with Zod schema (`POST /api/extract`)
 - [x] 2. Deterministic validation + unit tests
-- [ ] 3. Golden set + eval runner: synthetic (50, incl. 20 hard variants) and CORD (29) done,
+- [ ] 3. Golden set + eval runner: synthetic (50, incl. 20 hard variants), CORD (29), FATURA (30),
+  SROIE (30, external) done,
   dev runs recorded; still to do: first test-split run for the README numbers
 - [x] 4. Routing Haiku → Opus → `needs_review` (code done; strategy comparison needs the eval)
 - [ ] 5. Review UI; corrections → golden set (Supabase from here)
@@ -46,7 +47,8 @@ bun dev                     # app on :3000 (check the port in the log if others 
 bun test                    # unit tests
 bun run lint && bun run typecheck
 curl -F file=@invoice.pdf localhost:3000/api/extract
-bun run golden              # regenerate data/golden (needs CHROME, default Brave)
+bun run golden              # regenerate synthetic invoices (needs CHROME, default Brave)
+bun run golden:sroie        # download SROIE into data/external (research-only, not committed)
 bun run eval --strategy haiku|opus|routed --split dev|test|all [--limit N]
 ```
 
@@ -67,7 +69,15 @@ bun run eval --strategy haiku|opus|routed --split dev|test|all [--limit N]
 - Dev results (2026-11-03, synthetic dev, 33 docs): Haiku 87.9% docs fully right, 3 false alarms
   (low-res, rot90), $0.019; Opus 97.0%, 1 false alarm, $0.69; routed 97.0%, 0 false alarms,
   $0.14 (20% of Opus). Small n: one document is 3 points.
+- `data/golden/fat-*`: 30 FATURA invoices (CC BY 4.0, English, 50 layouts), scored on total,
+  currency, issue date, invoice number (no line items in its labels).
+- `data/external/sroie/`: 30 SROIE receipts (research-only licence): `bun run golden:sroie`
+  downloads them, gitignored, never committed. The runner reads `data/external/*` when present.
 - Known waste: routing escalates documents with printed errors to Opus, which can't fix them.
+- Routing is only as good as validation precision: rules that don't fit a document type escalate
+  everything. On FATURA 100% goes to Opus (document-level discounts have no field; some dates
+  before 2000); on SROIE 50% (rounding, VAT-inclusive prices) after foreign tax ids became
+  "not checkable" instead of "invalid" (was 90%).
 - Runs land in `eval/runs/`. Cost per doc on dev (2026-11-03): Haiku $0.0004, Opus $0.015.
 
 ## Git

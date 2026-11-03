@@ -1,0 +1,90 @@
+{
+  "summary": {
+    "strategy": "haiku",
+    "split": "dev",
+    "docs": 1,
+    "errors": 0,
+    "field_accuracy": {
+      "supplier_name": "100.0% (1)",
+      "supplier_tax_id": "n/a",
+      "invoice_number": "n/a",
+      "issue_date": "100.0% (1)",
+      "currency": "n/a",
+      "subtotal": "n/a",
+      "tax_amount": "n/a",
+      "total": "100.0% (1)",
+      "lines": "n/a"
+    },
+    "docs_all_fields_right": "100.0%",
+    "printed_errors_caught": "0/0",
+    "clean_docs_flagged": "0/0",
+    "cost_usd_total": 0.0003,
+    "cost_usd_per_doc": 0.00028,
+    "latency_ms_p50": 2526,
+    "latency_ms_p95": 2526
+  },
+  "results": [
+    {
+      "id": "sroie-002",
+      "scored": [
+        "total",
+        "issue_date",
+        "supplier_name"
+      ],
+      "expect_review": null,
+      "flagged": true,
+      "models": [
+        "claude-haiku-5-5"
+      ],
+      "costUsd": 0.0002789,
+      "ms": 2526,
+      "issues": [
+        {
+          "field": "lines.1.amount",
+          "message": "1 × 55.9 − 10% ≠ -5.59"
+        },
+        {
+          "field": "subtotal",
+          "message": "lines sum to 4.41, subtotal is 60.31"
+        }
+      ],
+      "fields": {
+        "supplier_name": true,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "INDAH GIFT & HOME DECO",
+        "supplier_tax_id": null,
+        "invoice_number": null,
+        "issue_date": "2018-10-19",
+        "currency": "MYR",
+        "lines": [
+          {
+            "description": "ST-PRIVILEGE CARD/GD INDAH 88888",
+            "quantity": 1,
+            "unit_price": 10,
+            "discount_percent": null,
+            "amount": 10
+          },
+          {
+            "description": "GF-TABLE LAMP/STITCH <i> 62483",
+            "quantity": 1,
+            "unit_price": 55.9,
+            "discount_percent": 10,
+            "amount": -5.59
+          }
+        ],
+        "subtotal": 60.31,
+        "tax_amount": 0,
+        "total": 60.3
+      }
+    }
+  ]
+}

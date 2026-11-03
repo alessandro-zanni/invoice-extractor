@@ -1,0 +1,1487 @@
+{
+  "summary": {
+    "strategy": "opus",
+    "split": "dev",
+    "docs": 20,
+    "errors": 0,
+    "field_accuracy": {
+      "supplier_name": "n/a",
+      "supplier_tax_id": "n/a",
+      "invoice_number": "100.0% (20)",
+      "issue_date": "100.0% (20)",
+      "currency": "100.0% (15)",
+      "subtotal": "n/a",
+      "tax_amount": "n/a",
+      "total": "100.0% (20)",
+      "lines": "n/a"
+    },
+    "docs_all_fields_right": "100.0%",
+    "printed_errors_caught": "0/0",
+    "clean_docs_flagged": "0/0",
+    "cost_usd_total": 0.2527,
+    "cost_usd_per_doc": 0.01264,
+    "latency_ms_p50": 3274,
+    "latency_ms_p95": 5113
+  },
+  "results": [
+    {
+      "id": "fat-002",
+      "scored": [
+        "total",
+        "currency",
+        "issue_date",
+        "invoice_number"
+      ],
+      "expect_review": null,
+      "flagged": true,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.01192,
+      "ms": 3189,
+      "issues": [
+        {
+          "field": "total",
+          "message": "769.56 + 0 ≠ 796.34"
+        }
+      ],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "Mclean-Cochran",
+        "supplier_tax_id": null,
+        "invoice_number": "9Y2M7d-647",
+        "issue_date": "2014-01-16",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Probably notice leg.",
+            "quantity": 1,
+            "unit_price": 53.1,
+            "discount_percent": null,
+            "amount": 53.1
+          },
+          {
+            "description": "Say culture.",
+            "quantity": 6,
+            "unit_price": 96.99,
+            "discount_percent": null,
+            "amount": 581.94
+          },
+          {
+            "description": "Reach.",
+            "quantity": 6,
+            "unit_price": 22.42,
+            "discount_percent": null,
+            "amount": 134.52
+          }
+        ],
+        "subtotal": 769.56,
+        "tax_amount": 0,
+        "total": 796.34
+      }
+    },
+    {
+      "id": "fat-003",
+      "scored": [
+        "total",
+        "currency",
+        "issue_date",
+        "invoice_number"
+      ],
+      "expect_review": null,
+      "flagged": true,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.01084,
+      "ms": 2380,
+      "issues": [
+        {
+          "field": "total",
+          "message": "402.41 + 0 ≠ 408.61"
+        }
+      ],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "Mclean-Cochran",
+        "supplier_tax_id": null,
+        "invoice_number": "0649-071",
+        "issue_date": "2014-01-15",
+        "currency": "USD",
+        "lines": [
+          {
+            "description": "Today year yard.",
+            "quantity": 4,
+            "unit_price": 72.29,
+            "discount_percent": null,
+            "amount": 289.16
+          },
+          {
+            "description": "Left week.",
+            "quantity": 3,
+            "unit_price": 37.75,
+            "discount_percent": null,
+            "amount": 113.25
+          }
+        ],
+        "subtotal": 402.41,
+        "tax_amount": 0,
+        "total": 408.61
+      }
+    },
+    {
+      "id": "fat-004",
+      "scored": [
+        "total",
+        "currency",
+        "issue_date",
+        "invoice_number"
+      ],
+      "expect_review": null,
+      "flagged": true,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.01104,
+      "ms": 2818,
+      "issues": [
+        {
+          "field": "total",
+          "message": "615.64 + 0 ≠ 634.39"
+        }
+      ],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "Mclean-Cochran",
+        "supplier_tax_id": null,
+        "invoice_number": "INV43749404",
+        "issue_date": "2007-09-05",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Knowledge fly number economy.",
+            "quantity": 6,
+            "unit_price": 51.79,
+            "discount_percent": null,
+            "amount": 310.74
+          },
+          {
+            "description": "When conference nearly.",
+            "quantity": 5,
+            "unit_price": 60.98,
+            "discount_percent": null,
+            "amount": 304.9
+          }
+        ],
+        "subtotal": 615.64,
+        "tax_amount": 0,
+        "total": 634.39
+      }
+    },
+    {
+      "id": "fat-006",
+      "scored": [
+        "total",
+        "currency",
+        "issue_date",
+        "invoice_number"
+      ],
+      "expect_review": null,
+      "flagged": true,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.01382,
+      "ms": 4290,
+      "issues": [
+        {
+          "field": "total",
+          "message": "689.55 + 0 ≠ 705.26"
+        }
+      ],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "Mclean-Cochran",
+        "supplier_tax_id": null,
+        "invoice_number": "INV/43-51/346",
+        "issue_date": "2007-07-26",
+        "currency": "USD",
+        "lines": [
+          {
+            "description": "Magazine pull state.",
+            "quantity": 1,
+            "unit_price": 14.39,
+            "discount_percent": null,
+            "amount": 14.39
+          },
+          {
+            "description": "Stop expert true.",
+            "quantity": 1,
+            "unit_price": 52.11,
+            "discount_percent": null,
+            "amount": 52.11
+          },
+          {
+            "description": "Chance toward.",
+            "quantity": 2,
+            "unit_price": 86.69,
+            "discount_percent": null,
+            "amount": 173.38
+          },
+          {
+            "description": "Than all serve.",
+            "quantity": 3,
+            "unit_price": 84.01,
+            "discount_percent": null,
+            "amount": 252.03
+          },
+          {
+            "description": "Budget this.",
+            "quantity": 2,
+            "unit_price": 98.82,
+            "discount_percent": null,
+            "amount": 197.64
+          }
+        ],
+        "subtotal": 689.55,
+        "tax_amount": 0,
+        "total": 705.26
+      }
+    },
+    {
+      "id": "fat-007",
+      "scored": [
+        "total",
+        "issue_date",
+        "invoice_number"
+      ],
+      "expect_review": null,
+      "flagged": true,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.0111,
+      "ms": 2957,
+      "issues": [
+        {
+          "field": "total",
+          "message": "579 + 0 ≠ 596.21"
+        },
+        {
+          "field": "issue_date",
+          "message": "implausible date 1995-02-12"
+        }
+      ],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": false,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "Mclean-Cochran",
+        "supplier_tax_id": null,
+        "invoice_number": "INV/54-76/892",
+        "issue_date": "1995-02-12",
+        "currency": "USD",
+        "lines": [
+          {
+            "description": "Someone describe describe everyone.",
+            "quantity": 2,
+            "unit_price": 82.65,
+            "discount_percent": null,
+            "amount": 165.3
+          },
+          {
+            "description": "Sign apply whom.",
+            "quantity": 5,
+            "unit_price": 82.74,
+            "discount_percent": null,
+            "amount": 413.7
+          }
+        ],
+        "subtotal": 579,
+        "tax_amount": 0,
+        "total": 596.21
+      }
+    },
+    {
+      "id": "fat-008",
+      "scored": [
+        "total",
+        "currency",
+        "issue_date",
+        "invoice_number"
+      ],
+      "expect_review": null,
+      "flagged": true,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.01366,
+      "ms": 3712,
+      "issues": [
+        {
+          "field": "total",
+          "message": "407.23 + 0 ≠ 416.83"
+        },
+        {
+          "field": "issue_date",
+          "message": "implausible date 1998-12-16"
+        }
+      ],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "Mclean-Cochran",
+        "supplier_tax_id": null,
+        "invoice_number": "7775-094",
+        "issue_date": "1998-12-16",
+        "currency": "USD",
+        "lines": [
+          {
+            "description": "Finally wait.",
+            "quantity": 5,
+            "unit_price": 46.62,
+            "discount_percent": null,
+            "amount": 233.1
+          },
+          {
+            "description": "Toward politics door.",
+            "quantity": 5,
+            "unit_price": 12.91,
+            "discount_percent": null,
+            "amount": 64.55
+          },
+          {
+            "description": "Figure.",
+            "quantity": 2,
+            "unit_price": 4.19,
+            "discount_percent": null,
+            "amount": 8.38
+          },
+          {
+            "description": "Design successful.",
+            "quantity": 1,
+            "unit_price": 99.8,
+            "discount_percent": null,
+            "amount": 99.8
+          },
+          {
+            "description": "Camera them father.",
+            "quantity": 1,
+            "unit_price": 1.4,
+            "discount_percent": null,
+            "amount": 1.4
+          }
+        ],
+        "subtotal": 407.23,
+        "tax_amount": 0,
+        "total": 416.83
+      }
+    },
+    {
+      "id": "fat-011",
+      "scored": [
+        "total",
+        "currency",
+        "issue_date",
+        "invoice_number"
+      ],
+      "expect_review": null,
+      "flagged": true,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.01272,
+      "ms": 3257,
+      "issues": [
+        {
+          "field": "subtotal",
+          "message": "lines sum to 949.38, subtotal is 933.69"
+        },
+        {
+          "field": "total",
+          "message": "933.69 + 0 ≠ 979.92"
+        }
+      ],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "Mclean-Cochran",
+        "supplier_tax_id": null,
+        "invoice_number": "INV47702701",
+        "issue_date": "2021-11-16",
+        "currency": "USD",
+        "lines": [
+          {
+            "description": "But right blood.",
+            "quantity": 3,
+            "unit_price": 75.29,
+            "discount_percent": null,
+            "amount": 225.87
+          },
+          {
+            "description": "Push year always.",
+            "quantity": 3,
+            "unit_price": 90.48,
+            "discount_percent": null,
+            "amount": 271.44
+          },
+          {
+            "description": "Face street machine.",
+            "quantity": 4,
+            "unit_price": 96.62,
+            "discount_percent": null,
+            "amount": 386.48
+          },
+          {
+            "description": "Decide note.",
+            "quantity": 1,
+            "unit_price": 65.59,
+            "discount_percent": null,
+            "amount": 65.59
+          }
+        ],
+        "subtotal": 933.69,
+        "tax_amount": 0,
+        "total": 979.92
+      }
+    },
+    {
+      "id": "fat-012",
+      "scored": [
+        "total",
+        "currency",
+        "issue_date",
+        "invoice_number"
+      ],
+      "expect_review": null,
+      "flagged": true,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.01096,
+      "ms": 2481,
+      "issues": [
+        {
+          "field": "total",
+          "message": "51.8 + 0 ≠ 52.97"
+        }
+      ],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "Mclean-Cochran",
+        "supplier_tax_id": null,
+        "invoice_number": "INV/30-53/825",
+        "issue_date": "2007-10-17",
+        "currency": "USD",
+        "lines": [
+          {
+            "description": "Seven whether require.",
+            "quantity": 4,
+            "unit_price": 2.35,
+            "discount_percent": null,
+            "amount": 9.4
+          },
+          {
+            "description": "Blood want.",
+            "quantity": 1,
+            "unit_price": 42.4,
+            "discount_percent": null,
+            "amount": 42.4
+          }
+        ],
+        "subtotal": 51.8,
+        "tax_amount": 0,
+        "total": 52.97
+      }
+    },
+    {
+      "id": "fat-013",
+      "scored": [
+        "total",
+        "currency",
+        "issue_date",
+        "invoice_number"
+      ],
+      "expect_review": null,
+      "flagged": true,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.01264,
+      "ms": 4245,
+      "issues": [
+        {
+          "field": "total",
+          "message": "393.84 + 0 ≠ 402.94"
+        }
+      ],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "Mclean-Cochran",
+        "supplier_tax_id": null,
+        "invoice_number": "INV92631148",
+        "issue_date": "2022-05-08",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Phone.",
+            "quantity": 1,
+            "unit_price": 19.41,
+            "discount_percent": null,
+            "amount": 19.41
+          },
+          {
+            "description": "Article attention.",
+            "quantity": 3,
+            "unit_price": 0.72,
+            "discount_percent": null,
+            "amount": 2.16
+          },
+          {
+            "description": "Case.",
+            "quantity": 6,
+            "unit_price": 49.6,
+            "discount_percent": null,
+            "amount": 297.6
+          },
+          {
+            "description": "It hour.",
+            "quantity": 3,
+            "unit_price": 24.89,
+            "discount_percent": null,
+            "amount": 74.67
+          }
+        ],
+        "subtotal": 393.84,
+        "tax_amount": 0,
+        "total": 402.94
+      }
+    },
+    {
+      "id": "fat-015",
+      "scored": [
+        "total",
+        "issue_date",
+        "invoice_number"
+      ],
+      "expect_review": null,
+      "flagged": true,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.01374,
+      "ms": 3713,
+      "issues": [
+        {
+          "field": "total",
+          "message": "859.61 + 0 ≠ 906.48"
+        }
+      ],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": false,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "Mclean-Cochran",
+        "supplier_tax_id": null,
+        "invoice_number": "6Y6M3d-631",
+        "issue_date": "2007-07-04",
+        "currency": "USD",
+        "lines": [
+          {
+            "description": "Stock down since.",
+            "quantity": 3,
+            "unit_price": 88.21,
+            "discount_percent": null,
+            "amount": 264.63
+          },
+          {
+            "description": "Particular choice.",
+            "quantity": 3,
+            "unit_price": 51.46,
+            "discount_percent": null,
+            "amount": 154.38
+          },
+          {
+            "description": "Long.",
+            "quantity": 1,
+            "unit_price": 87.42,
+            "discount_percent": null,
+            "amount": 87.42
+          },
+          {
+            "description": "Much role him.",
+            "quantity": 4,
+            "unit_price": 53.06,
+            "discount_percent": null,
+            "amount": 212.24
+          },
+          {
+            "description": "Suggest right box.",
+            "quantity": 6,
+            "unit_price": 23.49,
+            "discount_percent": null,
+            "amount": 140.94
+          }
+        ],
+        "subtotal": 859.61,
+        "tax_amount": 0,
+        "total": 906.48
+      }
+    },
+    {
+      "id": "fat-016",
+      "scored": [
+        "total",
+        "currency",
+        "issue_date",
+        "invoice_number"
+      ],
+      "expect_review": null,
+      "flagged": true,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.01278,
+      "ms": 3435,
+      "issues": [
+        {
+          "field": "total",
+          "message": "1304.7 + 0 ≠ 1301.29"
+        },
+        {
+          "field": "issue_date",
+          "message": "implausible date 1997-05-04"
+        }
+      ],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "Mclean-Cochran",
+        "supplier_tax_id": null,
+        "invoice_number": "9201-095",
+        "issue_date": "1997-05-04",
+        "currency": "USD",
+        "lines": [
+          {
+            "description": "Owner ten.",
+            "quantity": 6,
+            "unit_price": 68.51,
+            "discount_percent": null,
+            "amount": 411.06
+          },
+          {
+            "description": "Method form between media.",
+            "quantity": 6,
+            "unit_price": 19.93,
+            "discount_percent": null,
+            "amount": 119.58
+          },
+          {
+            "description": "Management.",
+            "quantity": 6,
+            "unit_price": 56.77,
+            "discount_percent": null,
+            "amount": 340.62
+          },
+          {
+            "description": "Defense miss defense.",
+            "quantity": 6,
+            "unit_price": 72.24,
+            "discount_percent": null,
+            "amount": 433.44
+          }
+        ],
+        "subtotal": 1304.7,
+        "tax_amount": 0,
+        "total": 1301.29
+      }
+    },
+    {
+      "id": "fat-017",
+      "scored": [
+        "total",
+        "issue_date",
+        "invoice_number"
+      ],
+      "expect_review": null,
+      "flagged": true,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.0138,
+      "ms": 3399,
+      "issues": [
+        {
+          "field": "subtotal",
+          "message": "lines sum to 650.57, subtotal is 661.39"
+        },
+        {
+          "field": "total",
+          "message": "661.39 + 0 ≠ 672.51"
+        }
+      ],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": false,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "Mclean-Cochran",
+        "supplier_tax_id": null,
+        "invoice_number": "INV/95-85/718",
+        "issue_date": "2006-12-08",
+        "currency": "USD",
+        "lines": [
+          {
+            "description": "Me debate.",
+            "quantity": 1,
+            "unit_price": 75.66,
+            "discount_percent": null,
+            "amount": 75.66
+          },
+          {
+            "description": "Data about.",
+            "quantity": 3,
+            "unit_price": 96.05,
+            "discount_percent": null,
+            "amount": 288.15
+          },
+          {
+            "description": "Drive while.",
+            "quantity": 1,
+            "unit_price": 22.28,
+            "discount_percent": null,
+            "amount": 22.28
+          },
+          {
+            "description": "Republican edge question lead.",
+            "quantity": 3,
+            "unit_price": 84.06,
+            "discount_percent": null,
+            "amount": 252.18
+          },
+          {
+            "description": "Government conference maybe.",
+            "quantity": 6,
+            "unit_price": 2.05,
+            "discount_percent": null,
+            "amount": 12.3
+          }
+        ],
+        "subtotal": 661.39,
+        "tax_amount": 0,
+        "total": 672.51
+      }
+    },
+    {
+      "id": "fat-020",
+      "scored": [
+        "total",
+        "currency",
+        "issue_date",
+        "invoice_number"
+      ],
+      "expect_review": null,
+      "flagged": true,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.01372,
+      "ms": 5113,
+      "issues": [
+        {
+          "field": "total",
+          "message": "1026.31 + 0 ≠ 1055.08"
+        }
+      ],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "Mclean-Cochran",
+        "supplier_tax_id": null,
+        "invoice_number": "INV42891180",
+        "issue_date": "2015-01-11",
+        "currency": "USD",
+        "lines": [
+          {
+            "description": "Various hit seem.",
+            "quantity": 1,
+            "unit_price": 55.91,
+            "discount_percent": null,
+            "amount": 55.91
+          },
+          {
+            "description": "Will organization.",
+            "quantity": 6,
+            "unit_price": 63.31,
+            "discount_percent": null,
+            "amount": 379.86
+          },
+          {
+            "description": "None west visit.",
+            "quantity": 2,
+            "unit_price": 97.49,
+            "discount_percent": null,
+            "amount": 194.98
+          },
+          {
+            "description": "Suffer close.",
+            "quantity": 5,
+            "unit_price": 75.99,
+            "discount_percent": null,
+            "amount": 379.95
+          },
+          {
+            "description": "Education tough.",
+            "quantity": 1,
+            "unit_price": 15.61,
+            "discount_percent": null,
+            "amount": 15.61
+          }
+        ],
+        "subtotal": 1026.31,
+        "tax_amount": 0,
+        "total": 1055.08
+      }
+    },
+    {
+      "id": "fat-021",
+      "scored": [
+        "total",
+        "currency",
+        "issue_date",
+        "invoice_number"
+      ],
+      "expect_review": null,
+      "flagged": true,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.01288,
+      "ms": 3274,
+      "issues": [
+        {
+          "field": "total",
+          "message": "933.27 + 0 ≠ 964.16"
+        }
+      ],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "Mclean-Cochran",
+        "supplier_tax_id": null,
+        "invoice_number": "3Y2M9d-132",
+        "issue_date": "2007-01-24",
+        "currency": "USD",
+        "lines": [
+          {
+            "description": "Middle thus instead.",
+            "quantity": 5,
+            "unit_price": 48.73,
+            "discount_percent": null,
+            "amount": 243.65
+          },
+          {
+            "description": "Local benefit.",
+            "quantity": 6,
+            "unit_price": 17.87,
+            "discount_percent": null,
+            "amount": 107.22
+          },
+          {
+            "description": "Sort pick.",
+            "quantity": 5,
+            "unit_price": 32.38,
+            "discount_percent": null,
+            "amount": 161.9
+          },
+          {
+            "description": "Community civil.",
+            "quantity": 5,
+            "unit_price": 84.1,
+            "discount_percent": null,
+            "amount": 420.5
+          }
+        ],
+        "subtotal": 933.27,
+        "tax_amount": 0,
+        "total": 964.16
+      }
+    },
+    {
+      "id": "fat-022",
+      "scored": [
+        "total",
+        "currency",
+        "issue_date",
+        "invoice_number"
+      ],
+      "expect_review": null,
+      "flagged": true,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.01374,
+      "ms": 3368,
+      "issues": [
+        {
+          "field": "total",
+          "message": "1004.03 + 0 ≠ 1036.97"
+        }
+      ],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "Mclean-Cochran",
+        "supplier_tax_id": null,
+        "invoice_number": "INV06279486",
+        "issue_date": "2013-06-19",
+        "currency": "EUR",
+        "lines": [
+          {
+            "description": "Leg think.",
+            "quantity": 5,
+            "unit_price": 5.54,
+            "discount_percent": null,
+            "amount": 27.7
+          },
+          {
+            "description": "Manager military game.",
+            "quantity": 2,
+            "unit_price": 79.33,
+            "discount_percent": null,
+            "amount": 158.66
+          },
+          {
+            "description": "Night student.",
+            "quantity": 6,
+            "unit_price": 96.57,
+            "discount_percent": null,
+            "amount": 579.42
+          },
+          {
+            "description": "Bit agreement argue.",
+            "quantity": 1,
+            "unit_price": 52.11,
+            "discount_percent": null,
+            "amount": 52.11
+          },
+          {
+            "description": "Small each.",
+            "quantity": 2,
+            "unit_price": 93.07,
+            "discount_percent": null,
+            "amount": 186.14
+          }
+        ],
+        "subtotal": 1004.03,
+        "tax_amount": 0,
+        "total": 1036.97
+      }
+    },
+    {
+      "id": "fat-024",
+      "scored": [
+        "total",
+        "issue_date",
+        "invoice_number"
+      ],
+      "expect_review": null,
+      "flagged": true,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.01274,
+      "ms": 3068,
+      "issues": [
+        {
+          "field": "total",
+          "message": "428.09 + 0 ≠ 426.52"
+        }
+      ],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": false,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "Mclean-Cochran",
+        "supplier_tax_id": null,
+        "invoice_number": "2684-789",
+        "issue_date": "2015-03-07",
+        "currency": "USD",
+        "lines": [
+          {
+            "description": "Energy environment.",
+            "quantity": 4,
+            "unit_price": 62.04,
+            "discount_percent": null,
+            "amount": 248.16
+          },
+          {
+            "description": "Per not.",
+            "quantity": 1,
+            "unit_price": 53.79,
+            "discount_percent": null,
+            "amount": 53.79
+          },
+          {
+            "description": "Avoid through.",
+            "quantity": 3,
+            "unit_price": 30.74,
+            "discount_percent": null,
+            "amount": 92.22
+          },
+          {
+            "description": "Stuff have present.",
+            "quantity": 2,
+            "unit_price": 16.96,
+            "discount_percent": null,
+            "amount": 33.92
+          }
+        ],
+        "subtotal": 428.09,
+        "tax_amount": 0,
+        "total": 426.52
+      }
+    },
+    {
+      "id": "fat-025",
+      "scored": [
+        "total",
+        "currency",
+        "issue_date",
+        "invoice_number"
+      ],
+      "expect_review": null,
+      "flagged": true,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.01302,
+      "ms": 3174,
+      "issues": [
+        {
+          "field": "total",
+          "message": "1274.05 + 0 ≠ 1309.79"
+        }
+      ],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "Mclean-Cochran",
+        "supplier_tax_id": null,
+        "invoice_number": "INV/97-27/209",
+        "issue_date": "2021-11-08",
+        "currency": "USD",
+        "lines": [
+          {
+            "description": "Cut miss camera among.",
+            "quantity": 5,
+            "unit_price": 99.55,
+            "discount_percent": null,
+            "amount": 497.75
+          },
+          {
+            "description": "Reduce detail knowledge.",
+            "quantity": 3,
+            "unit_price": 68.61,
+            "discount_percent": null,
+            "amount": 205.83
+          },
+          {
+            "description": "Painting son against.",
+            "quantity": 5,
+            "unit_price": 94.83,
+            "discount_percent": null,
+            "amount": 474.15
+          },
+          {
+            "description": "Him seven.",
+            "quantity": 2,
+            "unit_price": 48.16,
+            "discount_percent": null,
+            "amount": 96.32
+          }
+        ],
+        "subtotal": 1274.05,
+        "tax_amount": 0,
+        "total": 1309.79
+      }
+    },
+    {
+      "id": "fat-026",
+      "scored": [
+        "total",
+        "currency",
+        "issue_date",
+        "invoice_number"
+      ],
+      "expect_review": null,
+      "flagged": true,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.01374,
+      "ms": 3719,
+      "issues": [
+        {
+          "field": "total",
+          "message": "1001.6 + 0 ≠ 1037.12"
+        },
+        {
+          "field": "issue_date",
+          "message": "implausible date 1998-03-27"
+        }
+      ],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "Mclean-Cochran",
+        "supplier_tax_id": null,
+        "invoice_number": "2Y1M4d-299",
+        "issue_date": "1998-03-27",
+        "currency": "USD",
+        "lines": [
+          {
+            "description": "Service research.",
+            "quantity": 3,
+            "unit_price": 68.09,
+            "discount_percent": null,
+            "amount": 204.27
+          },
+          {
+            "description": "Arrive why then.",
+            "quantity": 5,
+            "unit_price": 21.07,
+            "discount_percent": null,
+            "amount": 105.35
+          },
+          {
+            "description": "Easy TV.",
+            "quantity": 6,
+            "unit_price": 38.29,
+            "discount_percent": null,
+            "amount": 229.74
+          },
+          {
+            "description": "Building.",
+            "quantity": 6,
+            "unit_price": 1.09,
+            "discount_percent": null,
+            "amount": 6.54
+          },
+          {
+            "description": "Offer or.",
+            "quantity": 6,
+            "unit_price": 75.95,
+            "discount_percent": null,
+            "amount": 455.7
+          }
+        ],
+        "subtotal": 1001.6,
+        "tax_amount": 0,
+        "total": 1037.12
+      }
+    },
+    {
+      "id": "fat-029",
+      "scored": [
+        "total",
+        "currency",
+        "issue_date",
+        "invoice_number"
+      ],
+      "expect_review": null,
+      "flagged": true,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.011,
+      "ms": 2516,
+      "issues": [
+        {
+          "field": "total",
+          "message": "571.78 + 0 ≠ 598.47"
+        },
+        {
+          "field": "issue_date",
+          "message": "implausible date 1997-12-30"
+        }
+      ],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": true,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "Mclean-Cochran",
+        "supplier_tax_id": null,
+        "invoice_number": "INV/18-91/749",
+        "issue_date": "1997-12-30",
+        "currency": "USD",
+        "lines": [
+          {
+            "description": "Administration any attention yes.",
+            "quantity": 4,
+            "unit_price": 65.02,
+            "discount_percent": null,
+            "amount": 260.08
+          },
+          {
+            "description": "Front already new.",
+            "quantity": 6,
+            "unit_price": 51.95,
+            "discount_percent": null,
+            "amount": 311.7
+          }
+        ],
+        "subtotal": 571.78,
+        "tax_amount": 0,
+        "total": 598.47
+      }
+    },
+    {
+      "id": "fat-030",
+      "scored": [
+        "total",
+        "issue_date",
+        "invoice_number"
+      ],
+      "expect_review": null,
+      "flagged": true,
+      "models": [
+        "claude-opus-5-5"
+      ],
+      "costUsd": 0.01288,
+      "ms": 3078,
+      "issues": [
+        {
+          "field": "total",
+          "message": "335.12 + 0 ≠ 345.32"
+        },
+        {
+          "field": "issue_date",
+          "message": "implausible date 1993-07-12"
+        }
+      ],
+      "fields": {
+        "supplier_name": false,
+        "supplier_tax_id": true,
+        "invoice_number": true,
+        "issue_date": true,
+        "currency": false,
+        "subtotal": false,
+        "tax_amount": true,
+        "total": true,
+        "lines": false
+      },
+      "invoice": {
+        "supplier_name": "Mclean-Cochran",
+        "supplier_tax_id": null,
+        "invoice_number": "INV08648683",
+        "issue_date": "1993-07-12",
+        "currency": "USD",
+        "lines": [
+          {
+            "description": "Moment group American hand.",
+            "quantity": 2,
+            "unit_price": 27.47,
+            "discount_percent": null,
+            "amount": 54.94
+          },
+          {
+            "description": "Blue suggest model.",
+            "quantity": 1,
+            "unit_price": 29.51,
+            "discount_percent": null,
+            "amount": 29.51
+          },
+          {
+            "description": "True hear form.",
+            "quantity": 5,
+            "unit_price": 33.82,
+            "discount_percent": null,
+            "amount": 169.1
+          },
+          {
+            "description": "Than use interview recently.",
+            "quantity": 1,
+            "unit_price": 81.57,
+            "discount_percent": null,
+            "amount": 81.57
+          }
+        ],
+        "subtotal": 335.12,
+        "tax_amount": 0,
+        "total": 345.32
+      }
+    }
+  ]
+}
