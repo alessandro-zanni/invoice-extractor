@@ -37,8 +37,9 @@ eval cases.*
 - [x] 5. Review UI (login, upload, list, review page with flagged fields); corrections → golden set
   via `bun run golden:reviews`
 - [x] 6. Prod: rate limit, cost logs, spend limit, Vercel deploy
-- [ ] 7. Showcase: README with numbers table, diagram, GIF; link from the portfolio. README and demo
-  GIF done 2026-11-03, GitHub default branch is `main`
+- [x] 7. Showcase: README with numbers table, diagram, GIF (2026-11-03, GitHub default branch is
+  `main`); featured on the portfolio at alessandrozanni.dev/projects/invoice-extractor (portfolio
+  release 1.1.0, 2026-11-12)
 
 ## Commands
 
