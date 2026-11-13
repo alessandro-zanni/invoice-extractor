@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useActionState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -10,7 +11,7 @@ import { signIn } from "./actions";
 export default function LoginPage() {
   const [error, action, pending] = useActionState(signIn, undefined);
   return (
-    <main className="flex min-h-svh items-center justify-center p-4">
+    <main className="flex min-h-svh flex-col items-center justify-center gap-4 p-4">
       <Card className="w-full max-w-sm">
         <CardHeader>
           <CardTitle>Invoice Extractor</CardTitle>
@@ -32,6 +33,7 @@ export default function LoginPage() {
           </form>
         </CardContent>
       </Card>
+      <Link href="/privacy" className="text-sm text-muted-foreground underline-offset-4 hover:underline">Privacy</Link>
     </main>
   );
 }

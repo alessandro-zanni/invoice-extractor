@@ -36,9 +36,9 @@ eval cases.*
 - [x] 4. Routing Haiku → Opus → `needs_review` (code done; strategy comparison needs the eval)
 - [x] 5. Review UI (login, upload, list, review page with flagged fields); corrections → golden set
   via `bun run golden:reviews`
-- [ ] 6. Prod: rate limit, cost logs, spend limit, Vercel deploy
-- [ ] 7. Showcase: README with numbers table, diagram, GIF; link from the portfolio; set the GitHub
-  default branch back to `main` (it is `develop` until `main` has a release). README and demo GIF done 2026-11-03
+- [x] 6. Prod: rate limit, cost logs, spend limit, Vercel deploy
+- [ ] 7. Showcase: README with numbers table, diagram, GIF; link from the portfolio. README and demo
+  GIF done 2026-11-03, GitHub default branch is `main`
 
 ## Commands
 
@@ -76,6 +76,7 @@ bun run eval --strategy haiku|opus|routed --split dev|test|all [--limit N]
   currency, issue date, invoice number (no line items in its labels).
 - `data/external/sroie/`: 30 SROIE receipts (research-only licence): `bun run golden:sroie`
   downloads them, gitignored, never committed. The runner reads `data/external/*` when present.
+  Saved runs keep SROIE scores but redact what was read from the receipts (`invoice`, issue text).
 - **Test split, first run (2026-11-03, 46 docs, never used for tuning):**
 
   | Strategy | Docs fully right | False alarms | Printed errors caught | Cost | p50 / p95 |
@@ -104,8 +105,15 @@ bun run eval --strategy haiku|opus|routed --split dev|test|all [--limit N]
   table and on storage restricts every user to their own rows and files (verified: another user
   gets 404).
 - Uploads are processed in `src/lib/documents.ts`, shared by the form and `POST /api/extract`.
+- Per-user limits in `src/lib/limits.ts` (20 uploads/hour, $1/day of extraction cost, checked on
+  the user's own `documents` rows, 429 when hit); the Anthropic workspace limit ($20/month) caps
+  everyone. Each extraction logs one JSON line (`"event":"extraction"`, cost and ms per attempt)
+  to the Vercel runtime logs.
 - A correction is the ground truth: checks re-run on it only to show what still doesn't add up.
 - `supabase link` should point at staging when idle, so a stray `db push` never hits prod.
+- Free plan: both Supabase projects (staging and prod) pause after ~7 days without traffic and the
+  app can't sign in. Restore with `POST https://api.supabase.com/v1/projects/<ref>/restore`
+  (`SUPABASE_ACCESS_TOKEN` from `.envrc`); check before a demo or an interview.
 - Local UI checks: `supabase start`, then sign in as `test@local.test` (local stack only, created
   through the local admin API; recreate it after `supabase db reset`).
 - Demo GIF (`docs/demo.gif`): Playwright MCP screenshots per step into `~/.playwright-mcp/gif/`
