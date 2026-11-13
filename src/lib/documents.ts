@@ -1,5 +1,6 @@
 import "server-only";
 import { extractRouted, type MediaType } from "@/lib/extract";
+import { limitError } from "@/lib/limits";
 import { createClient } from "@/lib/supabase/server";
 
 const EXT: Record<MediaType, string> = { "application/pdf": "pdf", "image/jpeg": "jpg", "image/png": "png", "image/webp": "webp" };
@@ -15,6 +16,14 @@ export async function processUpload(file: unknown) {
   const supabase = await createClient();
   const { data: auth } = await supabase.auth.getClaims();
   if (!auth?.claims) return { error: "not signed in", httpStatus: 401 } as const;
+
+  const { data: recent, error: recentError } = await supabase
+    .from("documents")
+    .select("created_at, cost_usd")
+    .gte("created_at", new Date(Date.now() - 86400_000).toISOString());
+  if (recentError) return { error: recentError.message, httpStatus: 500 } as const;
+  const limit = limitError(recent);
+  if (limit) return { error: limit, httpStatus: 429 } as const;
 
   const id = crypto.randomUUID();
   const path = `${auth.claims.sub}/${id}.${EXT[mediaType]}`;
@@ -34,6 +43,18 @@ export async function processUpload(file: unknown) {
     attempts: result.attempts,
     cost_usd: result.costUsd,
   });
+  // One JSON line per extraction: cost log readable in Vercel runtime logs.
+  console.log(
+    JSON.stringify({
+      event: "extraction",
+      user: auth.claims.sub,
+      document: id,
+      status: result.status,
+      cost_usd: result.costUsd,
+      attempts: result.attempts.map(({ model, costUsd, ms }) => ({ model, cost_usd: costUsd, ms })),
+      saved: !error,
+    }),
+  );
   if (error) return { error: error.message, httpStatus: 500 } as const;
   return { id, ...result };
 }
