@@ -1,7 +1,7 @@
 import { createServerClient } from "@supabase/ssr";
 import { NextResponse, type NextRequest } from "next/server";
 
-// Everything is behind login except the login page itself.
+// Everything is behind login except the login and privacy pages.
 export async function proxy(request: NextRequest) {
   let response = NextResponse.next({ request });
   const supabase = createServerClient(process.env.NEXT_PUBLIC_SUPABASE_URL!, process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY!, {
@@ -18,7 +18,7 @@ export async function proxy(request: NextRequest) {
   // getClaims() verifies the JWT locally and refreshes an expired session.
   const { data } = await supabase.auth.getClaims();
   const path = request.nextUrl.pathname;
-  if (!data?.claims && path !== "/login") {
+  if (!data?.claims && path !== "/login" && path !== "/privacy") {
     if (path.startsWith("/api/")) return NextResponse.json({ error: "not signed in" }, { status: 401 });
     return NextResponse.redirect(new URL("/login", request.url));
   }
