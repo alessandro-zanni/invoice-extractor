@@ -111,6 +111,9 @@ bun run eval --strategy haiku|opus|routed --split dev|test|all [--limit N]
   to the Vercel runtime logs.
 - A correction is the ground truth: checks re-run on it only to show what still doesn't add up.
 - `supabase link` should point at staging when idle, so a stray `db push` never hits prod.
+- Free plan: both Supabase projects (staging and prod) pause after ~7 days without traffic and the
+  app can't sign in. Restore with `POST https://api.supabase.com/v1/projects/<ref>/restore`
+  (`SUPABASE_ACCESS_TOKEN` from `.envrc`); check before a demo or an interview.
 - Local UI checks: `supabase start`, then sign in as `test@local.test` (local stack only, created
   through the local admin API; recreate it after `supabase db reset`).
 - Demo GIF (`docs/demo.gif`): Playwright MCP screenshots per step into `~/.playwright-mcp/gif/`
