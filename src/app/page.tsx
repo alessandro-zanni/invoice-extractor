@@ -22,9 +22,12 @@ export default async function Home() {
     <main className="mx-auto flex max-w-5xl flex-col gap-6 p-4 sm:p-8">
       <header className="flex items-center justify-between gap-4">
         <h1 className="text-xl font-semibold">Invoice Extractor</h1>
-        <form action={signOut}>
-          <Button variant="ghost" size="sm" type="submit">Sign out</Button>
-        </form>
+        <div className="flex items-center gap-2">
+          <Link href="/privacy" className="text-sm text-muted-foreground underline-offset-4 hover:underline">Privacy</Link>
+          <form action={signOut}>
+            <Button variant="ghost" size="sm" type="submit">Sign out</Button>
+          </form>
+        </div>
       </header>
       <UploadForm />
       <div className="overflow-x-auto">
