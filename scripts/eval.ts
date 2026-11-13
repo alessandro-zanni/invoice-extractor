@@ -91,5 +91,7 @@ for (const r of results) if ("error" in r) console.error(r.id, r.error);
 
 await mkdir("eval/runs", { recursive: true });
 const out = `eval/runs/${new Date().toISOString().replace(/[:.]/g, "-")}-${strategy}-${args.split}.json`;
-await Bun.write(out, JSON.stringify({ summary, results: results.sort((a, b) => a.id.localeCompare(b.id)) }, null, 2) + "\n");
+// Runs are committed: research-only sets (SROIE) keep their scores but not the values read from the receipts.
+const committable = results.map((r) => (r.id.startsWith("sroie-") && "invoice" in r ? { ...r, invoice: null, issues: r.issues.map(() => ({ field: "*", message: "redacted" })) } : r));
+await Bun.write(out, JSON.stringify({ summary, results: committable.sort((a, b) => a.id.localeCompare(b.id)) }, null, 2) + "\n");
 console.error(`saved ${out}`);

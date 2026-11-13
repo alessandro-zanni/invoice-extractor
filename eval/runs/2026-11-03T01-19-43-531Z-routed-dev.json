@@ -52,32 +52,7 @@
         "total": true,
         "lines": false
       },
-      "invoice": {
-        "supplier_name": "INDAH GIFT & HOME DECO",
-        "supplier_tax_id": null,
-        "invoice_number": "050100035279",
-        "issue_date": "2018-10-19",
-        "currency": "MYR",
-        "lines": [
-          {
-            "description": "ST-PRIVILEGE CARD/GD INDAH 88888",
-            "quantity": 1,
-            "unit_price": 10,
-            "discount_percent": null,
-            "amount": 10
-          },
-          {
-            "description": "GF-TABLE LAMP/STITCH <i> 62483",
-            "quantity": 1,
-            "unit_price": 55.9,
-            "discount_percent": 10,
-            "amount": 50.31
-          }
-        ],
-        "subtotal": 60.31,
-        "tax_amount": 0,
-        "total": 60.3
-      }
+      "invoice": null
     },
     {
       "id": "sroie-003",
@@ -105,46 +80,7 @@
         "total": true,
         "lines": false
       },
-      "invoice": {
-        "supplier_name": "MR D.I.Y. (JOHOR) SDN BHD",
-        "supplier_tax_id": null,
-        "invoice_number": null,
-        "issue_date": "2019-01-12",
-        "currency": "MYR",
-        "lines": [
-          {
-            "description": "CHOPPING BOARD 35.5x25.5CM 803M# EZ10HD05 - 24",
-            "quantity": 1,
-            "unit_price": 19,
-            "discount_percent": null,
-            "amount": 19
-          },
-          {
-            "description": "AIR PRESSURE SPRAYER SX-575-1 1.5L HC03-7 - 15",
-            "quantity": 1,
-            "unit_price": 8.02,
-            "discount_percent": null,
-            "amount": 8.02
-          },
-          {
-            "description": "WAXCO WINDSHILED CLEANER 120ML WA14-3A - 48",
-            "quantity": 1,
-            "unit_price": 3.02,
-            "discount_percent": null,
-            "amount": 3.02
-          },
-          {
-            "description": "BOPP TAPE 48MM*100M CLEAR FZ-04 - 36",
-            "quantity": 1,
-            "unit_price": 3.88,
-            "discount_percent": null,
-            "amount": 3.88
-          }
-        ],
-        "subtotal": 33.92,
-        "tax_amount": 0,
-        "total": 33.9
-      }
+      "invoice": null
     },
     {
       "id": "sroie-004",
@@ -163,8 +99,8 @@
       "ms": 5486,
       "issues": [
         {
-          "field": "supplier_tax_id",
-          "message": "invalid tax id 000849813504"
+          "field": "*",
+          "message": "redacted"
         }
       ],
       "fields": {
@@ -178,25 +114,7 @@
         "total": true,
         "lines": false
       },
-      "invoice": {
-        "supplier_name": "YONGFATT ENTERPRISE",
-        "supplier_tax_id": "000849813504",
-        "invoice_number": "CS00031663",
-        "issue_date": "2018-12-25",
-        "currency": "MYR",
-        "lines": [
-          {
-            "description": "E8318 ELEGANT SCH TR BAG 15",
-            "quantity": 1,
-            "unit_price": 80.91,
-            "discount_percent": null,
-            "amount": 80.91
-          }
-        ],
-        "subtotal": 80.91,
-        "tax_amount": 0,
-        "total": 80.9
-      }
+      "invoice": null
     },
     {
       "id": "sroie-006",
@@ -224,25 +142,7 @@
         "total": true,
         "lines": false
       },
-      "invoice": {
-        "supplier_name": "ABC HO TRADING",
-        "supplier_tax_id": null,
-        "invoice_number": "01-143008",
-        "issue_date": "2019-01-09",
-        "currency": "MYR",
-        "lines": [
-          {
-            "description": "Plastic",
-            "quantity": 2,
-            "unit_price": 15.5,
-            "discount_percent": null,
-            "amount": 31
-          }
-        ],
-        "subtotal": 31,
-        "tax_amount": 0,
-        "total": 31
-      }
+      "invoice": null
     },
     {
       "id": "sroie-007",
@@ -261,8 +161,8 @@
       "ms": 13893,
       "issues": [
         {
-          "field": "supplier_tax_id",
-          "message": "invalid tax id 002116837376"
+          "field": "*",
+          "message": "redacted"
         }
       ],
       "fields": {
@@ -276,74 +176,7 @@
         "total": true,
         "lines": false
       },
-      "invoice": {
-        "supplier_name": "SOON HUAT MACHINERY ENTERPRISE",
-        "supplier_tax_id": "002116837376",
-        "invoice_number": "CS00004040",
-        "issue_date": "2019-01-11",
-        "currency": "MYR",
-        "lines": [
-          {
-            "description": "REPAIR ENGINE POWER SPRAYER (1UNIT)",
-            "quantity": 1,
-            "unit_price": 80,
-            "discount_percent": null,
-            "amount": 80
-          },
-          {
-            "description": "workmanship & service",
-            "quantity": 1,
-            "unit_price": 160,
-            "discount_percent": null,
-            "amount": 160
-          },
-          {
-            "description": "GIANT 606 OVERFLOW ASSY",
-            "quantity": 1,
-            "unit_price": 17,
-            "discount_percent": null,
-            "amount": 17
-          },
-          {
-            "description": "ENGINE OIL",
-            "quantity": 1,
-            "unit_price": 10,
-            "discount_percent": null,
-            "amount": 10
-          },
-          {
-            "description": "GREASE FOR TOOLS 40ML (AKODA)",
-            "quantity": 1,
-            "unit_price": 6,
-            "discount_percent": null,
-            "amount": 6
-          },
-          {
-            "description": "EY20 PLUG CHAMPION",
-            "quantity": 1,
-            "unit_price": 8,
-            "discount_percent": null,
-            "amount": 8
-          },
-          {
-            "description": "STARTER TALI",
-            "quantity": 1,
-            "unit_price": 10,
-            "discount_percent": null,
-            "amount": 10
-          },
-          {
-            "description": "EY20 STARTER HANDLE",
-            "quantity": 2,
-            "unit_price": 18,
-            "discount_percent": null,
-            "amount": 36
-          }
-        ],
-        "subtotal": 327,
-        "tax_amount": 0,
-        "total": 327
-      }
+      "invoice": null
     },
     {
       "id": "sroie-008",
@@ -372,25 +205,7 @@
         "total": true,
         "lines": false
       },
-      "invoice": {
-        "supplier_name": "S.H.H. MOTOR ( SUNGAI RENGIT ) SDN. BHD.",
-        "supplier_tax_id": null,
-        "invoice_number": "22497",
-        "issue_date": "2019-01-23",
-        "currency": "MYR",
-        "lines": [
-          {
-            "description": "4132 CROCS 300X17 TUBES",
-            "quantity": 1,
-            "unit_price": 20,
-            "discount_percent": null,
-            "amount": 20
-          }
-        ],
-        "subtotal": 20,
-        "tax_amount": 0,
-        "total": 20
-      }
+      "invoice": null
     },
     {
       "id": "sroie-011",
@@ -409,12 +224,12 @@
       "ms": 6104,
       "issues": [
         {
-          "field": "subtotal",
-          "message": "lines sum to 14.10, subtotal is 13.3"
+          "field": "*",
+          "message": "redacted"
         },
         {
-          "field": "supplier_tax_id",
-          "message": "invalid tax id 001006288896"
+          "field": "*",
+          "message": "redacted"
         }
       ],
       "fields": {
@@ -428,32 +243,7 @@
         "total": true,
         "lines": false
       },
-      "invoice": {
-        "supplier_name": "SAM SAM TRADING CO",
-        "supplier_tax_id": "001006288896",
-        "invoice_number": "R000721136",
-        "issue_date": "2017-12-29",
-        "currency": "MYR",
-        "lines": [
-          {
-            "description": "HE EDG UNICORN TWIN SUPER GLUE USG-99-",
-            "quantity": 1,
-            "unit_price": 5.2,
-            "discount_percent": null,
-            "amount": 5.2
-          },
-          {
-            "description": "SS EZL A4 CYBER MIX COLOR PAPER 100'S8",
-            "quantity": 1,
-            "unit_price": 8.9,
-            "discount_percent": null,
-            "amount": 8.9
-          }
-        ],
-        "subtotal": 13.3,
-        "tax_amount": 0.8,
-        "total": 14.1
-      }
+      "invoice": null
     },
     {
       "id": "sroie-012",
@@ -472,12 +262,12 @@
       "ms": 7682,
       "issues": [
         {
-          "field": "subtotal",
-          "message": "lines sum to 15.00, subtotal is 14.15"
+          "field": "*",
+          "message": "redacted"
         },
         {
-          "field": "supplier_tax_id",
-          "message": "invalid tax id 000394528768"
+          "field": "*",
+          "message": "redacted"
         }
       ],
       "fields": {
@@ -491,25 +281,7 @@
         "total": true,
         "lines": false
       },
-      "invoice": {
-        "supplier_name": "AIK HUAT HARDWARE ENTERPRISE (SETIA ALAM) SDN BHD",
-        "supplier_tax_id": "000394528768",
-        "invoice_number": "CSP0393921",
-        "issue_date": "2017-06-15",
-        "currency": "MYR",
-        "lines": [
-          {
-            "description": "2000160000024 20\" 1.6KG X 500MM BIG STRETCH FILM ???",
-            "quantity": 1,
-            "unit_price": 15,
-            "discount_percent": null,
-            "amount": 15
-          }
-        ],
-        "subtotal": 14.15,
-        "tax_amount": 0.85,
-        "total": 15
-      }
+      "invoice": null
     },
     {
       "id": "sroie-013",
@@ -528,12 +300,12 @@
       "ms": 5261,
       "issues": [
         {
-          "field": "subtotal",
-          "message": "lines sum to 15.90, subtotal is 15"
+          "field": "*",
+          "message": "redacted"
         },
         {
-          "field": "supplier_tax_id",
-          "message": "invalid tax id 001637511168"
+          "field": "*",
+          "message": "redacted"
         }
       ],
       "fields": {
@@ -547,25 +319,7 @@
         "total": true,
         "lines": false
       },
-      "invoice": {
-        "supplier_name": "HOME MASTER HARDWARE & ELECTRICAL",
-        "supplier_tax_id": "001637511168",
-        "invoice_number": "CS 67832",
-        "issue_date": "2017-12-22",
-        "currency": "MYR",
-        "lines": [
-          {
-            "description": "24MMx7Y M.ONE TAPE",
-            "quantity": 1,
-            "unit_price": 15.9,
-            "discount_percent": null,
-            "amount": 15.9
-          }
-        ],
-        "subtotal": 15,
-        "tax_amount": 0.9,
-        "total": 15.9
-      }
+      "invoice": null
     },
     {
       "id": "sroie-015",
@@ -584,44 +338,44 @@
       "ms": 13286,
       "issues": [
         {
-          "field": "lines.0.amount",
-          "message": "17 × 0.85 − 0% ≠ 15.25"
+          "field": "*",
+          "message": "redacted"
         },
         {
-          "field": "lines.2.amount",
-          "message": "1 × 1.41 − 0% ≠ 1.5"
+          "field": "*",
+          "message": "redacted"
         },
         {
-          "field": "lines.3.amount",
-          "message": "1 × 1.42 − 0% ≠ 1.51"
+          "field": "*",
+          "message": "redacted"
         },
         {
-          "field": "lines.4.amount",
-          "message": "1 × 1.42 − 0% ≠ 1.51"
+          "field": "*",
+          "message": "redacted"
         },
         {
-          "field": "lines.5.amount",
-          "message": "1 × 2.3 − 0% ≠ 2.44"
+          "field": "*",
+          "message": "redacted"
         },
         {
-          "field": "lines.6.amount",
-          "message": "1 × 2.3 − 0% ≠ 2.44"
+          "field": "*",
+          "message": "redacted"
         },
         {
-          "field": "lines.7.amount",
-          "message": "1 × 1.51 − 0% ≠ 1.6"
+          "field": "*",
+          "message": "redacted"
         },
         {
-          "field": "lines.8.amount",
-          "message": "1 × 2.74 − 0% ≠ 2.9"
+          "field": "*",
+          "message": "redacted"
         },
         {
-          "field": "subtotal",
-          "message": "lines sum to 32.70, subtotal is 31.03"
+          "field": "*",
+          "message": "redacted"
         },
         {
-          "field": "supplier_tax_id",
-          "message": "invalid tax id 001609584640"
+          "field": "*",
+          "message": "redacted"
         }
       ],
       "fields": {
@@ -635,81 +389,7 @@
         "total": true,
         "lines": false
       },
-      "invoice": {
-        "supplier_name": "ASIA MART",
-        "supplier_tax_id": "001609584640",
-        "invoice_number": "CS02070163",
-        "issue_date": "2017-12-22",
-        "currency": "MYR",
-        "lines": [
-          {
-            "description": "DELICIA CHOCOLATE [50G]",
-            "quantity": 17,
-            "unit_price": 0.85,
-            "discount_percent": null,
-            "amount": 15.25
-          },
-          {
-            "description": "GARDENIA ORIGINAL CLASSIC JUMBO [600G]",
-            "quantity": 1,
-            "unit_price": 3.55,
-            "discount_percent": null,
-            "amount": 3.55
-          },
-          {
-            "description": "HU NS LIME 50G",
-            "quantity": 1,
-            "unit_price": 1.41,
-            "discount_percent": null,
-            "amount": 1.5
-          },
-          {
-            "description": "DOREMON CATCAT JOY 15G",
-            "quantity": 1,
-            "unit_price": 1.42,
-            "discount_percent": null,
-            "amount": 1.51
-          },
-          {
-            "description": "DOREMON CATCAT JOY 15G",
-            "quantity": 1,
-            "unit_price": 1.42,
-            "discount_percent": null,
-            "amount": 1.51
-          },
-          {
-            "description": "MINUTE MAID PULPY [OREN] [350ML]",
-            "quantity": 1,
-            "unit_price": 2.3,
-            "discount_percent": null,
-            "amount": 2.44
-          },
-          {
-            "description": "MINUTE MAID PULPY [OREN] [350ML]",
-            "quantity": 1,
-            "unit_price": 2.3,
-            "discount_percent": null,
-            "amount": 2.44
-          },
-          {
-            "description": "TINGE LEMON DRINK 500ML",
-            "quantity": 1,
-            "unit_price": 1.51,
-            "discount_percent": null,
-            "amount": 1.6
-          },
-          {
-            "description": "100 PLUS [1.5L]",
-            "quantity": 1,
-            "unit_price": 2.74,
-            "discount_percent": null,
-            "amount": 2.9
-          }
-        ],
-        "subtotal": 31.03,
-        "tax_amount": 1.65,
-        "total": 32.7
-      }
+      "invoice": null
     },
     {
       "id": "sroie-016",
@@ -728,12 +408,12 @@
       "ms": 5273,
       "issues": [
         {
-          "field": "subtotal",
-          "message": "lines sum to 15.90, subtotal is 15"
+          "field": "*",
+          "message": "redacted"
         },
         {
-          "field": "supplier_tax_id",
-          "message": "invalid tax id 001637511168"
+          "field": "*",
+          "message": "redacted"
         }
       ],
       "fields": {
@@ -747,25 +427,7 @@
         "total": true,
         "lines": false
       },
-      "invoice": {
-        "supplier_name": "HOME MASTER HARDWARE & ELECTRICAL",
-        "supplier_tax_id": "001637511168",
-        "invoice_number": "CS 67832",
-        "issue_date": "2017-12-22",
-        "currency": "MYR",
-        "lines": [
-          {
-            "description": "24MMx7Y M.ONE TAPE",
-            "quantity": 1,
-            "unit_price": 15.9,
-            "discount_percent": null,
-            "amount": 15.9
-          }
-        ],
-        "subtotal": 15,
-        "tax_amount": 0.9,
-        "total": 15.9
-      }
+      "invoice": null
     },
     {
       "id": "sroie-017",
@@ -784,8 +446,8 @@
       "ms": 4803,
       "issues": [
         {
-          "field": "supplier_tax_id",
-          "message": "invalid tax id 000584089600"
+          "field": "*",
+          "message": "redacted"
         }
       ],
       "fields": {
@@ -799,32 +461,7 @@
         "total": true,
         "lines": false
       },
-      "invoice": {
-        "supplier_name": "LIGHTROOM GALLERY SDN BHD",
-        "supplier_tax_id": "000584089600",
-        "invoice_number": "LCS03908",
-        "issue_date": "2017-12-20",
-        "currency": "MYR",
-        "lines": [
-          {
-            "description": "CH50514 T5 JOINT 2PIN 2PCS",
-            "quantity": 1,
-            "unit_price": 2.83,
-            "discount_percent": null,
-            "amount": 2.83
-          },
-          {
-            "description": "YT51874 YE30 BK 7W WW LED TRACK LIGHT",
-            "quantity": 2,
-            "unit_price": 33.02,
-            "discount_percent": null,
-            "amount": 66.04
-          }
-        ],
-        "subtotal": 68.87,
-        "tax_amount": 4.13,
-        "total": 73
-      }
+      "invoice": null
     },
     {
       "id": "sroie-020",
@@ -843,12 +480,12 @@
       "ms": 3686,
       "issues": [
         {
-          "field": "subtotal",
-          "message": "lines sum to 86.00, subtotal is 81.13"
+          "field": "*",
+          "message": "redacted"
         },
         {
-          "field": "supplier_tax_id",
-          "message": "invalid tax id 0010 9010 5344"
+          "field": "*",
+          "message": "redacted"
         }
       ],
       "fields": {
@@ -862,25 +499,7 @@
         "total": true,
         "lines": false
       },
-      "invoice": {
-        "supplier_name": "Shell ISNI PETRO TRADING",
-        "supplier_tax_id": "0010 9010 5344",
-        "invoice_number": "60000053668",
-        "issue_date": "2018-03-18",
-        "currency": "MYR",
-        "lines": [
-          {
-            "description": "V-Power 97",
-            "quantity": 35.1,
-            "unit_price": 2.45,
-            "discount_percent": null,
-            "amount": 86
-          }
-        ],
-        "subtotal": 81.13,
-        "tax_amount": 4.87,
-        "total": 86
-      }
+      "invoice": null
     },
     {
       "id": "sroie-021",
@@ -899,12 +518,12 @@
       "ms": 6405,
       "issues": [
         {
-          "field": "subtotal",
-          "message": "lines sum to 54.50, subtotal is 51.42"
+          "field": "*",
+          "message": "redacted"
         },
         {
-          "field": "supplier_tax_id",
-          "message": "invalid tax id 002046390272"
+          "field": "*",
+          "message": "redacted"
         }
       ],
       "fields": {
@@ -918,53 +537,7 @@
         "total": true,
         "lines": false
       },
-      "invoice": {
-        "supplier_name": "SYL ROASTED DELIGHTS SDN. BHD.",
-        "supplier_tax_id": "002046390272",
-        "invoice_number": "SO00022185",
-        "issue_date": "2018-03-06",
-        "currency": "MYR",
-        "lines": [
-          {
-            "description": "(T02) BRAISED PORK RICE WITH PEANUT",
-            "quantity": 2,
-            "unit_price": 7,
-            "discount_percent": null,
-            "amount": 14
-          },
-          {
-            "description": "ROAST PORK - SMALL",
-            "quantity": 1,
-            "unit_price": 12,
-            "discount_percent": null,
-            "amount": 12
-          },
-          {
-            "description": "(V02) SOUR & SPICY MUSTARD",
-            "quantity": 1,
-            "unit_price": 12,
-            "discount_percent": null,
-            "amount": 12
-          },
-          {
-            "description": "(B03) JASMINE GREEN TEA(HOT)",
-            "quantity": 2,
-            "unit_price": 2.3,
-            "discount_percent": null,
-            "amount": 4.6
-          },
-          {
-            "description": "(R05) ROAST PORK + ROAST CHICKEN RICE",
-            "quantity": 1,
-            "unit_price": 11.9,
-            "discount_percent": null,
-            "amount": 11.9
-          }
-        ],
-        "subtotal": 51.42,
-        "tax_amount": 3.08,
-        "total": 54.5
-      }
+      "invoice": null
     },
     {
       "id": "sroie-022",
@@ -983,8 +556,8 @@
       "ms": 7061,
       "issues": [
         {
-          "field": "supplier_tax_id",
-          "message": "invalid tax id 000689913856"
+          "field": "*",
+          "message": "redacted"
         }
       ],
       "fields": {
@@ -998,32 +571,7 @@
         "total": true,
         "lines": false
       },
-      "invoice": {
-        "supplier_name": "TEO HENG STATIONERY & BOOKS",
-        "supplier_tax_id": "000689913856",
-        "invoice_number": "CS1801/26874",
-        "issue_date": "2018-01-18",
-        "currency": "MYR",
-        "lines": [
-          {
-            "description": "9557068000035 - JIANYU STELL RULER 30CM THICK",
-            "quantity": 1,
-            "unit_price": 3.5,
-            "discount_percent": 5.69,
-            "amount": 3.3
-          },
-          {
-            "description": "1 - LAMINATE FILM",
-            "quantity": 1,
-            "unit_price": 1.3,
-            "discount_percent": null,
-            "amount": 1.3
-          }
-        ],
-        "subtotal": 4.6,
-        "tax_amount": 0.28,
-        "total": 4.9
-      }
+      "invoice": null
     },
     {
       "id": "sroie-024",
@@ -1042,8 +590,8 @@
       "ms": 7358,
       "issues": [
         {
-          "field": "supplier_tax_id",
-          "message": "invalid tax id 000689913856"
+          "field": "*",
+          "message": "redacted"
         }
       ],
       "fields": {
@@ -1057,25 +605,7 @@
         "total": true,
         "lines": false
       },
-      "invoice": {
-        "supplier_name": "TEO HENG STATIONERY & BOOKS",
-        "supplier_tax_id": "000689913856",
-        "invoice_number": "CS1801/26821",
-        "issue_date": "2018-01-17",
-        "currency": "MYR",
-        "lines": [
-          {
-            "description": "9555017370017 - LION FILE 220*307 LAMINATING FILM",
-            "quantity": 1,
-            "unit_price": 28,
-            "discount_percent": 7.14,
-            "amount": 26
-          }
-        ],
-        "subtotal": 26,
-        "tax_amount": 1.56,
-        "total": 27.55
-      }
+      "invoice": null
     },
     {
       "id": "sroie-025",
@@ -1094,8 +624,8 @@
       "ms": 6625,
       "issues": [
         {
-          "field": "supplier_tax_id",
-          "message": "invalid tax id 000689913856"
+          "field": "*",
+          "message": "redacted"
         }
       ],
       "fields": {
@@ -1109,32 +639,7 @@
         "total": true,
         "lines": false
       },
-      "invoice": {
-        "supplier_name": "TEO HENG STATIONERY & BOOKS",
-        "supplier_tax_id": "000689913856",
-        "invoice_number": "CS1801/26717",
-        "issue_date": "2018-01-15",
-        "currency": "MYR",
-        "lines": [
-          {
-            "description": "CBE BADGE CLIP 100PCS",
-            "quantity": 1,
-            "unit_price": 26.42,
-            "discount_percent": 9.14,
-            "amount": 24
-          },
-          {
-            "description": "NISO A4 LAMINATING FILM",
-            "quantity": 1,
-            "unit_price": 28,
-            "discount_percent": null,
-            "amount": 28
-          }
-        ],
-        "subtotal": 52,
-        "tax_amount": 3.12,
-        "total": 55.1
-      }
+      "invoice": null
     },
     {
       "id": "sroie-026",
@@ -1153,12 +658,12 @@
       "ms": 5741,
       "issues": [
         {
-          "field": "lines.1.amount",
-          "message": "5 × 2.08 − 0% ≠ 10.38"
+          "field": "*",
+          "message": "redacted"
         },
         {
-          "field": "supplier_tax_id",
-          "message": "invalid tax id 000689913856"
+          "field": "*",
+          "message": "redacted"
         }
       ],
       "fields": {
@@ -1172,32 +677,7 @@
         "total": true,
         "lines": false
       },
-      "invoice": {
-        "supplier_name": "TEO HENG STATIONERY & BOOKS",
-        "supplier_tax_id": "000689913856",
-        "invoice_number": "CS1801/27037",
-        "issue_date": "2018-01-23",
-        "currency": "MYR",
-        "lines": [
-          {
-            "description": "TP-24 - DOUBLE SIDED TISSUE TAPE 18MM",
-            "quantity": 5,
-            "unit_price": 1.32,
-            "discount_percent": 0,
-            "amount": 6.6
-          },
-          {
-            "description": "9557546631393 - G SOFT 6ML QUICK DRY CORRECTION PEN",
-            "quantity": 5,
-            "unit_price": 2.08,
-            "discount_percent": 0,
-            "amount": 10.38
-          }
-        ],
-        "subtotal": 16.98,
-        "tax_amount": 1.02,
-        "total": 18
-      }
+      "invoice": null
     },
     {
       "id": "sroie-029",
@@ -1216,12 +696,12 @@
       "ms": 7371,
       "issues": [
         {
-          "field": "subtotal",
-          "message": "lines sum to 2.50, subtotal is 2.36"
+          "field": "*",
+          "message": "redacted"
         },
         {
-          "field": "supplier_tax_id",
-          "message": "invalid tax id 000181747712"
+          "field": "*",
+          "message": "redacted"
         }
       ],
       "fields": {
@@ -1235,32 +715,7 @@
         "total": true,
         "lines": false
       },
-      "invoice": {
-        "supplier_name": "99 SPEED MART S/B",
-        "supplier_tax_id": "000181747712",
-        "invoice_number": "18287/102/T0049",
-        "issue_date": "2018-01-24",
-        "currency": "MYR",
-        "lines": [
-          {
-            "description": "1973 GARBAGE BAG (BLUE) 74C",
-            "quantity": 1,
-            "unit_price": 1.25,
-            "discount_percent": null,
-            "amount": 1.25
-          },
-          {
-            "description": "1974 GARBAGE BAG (GREEN) 74",
-            "quantity": 1,
-            "unit_price": 1.25,
-            "discount_percent": null,
-            "amount": 1.25
-          }
-        ],
-        "subtotal": 2.36,
-        "tax_amount": 0.14,
-        "total": 2.5
-      }
+      "invoice": null
     },
     {
       "id": "sroie-030",
@@ -1279,8 +734,8 @@
       "ms": 3998,
       "issues": [
         {
-          "field": "supplier_tax_id",
-          "message": "invalid tax id 000549584896"
+          "field": "*",
+          "message": "redacted"
         }
       ],
       "fields": {
@@ -1294,25 +749,7 @@
         "total": true,
         "lines": false
       },
-      "invoice": {
-        "supplier_name": "C W KHOO HARDWARE SDN BHD",
-        "supplier_tax_id": "000549584896",
-        "invoice_number": "CR 1803/0064",
-        "issue_date": "2018-03-01",
-        "currency": "MYR",
-        "lines": [
-          {
-            "description": "AIR ADAPTOR @ 1",
-            "quantity": 5,
-            "unit_price": 4,
-            "discount_percent": null,
-            "amount": 20
-          }
-        ],
-        "subtotal": 20,
-        "tax_amount": 1.2,
-        "total": 21.2
-      }
+      "invoice": null
     }
   ]
 }

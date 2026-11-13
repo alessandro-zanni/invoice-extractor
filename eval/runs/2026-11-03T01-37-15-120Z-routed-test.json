@@ -1312,28 +1312,7 @@
         "total": true,
         "lines": false
       },
-      "invoice": {
-        "supplier_name": "BOOK TA K (TAMAN DAYA) SDN BHD",
-        "supplier_tax_id": null,
-        "invoice_number": "TD01167104",
-        "issue_date": "2018-12-25",
-        "currency": "MYR",
-        "lines": [
-          {
-            "description": "KF MODELLING CLAY KIDDY FISH",
-            "quantity": 1,
-            "unit_price": 9,
-            "discount_percent": null,
-            "amount": 9
-          }
-        ],
-        "subtotal": 9,
-        "discount_amount": 0,
-        "tax_amount": 0,
-        "prices_include_tax": true,
-        "rounding": 0,
-        "total": 9
-      }
+      "invoice": null
     },
     {
       "id": "sroie-005",
@@ -1361,56 +1340,7 @@
         "total": true,
         "lines": false
       },
-      "invoice": {
-        "supplier_name": "MR D.I.Y. (M) SDN BHD",
-        "supplier_tax_id": null,
-        "invoice_number": "T2 R000002902",
-        "issue_date": "2018-11-18",
-        "currency": "MYR",
-        "lines": [
-          {
-            "description": "KILAT AUTO ECO WASH & SHINE ES1000 1L WA45-/2A - 12 9555916500133",
-            "quantity": 1,
-            "unit_price": 3.11,
-            "discount_percent": null,
-            "amount": 3.11
-          },
-          {
-            "description": "KILAT ECO AUTO WASH &WAX EW-1000-1L WA44-A - 12 9555916500126",
-            "quantity": 1,
-            "unit_price": 4.62,
-            "discount_percent": null,
-            "amount": 4.62
-          },
-          {
-            "description": "WD40 277ml MOQ 2572 WA43-A - 24 079567600084",
-            "quantity": 1,
-            "unit_price": 11.23,
-            "discount_percent": null,
-            "amount": 11.23
-          },
-          {
-            "description": "KLEENSO AJAIB 99 SERAI WANYI 900G WD00 - 15 9555651400385",
-            "quantity": 1,
-            "unit_price": 7.45,
-            "discount_percent": null,
-            "amount": 7.45
-          },
-          {
-            "description": "HANDKERCHIEF 71386#2PCS PI12PJ11-4 - 6/300 9090822",
-            "quantity": 1,
-            "unit_price": 4.5,
-            "discount_percent": null,
-            "amount": 4.5
-          }
-        ],
-        "subtotal": 30.91,
-        "discount_amount": 0,
-        "tax_amount": 0,
-        "prices_include_tax": true,
-        "rounding": -0.01,
-        "total": 30.9
-      }
+      "invoice": null
     },
     {
       "id": "sroie-009",
@@ -1438,56 +1368,7 @@
         "total": false,
         "lines": false
       },
-      "invoice": {
-        "supplier_name": "PERNIAGAAN ZHENG HUI",
-        "supplier_tax_id": "JM0325955-V",
-        "invoice_number": "CS00082652",
-        "issue_date": "2018-02-12",
-        "currency": "MYR",
-        "lines": [
-          {
-            "description": "8239 SR: 11\" PROWESS H/DUTY SILICONE GUN G-D2",
-            "quantity": 1,
-            "unit_price": 15,
-            "discount_percent": null,
-            "amount": 15
-          },
-          {
-            "description": "855075109147 SR: XTRASEAL R TV ACETIC SILICONE SA-107",
-            "quantity": 3,
-            "unit_price": 7,
-            "discount_percent": null,
-            "amount": 21
-          },
-          {
-            "description": "9744 SR: CENTRAL PUNCH SET 3PCS - 1/4\",5/32\",1/4\"",
-            "quantity": 1,
-            "unit_price": 18,
-            "discount_percent": null,
-            "amount": 18
-          },
-          {
-            "description": "12525 SR: 24\" MARKSMAN PIPE WRENCH",
-            "quantity": 1,
-            "unit_price": 50,
-            "discount_percent": null,
-            "amount": 50
-          },
-          {
-            "description": "2016 SR: PVC WIRE TAPE 1PC X 7YD",
-            "quantity": 3,
-            "unit_price": 0.7,
-            "discount_percent": null,
-            "amount": 2.1
-          }
-        ],
-        "subtotal": 106.1,
-        "discount_amount": 0,
-        "tax_amount": 6.37,
-        "prices_include_tax": false,
-        "rounding": -0.02,
-        "total": 112.46
-      }
+      "invoice": null
     },
     {
       "id": "sroie-010",
@@ -1515,49 +1396,7 @@
         "total": true,
         "lines": false
       },
-      "invoice": {
-        "supplier_name": "Gerbang Alaf Restaurants Sdn Bhd",
-        "supplier_tax_id": "000504664064",
-        "invoice_number": "003281900229170",
-        "issue_date": "2018-01-18",
-        "currency": "MYR",
-        "lines": [
-          {
-            "description": "ChicMcMuffin",
-            "quantity": 2,
-            "unit_price": 5.5,
-            "discount_percent": null,
-            "amount": 11
-          },
-          {
-            "description": "M Porridge",
-            "quantity": 1,
-            "unit_price": 5.6,
-            "discount_percent": null,
-            "amount": 5.6
-          },
-          {
-            "description": "BM 2HotCakes",
-            "quantity": 1,
-            "unit_price": 10,
-            "discount_percent": null,
-            "amount": 10
-          },
-          {
-            "description": "L Coke",
-            "quantity": 1,
-            "unit_price": 0,
-            "discount_percent": null,
-            "amount": 0
-          }
-        ],
-        "subtotal": 26.6,
-        "discount_amount": 0,
-        "tax_amount": 1.51,
-        "prices_include_tax": true,
-        "rounding": 0,
-        "total": 26.6
-      }
+      "invoice": null
     },
     {
       "id": "sroie-014",
@@ -1585,28 +1424,7 @@
         "total": true,
         "lines": false
       },
-      "invoice": {
-        "supplier_name": "RESTORAN HASSANBISTRO",
-        "supplier_tax_id": null,
-        "invoice_number": "C1-0170778",
-        "issue_date": "2017-12-28",
-        "currency": "MYR",
-        "lines": [
-          {
-            "description": "MAKANAN",
-            "quantity": 1,
-            "unit_price": 15,
-            "discount_percent": null,
-            "amount": 15
-          }
-        ],
-        "subtotal": 15,
-        "discount_amount": 0,
-        "tax_amount": 0,
-        "prices_include_tax": false,
-        "rounding": 0,
-        "total": 15
-      }
+      "invoice": null
     },
     {
       "id": "sroie-018",
@@ -1634,28 +1452,7 @@
         "total": true,
         "lines": false
       },
-      "invoice": {
-        "supplier_name": "LIGHTROOM GALLERY SDN BHD",
-        "supplier_tax_id": "000584089600",
-        "invoice_number": "LCN00211",
-        "issue_date": "2017-11-20",
-        "currency": "MYR",
-        "lines": [
-          {
-            "description": "YT51775 1059 18W SQ WW BK SUR LED LIGHT 1059 SQUARE BLACK FRAME",
-            "quantity": 2,
-            "unit_price": 18.77,
-            "discount_percent": null,
-            "amount": 37.55
-          }
-        ],
-        "subtotal": 37.55,
-        "discount_amount": 0,
-        "tax_amount": 2.25,
-        "prices_include_tax": false,
-        "rounding": 0,
-        "total": 39.8
-      }
+      "invoice": null
     },
     {
       "id": "sroie-019",
@@ -1683,35 +1480,7 @@
         "total": true,
         "lines": false
       },
-      "invoice": {
-        "supplier_name": "LIGHTROOM GALLERY SDN BHD",
-        "supplier_tax_id": "000584089600",
-        "invoice_number": "LCS03908",
-        "issue_date": "2017-12-20",
-        "currency": "MYR",
-        "lines": [
-          {
-            "description": "T5 JOINT 2PIN 2PCS",
-            "quantity": 1,
-            "unit_price": 2.83,
-            "discount_percent": null,
-            "amount": 2.83
-          },
-          {
-            "description": "YE30 BK 7W WW LED TRACK LIGHT",
-            "quantity": 2,
-            "unit_price": 33.02,
-            "discount_percent": null,
-            "amount": 66.04
-          }
-        ],
-        "subtotal": 68.87,
-        "discount_amount": 0,
-        "tax_amount": 4.13,
-        "prices_include_tax": false,
-        "rounding": 0,
-        "total": 73
-      }
+      "invoice": null
     },
     {
       "id": "sroie-023",
@@ -1740,28 +1509,7 @@
         "total": true,
         "lines": false
       },
-      "invoice": {
-        "supplier_name": "FUYI MINI MARKET",
-        "supplier_tax_id": "001601310720",
-        "invoice_number": "1CR0576494",
-        "issue_date": "2018-01-25",
-        "currency": "MYR",
-        "lines": [
-          {
-            "description": "013 SUMMER CUP 48X230ML",
-            "quantity": 1,
-            "unit_price": 8.49,
-            "discount_percent": null,
-            "amount": 8.49
-          }
-        ],
-        "subtotal": 8.49,
-        "discount_amount": 0,
-        "tax_amount": 0.51,
-        "prices_include_tax": false,
-        "rounding": 0,
-        "total": 9
-      }
+      "invoice": null
     },
     {
       "id": "sroie-027",
@@ -1780,8 +1528,8 @@
       "ms": 8806,
       "issues": [
         {
-          "field": "lines.0.amount",
-          "message": "10 × 10.57 − 0% ≠ 105.66"
+          "field": "*",
+          "message": "redacted"
         }
       ],
       "fields": {
@@ -1795,70 +1543,7 @@
         "total": true,
         "lines": false
       },
-      "invoice": {
-        "supplier_name": "TEO HENG STATIONERY & BOOKS",
-        "supplier_tax_id": "000689913856",
-        "invoice_number": "CS1802/27714",
-        "issue_date": "2018-02-12",
-        "currency": "MYR",
-        "lines": [
-          {
-            "description": "IK YELLOW 70GRAMS",
-            "quantity": 10,
-            "unit_price": 10.57,
-            "discount_percent": 0,
-            "amount": 105.66
-          },
-          {
-            "description": "PAPYRUS DARK COLOUR PAPER",
-            "quantity": 1,
-            "unit_price": 17.45,
-            "discount_percent": 0,
-            "amount": 17.45
-          },
-          {
-            "description": "ARTLINE 70",
-            "quantity": 1,
-            "unit_price": 2.7,
-            "discount_percent": 0,
-            "amount": 2.7
-          },
-          {
-            "description": "FASTER CX5N BALL PEN",
-            "quantity": 1,
-            "unit_price": 0.85,
-            "discount_percent": 0,
-            "amount": 0.85
-          },
-          {
-            "description": "CBE HANDYCUTTER",
-            "quantity": 2,
-            "unit_price": 0.85,
-            "discount_percent": 0,
-            "amount": 1.7
-          },
-          {
-            "description": "CBE A4 SIZE 20 POCKETS REFILLABLE NEW CLEAR HOLDER",
-            "quantity": 1,
-            "unit_price": 8.4,
-            "discount_percent": 0,
-            "amount": 8.4
-          },
-          {
-            "description": "EAGLE F4 120 NUMBERING FOOLSCAP BOOK",
-            "quantity": 2,
-            "unit_price": 3.96,
-            "discount_percent": 0,
-            "amount": 7.92
-          }
-        ],
-        "subtotal": 144.68,
-        "discount_amount": 0,
-        "tax_amount": 8.68,
-        "prices_include_tax": false,
-        "rounding": -0.01,
-        "total": 153.35
-      }
+      "invoice": null
     },
     {
       "id": "sroie-028",
@@ -1886,42 +1571,7 @@
         "total": true,
         "lines": false
       },
-      "invoice": {
-        "supplier_name": "MR. D.I.Y. (M) SDN BHD",
-        "supplier_tax_id": "000306020352",
-        "invoice_number": null,
-        "issue_date": "2018-03-14",
-        "currency": "MYR",
-        "lines": [
-          {
-            "description": "SOURING PAD 1018-4 4S WA03 - 24/240 9555221301081",
-            "quantity": 4,
-            "unit_price": 2.8,
-            "discount_percent": null,
-            "amount": 11.2
-          },
-          {
-            "description": "SCISSOR G/FISH AD51 - 24/360 9064422",
-            "quantity": 2,
-            "unit_price": 1.5,
-            "discount_percent": null,
-            "amount": 3
-          },
-          {
-            "description": "TRAILING SKT 5GN+SP 3X1.25MM CABLE 2 WA27 - 20 9553114461966",
-            "quantity": 1,
-            "unit_price": 22.9,
-            "discount_percent": null,
-            "amount": 22.9
-          }
-        ],
-        "subtotal": 37.1,
-        "discount_amount": 0,
-        "tax_amount": 2.1,
-        "prices_include_tax": true,
-        "rounding": 0,
-        "total": 37.1
-      }
+      "invoice": null
     },
     {
       "id": "syn-001",
