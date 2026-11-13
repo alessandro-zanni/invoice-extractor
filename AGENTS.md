@@ -76,6 +76,7 @@ bun run eval --strategy haiku|opus|routed --split dev|test|all [--limit N]
   currency, issue date, invoice number (no line items in its labels).
 - `data/external/sroie/`: 30 SROIE receipts (research-only licence): `bun run golden:sroie`
   downloads them, gitignored, never committed. The runner reads `data/external/*` when present.
+  Saved runs keep SROIE scores but redact what was read from the receipts (`invoice`, issue text).
 - **Test split, first run (2026-11-03, 46 docs, never used for tuning):**
 
   | Strategy | Docs fully right | False alarms | Printed errors caught | Cost | p50 / p95 |
